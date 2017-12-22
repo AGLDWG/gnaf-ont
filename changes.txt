@@ -1,0 +1,13 @@
+Changed ont URI
+  http://reference.data.gov.au/def/ont/address/gnaf --> http://reference.data.gov.au/def/ont/address/gnaf
+  the use of path segments like /address/gnaf for specialisation ("a gnaf type of address") isn't appropriate for an ontology which should just be definetd at <SOMETHING>/def/ont/<ONT_NAME>
+
+Use of http://reference.data.gov.au/def/ont/gnaf
+  following logic allowing use of http://reference.data.gov.au/def/ont/iso19160-1-address, this use of http://reference.data.gov.au/def/ont/gnaf is appropriate for a "GNAF ontology"
+
+Replaced the version URI with the overall ont URI
+  http://reference.data.gov.au/def/ont/gnaf/2017/07# --> http://reference.data.gov.au/def/ont/gnaf#
+  We want statements like #addressDefaultGeocodePID rdfs:domain #AddressDefaultGeocode for the ontology's latest version, not just locked to a numbered version
+
+Added standard ontology annotations
+  created data, creator, title, description, etc., version IRI
