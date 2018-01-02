@@ -1,0 +1,110 @@
+@prefix : <http://gnafld.net/def/gnaf/code/AliasType#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://gnafld.net/def/gnaf/code/AliasType>
+    a owl:Ontology ;
+    rdfs:label "G-NAF code list for AliasType instances"@en ;
+    rdfs:comment "G-NAF code list for AliasType instances."@en ;
+    dc:creator "Nicholas Car"@en ;
+    dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+    dc:publisher "PSMA Australia"@en ;
+    dct:publisher <http://www.psma.com.au> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rights "PSMA Ltd."@en ;
+    owl:versionInfo "0.1"@en ;
+    owl:versionIRI <http://gnafld.net/def/gnaf/code/GnafReliability/0.1> ;
+    dct:created "2018-01-02"^^xsd:date ;
+    dct:modified "2018-01-02"@en ;
+    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/code/AliasType#"^^xsd:string ;
+    vann:preferredNamespacePrefix "altyp"@en .
+
+:SYN a :AliasType , skos:Concept;
+    skos:prefLabel "Synonym"@en .
+    rdfs:label "Synonym"^^xsd:string ;
+    skos:definition ""@en ;
+    skos:altLabel "" ;
+    dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
+
+:CD a :AliasType , skos:Concept;
+    skos:prefLabel "Contributor Defined"@en .
+    rdfs:label "Contributor Defined"^^xsd:string ;
+    skos:definition ""@en ;
+    skos:altLabel "" ;
+    dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
+
+:AL a :AliasType , skos:Concept;
+    skos:prefLabel "Alternative Locality"@en .
+    rdfs:label "Alternative Locality"^^xsd:string ;
+    skos:definition ""@en ;
+    skos:altLabel "" ;
+    dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
+
+:RA a :AliasType , skos:Concept;
+    skos:prefLabel "Ranged Address"@en .
+    rdfs:label "Ranged Address"^^xsd:string ;
+    skos:definition ""@en ;
+    skos:altLabel "" ;
+    dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
+
+:LD a :AliasType , skos:Concept;
+    skos:prefLabel "Level Duplication"@en .
+    rdfs:label "Level Duplication"^^xsd:string ;
+    skos:definition ""@en ;
+    skos:altLabel "" ;
+    dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
+
+:FNNS a :AliasType , skos:Concept;
+    skos:prefLabel "Flat Number – No First Suffix Correlation"@en .
+    rdfs:label "Flat Number – No First Suffix Correlation"^^xsd:string ;
+    skos:definition ""@en ;
+    skos:altLabel "" ;
+    dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
+
+:MR a :AliasType , skos:Concept;
+    skos:prefLabel "Maintenance Reference"@en .
+    rdfs:label "Maintenance Reference"^^xsd:string ;
+    skos:definition ""@en ;
+    skos:altLabel "" ;
+    dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
+
+:SR a :AliasType , skos:Concept;
+    skos:prefLabel "Spatially Related"@en .
+    rdfs:label "Spatially Related"^^xsd:string ;
+    skos:definition ""@en ;
+    skos:altLabel "SPATIALLY RELATED" ;
+    dct:source "G-NAF Data Product Description, November 2017: LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
+
+:ALT a :AliasType , skos:Concept;
+    skos:prefLabel "Alternative"@en .
+    rdfs:label "Alternative"^^xsd:string ;    
+    skos:definition ""@en ;
+    skos:altLabel "ALTERNATIVE" ;
+    dct:source "G-NAF Data Product Description, November 2017: STREET_LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;

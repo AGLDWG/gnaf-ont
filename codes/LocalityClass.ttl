@@ -1,0 +1,101 @@
+@prefix : <http://gnafld.net/def/gnaf/code/LocalityClass/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix gnaf: <http://gnafld.net/def/gnaf#> .
+@base <http://gnafld.net/def/gnaf/code/LocalityClass> .
+
+<http://gnafld.net/def/gnaf/code/LocalityClass>
+    a owl:Ontology ;
+    rdfs:label "G-NAF code list for LocalityClass instances"@en ;
+    rdfs:comment "G-NAF code list for LocalityClass instances."@en ;
+    dc:creator "Nicholas Car"@en ;
+    dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+    dc:publisher "PSMA Australia"@en ;
+    dct:publisher <http://www.psma.com.au> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rights "PSMA Ltd."@en ;
+    owl:versionInfo "0.1"@en ;
+    owl:versionIRI <http://gnafld.net/def/gnaf/code/LocalityClass/0.1> ;
+    dct:created "2018-01-02"^^xsd:date ;
+    dct:modified "2018-01-02"@en ;
+    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/code/LocalityClass#"^^xsd:string ;
+    vann:preferredNamespacePrefix "loccl"@en .
+
+:A a gnaf:LocalityClass , skos:Concept ;
+	rdfs:label "Alias Only Locality"^^xsd:string ;
+  skos:prefLabel "Alias Only Locality"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "ALIAS ONLY LOCALITY"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
+
+:D a gnaf:LocalityClass , skos:Concept ;
+	rdfs:label "District"^^xsd:string ;
+  skos:prefLabel "District"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "DISTRICT"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
+
+:G a gnaf:LocalityClass , skos:Concept ;
+	rdfs:label "Gazeted Locality"^^xsd:string ;
+  skos:prefLabel "Gazeted Locality"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "GAZETTED LOCALITY"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
+
+:H a gnaf:LocalityClass , skos:Concept ;
+	rdfs:label "Hundred"^^xsd:string ;
+  skos:prefLabel "Hundred"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "HUNDRED"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
+
+:M a gnaf:LocalityClass , skos:Concept ;
+	rdfs:label "Manually Validated"^^xsd:string ;
+  skos:prefLabel "Manually Validated"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "MANUALLY VALIDATED"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
+
+:T a gnaf:LocalityClass , skos:Concept ;
+	rdfs:label "Topographic Locality"^^xsd:string ;
+  skos:prefLabel "Topographic Locality"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "TOPOGRAPHIC LOCALITY"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
+
+:U a gnaf:LocalityClass , skos:Concept ;
+	rdfs:label "Unofficial Suburb"^^xsd:string ;
+  skos:prefLabel "Unofficial Suburb"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "UNOFFICIAL SUBURB"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
+
+:V a gnaf:LocalityClass , skos:Concept ;
+	rdfs:label "Unofficial Topographic Feature"^^xsd:string ;
+  skos:prefLabel "Unofficial Topographic Feature"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "UNOFFICIAL TOPOGRAPHIC FEATURE"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
