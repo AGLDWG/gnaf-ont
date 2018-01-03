@@ -48,6 +48,12 @@
 #    Object Properties
 #################################################################
 
+###  http://gnafld.net/def/gnaf#addressNumberType
+:addressNumberType rdf:type owl:ObjectProperty ;
+                   rdfs:domain :AddressNumber ;
+                   rdfs:range :AddressNumberType .
+
+
 ###  http://gnafld.net/def/gnaf#addressSite
 :addressSite rdf:type owl:ObjectProperty .
 
@@ -95,6 +101,12 @@
            rdfs:domain :Locality ;
            rdfs:range :LocalityNeighbour ;
            rdfs:label "neighbour"@en .
+
+
+###  http://gnafld.net/def/gnaf#number
+:number rdf:type owl:ObjectProperty ;
+        rdfs:domain :Address ;
+        rdfs:range :AddressNumber .
 
 
 ###  http://gnafld.net/def/gnaf#reliability
@@ -151,65 +163,13 @@
              rdfs:range xsd:dateTime .
 
 
-###  http://gnafld.net/def/gnaf#flatNumber
-:flatNumber rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#flatNumberPrefix
-:flatNumberPrefix rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#flatNumberSuffix
-:flatNumberSuffix rdf:type owl:DatatypeProperty .
-
-
 ###  http://gnafld.net/def/gnaf#legalParcelId
 :legalParcelId rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#levelNumber
-:levelNumber rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#levelNumberPrefix
-:levelNumberPrefix rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#levelNumberSuffix
-:levelNumberSuffix rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#lotNumber
-:lotNumber rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#lotNumberPrefix
-:lotNumberPrefix rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#lotNumberSuffix
-:lotNumberSuffix rdf:type owl:DatatypeProperty .
 
 
 ###  http://gnafld.net/def/gnaf#name
 :name rdf:type owl:DatatypeProperty ;
       rdfs:range xsd:string .
-
-
-###  http://gnafld.net/def/gnaf#numberFirst
-:numberFirst rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#numberFirstPrefix
-:numberFirstPrefix rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#numberFirstSuffix
-:numberFirstSuffix rdf:type owl:DatatypeProperty .
-
-
-###  http://gnafld.net/def/gnaf#numberLast
-:numberLast rdf:type owl:DatatypeProperty .
 
 
 ###  http://gnafld.net/def/gnaf#numberLastPrefix
@@ -259,25 +219,44 @@ dbo:Place rdf:type owl:Class .
 :Address rdf:type owl:Class ;
          rdfs:subClassOf <http://reference.data.gov.au/def/ont/iso19160-1-address#Address> ,
                          [ rdf:type owl:Restriction ;
+                           owl:onProperty :number ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :AddressNumber
+                         ] ,
+                         [ rdf:type owl:Restriction ;
                            owl:onProperty :dateCreated ;
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:dateTime
                          ] ,
                          [ rdf:type owl:Restriction ;
+                           owl:onProperty :buildingName ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
                            owl:onProperty :dateRetired ;
                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:dateTime
-                         ] ;
-         rdfs:comment """General blurb about an Address.
-
-This class most closely corresponds to the G-NAF's ADDRESS_DETAIL class."""@en ;
-         rdfs:label "Address"^^xsd:string .
+                         ] .
 
 
 ###  http://gnafld.net/def/gnaf#AddressAlias
 :AddressAlias rdf:type owl:Class ;
               rdfs:subClassOf :Alias ;
               rdfs:label "Address Alias"@en .
+
+
+###  http://gnafld.net/def/gnaf#AddressNumber
+:AddressNumber rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :addressNumberType ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :AddressNumberType
+                               ] .
+
+
+###  http://gnafld.net/def/gnaf#AddressNumberType
+:AddressNumberType rdf:type owl:Class .
 
 
 ###  http://gnafld.net/def/gnaf#Alias
@@ -507,6 +486,31 @@ schema:Place rdf:type owl:Class .
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://gnafld.net/def/gnaf#First
+:First rdf:type owl:NamedIndividual ,
+                :AddressNumberType .
+
+
+###  http://gnafld.net/def/gnaf#Flat
+:Flat rdf:type owl:NamedIndividual ,
+               :AddressNumberType .
+
+
+###  http://gnafld.net/def/gnaf#Last
+:Last rdf:type owl:NamedIndividual ,
+               :AddressNumberType .
+
+
+###  http://gnafld.net/def/gnaf#Level
+:Level rdf:type owl:NamedIndividual ,
+                :AddressNumberType .
+
+
+###  http://gnafld.net/def/gnaf#Lot
+:Lot rdf:type owl:NamedIndividual ,
+              :AddressNumberType .
+
 
 ###  http://gnafld.net/def/gnaf#dateCreated
 :dateCreated rdf:type owl:NamedIndividual ;
