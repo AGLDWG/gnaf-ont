@@ -1,5 +1,6 @@
 Address
 * are CONFIDENCE and Street:GNAF_RELAIBILITY the same thing?
+* do all addresses have at least one number? Cardinality of number 1..4 (for each type)
 
 Street
 * what is GNAF_STREET_PID v. STREET_LOCALITY_PID?
