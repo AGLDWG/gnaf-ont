@@ -6,3 +6,5 @@ Street
 * what is GNAF_STREET_PID v. STREET_LOCALITY_PID?
 * what is GNAF_STREET_CONFIDENCE v. GNAF_RELIABILITY_CODE?
 
+AddressSite
+* create Class
