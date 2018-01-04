@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/code/GnafReliability#> .
+@prefix : <http://gnafld.net/def/gnaf/code/GnafConfidence#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -9,12 +9,12 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix gnaf: <http://gnafld.net/def/gnaf#> .
-@base <http://gnafld.net/def/gnaf/code/GnafReliability> .
+@base <http://gnafld.net/def/gnaf/code/GnafConfidence> .
 
-<http://gnafld.net/def/gnaf/code/GnafReliability>
+<http://gnafld.net/def/gnaf/code/GnafConfidence>
     a owl:Ontology ;
-    rdfs:label "G-NAF code list for GnafReliability instances"@en ;
-    rdfs:comment "G-NAF code list for GnafReliability instances."@en ;
+    rdfs:label "G-NAF code list for GnafConfidence instances"@en ;
+    rdfs:comment "G-NAF code list for GnafConfidence instances."@en ;
     dc:creator "Nicholas Car"@en ;
     dct:creator <http://orcid.org/0000-0002-8742-7730> ;
     dc:publisher "PSMA Australia"@en ;
@@ -22,44 +22,44 @@
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:rights "PSMA Ltd."@en ;
     owl:versionInfo "0.1"@en ;
-    owl:versionIRI <http://gnafld.net/def/gnaf/code/GnafReliability/0.1> ;
+    owl:versionIRI <http://gnafld.net/def/gnaf/code/GnafConfidence/0.1> ;
     dct:created "2018-01-02"^^xsd:date ;
     dct:modified "2018-01-02"@en ;
-    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/code/GnafReliability#"^^xsd:string ;
-    vann:preferredNamespacePrefix "loccl"@en .
+    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/code/GnafConfidence#"^^xsd:string ;
+    vann:preferredNamespacePrefix "gconf"@en .
 
-:2 a gnaf:GnafReliability , skos:Concept ;
+:2 a gnaf:GnafConfidence , skos:Concept ;
     rdfs:label "Confidence level = 2"^^xsd:string ;
     skos:prefLabel "Confidence level = 2"@en ;
     skos:definition "All three contributors have supplied an identical address"@en ;
     skos:altLabel "2"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafReliability> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
 
-:1 a gnaf:GnafReliability , skos:Concept ;
+:1 a gnaf:GnafConfidence , skos:Concept ;
     rdfs:label "Confidence level = 1"^^xsd:string ;
     skos:prefLabel "Confidence level = 1"@en ;
     skos:definition "A match has been achieved between only two contributors"@en ;
     skos:altLabel "1"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafReliability> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
 
-:0 a gnaf:GnafReliability , skos:Concept ;
+:0 a gnaf:GnafConfidence , skos:Concept ;
     rdfs:label "Confidence level = 0"^^xsd:string ;
     skos:prefLabel "Confidence level = 0"@en ;
     skos:definition "A single contributor holds this address and no match has been achieved with either or the other two contributors."@en ;
     skos:altLabel "0"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafReliability> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
 
-:-1 a gnaf:GnafReliability , skos:Concept ;
+:-1 a gnaf:GnafConfidence , skos:Concept ;
     rdfs:label "Confidence level = -1"^^xsd:string ;
     skos:prefLabel "Confidence level = -1"@en ;
     skos:definition "None of the contributors hold this address in their address dataset anymore."@en ;
     skos:altLabel "-1"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafReliability> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
