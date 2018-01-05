@@ -68,15 +68,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://gnafld.net/def/gnaf#hasAlias
 :hasAlias rdf:type owl:ObjectProperty ;
-          rdfs:domain :Locality ,
-                      :StreetLocality ,
-                      <http://reference.data.gov.au/def/ont/iso19160-1-address#Address> ;
+          rdfs:domain :Alias ;
+          rdfs:range :Address ,
+                     :Locality ,
+                     :Street ;
           rdfs:label "has alias"@en .
-
-
-###  http://gnafld.net/def/gnaf#hasAliasOf
-:hasAliasOf rdf:type owl:ObjectProperty ;
-            rdfs:label "has alias of"@en .
 
 
 ###  http://gnafld.net/def/gnaf#hasAliasType
@@ -114,8 +110,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://gnafld.net/def/gnaf#hasLocality
 :hasLocality rdf:type owl:ObjectProperty ;
-             rdfs:domain :LocalityNeighbour ,
-                         :StreetLocality ;
+             rdfs:domain :StreetLocality ;
              rdfs:range :Locality ;
              rdfs:label "has locality"@en .
 
@@ -130,7 +125,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 ###  http://gnafld.net/def/gnaf#hasNeighbour
 :hasNeighbour rdf:type owl:ObjectProperty ;
               rdfs:domain :Locality ;
-              rdfs:range :LocalityNeighbour ;
+              rdfs:range :Locality ;
               rdfs:label "has neighbour"@en .
 
 
@@ -250,6 +245,10 @@ dbo:Location rdf:type owl:Class ;
                          :GnafEntity ,
                          <http://reference.data.gov.au/def/ont/iso19160-1-address#Address> ,
                          prov:Location ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAlias ;
+                           owl:someValuesFrom :Alias
+                         ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasNumber ;
                            owl:someValuesFrom :Number
@@ -392,6 +391,10 @@ dbo:Location rdf:type owl:Class ;
                             owl:someValuesFrom :LocalityAlias
                           ] ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasNeighbour ;
+                            owl:someValuesFrom :Locality
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty :hasLocalityClass ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :LocalityClass
@@ -442,17 +445,6 @@ dbo:Location rdf:type owl:Class ;
                rdfs:label "Locality Class"@en .
 
 
-###  http://gnafld.net/def/gnaf#LocalityNeighbour
-:LocalityNeighbour rdf:type owl:Class ;
-                   rdfs:subClassOf :GnafEntity ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasLocality ;
-                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass :Locality
-                                   ] ;
-                   rdfs:label "Locality Neighbour"@en .
-
-
 ###  http://gnafld.net/def/gnaf#Number
 :Number rdf:type owl:Class ;
         rdfs:subClassOf prov:Entity ,
@@ -483,6 +475,10 @@ dbo:Location rdf:type owl:Class ;
         rdfs:subClassOf dbo:Location ,
                         :GnafEntity ,
                         prov:Location ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasAlias ;
+                          owl:someValuesFrom :Alias
+                        ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasStreetClass ;
                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
