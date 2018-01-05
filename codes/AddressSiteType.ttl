@@ -26,2062 +26,2333 @@
     vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/code/StreetType#"^^xsd:string ;
     rdfs:comment "The AS4590 code list for street types intended for implementing a standardised list of street types and their abbreviations for Australia and New Zealand. It complies with the World Wide Web Consortium's Web Ontology Language (OWL2) Recommendation."@en ;
     owl:versionIRI <http://gnafld.net/def/gnaf/code/StreetType/0.1> ;
-    owl:versionInfo "0.1"@en .
+    owl:versionInfo "0.1"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Access a :StreetType , skos:Concept ;
-    rdfs:label "Access"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ACCS"^^xsd:string,
         "ACCESS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Access"@en .
+    skos:prefLabel "Access"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Acre a :StreetType , skos:Concept ;
-    rdfs:label "Acre"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ACRE"^^xsd:string,
         "ACRE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Acre"@en .
+    skos:prefLabel "Acre"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Airwalk a :StreetType , skos:Concept ;
-    rdfs:label "Airwalk"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "AWLK"^^xsd:string,
         "AIRWALK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Airwalk"@en .
+    skos:prefLabel "Airwalk"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Alley a :StreetType , skos:Concept ;
-    rdfs:label "Alley"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ALLY"^^xsd:string,
         "ALLEY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Alley"@en .
+    skos:prefLabel "Alley"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Alleyway a :StreetType , skos:Concept ;
-    rdfs:label "Alleyway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ALWY"^^xsd:string,
         "ALLEYWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Alleyway"@en .
+    skos:prefLabel "Alleyway"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Amble a :StreetType , skos:Concept ;
-    rdfs:label "Amble"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "AMBL"^^xsd:string,
         "AMBLE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Amble"@en .
+    skos:prefLabel "Amble"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Approach a :StreetType , skos:Concept ;
-    rdfs:label "Approach"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "APP"^^xsd:string,
         "APPROACH"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Approach"@en .
+    skos:prefLabel "Approach"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Arcade a :StreetType , skos:Concept ;
-    rdfs:label "Arcade"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ARC"^^xsd:string,
         "ARCADE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Arcade"@en .
+    skos:prefLabel "Arcade"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Arterial a :StreetType , skos:Concept ;
-    rdfs:label "Arterial"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ARTL"^^xsd:string,
         "ARTERIAL"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Arterial"@en .
+    skos:prefLabel "Arterial"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Artery a :StreetType , skos:Concept ;
-    rdfs:label "Artery"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ARTY"^^xsd:string,
         "ARTERY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Artery"@en .
+    skos:prefLabel "Artery"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Avenue a :StreetType , skos:Concept ;
-    rdfs:label "Avenue"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "AV"^^xsd:string,
         "AVENUE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Avenue"@en .
+    skos:prefLabel "Avenue"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Banan a :StreetType , skos:Concept ;
-    rdfs:label "Banan"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BA"^^xsd:string,
         "BANAN"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Banan"@en .
+    skos:prefLabel "Banan"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Bank a :StreetType , skos:Concept ;
-    rdfs:label "Bank"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BANK"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Bank"@en .
+    skos:prefLabel "Bank"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Bay a :StreetType , skos:Concept ;
-    rdfs:label "Bay"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BAY"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Bay"@en .
+    skos:prefLabel "Bay"@en ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Beach a :StreetType , skos:Concept ;
-    rdfs:label "Beach"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BCH"^^xsd:string,
         "BEACH"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Beach"@en .
+    skos:prefLabel "Beach"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Bend a :StreetType , skos:Concept ;
-    rdfs:label "Bend"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BEND"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Bend"@en .
+    skos:prefLabel "Bend"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Boardwalk a :StreetType , skos:Concept ;
-    rdfs:label "Boardwalk"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BWLK"^^xsd:string,
         "BOARDWALK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Boardwalk"@en .
+    skos:prefLabel "Boardwalk"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Boulevard a :StreetType , skos:Concept ;
-    rdfs:label "Boulevard"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BVD"^^xsd:string,
         "BOULEVARD"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Boulevard"@en .
+    skos:prefLabel "Boulevard"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Boulevarde a :StreetType , skos:Concept ;
-    rdfs:label "Boulevarde"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BVDE"^^xsd:string,
         "BOULEVARDE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Boulevarde"@en .
+    skos:prefLabel "Boulevarde"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Bowl a :StreetType , skos:Concept ;
-    rdfs:label "Bowl"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BOWL"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Bowl"@en .
+    skos:prefLabel "Bowl"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Brace a :StreetType , skos:Concept ;
-    rdfs:label "Brace"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BR"^^xsd:string,
         "BRACE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Brace"@en .
+    skos:prefLabel "Brace"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Brae a :StreetType , skos:Concept ;
-    rdfs:label "Brae"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BRAE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Brae"@en .
+    skos:prefLabel "Brae"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Branch a :StreetType , skos:Concept ;
-    rdfs:label "Branch"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BRAN"^^xsd:string,
         "BRANCH"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Branch"@en .
+    skos:prefLabel "Branch"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Break a :StreetType , skos:Concept ;
-    rdfs:label "Break"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BRK"^^xsd:string,
         "BREAK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Break"@en .
+    skos:prefLabel "Break"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Brett a :StreetType , skos:Concept ;
-    rdfs:label "Brett"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BRET"^^xsd:string,
         "BRETT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Brett"@en .
+    skos:prefLabel "Brett"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Bridge a :StreetType , skos:Concept ;
-    rdfs:label "Bridge"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BDGE"^^xsd:string,
         "BRIDGE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Bridge"@en .
+    skos:prefLabel "Bridge"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Broadwalk a :StreetType , skos:Concept ;
-    rdfs:label "Broadwalk"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BRDWLK"^^xsd:string,
         "BROADWALK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Broadwalk"@en .
+    skos:prefLabel "Broadwalk"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Broadway a :StreetType , skos:Concept ;
-    rdfs:label "Broadway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BDWY"^^xsd:string,
         "BROADWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Broadway"@en .
+    skos:prefLabel "Broadway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Brow a :StreetType , skos:Concept ;
-    rdfs:label "Brow"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BROW"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Brow"@en .
+    skos:prefLabel "Brow"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Bull a :StreetType , skos:Concept ;
-    rdfs:label "Bull"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BULL"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Bull"@en .
+    skos:prefLabel "Bull"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Busway a :StreetType , skos:Concept ;
-    rdfs:label "Busway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BSWY"^^xsd:string,
         "BUSWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Busway"@en .
+    skos:prefLabel "Busway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Bypass a :StreetType , skos:Concept ;
-    rdfs:label "Bypass"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BYPA"^^xsd:string,
         "BYPASS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Bypass"@en .
+    skos:prefLabel "Bypass"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Byway a :StreetType , skos:Concept ;
-    rdfs:label "Byway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "BYWY"^^xsd:string,
         "BYWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Byway"@en .
+    skos:prefLabel "Byway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Causeway a :StreetType , skos:Concept ;
-    rdfs:label "Causeway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CSWY"^^xsd:string,
         "CAUSEWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Causeway"@en .
+    skos:prefLabel "Causeway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Centre a :StreetType , skos:Concept ;
-    rdfs:label "Centre"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CTR"^^xsd:string,
         "CENTRE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Centre"@en .
+    skos:prefLabel "Centre"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Centreway a :StreetType , skos:Concept ;
-    rdfs:label "Centreway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CNWY"^^xsd:string,
         "CENTREWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Centreway"@en .
+    skos:prefLabel "Centreway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Chase a :StreetType , skos:Concept ;
-    rdfs:label "Chase"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CH"^^xsd:string,
         "CHASE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Chase"@en .
+    skos:prefLabel "Chase"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Circle a :StreetType , skos:Concept ;
-    rdfs:label "Circle"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CIR"^^xsd:string,
         "CIRCLE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Circle"@en .
+    skos:prefLabel "Circle"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Circlet a :StreetType , skos:Concept ;
-    rdfs:label "Circlet"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CLT"^^xsd:string,
         "CIRCLET"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Circlet"@en .
+    skos:prefLabel "Circlet"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Circuit a :StreetType , skos:Concept ;
-    rdfs:label "Circuit"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CCT"^^xsd:string,
         "CIRCUIT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Circuit"@en .
+    skos:prefLabel "Circuit"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Circus a :StreetType , skos:Concept ;
-    rdfs:label "Circus"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CRCS"^^xsd:string,
         "CIRCUS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Circus"@en .
+    skos:prefLabel "Circus"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Close a :StreetType , skos:Concept ;
-    rdfs:label "Close"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CL"^^xsd:string,
         "CLOSE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Close"@en .
+    skos:prefLabel "Close"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Cluster a :StreetType , skos:Concept ;
-    rdfs:label "Cluster"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CLR"^^xsd:string,
         "CLUSTER"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Cluster"@en .
+    skos:prefLabel "Cluster"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Colonnade a :StreetType , skos:Concept ;
-    rdfs:label "Colonnade"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CLDE"^^xsd:string,
         "COLONNADE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Colonnade"@en .
+    skos:prefLabel "Colonnade"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Common a :StreetType , skos:Concept ;
-    rdfs:label "Common"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CMMN"^^xsd:string,
         "COMMON"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Common"@en .
+    skos:prefLabel "Common"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Commons a :StreetType , skos:Concept ;
-    rdfs:label "Commons"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CMMNS"^^xsd:string,
         "COMMONS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Commons"@en .
+    skos:prefLabel "Commons"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Concord a :StreetType , skos:Concept ;
-    rdfs:label "Concord"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CNCD"^^xsd:string,
         "CONCORD"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Concord"@en .
+    skos:prefLabel "Concord"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Concourse a :StreetType , skos:Concept ;
-    rdfs:label "Concourse"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CON"^^xsd:string,
         "CONCOURSE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Concourse"@en .
+    skos:prefLabel "Concourse"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Connection a :StreetType , skos:Concept ;
-    rdfs:label "Connection"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CNTN"^^xsd:string,
         "CONNECTION"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Connection"@en .
+    skos:prefLabel "Connection"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Copse a :StreetType , skos:Concept ;
-    rdfs:label "Copse"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CPS"^^xsd:string,
         "COPSE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Copse"@en .
+    skos:prefLabel "Copse"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Corner a :StreetType , skos:Concept ;
-    rdfs:label "Corner"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CNR"^^xsd:string,
         "CORNER"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Corner"@en .
+    skos:prefLabel "Corner"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Corso a :StreetType , skos:Concept ;
-    rdfs:label "Corso"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CSO"^^xsd:string,
         "CORSO"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Corso"@en .
+    skos:prefLabel "Corso"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Course a :StreetType , skos:Concept ;
-    rdfs:label "Course"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CRSE"^^xsd:string,
         "COURSE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Course"@en .
+    skos:prefLabel "Course"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Court a :StreetType , skos:Concept ;
-    rdfs:label "Court"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CT"^^xsd:string,
         "COURT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Court"@en .
+    skos:prefLabel "Court"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Courtyard a :StreetType , skos:Concept ;
-    rdfs:label "Courtyard"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CTYD"^^xsd:string,
         "COURTYARD"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Courtyard"@en .
+    skos:prefLabel "Courtyard"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Cove a :StreetType , skos:Concept ;
-    rdfs:label "Cove"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "COVE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Cove"@en .
+    skos:prefLabel "Cove"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Crescent a :StreetType , skos:Concept ;
-    rdfs:label "Crescent"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CR"^^xsd:string,
         "CRESCENT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Crescent"@en .
+    skos:prefLabel "Crescent"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Crest a :StreetType , skos:Concept ;
-    rdfs:label "Crest"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CRST"^^xsd:string,
         "CREST"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Crest"@en .
+    skos:prefLabel "Crest"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Crief a :StreetType , skos:Concept ;
-    rdfs:label "Crief"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CRF"^^xsd:string,
         "CRIEF"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Crief"@en .
+    skos:prefLabel "Crief"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Crook a :StreetType , skos:Concept ;
-    rdfs:label "Crook"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CRK"^^xsd:string,
         "CROOK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Crook"@en .
+    skos:prefLabel "Crook"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Cross a :StreetType , skos:Concept ;
-    rdfs:label "Cross"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CRSS"^^xsd:string,
         "CROSS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Cross"@en .
+    skos:prefLabel "Cross"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Crossing a :StreetType , skos:Concept ;
-    rdfs:label "Crossing"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CRSG"^^xsd:string,
         "CROSSING"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Crossing"@en .
+    skos:prefLabel "Crossing"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Cruiseway a :StreetType , skos:Concept ;
-    rdfs:label "Cruiseway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CUWY"^^xsd:string,
         "CRUISEWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Cruiseway"@en .
+    skos:prefLabel "Cruiseway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Cul-De-Sac a :StreetType , skos:Concept ;
     rdfs:label "Cul-De-Sac"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CSAC"^^xsd:string,
         "CUL-DE-SAC"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Cul-De-Sac"@en .
+    skos:prefLabel "Cul-De-Sac"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Cut a :StreetType , skos:Concept ;
-    rdfs:label "Cut"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CUT"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Cut"@en .
+    skos:prefLabel "Cut"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Cutting a :StreetType , skos:Concept ;
-    rdfs:label "Cutting"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "CUTT"^^xsd:string,
         "CUTTING"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Cutting"@en .
+    skos:prefLabel "Cutting"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Dale a :StreetType , skos:Concept ;
-    rdfs:label "Dale"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DALE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Dale"@en .
+    skos:prefLabel "Dale"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Dash a :StreetType , skos:Concept ;
-    rdfs:label "Dash"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DASH"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Dash"@en .
+    skos:prefLabel "Dash"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Dell a :StreetType , skos:Concept ;
-    rdfs:label "Dell"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DELL"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Dell"@en .
+    skos:prefLabel "Dell"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Dene a :StreetType , skos:Concept ;
-    rdfs:label "Dene"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DENE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Dene"@en .
+    skos:prefLabel "Dene"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Deviation a :StreetType , skos:Concept ;
-    rdfs:label "Deviation"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DE"^^xsd:string,
         "DEVIATION"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Deviation"@en .
+    skos:prefLabel "Deviation"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Dip a :StreetType , skos:Concept ;
-    rdfs:label "Dip"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DIP"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Dip"@en .
+    skos:prefLabel "Dip"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Distributor a :StreetType , skos:Concept ;
-    rdfs:label "Distributor"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DSTR"^^xsd:string,
         "DISTRIBUTOR"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Distributor"@en .
+    skos:prefLabel "Distributor"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Divide a :StreetType , skos:Concept ;
-    rdfs:label "Divide"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DIV"^^xsd:string,
         "DIVIDE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Divide"@en .
+    skos:prefLabel "Divide"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Dock a :StreetType , skos:Concept ;
-    rdfs:label "Dock"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DOCK"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Dock"@en .
+    skos:prefLabel "Dock"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Domain a :StreetType , skos:Concept ;
-    rdfs:label "Domain"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DOM"^^xsd:string,
         "DOMAIN"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Domain"@en .
+    skos:prefLabel "Domain"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Down a :StreetType , skos:Concept ;
-    rdfs:label "Down"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DOWN"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Down"@en .
+    skos:prefLabel "Down"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Downs a :StreetType , skos:Concept ;
-    rdfs:label "Downs"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DWNS"^^xsd:string,
         "DOWNS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Downs"@en .
+    skos:prefLabel "Downs"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Drive a :StreetType , skos:Concept ;
-    rdfs:label "Drive"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DR"^^xsd:string,
         "DRIVE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Drive"@en .
+    skos:prefLabel "Drive"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Driveway a :StreetType , skos:Concept ;
-    rdfs:label "Driveway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "DVWY"^^xsd:string,
         "DRIVEWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Driveway"@en .
+    skos:prefLabel "Driveway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Easement a :StreetType , skos:Concept ;
-    rdfs:label "Easement"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ESMT"^^xsd:string,
         "EASEMENT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Easement"@en .
+    skos:prefLabel "Easement"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :East a :StreetType , skos:Concept ;
-    rdfs:label "East"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "EAST"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "East"@en .
+    skos:prefLabel "East"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Edge a :StreetType , skos:Concept ;
-    rdfs:label "Edge"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "EDGE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Edge"@en .
+    skos:prefLabel "Edge"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Elbow a :StreetType , skos:Concept ;
-    rdfs:label "Elbow"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ELB"^^xsd:string,
         "ELBOW"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Elbow"@en .
+    skos:prefLabel "Elbow"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :End a :StreetType , skos:Concept ;
-    rdfs:label "End"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "END"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "End"@en .
+    skos:prefLabel "End"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Entrance a :StreetType , skos:Concept ;
-    rdfs:label "Entrance"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ENT"^^xsd:string,
         "ENTRANCE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Entrance"@en .
+    skos:prefLabel "Entrance"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Esplanade a :StreetType , skos:Concept ;
-    rdfs:label "Esplanade"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ESP"^^xsd:string,
         "ESPLANADE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Esplanade"@en .
+    skos:prefLabel "Esplanade"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Estate a :StreetType , skos:Concept ;
-    rdfs:label "Estate"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "EST"^^xsd:string,
         "ESTATE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Estate"@en .
+    skos:prefLabel "Estate"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Expressway a :StreetType , skos:Concept ;
-    rdfs:label "Expressway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "EXP"^^xsd:string,
         "EXPRESSWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Expressway"@en .
+    skos:prefLabel "Expressway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Extension a :StreetType , skos:Concept ;
-    rdfs:label "Extension"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "EXTN"^^xsd:string,
         "EXTENSION"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Extension"@en .
+    skos:prefLabel "Extension"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Fairway a :StreetType , skos:Concept ;
-    rdfs:label "Fairway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FAWY"^^xsd:string,
         "FAIRWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Fairway"@en .
+    skos:prefLabel "Fairway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Firebreak a :StreetType , skos:Concept ;
-    rdfs:label "Firebreak"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FBRK"^^xsd:string,
         "FIREBREAK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Firebreak"@en .
+    skos:prefLabel "Firebreak"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Fireline a :StreetType , skos:Concept ;
-    rdfs:label "Fireline"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FLNE"^^xsd:string,
         "FIRELINE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Fireline"@en .
+    skos:prefLabel "Fireline"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Firetrack a :StreetType , skos:Concept ;
-    rdfs:label "Firetrack"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FTRK"^^xsd:string,
         "FIRETRACK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Firetrack"@en .
+    skos:prefLabel "Firetrack"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Firetrail a :StreetType , skos:Concept ;
-    rdfs:label "Firetrail"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FITR"^^xsd:string,
         "FIRETRAIL"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Firetrail"@en .
+    skos:prefLabel "Firetrail"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Flat a :StreetType , skos:Concept ;
-    rdfs:label "Flat"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FLAT"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Flat"@en .
+    skos:prefLabel "Flat"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Flats a :StreetType , skos:Concept ;
-    rdfs:label "Flats"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FLTS"^^xsd:string,
         "FLATS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Flats"@en .
+    skos:prefLabel "Flats"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Follow a :StreetType , skos:Concept ;
-    rdfs:label "Follow"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FOLW"^^xsd:string,
         "FOLLOW"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Follow"@en .
+    skos:prefLabel "Follow"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Footway a :StreetType , skos:Concept ;
-    rdfs:label "Footway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FTWY"^^xsd:string,
         "FOOTWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Footway"@en .
+    skos:prefLabel "Footway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Ford a :StreetType , skos:Concept ;
-    rdfs:label "Ford"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FORD"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Ford"@en .
+    skos:prefLabel "Ford"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Foreshore a :StreetType , skos:Concept ;
-    rdfs:label "Foreshore"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FSHR"^^xsd:string,
         "FORESHORE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Foreshore"@en .
+    skos:prefLabel "Foreshore"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Fork a :StreetType , skos:Concept ;
-    rdfs:label "Fork"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FORK"^^xsd:string,
         "FORK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Fork"@en .
+    skos:prefLabel "Fork"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Formation a :StreetType , skos:Concept ;
-    rdfs:label "Formation"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FORM"^^xsd:string,
         "FORMATION"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Formation"@en .
+    skos:prefLabel "Formation"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Freeway a :StreetType , skos:Concept ;
-    rdfs:label "Freeway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FWY"^^xsd:string,
         "FREEWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Freeway"@en .
+    skos:prefLabel "Freeway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Front a :StreetType , skos:Concept ;
-    rdfs:label "Front"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FRNT"^^xsd:string,
         "FRONT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Front"@en .
+    skos:prefLabel "Front"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Frontage a :StreetType , skos:Concept ;
-    rdfs:label "Frontage"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "FRTG"^^xsd:string,
         "FRONTAGE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Frontage"@en .
+    skos:prefLabel "Frontage"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Gap a :StreetType , skos:Concept ;
-    rdfs:label "Gap"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GAP"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Gap"@en .
+    skos:prefLabel "Gap"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Garden a :StreetType , skos:Concept ;
-    rdfs:label "Garden"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GDN"^^xsd:string,
         "GARDEN"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Garden"@en .
+    skos:prefLabel "Garden"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Gardens a :StreetType , skos:Concept ;
-    rdfs:label "Gardens"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GDNS"^^xsd:string,
         "GARDENS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Gardens"@en .
+    skos:prefLabel "Gardens"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Gate a :StreetType , skos:Concept ;
-    rdfs:label "Gate"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GTE"^^xsd:string,
         "GATE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Gate"@en .
+    skos:prefLabel "Gate"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Gateway a :StreetType , skos:Concept ;
-    rdfs:label "Gateway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GWY"^^xsd:string,
         "GATEWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Gateway"@en .
+    skos:prefLabel "Gateway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Glade a :StreetType , skos:Concept ;
-    rdfs:label "Glade"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GLDE"^^xsd:string,
         "GLADE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Glade"@en .
+    skos:prefLabel "Glade"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Glen a :StreetType , skos:Concept ;
-    rdfs:label "Glen"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GLEN"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Glen"@en .
+    skos:prefLabel "Glen"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Grange a :StreetType , skos:Concept ;
-    rdfs:label "Grange"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GRA"^^xsd:string,
         "GRANGE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Grange"@en .
+    skos:prefLabel "Grange"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Green a :StreetType , skos:Concept ;
-    rdfs:label "Green"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GRN"^^xsd:string,
         "GREEN"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Green"@en .
+    skos:prefLabel "Green"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Grove a :StreetType , skos:Concept ;
-    rdfs:label "Grove"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GR"^^xsd:string,
         "GROVE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Grove"@en .
+    skos:prefLabel "Grove"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Gully a :StreetType , skos:Concept ;
-    rdfs:label "Gully"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "GLY"^^xsd:string,
         "GULLY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Gully"@en .
+    skos:prefLabel "Gully"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Harbour a :StreetType , skos:Concept ;
-    rdfs:label "Harbour"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HRBR"^^xsd:string,
         "HARBOUR"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Harbour"@en .
+    skos:prefLabel "Harbour"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Haven a :StreetType , skos:Concept ;
-    rdfs:label "Haven"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HVN"^^xsd:string,
         "HAVEN"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Haven"@en .
+    skos:prefLabel "Haven"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Heath a :StreetType , skos:Concept ;
-    rdfs:label "Heath"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HTH"^^xsd:string,
         "HEATH"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Heath"@en .
+    skos:prefLabel "Heath"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Heights a :StreetType , skos:Concept ;
-    rdfs:label "Heights"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HTS"^^xsd:string,
         "HEIGHTS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Heights"@en .
+    skos:prefLabel "Heights"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Highroad a :StreetType , skos:Concept ;
-    rdfs:label "Highroad"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HIRD"^^xsd:string,
         "HIGHROAD"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Highroad"@en .
+    skos:prefLabel "Highroad"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Highway a :StreetType , skos:Concept ;
-    rdfs:label "Highway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HWY"^^xsd:string,
         "HIGHWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Highway"@en .
+    skos:prefLabel "Highway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Hike a :StreetType , skos:Concept ;
-    rdfs:label "Hike"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HIKE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Hike"@en .
+    skos:prefLabel "Hike"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Hill a :StreetType , skos:Concept ;
-    rdfs:label "Hill"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HILL"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Hill"@en .
+    skos:prefLabel "Hill"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Hills a :StreetType , skos:Concept ;
-    rdfs:label "Hills"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HILLS"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Hills"@en .
+    skos:prefLabel "Hills"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Hollow a :StreetType , skos:Concept ;
-    rdfs:label "Hollow"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HLLW"^^xsd:string,
         "HOLLOW"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Hollow"@en .
+    skos:prefLabel "Hollow"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Hub a :StreetType , skos:Concept ;
-    rdfs:label "Hub"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "HUB"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Hub"@en .
+    skos:prefLabel "Hub"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Inlet a :StreetType , skos:Concept ;
-    rdfs:label "Inlet"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "INLT"^^xsd:string,
         "INLET"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Inlet"@en .
+    skos:prefLabel "Inlet"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Interchange a :StreetType , skos:Concept ;
-    rdfs:label "Interchange"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "INTG"^^xsd:string,
         "INTERCHANGE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Interchange"@en .
+    skos:prefLabel "Interchange"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Island a :StreetType , skos:Concept ;
-    rdfs:label "Island"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ID"^^xsd:string,
         "ISLAND"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Island"@en .
+    skos:prefLabel "Island"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Junction a :StreetType , skos:Concept ;
-    rdfs:label "Junction"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "JNC"^^xsd:string,
         "JUNCTION"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Junction"@en .
+    skos:prefLabel "Junction"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Key a :StreetType , skos:Concept ;
-    rdfs:label "Key"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "KEY"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Key"@en .
+    skos:prefLabel "Key"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Keys a :StreetType , skos:Concept ;
-    rdfs:label "Keys"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "KEYS"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Keys"@en .
+    skos:prefLabel "Keys"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Knoll a :StreetType , skos:Concept ;
-    rdfs:label "Knoll"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "KNOL"^^xsd:string,
         "KNOLL"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Knoll"@en .
+    skos:prefLabel "Knoll"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Ladder a :StreetType , skos:Concept ;
-    rdfs:label "Ladder"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LADR"^^xsd:string,
         "LADDER"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Ladder"@en .
+    skos:prefLabel "Ladder"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Landing a :StreetType , skos:Concept ;
-    rdfs:label "Landing"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LDG"^^xsd:string,
         "LANDING"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Landing"@en .
+    skos:prefLabel "Landing"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Lane a :StreetType , skos:Concept ;
-    rdfs:label "Lane"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LANE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Lane"@en .
+    skos:prefLabel "Lane"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Laneway a :StreetType , skos:Concept ;
-    rdfs:label "Laneway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LNWY"^^xsd:string,
         "LANEWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Laneway"@en .
+    skos:prefLabel "Laneway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Lead a :StreetType , skos:Concept ;
-    rdfs:label "Lead"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LEAD"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Lead"@en .
+    skos:prefLabel "Lead"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Leader a :StreetType , skos:Concept ;
-    rdfs:label "Leader"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LEDR"^^xsd:string,
         "LEADER"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Leader"@en .
+    skos:prefLabel "Leader"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Line a :StreetType , skos:Concept ;
-    rdfs:label "Line"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LINE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Line"@en .
+    skos:prefLabel "Line"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Link a :StreetType , skos:Concept ;
-    rdfs:label "Link"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LINK"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Link"@en .
+    skos:prefLabel "Link"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Lookout a :StreetType , skos:Concept ;
-    rdfs:label "Lookout"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LKT"^^xsd:string,
         "LOOKOUT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Lookout"@en .
+    skos:prefLabel "Lookout"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Loop a :StreetType , skos:Concept ;
-    rdfs:label "Loop"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LOOP"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Loop"@en .
+    skos:prefLabel "Loop"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Lynne a :StreetType , skos:Concept ;
-    rdfs:label "Lynne"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "LYNN"^^xsd:string,
         "LYNNE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Lynne"@en .
+    skos:prefLabel "Lynne"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Mall a :StreetType , skos:Concept ;
-    rdfs:label "Mall"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MALL"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Mall"@en .
+    skos:prefLabel "Mall"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Manor a :StreetType , skos:Concept ;
-    rdfs:label "Manor"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MANR"^^xsd:string,
         "MANOR"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Manor"@en .
+    skos:prefLabel "Manor"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Mart a :StreetType , skos:Concept ;
-    rdfs:label "Mart"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MART"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Mart"@en .
+    skos:prefLabel "Mart"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Maze a :StreetType , skos:Concept ;
-    rdfs:label "Maze"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MZ"^^xsd:string,
         "MAZE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Maze"@en .
+    skos:prefLabel "Maze"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Mead a :StreetType , skos:Concept ;
-    rdfs:label "Mead"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MEAD"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Mead"@en .
+    skos:prefLabel "Mead"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Meander a :StreetType , skos:Concept ;
-    rdfs:label "Meander"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MNDR"^^xsd:string,
         "MEANDER"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Meander"@en .
+    skos:prefLabel "Meander"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Mew a :StreetType , skos:Concept ;
-    rdfs:label "Mew"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MEW"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Mew"@en .
+    skos:prefLabel "Mew"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Mews a :StreetType , skos:Concept ;
-    rdfs:label "Mews"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MEWS"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Mews"@en .
+    skos:prefLabel "Mews"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Mile a :StreetType , skos:Concept ;
-    rdfs:label "Mile"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MILE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Mile"@en .
+    skos:prefLabel "Mile"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Motorway a :StreetType , skos:Concept ;
-    rdfs:label "Motorway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "MTWY"^^xsd:string,
         "MOTORWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Motorway"@en .
+    skos:prefLabel "Motorway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Nook a :StreetType , skos:Concept ;
-    rdfs:label "Nook"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "NOOK"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Nook"@en .
+    skos:prefLabel "Nook"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :North a :StreetType , skos:Concept ;
-    rdfs:label "North"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "NTH"^^xsd:string,
         "NORTH"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "North"@en .
+    skos:prefLabel "North"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Null a :StreetType , skos:Concept ;
-    rdfs:label "Null"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "NULL"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Null"@en .
+    skos:prefLabel "Null"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Outlet a :StreetType , skos:Concept ;
-    rdfs:label "Outlet"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "OTLT"^^xsd:string,
         "OUTLET"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Outlet"@en .
+    skos:prefLabel "Outlet"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Outlook a :StreetType , skos:Concept ;
-    rdfs:label "Outlook"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "OTLK"^^xsd:string,
         "OUTLOOK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Outlook"@en .
+    skos:prefLabel "Outlook"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Oval a :StreetType , skos:Concept ;
-    rdfs:label "Oval"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "OVAL"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Oval"@en .
+    skos:prefLabel "Oval"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Palms a :StreetType , skos:Concept ;
-    rdfs:label "Palms"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PLMS"^^xsd:string,
         "PALMS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Palms"@en .
+    skos:prefLabel "Palms"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Parade a :StreetType , skos:Concept ;
-    rdfs:label "Parade"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PDE"^^xsd:string,
         "PARADE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Parade"@en .
+    skos:prefLabel "Parade"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Paradise a :StreetType , skos:Concept ;
-    rdfs:label "Paradise"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PRDS"^^xsd:string,
         "PARADISE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Paradise"@en .
+    skos:prefLabel "Paradise"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Park a :StreetType , skos:Concept ;
-    rdfs:label "Park"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PARK"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Park"@en .
+    skos:prefLabel "Park"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Parkway a :StreetType , skos:Concept ;
-    rdfs:label "Parkway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PWY"^^xsd:string,
         "PARKWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Parkway"@en .
+    skos:prefLabel "Parkway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Part a :StreetType , skos:Concept ;
-    rdfs:label "Part"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PART"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Part"@en .
+    skos:prefLabel "Part"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Pass a :StreetType , skos:Concept ;
-    rdfs:label "Pass"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PASS"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Pass"@en .
+    skos:prefLabel "Pass"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Passage a :StreetType , skos:Concept ;
-    rdfs:label "Passage"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PSGE"^^xsd:string,
         "PASSAGE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Passage"@en .
+    skos:prefLabel "Passage"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Path a :StreetType , skos:Concept ;
-    rdfs:label "Path"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PATH"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Path"@en .
+    skos:prefLabel "Path"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Pathway a :StreetType , skos:Concept ;
-    rdfs:label "Pathway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PWAY"^^xsd:string,
         "PATHWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Pathway"@en .
+    skos:prefLabel "Pathway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Peninsula a :StreetType , skos:Concept ;
-    rdfs:label "Peninsula"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PSLA"^^xsd:string,
         "PENINSULA"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Peninsula"@en .
+    skos:prefLabel "Peninsula"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Piazza a :StreetType , skos:Concept ;
-    rdfs:label "Piazza"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PIAZ"^^xsd:string,
         "PIAZZA"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Piazza"@en .
+    skos:prefLabel "Piazza"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Place a :StreetType , skos:Concept ;
-    rdfs:label "Place"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PL"^^xsd:string,
         "PLACE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Place"@en .
+    skos:prefLabel "Place"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Plaza a :StreetType , skos:Concept ;
-    rdfs:label "Plaza"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PLZA"^^xsd:string,
         "PLAZA"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Plaza"@en .
+    skos:prefLabel "Plaza"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Pocket a :StreetType , skos:Concept ;
-    rdfs:label "Pocket"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PKT"^^xsd:string,
         "POCKET"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Pocket"@en .
+    skos:prefLabel "Pocket"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Point a :StreetType , skos:Concept ;
-    rdfs:label "Point"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PNT"^^xsd:string,
         "POINT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Point"@en .
+    skos:prefLabel "Point"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Port a :StreetType , skos:Concept ;
-    rdfs:label "Port"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PORT"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Port"@en .
+    skos:prefLabel "Port"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Precinct a :StreetType , skos:Concept ;
-    rdfs:label "Precinct"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PREC"^^xsd:string,
         "PRECINCT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Precinct"@en .
+    skos:prefLabel "Precinct"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Promenade a :StreetType , skos:Concept ;
-    rdfs:label "Promenade"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PROM"^^xsd:string,
         "PROMENADE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Promenade"@en .
+    skos:prefLabel "Promenade"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Pursuit a :StreetType , skos:Concept ;
-    rdfs:label "Pursuit"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "PRST"^^xsd:string,
         "PURSUIT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Pursuit"@en .
+    skos:prefLabel "Pursuit"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Quad a :StreetType , skos:Concept ;
-    rdfs:label "Quad"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "QUAD"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Quad"@en .
+    skos:prefLabel "Quad"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Quadrant a :StreetType , skos:Concept ;
-    rdfs:label "Quadrant"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "QDRT"^^xsd:string,
         "QUADRANT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Quadrant"@en .
+    skos:prefLabel "Quadrant"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Quay a :StreetType , skos:Concept ;
-    rdfs:label "Quay"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "QY"^^xsd:string,
         "QUAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Quay"@en .
+    skos:prefLabel "Quay"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Quays a :StreetType , skos:Concept ;
-    rdfs:label "Quays"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "QYS"^^xsd:string,
         "QUAYS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Quays"@en .
+    skos:prefLabel "Quays"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Ramble a :StreetType , skos:Concept ;
-    rdfs:label "Ramble"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RMBL"^^xsd:string,
         "RAMBLE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Ramble"@en .
+    skos:prefLabel "Ramble"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Ramp a :StreetType , skos:Concept ;
-    rdfs:label "Ramp"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RAMP"^^xsd:string,
         "RAMP"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Ramp"@en .
+    skos:prefLabel "Ramp"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Range a :StreetType , skos:Concept ;
-    rdfs:label "Range"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RNGE"^^xsd:string,
         "RANGE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Range"@en .
+    skos:prefLabel "Range"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Reach a :StreetType , skos:Concept ;
-    rdfs:label "Reach"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RCH"^^xsd:string,
         "REACH"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Reach"@en .
+    skos:prefLabel "Reach"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Reef a :StreetType , skos:Concept ;
-    rdfs:label "Reef"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "REEF"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Reef"@en .
+    skos:prefLabel "Reef"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Reserve a :StreetType , skos:Concept ;
-    rdfs:label "Reserve"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RES"^^xsd:string,
         "RESERVE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Reserve"@en .
+    skos:prefLabel "Reserve"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Rest a :StreetType , skos:Concept ;
-    rdfs:label "Rest"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "REST"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Rest"@en .
+    skos:prefLabel "Rest"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Retreat a :StreetType , skos:Concept ;
-    rdfs:label "Retreat"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RTT"^^xsd:string,
         "RETREAT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Retreat"@en .
+    skos:prefLabel "Retreat"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Return a :StreetType , skos:Concept ;
-    rdfs:label "Return"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RTN"^^xsd:string,
         "RETURN"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Return"@en .
+    skos:prefLabel "Return"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Ride a :StreetType , skos:Concept ;
-    rdfs:label "Ride"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RIDE"^^xsd:string,
         "RIDE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Ride"@en .
+    skos:prefLabel "Ride"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Ridge a :StreetType , skos:Concept ;
-    rdfs:label "Ridge"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RDGE"^^xsd:string,
         "RIDGE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Ridge"@en .
+    skos:prefLabel "Ridge"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :RightOfWay a :StreetType , skos:Concept ;
-    rdfs:label "Right Of Way"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ROFW"^^xsd:string,
         "RIGHT OF WAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Right Of Way"@en .
+    skos:prefLabel "Right Of Way"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Ring a :StreetType , skos:Concept ;
-    rdfs:label "Ring"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RING"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Ring"@en .
+    skos:prefLabel "Ring"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Rise a :StreetType , skos:Concept ;
-    rdfs:label "Rise"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RISE"^^xsd:string,
         "RISE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Rise"@en .
+    skos:prefLabel "Rise"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Rising a :StreetType , skos:Concept ;
-    rdfs:label "Rising"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RSNG"^^xsd:string,
         "RISING"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Rising"@en .
+    skos:prefLabel "Rising"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :River a :StreetType , skos:Concept ;
-    rdfs:label "River"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RVR"^^xsd:string,
         "RIVER"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "River"@en .
+    skos:prefLabel "River"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Road a :StreetType , skos:Concept ;
-    rdfs:label "Road"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RD"^^xsd:string,
         "ROAD"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Road"@en .
+    skos:prefLabel "Road"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Roads a :StreetType , skos:Concept ;
-    rdfs:label "Roads"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RDS"^^xsd:string,
         "ROADS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Roads"@en .
+    skos:prefLabel "Roads"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Roadway a :StreetType , skos:Concept ;
-    rdfs:label "Roadway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RDWY"^^xsd:string,
         "ROADWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Roadway"@en .
+    skos:prefLabel "Roadway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Rotary a :StreetType , skos:Concept ;
-    rdfs:label "Rotary"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RTY"^^xsd:string,
         "ROTARY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Rotary"@en .
+    skos:prefLabel "Rotary"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Round a :StreetType , skos:Concept ;
-    rdfs:label "Round"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RND"^^xsd:string,
         "ROUND"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Round"@en .
+    skos:prefLabel "Round"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Route a :StreetType , skos:Concept ;
-    rdfs:label "Route"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RTE"^^xsd:string,
         "ROUTE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Route"@en .
+    skos:prefLabel "Route"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Row a :StreetType , skos:Concept ;
-    rdfs:label "Row"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ROW"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Row"@en .
+    skos:prefLabel "Row"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Rowe a :StreetType , skos:Concept ;
-    rdfs:label "Rowe"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ROWE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Rowe"@en .
+    skos:prefLabel "Rowe"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Rue a :StreetType , skos:Concept ;
-    rdfs:label "Rue"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RUE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Rue"@en .
+    skos:prefLabel "Rue"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Run a :StreetType , skos:Concept ;
-    rdfs:label "Run"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "RUN"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Run"@en .
+    skos:prefLabel "Run"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Serviceway a :StreetType , skos:Concept ;
-    rdfs:label "Serviceway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "SVWY"^^xsd:string,
         "SERVICEWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Serviceway"@en .
+    skos:prefLabel "Serviceway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Shunt a :StreetType , skos:Concept ;
-    rdfs:label "Shunt"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "SHUN"^^xsd:string,
         "SHUNT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Shunt"@en .
+    skos:prefLabel "Shunt"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Skyline a :StreetType , skos:Concept ;
-    rdfs:label "Skyline"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "SKLN"^^xsd:string,
         "SKYLINE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Skyline"@en .
+    skos:prefLabel "Skyline"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Slope a :StreetType , skos:Concept ;
-    rdfs:label "Slope"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "SLPE"^^xsd:string,
         "SLOPE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Slope"@en .
+    skos:prefLabel "Slope"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :South a :StreetType , skos:Concept ;
-    rdfs:label "South"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "STH"^^xsd:string,
         "SOUTH"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "South"@en .
+    skos:prefLabel "South"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Spur a :StreetType , skos:Concept ;
-    rdfs:label "Spur"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "SPUR"^^xsd:string,
         "SPUR"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Spur"@en .
+    skos:prefLabel "Spur"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Square a :StreetType , skos:Concept ;
-    rdfs:label "Square"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "SQ"^^xsd:string,
         "SQUARE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Square"@en .
+    skos:prefLabel "Square"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Steps a :StreetType , skos:Concept ;
-    rdfs:label "Steps"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "STPS"^^xsd:string,
         "STEPS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Steps"@en .
+    skos:prefLabel "Steps"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Straight a :StreetType , skos:Concept ;
-    rdfs:label "Straight"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "STRT"^^xsd:string,
         "STRAIGHT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Straight"@en .
+    skos:prefLabel "Straight"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Strait a :StreetType , skos:Concept ;
-    rdfs:label "Strait"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "STAI"^^xsd:string,
         "STRAIT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Strait"@en .
+    skos:prefLabel "Strait"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Strand a :StreetType , skos:Concept ;
-    rdfs:label "Strand"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "STRA"^^xsd:string,
         "STRAND"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Strand"@en .
+    skos:prefLabel "Strand"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Street a :StreetType , skos:Concept ;
-    rdfs:label "Street"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "ST"^^xsd:string,
         "STREET"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Street"@en .
+    skos:prefLabel "Street"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Strip a :StreetType , skos:Concept ;
-    rdfs:label "Strip"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "STRP"^^xsd:string,
         "STRIP"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Strip"@en .
+    skos:prefLabel "Strip"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Subway a :StreetType , skos:Concept ;
-    rdfs:label "Subway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "SBWY"^^xsd:string,
         "SUBWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Subway"@en .
+    skos:prefLabel "Subway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Tarn a :StreetType , skos:Concept ;
-    rdfs:label "Tarn"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TARN"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Tarn"@en .
+    skos:prefLabel "Tarn"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Terrace a :StreetType , skos:Concept ;
-    rdfs:label "Terrace"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TCE"^^xsd:string,
         "TERRACE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Terrace"@en .
+    skos:prefLabel "Terrace"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Thoroughfare a :StreetType , skos:Concept ;
-    rdfs:label "Thoroughfare"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "THFR"^^xsd:string,
         "THOROUGHFARE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Thoroughfare"@en .
+    skos:prefLabel "Thoroughfare"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Throughway a :StreetType , skos:Concept ;
-    rdfs:label "Throughway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "THRU"^^xsd:string,
         "THROUGHWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Throughway"@en .
+    skos:prefLabel "Throughway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Tollway a :StreetType , skos:Concept ;
-    rdfs:label "Tollway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TLWY"^^xsd:string,
         "TOLLWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Tollway"@en .
+    skos:prefLabel "Tollway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Top a :StreetType , skos:Concept ;
-    rdfs:label "Top"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TOP"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Top"@en .
+    skos:prefLabel "Top"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Tor a :StreetType , skos:Concept ;
-    rdfs:label "Tor"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TOR"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Tor"@en .
+    skos:prefLabel "Tor"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Track a :StreetType , skos:Concept ;
-    rdfs:label "Track"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TRK"^^xsd:string,
         "TRACK"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Track"@en .
+    skos:prefLabel "Track"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Trail a :StreetType , skos:Concept ;
-    rdfs:label "Trail"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TRL"^^xsd:string,
         "TRAIL"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Trail"@en .
+    skos:prefLabel "Trail"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Tramway a :StreetType , skos:Concept ;
-    rdfs:label "Tramway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TMWY"^^xsd:string,
         "TRAMWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Tramway"@en .
+    skos:prefLabel "Tramway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Traverse a :StreetType , skos:Concept ;
-    rdfs:label "Traverse"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TVSE"^^xsd:string,
         "TRAVERSE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Traverse"@en .
+    skos:prefLabel "Traverse"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Triangle a :StreetType , skos:Concept ;
-    rdfs:label "Triangle"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TRIANGLE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Triangle"@en .
+    skos:prefLabel "Triangle"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Trunkway a :StreetType , skos:Concept ;
-    rdfs:label "Trunkway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TKWY"^^xsd:string,
         "TRUNKWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Trunkway"@en .
+    skos:prefLabel "Trunkway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Tunnel a :StreetType , skos:Concept ;
-    rdfs:label "Tunnel"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TUNL"^^xsd:string,
         "TUNNEL"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Tunnel"@en .
+    skos:prefLabel "Tunnel"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Turn a :StreetType , skos:Concept ;
-    rdfs:label "Turn"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TURN"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Turn"@en .
+    skos:prefLabel "Turn"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Twist a :StreetType , skos:Concept ;
-    rdfs:label "Twist"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "TWIST"^^xsd:string,
         "TWIST"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Twist"@en .
+    skos:prefLabel "Twist"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Underpass a :StreetType , skos:Concept ;
-    rdfs:label "Underpass"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "UPAS"^^xsd:string,
         "UNDERPASS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Underpass"@en .
+    skos:prefLabel "Underpass"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Vale a :StreetType , skos:Concept ;
-    rdfs:label "Vale"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VALE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Vale"@en .
+    skos:prefLabel "Vale"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Valley a :StreetType , skos:Concept ;
-    rdfs:label "Valley"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VLLY"^^xsd:string,
         "VALLEY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Valley"@en .
+    skos:prefLabel "Valley"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Verge a :StreetType , skos:Concept ;
-    rdfs:label "Verge"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VERGE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Verge"@en .
+    skos:prefLabel "Verge"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Viaduct a :StreetType , skos:Concept ;
-    rdfs:label "Viaduct"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VIAD"^^xsd:string,
         "VIADUCT"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Viaduct"@en .
+    skos:prefLabel "Viaduct"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :View a :StreetType , skos:Concept ;
-    rdfs:label "View"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VIEW"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "View"@en .
+    skos:prefLabel "View"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Views a :StreetType , skos:Concept ;
-    rdfs:label "Views"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VWS"^^xsd:string,
         "VIEWS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Views"@en .
+    skos:prefLabel "Views"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Villa a :StreetType , skos:Concept ;
-    rdfs:label "Villa"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VLLA"^^xsd:string,
         "VILLA"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Villa"@en .
+    skos:prefLabel "Villa"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Village a :StreetType , skos:Concept ;
-    rdfs:label "Village"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VLGE"^^xsd:string,
         "VILLAGE"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Village"@en .
+    skos:prefLabel "Village"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Villas a :StreetType , skos:Concept ;
-    rdfs:label "Villas"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VLLS"^^xsd:string,
         "VILLAS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Villas"@en .
+    skos:prefLabel "Villas"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Vista a :StreetType , skos:Concept ;
-    rdfs:label "Vista"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VSTA"^^xsd:string,
         "VISTA"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Vista"@en .
+    skos:prefLabel "Vista"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Vue a :StreetType , skos:Concept ;
-    rdfs:label "Vue"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "VUE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Vue"@en .
+    skos:prefLabel "Vue"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Wade a :StreetType , skos:Concept ;
-    rdfs:label "Wade"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WADE"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Wade"@en .
+    skos:prefLabel "Wade"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Walk a :StreetType , skos:Concept ;
-    rdfs:label "Walk"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WALK"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Walk"@en .
+    skos:prefLabel "Walk"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Walkway a :StreetType , skos:Concept ;
-    rdfs:label "Walkway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WKWY"^^xsd:string,
         "WALKWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Walkway"@en .
+    skos:prefLabel "Walkway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Waters a :StreetType , skos:Concept ;
-    rdfs:label "Waters"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WTRS"^^xsd:string,
         "WATERS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Waters"@en .
+    skos:prefLabel "Waters"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Waterway a :StreetType , skos:Concept ;
-    rdfs:label "Waterway"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WTWY"^^xsd:string,
         "WATERWAY"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Waterway"@en .
+    skos:prefLabel "Waterway"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Way a :StreetType , skos:Concept ;
-    rdfs:label "Way"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WAY"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Way"@en .
+    skos:prefLabel "Way"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :West a :StreetType , skos:Concept ;
-    rdfs:label "West"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WEST"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "West"@en .
+    skos:prefLabel "West"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Wharf a :StreetType , skos:Concept ;
-    rdfs:label "Wharf"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WHRF"^^xsd:string,
         "WHARF"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Wharf"@en .
+    skos:prefLabel "Wharf"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Wood a :StreetType , skos:Concept ;
-    rdfs:label "Wood"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WD"^^xsd:string,
         "WOOD"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Wood"@en .
+    skos:prefLabel "Wood"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Woods a :StreetType , skos:Concept ;
-    rdfs:label "Woods"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WDS"^^xsd:string,
         "WOODS"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Woods"@en .
+    skos:prefLabel "Woods"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Wynd a :StreetType , skos:Concept ;
-    rdfs:label "Wynd"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "WYND"^^xsd:string,
         "WYND"@en ;
     skos:definition ""@en ;
-    skos:prefLabel "Wynd"@en .
+    skos:prefLabel "Wynd"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :Yard a :StreetType , skos:Concept ;
-    rdfs:label "Yard"^^xsd:string ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
     skos:altLabel "YARD"^^xsd:string ;
     skos:definition ""@en ;
-    skos:prefLabel "Yard"@en .
+    skos:prefLabel "Yard"@en \.
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> .

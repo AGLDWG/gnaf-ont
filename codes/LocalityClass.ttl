@@ -29,7 +29,6 @@
     vann:preferredNamespacePrefix "loccl"@en .
 
 :A a gnaf:LocalityClass , skos:Concept ;
-	rdfs:label "Alias Only Locality"^^xsd:string ;
   skos:prefLabel "Alias Only Locality"@en ;
 	skos:definition ""@en ;
   skos:altLabel "ALIAS ONLY LOCALITY"^^xsd:string ;
@@ -38,7 +37,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
 
 :D a gnaf:LocalityClass , skos:Concept ;
-	rdfs:label "District"^^xsd:string ;
   skos:prefLabel "District"@en ;
 	skos:definition ""@en ;
   skos:altLabel "DISTRICT"^^xsd:string ;
@@ -47,7 +45,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
 
 :G a gnaf:LocalityClass , skos:Concept ;
-	rdfs:label "Gazeted Locality"^^xsd:string ;
   skos:prefLabel "Gazeted Locality"@en ;
 	skos:definition ""@en ;
   skos:altLabel "GAZETTED LOCALITY"^^xsd:string ;
@@ -56,7 +53,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
 
 :H a gnaf:LocalityClass , skos:Concept ;
-	rdfs:label "Hundred"^^xsd:string ;
   skos:prefLabel "Hundred"@en ;
 	skos:definition ""@en ;
   skos:altLabel "HUNDRED"^^xsd:string ;
@@ -65,7 +61,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
 
 :M a gnaf:LocalityClass , skos:Concept ;
-	rdfs:label "Manually Validated"^^xsd:string ;
   skos:prefLabel "Manually Validated"@en ;
 	skos:definition ""@en ;
   skos:altLabel "MANUALLY VALIDATED"^^xsd:string ;
@@ -74,7 +69,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
 
 :T a gnaf:LocalityClass , skos:Concept ;
-	rdfs:label "Topographic Locality"^^xsd:string ;
   skos:prefLabel "Topographic Locality"@en ;
 	skos:definition ""@en ;
   skos:altLabel "TOPOGRAPHIC LOCALITY"^^xsd:string ;
@@ -83,7 +77,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
 
 :U a gnaf:LocalityClass , skos:Concept ;
-	rdfs:label "Unofficial Suburb"^^xsd:string ;
   skos:prefLabel "Unofficial Suburb"@en ;
 	skos:definition ""@en ;
   skos:altLabel "UNOFFICIAL SUBURB"^^xsd:string ;
@@ -92,7 +85,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/LocalityClass> .
 
 :V a gnaf:LocalityClass , skos:Concept ;
-	rdfs:label "Unofficial Topographic Feature"^^xsd:string ;
   skos:prefLabel "Unofficial Topographic Feature"@en ;
 	skos:definition ""@en ;
   skos:altLabel "UNOFFICIAL TOPOGRAPHIC FEATURE"^^xsd:string ;

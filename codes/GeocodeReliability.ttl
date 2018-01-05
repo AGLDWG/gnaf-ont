@@ -29,7 +29,6 @@
     vann:preferredNamespacePrefix "loccl"@en .
 
 :1 a gnaf:GeocodeReliability , skos:Concept ;
-	rdfs:label "Surveying Standard"^^xsd:string ;
   skos:prefLabel "Surveying Standard"@en ;
 	skos:definition "Geocode accuracy recorded to appropriate surveying standard"@en ;
   skos:altLabel "SURVEYING STANDARD"^^xsd:string ;
@@ -38,7 +37,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
 :2 a gnaf:GeocodeReliability , skos:Concept ;
-	rdfs:label "Within Address Site Boundary or Access Point"^^xsd:string ;
   skos:prefLabel "Within Address Site Boundary or Access Point"@en ;
 	skos:definition "Geocode accuracy sufficient to place geocode within address site boundary or access point"@en ;
   skos:altLabel "WITHIN ADDRESS SITE BOUNDARY OR ACCESS POINT"^^xsd:string ;
@@ -47,7 +45,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
 :3 a gnaf:GeocodeReliability , skos:Concept ;
-	rdfs:label "Near (Or Possibly Within) Address Site Boundary"^^xsd:string ;
   skos:prefLabel "Near (Or Possibly Within) Address Site Boundary"@en ;
 	skos:definition "Geocode accuracy sufficient to place geocode near (or possibly within) address site boundary"@en ;
   skos:altLabel "NEAR (OR POSSIBLY WITHIN) ADDRESS SITE BOUNDARY"^^xsd:string ;
@@ -56,7 +53,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
 :4 a gnaf:GeocodeReliability , skos:Concept ;
-	rdfs:label "Unique Road Feature"^^xsd:string ;
   skos:prefLabel "Unique Road Feature"@en ;
 	skos:definition "Geocode accuracy sufficient to associate address site with a unique road feature"@en ;
   skos:altLabel "UNIQUE ROAD FEATURE"^^xsd:string ;
@@ -65,7 +61,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
 :5 a gnaf:GeocodeReliability , skos:Concept ;
-	rdfs:label "Unique Locality Or Neighbourhood"^^xsd:string ;
   skos:prefLabel "Unique Locality Or Neighbourhood"@en ;
 	skos:definition "Geocode accuracy sufficient to associate address site with a unique locality or neighbourhood"@en ;
   skos:altLabel "UNIQUE LOCALITY OR NEIGHBOURHOOD"^^xsd:string ;
@@ -74,7 +69,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
 :6 a gnaf:GeocodeReliability , skos:Concept ;
-	rdfs:label "Unique Region"^^xsd:string ;
   skos:prefLabel "Unique Region"@en ;
 	skos:definition "Geocode accuracy sufficient to associate address site with a unique region"@en ;
   skos:altLabel "UNIQUE REGION"^^xsd:string ;

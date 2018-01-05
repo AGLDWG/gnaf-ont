@@ -29,7 +29,6 @@
     vann:preferredNamespacePrefix "loccl"@en .
 
 :C a gnaf:StreetClass , skos:Concept ;
-	rdfs:label "Confirmed"^^xsd:string ;
   skos:prefLabel "Confirmed"@en ;
 	skos:definition "A confirmed street is present in the roads data of the PSMA Transport and Topography product for the same release"@en ;
   skos:altLabel "CONFIRMED"^^xsd:string ;
@@ -38,7 +37,6 @@
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
 :U a gnaf:StreetClass , skos:Concept ;
-	rdfs:label "Unconfirmed"^^xsd:string ;
   skos:prefLabel "Unconfirmed"@en ;
 	skos:definition "An unconfirmed street is NOT present in the roads data of the PSMA Transport and Topography product for the same release and will not have a street locality geocode"@en ;
   skos:altLabel "UNCONFIRMED"^^xsd:string ;

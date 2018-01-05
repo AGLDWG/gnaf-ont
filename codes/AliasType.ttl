@@ -30,7 +30,6 @@
 
 :SYN a :AliasType , skos:Concept;
     skos:prefLabel "Synonym"@en .
-    rdfs:label "Synonym"^^xsd:string ;
     skos:definition ""@en ;
     skos:altLabel "" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
@@ -39,7 +38,6 @@
 
 :CD a :AliasType , skos:Concept;
     skos:prefLabel "Contributor Defined"@en .
-    rdfs:label "Contributor Defined"^^xsd:string ;
     skos:definition ""@en ;
     skos:altLabel "" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
@@ -48,7 +46,6 @@
 
 :AL a :AliasType , skos:Concept;
     skos:prefLabel "Alternative Locality"@en .
-    rdfs:label "Alternative Locality"^^xsd:string ;
     skos:definition ""@en ;
     skos:altLabel "" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
@@ -57,7 +54,6 @@
 
 :RA a :AliasType , skos:Concept;
     skos:prefLabel "Ranged Address"@en .
-    rdfs:label "Ranged Address"^^xsd:string ;
     skos:definition ""@en ;
     skos:altLabel "" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
@@ -66,7 +62,6 @@
 
 :LD a :AliasType , skos:Concept;
     skos:prefLabel "Level Duplication"@en .
-    rdfs:label "Level Duplication"^^xsd:string ;
     skos:definition ""@en ;
     skos:altLabel "" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
@@ -84,7 +79,6 @@
 
 :MR a :AliasType , skos:Concept;
     skos:prefLabel "Maintenance Reference"@en .
-    rdfs:label "Maintenance Reference"^^xsd:string ;
     skos:definition ""@en ;
     skos:altLabel "" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
@@ -93,7 +87,6 @@
 
 :SR a :AliasType , skos:Concept;
     skos:prefLabel "Spatially Related"@en .
-    rdfs:label "Spatially Related"^^xsd:string ;
     skos:definition ""@en ;
     skos:altLabel "SPATIALLY RELATED" ;
     dct:source "G-NAF Data Product Description, November 2017: LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
@@ -102,7 +95,7 @@
 
 :ALT a :AliasType , skos:Concept;
     skos:prefLabel "Alternative"@en .
-    rdfs:label "Alternative"^^xsd:string ;    
+    rdfs:label "Alternative"^^xsd:string ;
     skos:definition ""@en ;
     skos:altLabel "ALTERNATIVE" ;
     dct:source "G-NAF Data Product Description, November 2017: STREET_LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;

@@ -29,7 +29,6 @@
     vann:preferredNamespacePrefix "gconf"@en .
 
 :2 a gnaf:GnafConfidence , skos:Concept ;
-    rdfs:label "Confidence level = 2"^^xsd:string ;
     skos:prefLabel "Confidence level = 2"@en ;
     skos:definition "All three contributors have supplied an identical address"@en ;
     skos:altLabel "2"^^xsd:string ;
@@ -38,7 +37,6 @@
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
 
 :1 a gnaf:GnafConfidence , skos:Concept ;
-    rdfs:label "Confidence level = 1"^^xsd:string ;
     skos:prefLabel "Confidence level = 1"@en ;
     skos:definition "A match has been achieved between only two contributors"@en ;
     skos:altLabel "1"^^xsd:string ;
@@ -47,7 +45,6 @@
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
 
 :0 a gnaf:GnafConfidence , skos:Concept ;
-    rdfs:label "Confidence level = 0"^^xsd:string ;
     skos:prefLabel "Confidence level = 0"@en ;
     skos:definition "A single contributor holds this address and no match has been achieved with either or the other two contributors."@en ;
     skos:altLabel "0"^^xsd:string ;
@@ -56,7 +53,6 @@
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
 
 :-1 a gnaf:GnafConfidence , skos:Concept ;
-    rdfs:label "Confidence level = -1"^^xsd:string ;
     skos:prefLabel "Confidence level = -1"@en ;
     skos:definition "None of the contributors hold this address in their address dataset anymore."@en ;
     skos:altLabel "-1"^^xsd:string ;
