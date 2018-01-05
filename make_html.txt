@@ -38,22 +38,26 @@ Things to do in order to create an HTML version of the ontology
 				<dd><a href="http://promsns.org/def/dmn.ttl">Ontology source</a></dd>
 			</dl>
 
-* add link to paper
+* add link to the API
     * add
-			<dl>
-				<dt>Publications:</dt>
-				<dd><a href="http://github.com/nicholascar/decprov-ont/blob/master/references/Car2017-Modelling-causes-for-actions-with-the-Decision-and-PROV-ontologies.pdf">Modelling causes for actions with the Decision and PROV ontologies (MODSIM 2017 conference)</a></dd>
-			</dl>
+    <dl>
+        <dt>Ontology in operation:</dt>
+        <dd><a href="http://gnafld.net">The GNAF Linked Data API online</a></dd>
+    </dl>
 	after:
 			<dl>
 				<dt>Further documentation & examples:</dt>
 				<dd><a href="http://github.com/nicholascar/decprov-ont">This ontology's full documentation on GitHub</a></dd>
 			</dl>
-			
-* add ontology image
+
+* add ontology images
 	* after ToC, add
         <div id="img">
-            <img src="images/decprov.png" alt="Image of all DecPROV classes">
+            <img src="images/gnaf.png" style="width:527px;" alt="Image of all major GNAF classes">
             <p><em>All of the DecPROV classes and their relationships to the basic PROV-O classes</em></p>
         </div>
-
+  * after Address, Locality, Geocode, StreetLocality<h3>, add:
+    <img src="images/Address.png" style="width:527px;" alt="Address class and properties" />
+    <img src="images/Geocode.png" style="width:527px;" alt="Geocode class and properties" />
+    <img src="images/Locality.png" style="width:527px;" alt="Locality class and properties" />
+    <img src="images/StreetLocality.png" style="width:527px;" alt="StreetLocality class and properties" />
