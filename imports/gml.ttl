@@ -1,0 +1,288 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix gml: <http://www.opengis.net/ont/gml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geo:Feature rdfs:isDefinedBy <http://www.opengis.net/ont/gml> .
+
+geo:SpatialObject rdfs:isDefinedBy <http://www.opengis.net/ont/gml> .
+
+gml:ArcByBulge a owl:Class ;
+    rdfs:label "Arc by Bulge"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:ArcStringByBulge .
+
+gml:Bezier a owl:Class ;
+    rdfs:label "Bezier"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:BSpline .
+
+gml:Circle a owl:Class ;
+    rdfs:label "Circle"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:Arc .
+
+gml:CircleByCenterPoint a owl:Class ;
+    rdfs:label "CircleByCenterPoint"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:ArcByCenterPoint .
+
+gml:Clothoid a owl:Class ;
+    rdfs:label "Clothoid"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractCurveSegment .
+
+gml:CompositeSolid a owl:Class ;
+    rdfs:label "Composite Solid"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:Composite,
+        gml:Solid .
+
+gml:Cone a owl:Class ;
+    rdfs:label "Cone"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGriddedSurface .
+
+gml:CubicSpline a owl:Class ;
+    rdfs:label "Cubic Spline"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:PolynomialSpline .
+
+gml:Curve a owl:Class ;
+    rdfs:label "Curve"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGeometricPrimitive,
+        gml:OrientableCurve .
+
+gml:Cylinder a owl:Class ;
+    rdfs:label "Cylinder"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGriddedSurface .
+
+gml:Geodesic a owl:Class ;
+    rdfs:label "Geodesic"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:GeodesicString .
+
+gml:LineString a owl:Class ;
+    rdfs:label "Line String"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:LineStringSegment .
+
+gml:LinearRing a owl:Class ;
+    rdfs:label "Linear Ring"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:Ring .
+
+gml:MultiCurve a owl:Class ;
+    rdfs:label "Multi-Curve"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:MultiGeometry .
+
+gml:MultiPoint a owl:Class ;
+    rdfs:label "Multi-Point"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:MultiGeometry .
+
+gml:MultiSolid a owl:Class ;
+    rdfs:label "Multi-Solid"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:MultiGeometry .
+
+gml:MultiSurface a owl:Class ;
+    rdfs:label "Multi-Surface"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:MultiGeometry .
+
+gml:OffsetCurve a owl:Class ;
+    rdfs:label "Offset Curve"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractCurveSegment .
+
+gml:Point a owl:Class ;
+    rdfs:label "Point"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGeometricPrimitive .
+
+gml:Polygon a owl:Class ;
+    rdfs:label "Polygon"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:Surface .
+
+gml:Rectangle a owl:Class ;
+    rdfs:label "Rectangle"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:PolygonPatch .
+
+gml:Shell a owl:Class ;
+    rdfs:label "Shell"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:CompositeSurface .
+
+gml:Sphere a owl:Class ;
+    rdfs:label "Sphere"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGriddedSurface .
+
+gml:Tin a owl:Class ;
+    rdfs:label "Triangulated Irregular Network"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:TriangulatedSurface .
+
+gml:Triangle a owl:Class ;
+    rdfs:label "Triangle"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:PolygonPatch .
+
+gml:AbstractParametricCurveSurface a owl:Class ;
+    rdfs:label "Abstract Parametric Curve Surface"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractSurfacePatch .
+
+gml:Arc a owl:Class ;
+    rdfs:label "Arc"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:ArcString .
+
+gml:ArcByCenterPoint a owl:Class ;
+    rdfs:label "Arc by Center Point"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractCurveSegment .
+
+gml:ArcString a owl:Class ;
+    rdfs:label "Arc String"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractCurveSegment .
+
+gml:ArcStringByBulge a owl:Class ;
+    rdfs:label "Arc String by Bulge"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractCurveSegment .
+
+gml:BSpline a owl:Class ;
+    rdfs:label "BSpline"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:SplineCurve .
+
+gml:CompositeCurve a owl:Class ;
+    rdfs:label "Composite Curve"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:Composite,
+        gml:OrientableCurve .
+
+gml:CompositeSurface a owl:Class ;
+    rdfs:label "Composite Surface"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:Composite,
+        gml:OrientableSurface .
+
+gml:GeodesicString a owl:Class ;
+    rdfs:label "Geodesic String"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractCurveSegment .
+
+gml:GeometricComplex a owl:Class ;
+    rdfs:label "Geometric Complex"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGeometry .
+
+gml:LineStringSegment a owl:Class ;
+    rdfs:label "Line String Segment"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractCurveSegment .
+
+gml:PolyhedralSurface a owl:Class ;
+    rdfs:label "Polyhedral Surface"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:Surface .
+
+gml:PolynomialSpline a owl:Class ;
+    rdfs:label "Polynomial Spline"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:SplineCurve .
+
+gml:Ring a owl:Class ;
+    rdfs:label "Ring"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:CompositeCurve .
+
+gml:Solid a owl:Class ;
+    rdfs:label "Solid"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGeometricPrimitive .
+
+gml:TriangulatedSurface a owl:Class ;
+    rdfs:label "Triangulated Surface"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:PolyhedralSurface .
+
+gml:AbstractSurfacePatch a owl:Class ;
+    rdfs:label "Abstract Surface Patch"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf geo:Geometry .
+
+gml:OrientableCurve a owl:Class ;
+    rdfs:label "Orientable Curve"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGeometricPrimitive .
+
+gml:OrientableSurface a owl:Class ;
+    rdfs:label "Orientable Surface"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGeometricPrimitive .
+
+gml:PolygonPatch a owl:Class ;
+    rdfs:label "Polygon Patch"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractSurfacePatch .
+
+gml:SplineCurve a owl:Class ;
+    rdfs:label "Spline Curve"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractCurveSegment .
+
+gml:Surface a owl:Class ;
+    rdfs:label "Surface"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGeometricPrimitive,
+        gml:OrientableSurface .
+
+geo:Geometry rdfs:isDefinedBy <http://www.opengis.net/ont/gml> .
+
+gml:AbstractGeometry a owl:Class ;
+    rdfs:label "Abstract Geometry"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf geo:Geometry .
+
+gml:AbstractGriddedSurface a owl:Class ;
+    rdfs:label "Abstract Gridded Surface"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractParametricCurveSurface .
+
+gml:Composite a owl:Class ;
+    rdfs:label "Composite"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:GeometricComplex .
+
+gml:MultiGeometry a owl:Class ;
+    rdfs:label "Multi-Geometry"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGeometry .
+
+gml:AbstractGeometricPrimitive a owl:Class ;
+    rdfs:label "Abstract Geometric Primitive"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf gml:AbstractGeometry .
+
+gml:AbstractCurveSegment a owl:Class ;
+    rdfs:label "Abstract Curve Segment"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/gml> ;
+    rdfs:subClassOf geo:Geometry .
+
+<http://www.opengis.net/ont/gml> a owl:Ontology ;
+    owl:imports <http://www.opengis.net/ont/geosparql> .
