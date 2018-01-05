@@ -31,7 +31,6 @@
 <http://www.geonames.org/2177478> a gnaf:State , skos:Concept ;
     skos:definition ""@en ;
     skos:altLabel "ACT"^^xsd:string ;
-    gnaf:dateCreated "2006-01-12"^^xds:date ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
@@ -39,7 +38,6 @@
 <http://www.geonames.org/2155400> a gnaf:State , skos:Concept ;
     skos:definition ""@en ;
     skos:altLabel "NSW"^^xsd:string ;
-    gnaf:dateCreated "2006-01-12"^^xds:date ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
@@ -47,7 +45,6 @@
 <http://www.geonames.org/2064513> a gnaf:State , skos:Concept ;
     skos:definition ""@en ;
     skos:altLabel "NT"^^xsd:string ;
-    gnaf:dateCreated "2006-01-12"^^xds:date ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
@@ -55,7 +52,6 @@
 <http://gnafld.net/def/gnaf/code/State#OT> a gnaf:State , skos:Concept ;
     skos:definition "Refers to external Territories of Australia included within the PSMA datasets: Christmas Island, Cocos (Keeling) Islands, Norfolk Island and Jervis Bay."@en ;
     skos:altLabel "OT"^^xsd:string ;
-    gnaf:dateCreated "2006-01-12"^^xds:date ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
@@ -63,7 +59,6 @@
 <http://www.geonames.org/2152274> a gnaf:State , skos:Concept ;
     skos:definition ""@en ;
     skos:altLabel "QLD"^^xsd:string ;
-    gnaf:dateCreated "2006-01-12"^^xds:date ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
@@ -79,7 +74,6 @@
 
     skos:definition ""@en ;
     skos:altLabel "TAS"^^xsd:string ;
-    gnaf:dateCreated "2006-01-12"^^xds:date ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
@@ -87,7 +81,6 @@
 <http://www.geonames.org/2145234> a gnaf:State , skos:Concept ;
     skos:definition ""@en ;
     skos:altLabel "VIC"^^xsd:string ;
-    gnaf:dateCreated "2006-01-12"^^xds:date ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
@@ -95,7 +88,6 @@
 <http://www.geonames.org/2058645> a gnaf:State , skos:Concept ;
     skos:definition ""@en ;
     skos:altLabel "WA"^^xsd:string ;
-    gnaf:dateCreated "2006-01-12"^^xds:date ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .

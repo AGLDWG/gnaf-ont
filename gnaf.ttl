@@ -19,7 +19,7 @@
                               dc:contributor "Joseph Abhayaratna"^^xsd:string ;
                               dc:creator "Nicholas Car"^^xsd:string ;
                               dct:modified "2018-01-05"^^xsd:date ;
-                              dct:contributor <http://gnafld.net/def/joseph.abhayaratna@psma.com.au> ;
+                              dct:contributor <joseph.abhayaratna@psma.com.au> ;
                               dct:created "2017-12-23"^^xsd:date ;
                               dct:creator <http://orcid.org/0000-0002-8742-7730> ;
                               dc:publisher "Australian Government Linked Data Working Group"^^xsd:string ;
@@ -234,11 +234,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  http://dbpedia.org/ontology/Location
-dbo:Location rdf:type owl:Class ;
-             rdfs:subClassOf prov:Location .
-
-
 ###  http://gnafld.net/def/gnaf#Address
 :Address rdf:type owl:Class ;
          rdfs:subClassOf dbo:Location ,
@@ -286,7 +281,8 @@ dbo:Location rdf:type owl:Class ;
                            owl:onProperty :hasBuildingName ;
                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:string
-                         ] .
+                         ] ;
+         rdfs:label "Address"@en .
 
 
 ###  http://gnafld.net/def/gnaf#AddressSite
@@ -544,16 +540,6 @@ dbo:Location rdf:type owl:Class ;
                                                                   rdfs:label "ISO19160-1 Address"@en .
 
 
-###  http://schema.org/AdministrativeArea
-schema:AdministrativeArea rdf:type owl:Class ;
-                          rdfs:subClassOf prov:Entity .
-
-
-###  http://schema.org/Place
-schema:Place rdf:type owl:Class ;
-             rdfs:subClassOf prov:Entity .
-
-
 ###  http://www.w3.org/ns/prov#Collection
 prov:Collection rdfs:subClassOf prov:Collection .
 
@@ -561,30 +547,6 @@ prov:Collection rdfs:subClassOf prov:Collection .
 #################################################################
 #    Individuals
 #################################################################
-
-###  http://gnafld.net/def/gnaf#First
-:First rdf:type owl:NamedIndividual ,
-                :NumberType .
-
-
-###  http://gnafld.net/def/gnaf#Flat
-:Flat rdf:type owl:NamedIndividual ,
-               :NumberType .
-
-
-###  http://gnafld.net/def/gnaf#Last
-:Last rdf:type owl:NamedIndividual ,
-               :NumberType .
-
-
-###  http://gnafld.net/def/gnaf#Level
-:Level rdf:type owl:NamedIndividual ,
-                :NumberType .
-
-
-###  http://gnafld.net/def/gnaf#Lot
-:Lot rdf:type owl:NamedIndividual ,
-              :NumberType .
 
 
 ###  http://gnafld.net/def/gnaf#hasDateCreated
