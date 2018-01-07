@@ -12,7 +12,7 @@ This ontology draws some elements from the OWL ontology version of the ISO19160-
 ## Implementation
 The main documentation for this ontology is available online at this ontology's namespace location:
 
-* <http://gnafld.net/def/gnafld>
+* <http://gnafld.net/def/gnaf>
 
 The content of the GNAF database, delivered using Linked Data principles, according to this ontology, is online at:
 
