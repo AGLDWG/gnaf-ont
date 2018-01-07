@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Collection">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+  </rdf:Description>
+  <owl:Ontology rdf:about="http://gnafld.net/def/gnaf">
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-05</dct:modified>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GNAF ontology</rdfs:label>
+    <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    <dct:source>https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf</dct:source>
+    <dct:contributor rdf:resource="http://gnafld.net/def/joseph.abhayaratna@psma.com.au"/>
+    <dct:publisher rdf:resource="http://linked.data.gov.au"/>
+    <dct:creator rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+    <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Government Linked Data Working Group</dc:publisher>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dc:creator>
+    <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Abhayaratna</dc:contributor>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-23</dct:created>
+    <rdfs:comment xml:lang="en"><![CDATA[An ontology for the content of the PSMA Geocoded National Address File (G-NAF).
+
+  The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.
+
+  The G-NAF does not contain any names or personal information.
+
+  The base content of the G-NAF is available freely online at <https://data.gov.au/dataset/geocoded-national-address-file-g-naf> and also via a Linked Data API that uses this ontology at <http://gnafld.net>.
+
+  This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 "Addressing -- Part 1: Conceptual model" standard (see <https://www.iso.org/standard/61710.html>) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at <http://reference.data.gov.au/def/ont/iso19160-1-address>.]]></rdfs:comment>
+    <owl:versionIRI rdf:resource="http://reference.data.gov.au/def/ont/gnaf/1.0"/>
+  </owl:Ontology>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasLegalParcelId">
+    <rdfs:label xml:lang="en">has legal parcel ID</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasPrimarySecondary">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">is primary secondary</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasDescription">
+    <owl:sameAs>
+      <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/description"/>
+    </owl:sameAs>
+    <rdfs:label xml:lang="en">has description</rdfs:label>
+    <rdfs:comment xml:lang="en">This is the same as dct:description.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#isPrivateStreet">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">has private street</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <rdf:Description rdf:nodeID="ub182bL587C1">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#aliasOf">
+    <rdfs:label xml:lang="en">alias of</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasAlias">
+        <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#Address"/>
+        <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Alias"/>
+        <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#Street"/>
+        <rdfs:label xml:lang="en">has alias</rdfs:label>
+        <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#LocalityAlias">
+    <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#Alias"/>
+    <rdfs:label xml:lang="en">Locality Alias</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL427C32">
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasName"/>
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL432C32">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasPrimaryPostcode"/>
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#Address">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL264C26">
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasLocality"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"/>
+    <rdfs:label xml:lang="en">Address</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Location"/>
+    <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#GnafEntity"/>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Location"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL259C26">
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGnafConfidence"/>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#GnafConfidence"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL242C26">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAddressSite"/>
+        <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#AddressSite"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL269C26">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasStreetLocality"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#StreetLocality"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL246C26">
+        <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#Alias"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAlias"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL254C26">
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGeocode"/>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#Geocode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL274C26">
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasPostcode"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL250C26">
+        <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#Number"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasNumber"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL279C26">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasBuildingName"/>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#Locality">
+    <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#GnafEntity"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL396C27">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasLocalityClass"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#LocalityClass"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL411C27">
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasName"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL416C27">
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasPrimaryPostcode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL406C27">
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGeocode"/>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#Geocode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Location"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL388C27">
+        <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#LocalityAlias"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAlias"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL401C27">
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#State"/>
+        <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#ehInside"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Location"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL392C27">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasNeighbour"/>
+        <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locality</rdfs:label>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasGnafConfidence">
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Address"/>
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#GnafConfidence"/>
+    <rdfs:label xml:lang="en">has GNAF confidence</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasBuildingName">
+    <rdfs:label xml:lang="en">has building name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#Number">
+    <rdfs:label xml:lang="en">Number</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL450C25">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAddressNumberType"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#NumberType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#Geocode">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL323C26">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGeocodeReliability"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#GeocodeReliability"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL328C26">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGeocodeType"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#GeocodeType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geocode</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL333C26">
+        <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onClass rdf:resource="http://www.opengis.net/ont/sf#Geometry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#GnafEntity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#AliasType">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdfs:label xml:lang="en">Alias Type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasStreetLocality">
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Address"/>
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#StreetLocality"/>
+    <rdfs:label xml:lang="en">has street locality</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasPrimaryPostcode">
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:label xml:lang="en">has primary postcode</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#StreetLocality">
+    <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#Street"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL514C33">
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasLocality"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Street Locality</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#NumberType">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+    <rdfs:label xml:lang="en">Number Type</rdfs:label>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasName">
+    <rdfs:comment xml:lang="en">This is the same as dct:title.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">has name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:sameAs>
+      <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/title"/>
+    </owl:sameAs>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasNumber">
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#Number"/>
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Address"/>
+    <rdfs:label xml:lang="en">has number</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#Alias">
+    <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#GnafEntity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alias</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL305C24">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAliasType"/>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#AliasType"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#AddressSite">
+    <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#GnafEntity"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL290C30">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGeocode"/>
+        <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#Geocode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Address Site</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL294C30">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasName"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#StreetClass">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdfs:label xml:lang="en">Street Class</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://gnafld.net/def/gnaf#hasDateRetired">
+    <owl:sameAs>
+      <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#wasInvalidatedAtTime"/>
+    </owl:sameAs>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">This is the same as prov:wasInvalidatedAtTime.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="en">has date retired</rdfs:label>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasGeocodeType">
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Geocode"/>
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#GeocodeType"/>
+    <rdfs:label xml:lang="en">has geocode type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#GnafEntity">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL364C29">
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasDateCreated"/>
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL369C29">
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasDateLastModified"/>
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL374C29">
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasDateRetired"/>
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">GNAF Entity</rdfs:label>
+    <rdfs:comment xml:lang="en">Entities (things) that are present as records in the GNAF database. Every GNAF Entity has a data created, date last modified (can be the same) and may have a data retired. These dates indicate the creation, modification &amp; retirement of the representation of the Entity in the GNAF database, not the real-world Entity.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasAliasType">
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Alias"/>
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#AliasType"/>
+    <rdfs:label xml:lang="en">has alias type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#Street">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL491C25">
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasStreetType"/>
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#StreetType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL486C25">
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#StreetSuffix"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasStreetSuffix"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Location"/>
+    <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#GnafEntity"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL481C25">
+        <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#StreetClass"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasStreetClass"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL496C25">
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasName"/>
+        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Location"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="ub182bL477C25">
+        <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#Alias"/>
+        <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAlias"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Street</rdfs:label>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasAddressSite">
+    <rdfs:label xml:lang="en">has address site</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#LocalityClass">
+    <rdfs:label xml:lang="en">Locality Class</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasGeocode">
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#Geocode"/>
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Address"/>
+    <rdfs:label xml:lang="en">has geocode</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#GeocodeReliability">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdfs:label xml:lang="en">Geocode Reliability</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#State">
+    <rdfs:comment xml:lang="en">An Australian State, including "Other Territories" for Cocos &amp; Keeling Islands, Jervis Bay etc.</rdfs:comment>
+    <rdfs:label xml:lang="en">State</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#GnafEntity"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasStreetType">
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#StreetType"/>
+    <rdfs:label xml:lang="en">has street type</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#StreetLocality"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasAddressNumberType">
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#NumberType"/>
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Number"/>
+    <rdfs:label xml:lang="en">has address number type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasLocality">
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#StreetLocality"/>
+    <rdfs:label xml:lang="en">has locality</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasStreetSuffix">
+    <rdfs:label xml:lang="en">has street suffix</rdfs:label>
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#StreetLocality"/>
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#StreetSuffix"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasStreetClass">
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#StreetClass"/>
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#StreetLocality"/>
+    <rdfs:label xml:lang="en">has street class</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasNeighbour">
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+    <rdfs:label xml:lang="en">has neighbour</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasLocalityClass">
+    <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#LocalityClass"/>
+    <rdfs:label xml:lang="en">has locality class</rdfs:label>
+    <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#StreetSuffix">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+    <rdfs:label xml:lang="en">Street Suffix</rdfs:label>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasPostcode">
+    <rdfs:label xml:lang="en">has postcode</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasDateLastModified">
+    <rdfs:label xml:lang="en">has date last modified</rdfs:label>
+    <rdfs:comment xml:lang="en">This is the same as dct:modified.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasDateCreated">
+    <rdfs:comment xml:lang="en">This is the same as prov:wasGeneratedAtTime.</rdfs:comment>
+    <rdfs:label xml:lang="en">has date created</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:sameAs>
+      <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#wasGeneratedAtTime"/>
+    </owl:sameAs>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasGeocodeReliability">
+    <rdfs:label xml:lang="en">has geocode reliability</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://reference.data.gov.au/def/ont/iso19160-1-address#Address">
+    <rdfs:label xml:lang="en">ISO19160-1 Address</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#GeocodeType">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdfs:label xml:lang="en">Geocode Type</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#StreetType">
+    <rdfs:label xml:lang="en">Street Type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://gnafld.net/def/gnaf#GnafConfidence">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdfs:label xml:lang="en">GNAF Confidence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+  </owl:Class>
+</rdf:RDF>
