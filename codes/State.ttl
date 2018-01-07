@@ -29,27 +29,31 @@
     vann:preferredNamespacePrefix "gconf"@en .
 
 <http://www.geonames.org/2177478> a gnaf:State , skos:Concept ;
+    skos:prefLabel "Australian Capital Territory"@en ;
     skos:definition ""@en ;
     skos:altLabel "ACT"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
+    rdfs:isDefinedBy <http://sws.geonames.org/2177478/about.rdf> .
 
 <http://www.geonames.org/2155400> a gnaf:State , skos:Concept ;
+    skos:prefLabel "New South Wales"@en ;
     skos:definition ""@en ;
     skos:altLabel "NSW"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
+    rdfs:isDefinedBy <http://sws.geonames.org/2155400/about.rdf> .
 
 <http://www.geonames.org/2064513> a gnaf:State , skos:Concept ;
+    skos:prefLabel "Northern Territory"@en ;
     skos:definition ""@en ;
     skos:altLabel "NT"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
+    rdfs:isDefinedBy <http://sws.geonames.org/2064513/about.rdf> .
 
 <http://gnafld.net/def/gnaf/code/State#OT> a gnaf:State , skos:Concept ;
+    skos:prefLabel "Other Territories"@en ;
     skos:definition "Refers to external Territories of Australia included within the PSMA datasets: Christmas Island, Cocos (Keeling) Islands, Norfolk Island and Jervis Bay."@en ;
     skos:altLabel "OT"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
@@ -57,37 +61,41 @@
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
 
 <http://www.geonames.org/2152274> a gnaf:State , skos:Concept ;
+    skos:prefLabel "Queensland"@en ;
     skos:definition ""@en ;
     skos:altLabel "QLD"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
+    rdfs:isDefinedBy <http://sws.geonames.org/2152274/about.rdf> .
 
 <http://www.geonames.org/2061327> a gnaf:State , skos:Concept ;
+    skos:prefLabel "South Australia"@en ;
     skos:definition ""@en ;
     skos:altLabel "SA"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
+    rdfs:isDefinedBy <http://sws.geonames.org/2061327/about.rdf> .
 
 <http://www.geonames.org/2147291> a gnaf:State , skos:Concept ;
-
+    skos:prefLabel "Tasmania"@en ;
     skos:definition ""@en ;
     skos:altLabel "TAS"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
+    rdfs:isDefinedBy <http://sws.geonames.org/2147291/about.rdf> .
 
 <http://www.geonames.org/2145234> a gnaf:State , skos:Concept ;
+    skos:prefLabel "Victoria"@en ;
     skos:definition ""@en ;
     skos:altLabel "VIC"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
+    rdfs:isDefinedBy <http://sws.geonames.org/2145234/about.rdf> .
 
 <http://www.geonames.org/2058645> a gnaf:State , skos:Concept ;
+    skos:prefLabel "Western Australia"@en ;
     skos:definition ""@en ;
     skos:altLabel "WA"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
+    rdfs:isDefinedBy <http://sws.geonames.org/2058645/about.rdf> .

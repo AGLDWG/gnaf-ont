@@ -28,7 +28,7 @@
     vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/code/GeocodeReliability#"^^xsd:string ;
     vann:preferredNamespacePrefix "loccl"@en .
 
-:1 a gnaf:GeocodeReliability , skos:Concept ;
+:SurveyingStandard a gnaf:GeocodeReliability , skos:Concept ;
   skos:prefLabel "Surveying Standard"@en ;
 	skos:definition "Geocode accuracy recorded to appropriate surveying standard"@en ;
   skos:altLabel "SURVEYING STANDARD"^^xsd:string ;
@@ -36,7 +36,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
-:2 a gnaf:GeocodeReliability , skos:Concept ;
+:WithinAddressSiteBoundaryOrAccessPoint a gnaf:GeocodeReliability , skos:Concept ;
   skos:prefLabel "Within Address Site Boundary or Access Point"@en ;
 	skos:definition "Geocode accuracy sufficient to place geocode within address site boundary or access point"@en ;
   skos:altLabel "WITHIN ADDRESS SITE BOUNDARY OR ACCESS POINT"^^xsd:string ;
@@ -44,7 +44,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
-:3 a gnaf:GeocodeReliability , skos:Concept ;
+:NearOrPossiblyWithinAddressSiteBoundary a gnaf:GeocodeReliability , skos:Concept ;
   skos:prefLabel "Near (Or Possibly Within) Address Site Boundary"@en ;
 	skos:definition "Geocode accuracy sufficient to place geocode near (or possibly within) address site boundary"@en ;
   skos:altLabel "NEAR (OR POSSIBLY WITHIN) ADDRESS SITE BOUNDARY"^^xsd:string ;
@@ -52,7 +52,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
-:4 a gnaf:GeocodeReliability , skos:Concept ;
+:UniqueRoadFeature a gnaf:GeocodeReliability , skos:Concept ;
   skos:prefLabel "Unique Road Feature"@en ;
 	skos:definition "Geocode accuracy sufficient to associate address site with a unique road feature"@en ;
   skos:altLabel "UNIQUE ROAD FEATURE"^^xsd:string ;
@@ -60,7 +60,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
-:5 a gnaf:GeocodeReliability , skos:Concept ;
+:UniqueLocalityOrNeighbourhood a gnaf:GeocodeReliability , skos:Concept ;
   skos:prefLabel "Unique Locality Or Neighbourhood"@en ;
 	skos:definition "Geocode accuracy sufficient to associate address site with a unique locality or neighbourhood"@en ;
   skos:altLabel "UNIQUE LOCALITY OR NEIGHBOURHOOD"^^xsd:string ;
@@ -68,7 +68,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeReliability> .
 
-:6 a gnaf:GeocodeReliability , skos:Concept ;
+:UniqueRegion a gnaf:GeocodeReliability , skos:Concept ;
   skos:prefLabel "Unique Region"@en ;
 	skos:definition "Geocode accuracy sufficient to associate address site with a unique region"@en ;
   skos:altLabel "UNIQUE REGION"^^xsd:string ;

@@ -19,7 +19,7 @@
                               dc:contributor "Joseph Abhayaratna"^^xsd:string ;
                               dc:creator "Nicholas Car"^^xsd:string ;
                               dct:modified "2018-01-05"^^xsd:date ;
-                              dct:contributor <joseph.abhayaratna@psma.com.au> ;
+                              dct:contributor <http://gnafld.net/def/joseph.abhayaratna@psma.com.au> ;
                               dct:created "2017-12-23"^^xsd:date ;
                               dct:creator <http://orcid.org/0000-0002-8742-7730> ;
                               dc:publisher "Australian Government Linked Data Working Group"^^xsd:string ;
@@ -59,6 +59,10 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                       rdfs:domain :Number ;
                       rdfs:range :NumberType ;
                       rdfs:label "has address number type"@en .
+
+
+###  http://gnafld.net/def/gnaf#hasAddressSecondary
+:hasAddressSecondary rdf:type owl:ObjectProperty .
 
 
 ###  http://gnafld.net/def/gnaf#hasAddressSite
@@ -108,6 +112,12 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                    rdfs:label "has GNAF confidence"@en .
 
 
+###  http://gnafld.net/def/gnaf#hasJoinType
+:hasJoinType rdf:type owl:ObjectProperty ;
+             rdfs:domain :AddressSecondary ;
+             rdfs:range :PrimarySecondaryJoinType .
+
+
 ###  http://gnafld.net/def/gnaf#hasLocality
 :hasLocality rdf:type owl:ObjectProperty ;
              rdfs:domain :StreetLocality ;
@@ -120,6 +130,26 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                   rdfs:domain :Locality ;
                   rdfs:range :LocalityClass ;
                   rdfs:label "has locality class"@en .
+
+
+###  http://gnafld.net/def/gnaf#hasMeshBlock
+:hasMeshBlock rdf:type owl:ObjectProperty ;
+              rdfs:domain :MeshBlockMatch ;
+              rdfs:range :MeshBlock ;
+              rdfs:label "has mesh block"@en .
+
+
+###  http://gnafld.net/def/gnaf#hasMeshBlockMatch
+:hasMeshBlockMatch rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Address ;
+                   rdfs:range :MeshBlockMatch ;
+                   rdfs:label "has Mesh Block match"@en .
+
+
+###  http://gnafld.net/def/gnaf#hasMeshBlockType
+:hasMeshBlockType rdf:type owl:ObjectProperty ;
+                  rdfs:comment "This property is added to allow references to MeshBlock objects which are then differentiated by a MeshBlockType corresponding to the year of the MeshBlock, rather than forcing different objects for MeshBlock2011, MeshBlock2016 etc."@en ;
+                  rdfs:label "mesh block type"@en .
 
 
 ###  http://gnafld.net/def/gnaf#hasNeighbour
@@ -217,10 +247,12 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                     rdfs:label "has primary postcode"@en .
 
 
-###  http://gnafld.net/def/gnaf#hasPrimarySecondary
-:hasPrimarySecondary rdf:type owl:DatatypeProperty ;
-                     rdfs:range xsd:string ;
-                     rdfs:label "is primary secondary"@en .
+###  http://gnafld.net/def/gnaf#isPrimary
+:isPrimary rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Address ;
+           rdfs:range xsd:boolean ;
+           rdfs:comment "In the non-semantic version of the GNAF, an address is indicated as being either Primary (P) or Secondary (S). In this semantic version, an Address either has the isPrimary property set to true (it is a Primary) or false (it is a Secondary)."@en ;
+           rdfs:label "is primary"@en .
 
 
 ###  http://gnafld.net/def/gnaf#isPrivateStreet
@@ -234,6 +266,10 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
+###  http://dbpedia.org/ontology/Location
+dbo:Location rdf:type owl:Class .
+
+
 ###  http://gnafld.net/def/gnaf#Address
 :Address rdf:type owl:Class ;
          rdfs:subClassOf dbo:Location ,
@@ -241,12 +277,20 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                          <http://reference.data.gov.au/def/ont/iso19160-1-address#Address> ,
                          prov:Location ,
                          [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAddressSecondary ;
+                           owl:someValuesFrom :AddressSecondary
+                         ] ,
+                         [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAddressSite ;
                            owl:someValuesFrom :AddressSite
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAlias ;
                            owl:someValuesFrom :Alias
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasMeshBlockMatch ;
+                           owl:someValuesFrom :MeshBlockMatch
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasNumber ;
@@ -281,8 +325,24 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                            owl:onProperty :hasBuildingName ;
                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isPrimary ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:boolean
                          ] ;
          rdfs:label "Address"@en .
+
+
+###  http://gnafld.net/def/gnaf#AddressSecondary
+:AddressSecondary rdf:type owl:Class ;
+                  rdfs:subClassOf :GnafEntity ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasAddressSecondary ;
+                                    owl:someValuesFrom :Address
+                                  ] ;
+                  rdfs:comment "In the non-LD GNAF, this is the 'PrimarySecondary' concept but in this LD version, the relationship between Primary/Secondary Addresses is directed from Address (Primary) -> Address (Secondary) via Address Secondary to indicate the join type."@en ;
+                  rdfs:label "Address Secondary"@en .
 
 
 ###  http://gnafld.net/def/gnaf#AddressSite
@@ -445,6 +505,40 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                rdfs:label "Locality Class"@en .
 
 
+###  http://gnafld.net/def/gnaf#MeshBlock
+:MeshBlock rdf:type owl:Class ;
+           rdfs:subClassOf :GnafEntity ;
+           rdfs:comment "Mesh Blocks are the smallest geographical area defined by the Australian Bureau of Statistics (ABS) and form the building blocks for the larger regions of the Australian Statistical Geography Standard (ASGS). All other statistical areas or regions are built up from or, approximated by whole Mesh Blocks. They broadly identify land use such as residential, commercial, primary production and parks, etc."@en ;
+           rdfs:label "Mesh Block"@en .
+
+
+###  http://gnafld.net/def/gnaf#MeshBlockMatch
+:MeshBlockMatch rdf:type owl:Class ;
+                rdfs:subClassOf :GnafEntity ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasMeshBlock ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :MeshBlock
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasMeshBlockMatch ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :MeshBlockMatchType
+                                ] ;
+                rdfs:label "Mesh Block Match"@en .
+
+
+###  http://gnafld.net/def/gnaf#MeshBlockMatchType
+:MeshBlockMatchType rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> .
+
+
+###  http://gnafld.net/def/gnaf#MeshBlockType
+:MeshBlockType rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ,
+                               prov:Collection .
+
+
 ###  http://gnafld.net/def/gnaf#Number
 :Number rdf:type owl:Class ;
         rdfs:subClassOf prov:Entity ,
@@ -461,6 +555,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
             rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ,
                             prov:Collection ;
             rdfs:label "Number Type"@en .
+
+
+###  http://gnafld.net/def/gnaf#PrimarySecondaryJoinType
+:PrimarySecondaryJoinType rdf:type owl:Class ;
+                          rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> .
 
 
 ###  http://gnafld.net/def/gnaf#State
@@ -547,7 +646,6 @@ prov:Collection rdfs:subClassOf prov:Collection .
 #################################################################
 #    Individuals
 #################################################################
-
 
 ###  http://gnafld.net/def/gnaf#hasDateCreated
 :hasDateCreated rdf:type owl:NamedIndividual ;

@@ -29,31 +29,36 @@
     vann:preferredNamespacePrefix "sntype"@en .
 
 :First a gnaf:StreetNumberType , skos:Concept ;
-    skos:definition "First"@en ;
+    skos:prefLabel "First"@en ;
+    skos:definition "The first street number"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetNumberType> .
 
 :Flat a gnaf:StreetNumberType , skos:Concept ;
-    skos:definition "Flat"@en ;
+    skos:prefLabel "Flat"@en ;
+    skos:definition "A flat's number"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetNumberType> .
 
 :Last a gnaf:StreetNumberType , skos:Concept ;
-    skos:definition "Last"@en ;
+    skos:prefLabel "Last"@en ;
+    skos:definition "The last street number"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetNumberType> .
 
 :Level a gnaf:StreetNumberType , skos:Concept ;
-    skos:definition "Level"@en ;
+    skos:prefLabel "Level"@en ;
+    skos:definition "a building level number"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetNumberType> .
 
 :Lot a gnaf:StreetNumberType , skos:Concept ;
-    skos:definition "Lot"@en ;
+    skos:prefLabel "Lot"@en ;
+    skos:definition "A lot number"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetNumberType> .

@@ -61,3 +61,14 @@ Things to do in order to create an HTML version of the ontology
     <img src="images/Geocode.png" style="width:527px;" alt="Geocode class and properties" />
     <img src="images/Locality.png" style="width:527px;" alt="Locality class and properties" />
     <img src="images/StreetLocality.png" style="width:527px;" alt="StreetLocality class and properties" />
+
+* replace all random anchors with class/property names
+
+* remove/change the following namespace declarations
+  * ORCID
+  * ontology - DBPedia
+  * ns - W3C
+  * def - GNAF
+  * core --> SKOS
+  * geosparql --> geo
+  * ont --> opengis

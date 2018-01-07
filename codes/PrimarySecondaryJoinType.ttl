@@ -1,0 +1,45 @@
+@prefix : <http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix gnaf: <http://gnafld.net/def/gnaf#> .
+@base <http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType> .
+
+<http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType>
+    a owl:Ontology ;
+    rdfs:label "G-NAF code list for Primary Secondary Join Type instances"@en ;
+    rdfs:comment "G-NAF code list for Primary Secondary Join Type instances."@en ;
+    dc:creator "Nicholas Car"@en ;
+    dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+    dc:publisher "PSMA Australia"@en ;
+    dct:publisher <http://www.psma.com.au> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rights "PSMA Ltd."@en ;
+    owl:versionInfo "0.1"@en ;
+    owl:versionIRI <http://gnafld.net/def/gnaf/code/State/0.1> ;
+    dct:created "2018-01-06"^^xsd:date ;
+    dct:modified "2018-01-06"@en ;
+    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType#"^^xsd:string ;
+    vann:preferredNamespacePrefix "sntype"@en .
+
+:Auto a gnaf:PrimarySecondaryJoinType , skos:Concept ;
+    skos:prefLabel "Auto"@en ;
+    skos:definition "Automtically matched Primary & Secondary, both parent & child have same root Address."@en ;
+    skos:altLabel "1"@en ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType> .
+
+:Manual a gnaf:PrimarySecondaryJoinType , skos:Concept ;
+    skos:prefLabel "Manual"@en ;
+    skos:definition "Manually generated link, may or may not have same root Address"@en ;
+    skos:altLabel "2"@en ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType> .
