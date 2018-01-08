@@ -67,6 +67,8 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://gnafld.net/def/gnaf#hasAddressSite
 :hasAddressSite rdf:type owl:ObjectProperty ;
+                rdfs:domain :Address ;
+                rdfs:range :AddressSite ;
                 rdfs:label "has address site"@en .
 
 
@@ -166,6 +168,12 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
            rdfs:label "has number"@en .
 
 
+###  http://gnafld.net/def/gnaf#hasState
+:hasState rdf:type owl:ObjectProperty ;
+          rdfs:domain dbo:Location ;
+          rdfs:range :State .
+
+
 ###  http://gnafld.net/def/gnaf#hasStreetClass
 :hasStreetClass rdf:type owl:ObjectProperty ;
                 rdfs:domain :StreetLocality ;
@@ -262,6 +270,10 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                  rdfs:label "has private street"@en .
 
 
+###  http://purl.org/dc/terms/subject
+dct:subject rdf:type owl:DatatypeProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -281,10 +293,6 @@ dbo:Location rdf:type owl:Class .
                            owl:someValuesFrom :AddressSecondary
                          ] ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasAddressSite ;
-                           owl:someValuesFrom :AddressSite
-                         ] ,
-                         [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAlias ;
                            owl:someValuesFrom :Alias
                          ] ,
@@ -295,6 +303,11 @@ dbo:Location rdf:type owl:Class .
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasNumber ;
                            owl:someValuesFrom :Number
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAddressSite ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :AddressSite
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasGeocode ;
@@ -318,6 +331,11 @@ dbo:Location rdf:type owl:Class .
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasPostcode ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dct:subject ;
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:string
                          ] ,
@@ -458,11 +476,6 @@ dbo:Location rdf:type owl:Class .
                             owl:onProperty :hasLocalityClass ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :LocalityClass
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty <http://www.opengis.net/ont/geosparql#ehInside> ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :State
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasGeocode ;

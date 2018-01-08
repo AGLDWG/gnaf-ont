@@ -77,10 +77,10 @@
         <IRI>http://linked.data.gov.au</IRI>
     </Annotation>
     <Declaration>
-        <ObjectProperty IRI="#hasJoinType"/>
+        <Class IRI="#MeshBlock"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MeshBlock"/>
+        <ObjectProperty IRI="#hasJoinType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#hasDateCreated"/>
@@ -92,19 +92,22 @@
         <Class IRI="#GeocodeType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasLocalityClass"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasDateCreated"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasMeshBlock"/>
+        <ObjectProperty IRI="#hasLocalityClass"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isPrivateStreet"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasMeshBlock"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GeocodeReliability"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbo:Location"/>
     </Declaration>
     <Declaration>
         <Class IRI="#StreetClass"/>
@@ -134,16 +137,16 @@
         <Class IRI="#AddressSecondary"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NumberType"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#MeshBlockMatch"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasGeocode"/>
+        <Class IRI="#NumberType"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeocode"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
@@ -155,16 +158,16 @@
         <DataProperty IRI="#hasName"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dct:title"/>
+        <NamedIndividual abbreviatedIRI="prov:wasInvalidatedAtTime"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#hasName"/>
+        <NamedIndividual abbreviatedIRI="dct:title"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AliasType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="prov:wasInvalidatedAtTime"/>
+        <NamedIndividual IRI="#hasName"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MeshBlockType"/>
@@ -188,19 +191,22 @@
         <Class IRI="#GnafConfidence"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasLocality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="prov:wasGeneratedAtTime"/>
+        <ObjectProperty IRI="#hasNeighbour"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasDateLastModified"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Street"/>
+        <NamedIndividual abbreviatedIRI="prov:wasGeneratedAtTime"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasNeighbour"/>
+        <Class IRI="#Street"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasGeocodeType"/>
@@ -215,10 +221,10 @@
         <Class IRI="#StreetSuffix"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Geocode"/>
+        <Class IRI="#StreetType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StreetType"/>
+        <Class IRI="#Geocode"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasMeshBlockMatch"/>
@@ -227,13 +233,13 @@
         <Class IRI="#LocalityAlias"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AddressSite"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Locality"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasPostcode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AddressSite"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="dct:description"/>
@@ -263,6 +269,9 @@
         <NamedIndividual IRI="#hasDescription"/>
     </Declaration>
     <Declaration>
+        <DataProperty abbreviatedIRI="dct:subject"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#isPrimary"/>
     </Declaration>
     <Declaration>
@@ -278,10 +287,10 @@
         <ObjectProperty IRI="#hasAliasType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#aliasOf"/>
+        <Class IRI="#PrimarySecondaryJoinType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PrimarySecondaryJoinType"/>
+        <ObjectProperty IRI="#aliasOf"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:contributor"/>
@@ -291,9 +300,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:modified"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dbo:Location"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:publisher"/>
@@ -339,13 +345,6 @@
     <SubClassOf>
         <Class IRI="#Address"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasAddressSite"/>
-            <Class IRI="#AddressSite"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Address"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasAlias"/>
             <Class IRI="#Alias"/>
         </ObjectSomeValuesFrom>
@@ -363,6 +362,13 @@
             <ObjectProperty IRI="#hasNumber"/>
             <Class IRI="#Number"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAddressSite"/>
+            <Class IRI="#AddressSite"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Address"/>
@@ -396,6 +402,13 @@
         <Class IRI="#Address"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="#hasPostcode"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="dct:subject"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataExactCardinality>
     </SubClassOf>
@@ -562,13 +575,6 @@
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasLocalityClass"/>
             <Class IRI="#LocalityClass"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Locality"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.opengis.net/ont/geosparql#ehInside"/>
-            <Class IRI="#State"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -798,6 +804,10 @@
         <Class IRI="#Number"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAddressSite"/>
+        <Class IRI="#Address"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAlias"/>
         <Class IRI="#Alias"/>
     </ObjectPropertyDomain>
@@ -846,6 +856,10 @@
         <Class IRI="#Address"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasState"/>
+        <Class abbreviatedIRI="dbo:Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasStreetClass"/>
         <Class IRI="#StreetLocality"/>
     </ObjectPropertyDomain>
@@ -864,6 +878,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAddressNumberType"/>
         <Class IRI="#NumberType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAddressSite"/>
+        <Class IRI="#AddressSite"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAlias"/>
@@ -920,6 +938,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasNumber"/>
         <Class IRI="#Number"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasState"/>
+        <Class IRI="#State"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasStreetClass"/>
@@ -1317,3 +1339,4 @@
 
 
 <!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

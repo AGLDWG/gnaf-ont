@@ -22,7 +22,7 @@ Things to do in order to create an HTML version of the ontology
     <dd><a href="http://eelst.cs.unibo.it/apps/LODE/source?url=http://www.essepuntato.it/tmp/1487156869-ontology">Ontology source</a></dd> --> <dd><a href="http://promsns.org/def/decprov.ttl">Ontology source</a></dd>
 
 * change external JS, CSS & favicon links to local:
-    * http://eelst.cs.unibo.it/apps/LODE/ --> /static/LODE/
+    * http://eelst.cs.unibo.it/apps/LODE/ --> http://pid.data.gov.au/websrv/static/LODE/
 
 * linbreak the <script> tags
 
@@ -35,7 +35,7 @@ Things to do in order to create an HTML version of the ontology
 	after:
 			<dl>
 				<dt>Other visualisation:</dt>
-				<dd><a href="http://promsns.org/def/dmn.ttl">Ontology source</a></dd>
+				<dd><a href="http://promsns.org/def/gnaf.ttl">Ontology source</a></dd>
 			</dl>
 
 * add link to the API
