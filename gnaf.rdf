@@ -587,6 +587,7 @@
 
     <owl:Class rdf:about="http://gnafld.net/def/gnaf#Geocode">
         <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#GnafEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGeocodeReliability"/>
@@ -865,6 +866,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGeocode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#Geocode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasStreetClass"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#StreetClass"/>
@@ -910,6 +918,13 @@
 
     <owl:Class rdf:about="http://gnafld.net/def/gnaf#StreetLocality">
         <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#Street"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGnafConfidence"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#GnafConfidence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasLocality"/>

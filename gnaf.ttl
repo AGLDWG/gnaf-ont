@@ -399,6 +399,7 @@ dbo:Location rdf:type owl:Class .
 ###  http://gnafld.net/def/gnaf#Geocode
 :Geocode rdf:type owl:Class ;
          rdfs:subClassOf :GnafEntity ,
+                         <http://www.opengis.net/ont/geosparql#Feature> ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasGeocodeReliability ;
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -592,6 +593,11 @@ dbo:Location rdf:type owl:Class .
                           owl:someValuesFrom :Alias
                         ] ,
                         [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasGeocode ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Geocode
+                        ] ,
+                        [ rdf:type owl:Restriction ;
                           owl:onProperty :hasStreetClass ;
                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                           owl:onClass :StreetClass
@@ -624,6 +630,11 @@ dbo:Location rdf:type owl:Class .
 ###  http://gnafld.net/def/gnaf#StreetLocality
 :StreetLocality rdf:type owl:Class ;
                 rdfs:subClassOf :Street ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasGnafConfidence ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :GnafConfidence
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasLocality ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
