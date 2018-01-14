@@ -1,0 +1,56 @@
+R, Rural
+R/BLOCK Rural, Block
+R/CABIN Rural, Cabin
+R/FLAT Rural, Flat
+R/HOUSE Rural, House
+R/LOT Rural, Lot
+R/RES Rural, Reserve
+R/RMB Rural Roadside mail, box
+R/ROOM Rural, Room
+R/RSD Rural Roadside mail, delivery
+R/RSM Rural Roadside mail, service
+R/SEC Rural, Section
+R/SITE Rural, Site
+R/UNIT Rural, Unit
+UN, Unknown
+UN//VLLA Unknown, Villa
+UN/APT Unknown, Apartment
+UN/BLOCK Unknown, Block
+UN/CABIN Unknown, Cabin
+UN/CTGE Unknown, Cottage
+UN/CVAN Unknown, Caravan
+UN/FARM Unknown, Farm
+UN/FLAT Unknown, Flat
+UN/GD Unknown Ground, Floor
+UN/HOUSE Unknown, House
+UN/LOC Unknown, Location
+UN/LOT Unknown, Lot
+UN/LWR Unknown, Lower
+UN/POR Unknown, Portion
+UN/PTHS Unknown, Penthouse
+UN/REAR Unknown, Rear
+UN/RES Unknown, Reserve
+UN/RMB Unknown Roadside mail, box
+UN/RMS Unknown Roadside mail, service
+UN/ROOM Unknown, Room
+UN/RSD Unknown Roadside mail, delivery
+UN/RSM Unknown Roadside mail, service
+UN/SEC Unknown, Section
+UN/SITE Unknown, Site
+UN/TNHS Unknown, Townhouse
+UN/UNIT Unknown, Unit
+UR, Urban
+UR/BLOCK Urban, Block
+UR/CABIN Urban, Cabin
+UR/FLAT Urban, Flat
+UR/HOUSE Urban, House
+UR/LOT Urban, Lot
+UR/RES Urban, Reserve
+UR/RMB Urban Roadside mail, box
+UR/RMS Unknown Roadside mail, service
+UR/ROOM Urban, Room
+UR/RSD Urban Roadside mail, delivery
+UR/RSM Urban Roadside mail, service
+UR/SEC Urban, Section
+UR/SITE Urban, Site
+UR/UNIT Urban, Unit

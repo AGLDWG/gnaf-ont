@@ -1,0 +1,69 @@
+@prefix : <http://gnafld.net/def/gnaf/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix gnaf: <http://gnafld.net/def/gnaf/> .
+@base <http://gnafld.net/def/gnaf> .
+
+<http://gnafld.net/def/gnaf/NumberSubclassCollection> a skos:Collection ;
+    skos:member
+        :FirstStreetNumber ,
+        :FlatNumber ,
+        :LastStreetNumber ,
+        :LevelNumber ,
+        :LotNumber
+    ;
+    skos:prefLabel "Number  Collection" .
+
+# This ensures that an instance of a Number cannot be of more than one subclass
+[
+    a owl:AllDisjointClasses ;
+    owl:members (
+          :FirstStreetNumber ,
+          :FlatNumber ,
+          :LastStreetNumber ,
+          :LevelNumber ,
+          :LotNumber
+      ) ;
+].
+
+:FirstStreetNumber rdfs:subClassOf gnaf:Number , skos:Concept ;
+    skos:prefLabel "First"@en ;
+    skos:definition "The first street number"@en ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:FlatNumber rdfs:subClassOf gnaf:Number , skos:Concept ;
+    skos:prefLabel "Flat"@en ;
+    skos:definition "A flat's number"@en ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:LastStreetNumber rdfs:subClassOf gnaf:Number , skos:Concept ;
+    skos:prefLabel "Last"@en ;
+    skos:definition "The last street number"@en ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:LevelNumber rdfs:subClassOf gnaf:Number , skos:Concept ;
+    skos:prefLabel "Level"@en ;
+    skos:definition "a building level number"@en ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:LotNumber rdfs:subClassOf gnaf:Number , skos:Concept ;
+    skos:prefLabel "Lot"@en ;
+    skos:definition "A lot number"@en ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .

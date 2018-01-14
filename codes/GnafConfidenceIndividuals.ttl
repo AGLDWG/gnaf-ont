@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/code/GnafConfidence#> .
+@prefix : <http://gnafld.net/def/gnaf/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +8,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix gnaf: <http://gnafld.net/def/gnaf#> .
-@base <http://gnafld.net/def/gnaf/code/GnafConfidence> .
+@prefix gnaf: <http://gnafld.net/def/gnaf/> .
+@base <http://gnafld.net/def/gnaf> .
 
-<http://gnafld.net/def/gnaf/code/GnafConfidence>
+<http://gnafld.net/def/gnaf/GnafConfidence/>
     a owl:Ontology ;
-    rdfs:label "G-NAF code list for GnafConfidence instances"@en ;
-    rdfs:comment "G-NAF code list for GnafConfidence instances."@en ;
+    rdfs:label "G-NAF code list for GnafConfidence individuals"@en ;
+    rdfs:comment "This code list is a Register of OWL class Named Individuals."@en ;
     dc:creator "Nicholas Car"@en ;
     dct:creator <http://orcid.org/0000-0002-8742-7730> ;
     dc:publisher "PSMA Australia"@en ;
@@ -22,40 +22,49 @@
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:rights "PSMA Ltd."@en ;
     owl:versionInfo "0.1"@en ;
-    owl:versionIRI <http://gnafld.net/def/gnaf/code/GnafConfidence/0.1> ;
+    owl:versionIRI <http://gnafld.net/def/gnaf/GnafConfidence/0.1> ;
     dct:created "2018-01-02"^^xsd:date ;
     dct:modified "2018-01-02"@en ;
-    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/code/GnafConfidence#"^^xsd:string ;
-    vann:preferredNamespacePrefix "gconf"@en .
+    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/GnafConfidence/"^^xsd:string ;
+    vann:preferredNamespacePrefix "gnconf"@en .
 
-:2 a gnaf:GnafConfidence , skos:Concept ;
-    skos:prefLabel "Confidence level = 2"@en ;
+<http://gnafld.net/def/gnaf/GnafConfidenceCollection> a skos:Collection ;
+    skos:member
+      :2 ,
+      :1 ,
+      :0 ,
+      :-1
+    ;
+    skos:prefLabel "GNAF Confidence Subclasses Collection" .
+
+:GnafConfidence_2 a gnaf:GnafConfidence , skos:Concept ;
+    skos:prefLabel "Confidence level 2"@en ;
     skos:definition "All three contributors have supplied an identical address"@en ;
     skos:altLabel "2"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
 
-:1 a gnaf:GnafConfidence , skos:Concept ;
-    skos:prefLabel "Confidence level = 1"@en ;
+:GnafConfidence_1 a gnaf:GnafConfidence , skos:Concept ;
+    skos:prefLabel "Confidence level 1"@en ;
     skos:definition "A match has been achieved between only two contributors"@en ;
     skos:altLabel "1"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
 
-:0 a gnaf:GnafConfidence , skos:Concept ;
-    skos:prefLabel "Confidence level = 0"@en ;
+:GnafConfidence_0 a gnaf:GnafConfidence , skos:Concept ;
+    skos:prefLabel "Confidence level 0"@en ;
     skos:definition "A single contributor holds this address and no match has been achieved with either or the other two contributors."@en ;
     skos:altLabel "0"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
 
-:-1 a gnaf:GnafConfidence , skos:Concept ;
-    skos:prefLabel "Confidence level = -1"@en ;
+:GnafConfidence_-1 a gnaf:GnafConfidence , skos:Concept ;
+    skos:prefLabel "Confidence level -1"@en ;
     skos:definition "None of the contributors hold this address in their address dataset anymore."@en ;
     skos:altLabel "-1"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GnafConfidence> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .

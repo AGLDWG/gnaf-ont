@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/code/State#> .
+@prefix : <http://gnafld.net/def/gnaf/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +8,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix gnaf: <http://gnafld.net/def/gnaf#> .
-@base <http://gnafld.net/def/gnaf/code/State> .
+@prefix gnaf: <http://gnafld.net/def/gnaf/> .
+@base <http://gnafld.net/def/gnaf> .
 
-<http://gnafld.net/def/gnaf/code/State>
+<http://gnafld.net/def/gnaf/State/>
     a owl:Ontology ;
     rdfs:label "G-NAF code list for State instances"@en ;
-    rdfs:comment "G-NAF code list for State instances."@en ;
+    rdfs:comment "This code list is a Register of OWL class Named Individuals."@en ;
     dc:creator "Nicholas Car"@en ;
     dct:creator <http://orcid.org/0000-0002-8742-7730> ;
     dc:publisher "PSMA Australia"@en ;
@@ -22,11 +22,25 @@
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:rights "PSMA Ltd."@en ;
     owl:versionInfo "0.1"@en ;
-    owl:versionIRI <http://gnafld.net/def/gnaf/code/State/0.1> ;
+    owl:versionIRI <http://gnafld.net/def/gnaf/State/0.1> ;
     dct:created "2018-01-05"^^xsd:date ;
     dct:modified "2018-01-05"@en ;
-    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/code/State#"^^xsd:string ;
-    vann:preferredNamespacePrefix "gconf"@en .
+    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/State/"^^xsd:string ;
+    vann:preferredNamespacePrefix "gnstate"@en .
+
+<http://gnafld.net/def/gnaf/StateCollection> a skos:Collection ;
+    skos:member
+        <http://www.geonames.org/2177478> ,
+        <http://www.geonames.org/2155400> ,
+        <http://www.geonames.org/2064513> ,
+        <http://gnafld.net/def/gnaf/State/OT> ,
+        <http://www.geonames.org/2152274> ,
+        <http://www.geonames.org/2061327> ,
+        <http://www.geonames.org/2147291> ,
+        <http://www.geonames.org/2145234> ,
+        <http://www.geonames.org/2058645>
+    ;
+    skos:prefLabel "State Collection" .
 
 <http://www.geonames.org/2177478> a gnaf:State , skos:Concept ;
     skos:prefLabel "Australian Capital Territory"@en ;
@@ -52,13 +66,13 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://sws.geonames.org/2064513/about.rdf> .
 
-<http://gnafld.net/def/gnaf/code/State#OT> a gnaf:State , skos:Concept ;
+<http://gnafld.net/def/gnaf/State/OT> a gnaf:State , skos:Concept ;
     skos:prefLabel "Other Territories"@en ;
     skos:definition "Refers to external Territories of Australia included within the PSMA datasets: Christmas Island, Cocos (Keeling) Islands, Norfolk Island and Jervis Bay."@en ;
     skos:altLabel "OT"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/State> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/State/> .
 
 <http://www.geonames.org/2152274> a gnaf:State , skos:Concept ;
     skos:prefLabel "Queensland"@en ;
