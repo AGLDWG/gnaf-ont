@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://gnafld.net/def/gnaf"
-     versionIRI="http://gnafld.net/def/gnaf/1.0">
+     versionIRI="http://gnafld.net/def/gnaf/1.1">
     <Prefix name="" IRI="http://gnafld.net/def/gnaf#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
@@ -34,7 +34,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-01-05</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-01-15</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.1</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:contributor"/>
@@ -51,10 +55,6 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Australian Government Linked Data Working Group</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.0</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:source"/>
@@ -80,28 +80,19 @@
         <Class IRI="#MeshBlock"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasJoinType"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#hasDateCreated"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Address"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GeocodeType"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasLocalityClass"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasDateCreated"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasMeshBlock"/>
+        <DataProperty IRI="#isPrivateStreet"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isPrivateStreet"/>
+        <ObjectProperty IRI="#hasMeshBlock"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GeocodeReliability"/>
@@ -110,7 +101,7 @@
         <Class abbreviatedIRI="dbo:Location"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StreetClass"/>
+        <ObjectProperty IRI="#hasStreetConfirmation"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasLegalParcelId"/>
@@ -122,13 +113,7 @@
         <ObjectProperty IRI="#hasStreetLocality"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAddressNumberType"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasAddressSecondary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LocalityClass"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasAddressSite"/>
@@ -137,28 +122,25 @@
         <Class IRI="#AddressSecondary"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NumberType"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#MeshBlockMatch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasGeocode"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreetConfirmation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#StreetLocality"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasName"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AliasType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="dct:title"/>
@@ -170,25 +152,25 @@
         <NamedIndividual abbreviatedIRI="prov:wasInvalidatedAtTime"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MeshBlockType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MeshBlockMatchType"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Alias"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSuffix"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasAlias"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#State"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#GnafEntity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GnafConfidence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrefix"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasState"/>
@@ -197,22 +179,16 @@
         <ObjectProperty IRI="#hasLocality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="prov:wasGeneratedAtTime"/>
+        <DataProperty IRI="#hasDateLastModified"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasNeighbour"/>
+        <NamedIndividual abbreviatedIRI="prov:wasGeneratedAtTime"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Street"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasDateLastModified"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasGeocodeType"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasStreetClass"/>
+        <ObjectProperty IRI="#hasNeighbour"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Number"/>
@@ -221,16 +197,7 @@
         <Class IRI="#StreetSuffix"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Geocode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#StreetType"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasMeshBlockMatch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LocalityAlias"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Locality"/>
@@ -248,25 +215,19 @@
         <ObjectProperty IRI="#hasGnafConfidence"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasBuildingName"/>
+        <DataProperty abbreviatedIRI="dct:description"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasMeshBlockType"/>
+        <DataProperty IRI="#hasBuildingName"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasGeocodeReliability"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasDateRetired"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasDescription"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasStreetType"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="dct:subject"/>
+        <DataProperty IRI="#hasDateRetired"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#hasDescription"/>
@@ -284,19 +245,22 @@
         <ObjectProperty IRI="#hasStreetSuffix"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAliasType"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#aliasOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PrimarySecondaryJoinType"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:contributor"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:source"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:modified"/>
@@ -310,15 +274,6 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:created"/>
     </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dct:source"/>
-    </Declaration>
     <SubClassOf>
         <Class IRI="#Address"/>
         <Class abbreviatedIRI="dbo:Location"/>
@@ -330,6 +285,10 @@
     <SubClassOf>
         <Class IRI="#Address"/>
         <Class IRI="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Address"/>
@@ -373,13 +332,6 @@
     <SubClassOf>
         <Class IRI="#Address"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasGeocode"/>
-            <Class IRI="#Geocode"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Address"/>
-        <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasGnafConfidence"/>
             <Class IRI="#GnafConfidence"/>
         </ObjectExactCardinality>
@@ -401,15 +353,8 @@
     <SubClassOf>
         <Class IRI="#Address"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasPostcode"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Address"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="dct:subject"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
+            <DataProperty IRI="#hasDateLastModified"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -422,8 +367,22 @@
     <SubClassOf>
         <Class IRI="#Address"/>
         <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasPostcode"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
+        <DataMaxCardinality cardinality="1">
             <DataProperty IRI="#isPrimary"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="dct:description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -443,65 +402,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AddressSite"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasGeocode"/>
-            <Class IRI="#Geocode"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AddressSite"/>
-        <DataExactCardinality cardinality="1">
+        <DataMaxCardinality cardinality="1">
             <DataProperty IRI="#hasName"/>
             <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
+        </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Alias"/>
         <Class IRI="#GnafEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Alias"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasAliasType"/>
-            <Class IRI="#AliasType"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AliasType"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AliasType"/>
-        <Class abbreviatedIRI="prov:Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Geocode"/>
-        <Class IRI="#GnafEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Geocode"/>
-        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Geocode"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasGeocodeReliability"/>
-            <Class IRI="#GeocodeReliability"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Geocode"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasGeocodeType"/>
-            <Class IRI="#GeocodeType"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Geocode"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.opengis.net/ont/geosparql#hasGeometry"/>
-            <Class IRI="http://www.opengis.net/ont/sf#Geometry"/>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GeocodeReliability"/>
@@ -510,10 +418,6 @@
     <SubClassOf>
         <Class IRI="#GeocodeReliability"/>
         <Class abbreviatedIRI="prov:Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GeocodeType"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GnafConfidence"/>
@@ -536,13 +440,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GnafEntity"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasDateLastModified"/>
-            <Datatype abbreviatedIRI="xsd:dateTime"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GnafEntity"/>
         <DataMaxCardinality cardinality="1">
             <DataProperty IRI="#hasDateRetired"/>
             <Datatype abbreviatedIRI="xsd:dateTime"/>
@@ -558,13 +455,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Locality"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Locality"/>
         <Class abbreviatedIRI="prov:Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Locality"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasAlias"/>
-            <Class IRI="#LocalityAlias"/>
+            <Class IRI="#Alias"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -576,20 +477,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Locality"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasLocalityClass"/>
-            <Class IRI="#LocalityClass"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Locality"/>
-        <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="#hasGeocode"/>
-            <Class IRI="#Geocode"/>
-        </ObjectMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Locality"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="#hasName"/>
             <Datatype abbreviatedIRI="xsd:string"/>
@@ -597,36 +484,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Locality"/>
-        <DataExactCardinality cardinality="1">
+        <DataMaxCardinality cardinality="1">
             <DataProperty IRI="#hasPrimaryPostcode"/>
             <Datatype abbreviatedIRI="xsd:int"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LocalityAlias"/>
-        <Class IRI="#Alias"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LocalityAlias"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasName"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LocalityAlias"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasPrimaryPostcode"/>
-            <Datatype abbreviatedIRI="xsd:int"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LocalityClass"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LocalityClass"/>
-        <Class abbreviatedIRI="prov:Collection"/>
+        </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MeshBlock"/>
@@ -644,46 +505,22 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MeshBlockMatch"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasMeshBlockMatch"/>
-            <Class IRI="#MeshBlockMatchType"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MeshBlockMatchType"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MeshBlockType"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MeshBlockType"/>
-        <Class abbreviatedIRI="prov:Collection"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Number"/>
         <Class abbreviatedIRI="prov:Entity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Number"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasAddressNumberType"/>
-            <Class IRI="#NumberType"/>
-        </ObjectExactCardinality>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasPrefix"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NumberType"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NumberType"/>
-        <Class abbreviatedIRI="prov:Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PrimarySecondaryJoinType"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <Class IRI="#Number"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasSuffix"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#State"/>
@@ -699,6 +536,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Street"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Street"/>
         <Class abbreviatedIRI="prov:Location"/>
     </SubClassOf>
     <SubClassOf>
@@ -710,31 +551,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Street"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasGeocode"/>
-            <Class IRI="#Geocode"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Street"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasStreetClass"/>
-            <Class IRI="#StreetClass"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Street"/>
-        <ObjectExactCardinality cardinality="1">
+        <ObjectMaxCardinality cardinality="1">
             <ObjectProperty IRI="#hasStreetSuffix"/>
             <Class IRI="#StreetSuffix"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Street"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasStreetType"/>
-            <Class IRI="#StreetType"/>
-        </ObjectExactCardinality>
+        </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Street"/>
@@ -744,11 +564,11 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StreetClass"/>
+        <Class IRI="#StreetConfirmation"/>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StreetClass"/>
+        <Class IRI="#StreetConfirmation"/>
         <Class abbreviatedIRI="prov:Collection"/>
     </SubClassOf>
     <SubClassOf>
@@ -778,16 +598,26 @@
         <Class abbreviatedIRI="prov:Collection"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StreetType"/>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StreetType"/>
-        <Class abbreviatedIRI="prov:Collection"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"/>
         <Class abbreviatedIRI="prov:Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+            <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
+        <Class IRI="#GnafEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGeocodeReliability"/>
+            <Class IRI="#GeocodeReliability"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="prov:Collection"/>
@@ -809,18 +639,10 @@
         <NamedIndividual IRI="#hasName"/>
         <NamedIndividual abbreviatedIRI="dct:title"/>
     </SameIndividual>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasStreetType"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#aliasOf"/>
         <ObjectProperty IRI="#hasAlias"/>
     </InverseObjectProperties>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAddressNumberType"/>
-        <Class IRI="#Number"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAddressSite"/>
         <Class IRI="#Address"/>
@@ -830,32 +652,16 @@
         <Class IRI="#Alias"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAliasType"/>
-        <Class IRI="#Alias"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGeocode"/>
         <Class IRI="#Address"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasGeocodeType"/>
-        <Class IRI="#Geocode"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGnafConfidence"/>
         <Class IRI="#Address"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasJoinType"/>
-        <Class IRI="#AddressSecondary"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasLocality"/>
         <Class IRI="#StreetLocality"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasLocalityClass"/>
-        <Class IRI="#Locality"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMeshBlock"/>
@@ -878,8 +684,8 @@
         <Class abbreviatedIRI="dbo:Location"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasStreetClass"/>
-        <Class IRI="#StreetLocality"/>
+        <ObjectProperty IRI="#hasStreetConfirmation"/>
+        <Class IRI="#Street"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasStreetLocality"/>
@@ -889,14 +695,6 @@
         <ObjectProperty IRI="#hasStreetSuffix"/>
         <Class IRI="#StreetLocality"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasStreetType"/>
-        <Class IRI="#StreetLocality"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAddressNumberType"/>
-        <Class IRI="#NumberType"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAddressSite"/>
         <Class IRI="#AddressSite"/>
@@ -914,32 +712,12 @@
         <Class IRI="#Street"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAliasType"/>
-        <Class IRI="#AliasType"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasGeocode"/>
-        <Class IRI="#Geocode"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasGeocodeType"/>
-        <Class IRI="#GeocodeType"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasGnafConfidence"/>
         <Class IRI="#GnafConfidence"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasJoinType"/>
-        <Class IRI="#PrimarySecondaryJoinType"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasLocality"/>
         <Class IRI="#Locality"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasLocalityClass"/>
-        <Class IRI="#LocalityClass"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMeshBlock"/>
@@ -962,8 +740,8 @@
         <Class IRI="#State"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasStreetClass"/>
-        <Class IRI="#StreetClass"/>
+        <ObjectProperty IRI="#hasStreetConfirmation"/>
+        <Class IRI="#StreetConfirmation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasStreetLocality"/>
@@ -973,17 +751,21 @@
         <ObjectProperty IRI="#hasStreetSuffix"/>
         <Class IRI="#StreetSuffix"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasStreetType"/>
-        <Class IRI="#StreetType"/>
-    </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#isPrivateStreet"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasPrefix"/>
+        <Class IRI="#Number"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasPrimaryPostcode"/>
         <Class IRI="#Locality"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSuffix"/>
+        <Class IRI="#Number"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#isPrimary"/>
@@ -1006,8 +788,16 @@
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#hasPrefix"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasPrimaryPostcode"/>
         <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSuffix"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#isPrimary"/>
@@ -1044,23 +834,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#AliasType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alias Type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Geocode</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Geocode</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#GeocodeReliability</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Geocode Reliability</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#GeocodeType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Geocode Type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1083,16 +858,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Locality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LocalityAlias</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Locality Alias</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LocalityClass</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Locality Class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MeshBlock</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mesh Blocks are the smallest geographical area defined by the Australian Bureau of Statistics (ABS) and form the building blocks for the larger regions of the Australian Statistical Geography Standard (ASGS). All other statistical areas or regions are built up from or, approximated by whole Mesh Blocks. They broadly identify land use such as residential, commercial, primary production and parks, etc.</Literal>
@@ -1113,11 +878,6 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#NumberType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number Type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#State</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An Australian State, including &quot;Other Territories&quot; for Cocos &amp; Keeling Islands, Jervis Bay etc.</Literal>
@@ -1134,8 +894,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#StreetClass</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Street Class</Literal>
+        <IRI>#StreetConfirmation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Street Confirmation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1149,33 +909,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#StreetType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Street Type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#aliasOf</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">alias of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasAddressNumberType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has address number type</Literal>
+        <IRI>#hasAddressSecondary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Address Secondary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasAddressSite</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has address site</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Address Site</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasAlias</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has alias</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasAliasType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has alias type</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Alias</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1225,17 +975,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasGeocode</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has geocode</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Geocode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasGeocodeReliability</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has geocode reliability</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasGeocodeType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has geocode type</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Geocode Reliability</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1250,32 +995,17 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasLocality</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has locality</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasLocalityClass</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has locality class</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Locality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasMeshBlock</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has mesh block</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Mesh Block</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasMeshBlockMatch</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Mesh Block match</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasMeshBlockType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property is added to allow references to MeshBlock objects which are then differentiated by a MeshBlockType corresponding to the year of the MeshBlock, rather than forcing different objects for MeshBlock2011, MeshBlock2016 etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasMeshBlockType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mesh block type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1295,7 +1025,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasNumber</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has number</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1304,28 +1034,38 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPrefix</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has prefix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPrimaryPostcode</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has primary postcode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasStreetClass</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has street class</Literal>
+        <IRI>#hasState</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has State</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStreetConfirmation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Street Confirmation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasStreetLocality</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has street locality</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Street Locality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasStreetSuffix</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has street suffix</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Street Suffix</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasStreetType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has street type</Literal>
+        <IRI>#hasSuffix</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has suffix</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1350,6 +1090,11 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
         <AnonymousIndividual nodeID="_:genid4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid5"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
 </Ontology>
