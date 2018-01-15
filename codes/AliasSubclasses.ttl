@@ -22,7 +22,9 @@
       :FlatNumberNoFirstSuffixCorrelationAlias ,
       :MaintenanceReferenceAlias ,
       :SpatiallyRelatedAlias ,
-      :AlternativeAlias
+      :AlternativeAlias ,
+      :LocalityAlias
+      :StreetLocalityAlias
     ;
     skos:prefLabel "Alias Subclass Collection" .
 
@@ -38,7 +40,9 @@
         :FlatNumberNoFirstSuffixCorrelationAlias ,
         :MaintenanceReferenceAlias ,
         :SpatiallyRelatedAlias ,
-        :AlternativeAlias
+        :AlternativeAlias ,
+        :LocalityAlias ,
+        :StreetLocalityAlias
     ) ;
 ].
 
@@ -98,7 +102,26 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:SpatiallyRelatedAlias rdfs:subClassOf gnaf:Alias , skos:Concept;
+:LocalityAlias rdfs:subClassOf , skos:Concept;
+    skos:prefLabel "Locality Alias"@en ;
+    skos:definition ""@en ;
+    skos:altLabel "" ;
+    dct:source "This ontology"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> ;
+    rdfs:subClassOf :Alias ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasName ;
+                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onDataRange xsd:string
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasPrimaryPostcode ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onDataRange xsd:int
+                    ] .
+
+:SpatiallyRelatedAlias rdfs:subClassOf gnaf:LocalityAlias , skos:Concept;
     skos:prefLabel "Spatially Related Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "SR" ;
@@ -106,10 +129,24 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:AlternativeAlias rdfs:subClassOf gnaf:Alias , skos:Concept;
+:AlternativeAlias rdfs:subClassOf gnaf:LocalityAlias , skos:Concept;
     skos:prefLabel "Alternative Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "ALT" ;
     dct:source "G-NAF Data Product Description, November 2017: STREET_LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:StreetLocalityAlias rdfs:subClassOf gnaf:LocalityAlias , skos:Concept;
+    skos:prefLabel "Street Locality Alias"@en ;
+    skos:definition ""@en ;
+    skos:altLabel "" ;
+    dct:source "This ontology"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasStreetLocality ;
+          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+          owl:onClass :StreetLocality
+        ] ,

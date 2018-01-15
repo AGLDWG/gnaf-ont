@@ -1,0 +1,44 @@
+@prefix : <http://gnafld.net/def/gnaf/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix gnaf: <http://gnafld.net/def/gnaf/> .
+@base <http://gnafld.net/def/gnaf> .
+
+<http://gnafld.net/def/gnaf/MeshBlockSubclassCollection> a skos:Collection ;
+    skos:member
+        :2011MB ,
+        :2016MB
+    ;
+    skos:prefLabel "Mesh Block subclass Collection" .
+
+# This ensures that an instance of a Mesh Block Match cannot be of more than one subclass
+[
+    a owl:AllDisjointClasses ;
+    owl:members (
+          :2011MB ,
+          :2016MB
+      ) ;
+].
+
+:2011MB rdfs:subClassOf gnaf:MeshBlock , skos:Concept ;
+    skos:prefLabel "2011 Mesh Block"@en ;
+    skos:definition "A Mesh Block from the 2011 census"@en ;
+    skos:altLabel "2011"@en ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:2016MB rdfs:subClassOf gnaf:MeshBlock , skos:Concept ;
+    skos:prefLabel "2016 Mesh Block"@en ;
+    skos:definition "A Mesh Block from the 2016 census"@en ;
+    skos:altLabel "2016"@en ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .

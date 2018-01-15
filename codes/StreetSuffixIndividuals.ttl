@@ -50,7 +50,7 @@
         :OP ,
         :OT
     ;
-    skos:prefLabel "Street Suffix Collection" .
+    skos:prefLabel "Street Suffix Individuals Collection" .
 
 :CN a gnaf:StreetSuffix , skos:Concept ;
   skos:prefLabel "Central"@en ;

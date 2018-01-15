@@ -19,7 +19,7 @@
         :StreetLocalityLevelMultipleMatch ,
         :LocalityLevelSingleMatch
     ;
-    skos:prefLabel "Mesh Block Match Collection" .
+    skos:prefLabel "Mesh Block Match subclass Collection" .
 
 # This ensures that an instance of a Mesh Block Match cannot be of more than one subclass
 [
