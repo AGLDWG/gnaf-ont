@@ -29,6 +29,18 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Joseph Abhayaratna</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An ontology for the content of the PSMA Geocoded National Address File (G-NAF).
+
+  The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth&apos;s surface.
+
+  The G-NAF does not contain any names or personal information.
+
+  The base content of the G-NAF is available freely online at &lt;https://data.gov.au/dataset/geocoded-national-address-file-g-naf&gt; and also via a Linked Data API that uses this ontology at &lt;http://gnafld.net&gt;.
+
+  This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 &quot;Addressing -- Part 1: Conceptual model&quot; standard (see &lt;https://www.iso.org/standard/61710.html&gt;) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at &lt;http://reference.data.gov.au/def/ont/iso19160-1-address&gt;.</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</Literal>
     </Annotation>
@@ -61,18 +73,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An ontology for the content of the PSMA Geocoded National Address File (G-NAF).
-
-  The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth&apos;s surface.
-
-  The G-NAF does not contain any names or personal information.
-
-  The base content of the G-NAF is available freely online at &lt;https://data.gov.au/dataset/geocoded-national-address-file-g-naf&gt; and also via a Linked Data API that uses this ontology at &lt;http://gnafld.net&gt;.
-
-  This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 &quot;Addressing -- Part 1: Conceptual model&quot; standard (see &lt;https://www.iso.org/standard/61710.html&gt;) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at &lt;http://reference.data.gov.au/def/ont/iso19160-1-address&gt;.</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:publisher"/>
         <IRI>http://linked.data.gov.au</IRI>
     </Annotation>
@@ -102,6 +102,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasStreetConfirmation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeocodePoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAddressPrimary"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasLegalParcelId"/>
@@ -324,6 +330,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Address"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+            <Class IRI="#GeocodePoint"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasAddressSite"/>
             <Class IRI="#AddressSite"/>
@@ -412,6 +425,10 @@
         <Class IRI="#GnafEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GeocodePoint"/>
+        <Class IRI="http://www.opengis.net/ont/sf#Point"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GeocodeReliability"/>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
     </SubClassOf>
@@ -474,6 +491,13 @@
             <ObjectProperty IRI="#hasNeighbour"/>
             <Class IRI="#Locality"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Locality"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+            <Class IRI="#GeocodePoint"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Locality"/>
@@ -577,6 +601,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StreetLocality"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+            <Class IRI="#GeocodePoint"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreetLocality"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasGnafConfidence"/>
             <Class IRI="#GnafConfidence"/>
@@ -600,13 +631,6 @@
     <SubClassOf>
         <Class IRI="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"/>
         <Class abbreviatedIRI="prov:Entity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.opengis.net/ont/geosparql#hasGeometry"/>
-            <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
@@ -643,6 +667,14 @@
         <ObjectProperty IRI="#aliasOf"/>
         <ObjectProperty IRI="#hasAlias"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAddressPrimary"/>
+        <ObjectProperty IRI="#hasAddressSecondary"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAddressSecondary"/>
+        <Class IRI="#Address"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAddressSite"/>
         <Class IRI="#Address"/>
@@ -696,6 +728,10 @@
         <Class IRI="#StreetLocality"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAddressSecondary"/>
+        <Class IRI="#Address"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAddressSite"/>
         <Class IRI="#AddressSite"/>
     </ObjectPropertyRange>
@@ -710,6 +746,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAlias"/>
         <Class IRI="#Street"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGeocode"/>
+        <Class IRI="#GeocodePoint"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasGnafConfidence"/>
@@ -833,6 +873,18 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alias</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GeocodePoint</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is the equivalent class to the non-Linked Data version of the GNAF&apos;s Geocode. It is subclassed as a Point since all the GNAF&apos;s Geocodes are points.
+
+In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also has a Geocode Reliability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GeocodePoint</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Geocode Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#GeocodeReliability</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Geocode Reliability</Literal>
@@ -911,6 +963,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#aliasOf</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">alias of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAddressPrimary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Address primary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1089,12 +1146,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid4"/>
+        <AnonymousIndividual nodeID="_:genid72"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
-        <AnonymousIndividual nodeID="_:genid5"/>
+        <AnonymousIndividual nodeID="_:genid73"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
     </AnnotationAssertion>
 </Ontology>

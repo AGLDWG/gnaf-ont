@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/> .
+@prefix : <http://gnafld.net/def/gnaf#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,7 +8,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix gnaf: <http://gnafld.net/def/gnaf/> .
 @base <http://gnafld.net/def/gnaf> .
 
 <http://gnafld.net/def/gnaf/GeocodeSubclassCollection> a skos:Collection ;
@@ -79,7 +78,7 @@
     ) ;
 ].
 
-:BuildingAccessPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:BuildingAccessPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Building Access Point"@en ;
     skos:definition "POINT OF ACCESS TO THE BUILDING"@en ;
     skos:altLabel "BAP"^^xsd:string ;
@@ -87,7 +86,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:BuildingCentroidGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:BuildingCentroidGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Building Centroid"@en ;
     skos:definition "POINT AS CENTRE OF BUILDING AND LYING WITHIN ITS BOUNDS (E.G. FOR U-SHAPED BUILDING)"@en ;
     skos:altLabel "BC"^^xsd:string ;
@@ -95,7 +94,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:CentreLineDroppedFrontageGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:CentreLineDroppedFrontageGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Centre-Line Dropped Frontage"@en ;
     skos:definition "A POINT ON THE ROAD CENTRE-LINE OPPOSITE THE CENTRE OF THE ROAD FRONTAGE OF AN ADDRESS SITE"@en ;
     skos:altLabel "CDF"^^xsd:string ;
@@ -103,7 +102,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:DrivewayFrontageGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:DrivewayFrontageGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Driveway Frontage"@en ;
     skos:definition "CENTRE OF DRIVEWAY ON ADDRESS SITE FRONTAGE"@en ;
     skos:altLabel "DF"^^xsd:string ;
@@ -111,7 +110,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:EmergencyAccessGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:EmergencyAccessGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Emergency Access"@en ;
     skos:definition "SPECIFIC BUILDING OR PROPERTY ACCESS POINT FOR EMERGENCY SERVICES"@en ;
     skos:altLabel "EA"^^xsd:string ;
@@ -119,7 +118,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:EmergencyAccessSecondaryGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:EmergencyAccessSecondaryGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Emergency Access Secondary"@en ;
     skos:definition "SPECIFIC BUILDING OR PROPERTY SECONDARY ACCESS POINT FOR EMERGENCY SERVICES"@en ;
     skos:altLabel "EAS"^^xsd:string ;
@@ -127,7 +126,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:FrontDoorAccessGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:FrontDoorAccessGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Front Door Access"@en ;
     skos:definition "FRONT DOOR OF BUILDING"@en ;
     skos:altLabel "FDA"^^xsd:string ;
@@ -135,7 +134,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:FrontageCentreGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:FrontageCentreGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Frontage Centre"@en ;
     skos:definition "POINT ON THE CENTRE OF THE ADDRESS SITE FRONTAGE"@en ;
     skos:altLabel "FC"^^xsd:string ;
@@ -143,7 +142,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:FrontageCentreSetbackGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:FrontageCentreSetbackGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Frontage Centre Setback"@en ;
     skos:definition "A POINT SET BACK FROM THE CENTRE OF THE ROAD FRONTAGE WITHIN AN ADDRESS SITE"@en ;
     skos:altLabel "FCS"^^xsd:string ;
@@ -151,7 +150,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:LetterboxGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:LetterboxGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Letterbox"@en ;
     skos:definition "PLACE WHERE MAIL IS DEPOSITED"@en ;
     skos:altLabel "LB"^^xsd:string ;
@@ -159,7 +158,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:PropertyAccessPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:PropertyAccessPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Property Access Point"@en ;
     skos:definition "ACCESS POINT (CENTRE OF) AT THE ROAD FRONTAGE OF THE PROPERTY"@en ;
     skos:altLabel "PAP"^^xsd:string ;
@@ -167,7 +166,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:PropertyAccessPointSetbackGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:PropertyAccessPointSetbackGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Property Access Point Setback"@en ;
     skos:definition "A POINT SET BACK FROM THE (CENTRE OF THE) ACCESS POINT AT THE ROAD FRONTAGE OF THE PROPERTY"@en ;
     skos:altLabel "PAPS"^^xsd:string ;
@@ -175,7 +174,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:PropertyCentroidGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:PropertyCentroidGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Property Centroid"@en ;
     skos:definition "POINT OF CENTRE OF PARCELS MAKING UP A PROPERTY AND LYING WITHIN ITS BOUNDARIES (E.G. FOR L-SHAPED PROPERTY)"@en ;
     skos:altLabel "PC"^^xsd:string ;
@@ -183,7 +182,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:PropertyCentroidManualGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:PropertyCentroidManualGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Property Centroid Manual"@en ;
     skos:definition "POINT MANUALLY PLACED APPROXIMATELY AT CENTRE OF PARCELS MAKING UP A PROPERTY AND LYING WITHIN ITS BOUNDARIES (E.G. FOR L-SHAPED PROPERTY)"@en ;
     skos:altLabel "PCM"^^xsd:string ;
@@ -191,7 +190,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:UnitCentroidGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:UnitCentroidGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Unit Centroid"@en ;
     skos:definition "POINT AT CENTRE OF UNIT AND LYING WITHIN ITS BOUNDS (E.G. FOR U-SHAPED UNIT)"@en ;
     skos:altLabel "UC"^^xsd:string ;
@@ -199,7 +198,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:UnitCentroidManualGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:UnitCentroidManualGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Unit Centroid Manual"@en ;
     skos:definition "POINT MANUALLY PLACED APPROXIMATELY AT CENTRE OF UNIT AND LYING WITHIN ITS BOUNDS (E.G. FOR U-SHAPED UNIT)"@en ;
     skos:altLabel "UCM"^^xsd:string ;
@@ -207,7 +206,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:GapGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:GapGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Gap Geocode"@en ;
     skos:definition "POINT PROGRAMMATICALLY ALLOCATED DURING THE G-NAF PRODUCTION PROCESS PROPORTIONALLY BETWEEN ADJACENT ADDRESS LOCATIONS (BASED ON NUMBER_FIRST)"@en ;
     skos:altLabel "GG"^^xsd:string ;
@@ -215,7 +214,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:WaterConnectionPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:WaterConnectionPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Water Connection Point"@en ;
     skos:definition "WATER CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
     skos:altLabel "WCP"^^xsd:string ;
@@ -223,7 +222,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:WaterMeterGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:WaterMeterGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Water Meter"@en ;
     skos:definition "WATER METER POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
     skos:altLabel "WM"^^xsd:string ;
@@ -231,7 +230,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:SewageConnectionPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:SewageConnectionPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Sewage Connection Point"@en ;
     skos:definition "SEWERAGE CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
     skos:altLabel "SCP"^^xsd:string ;
@@ -239,7 +238,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:GasConnectionPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:GasConnectionPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Gas Connection Point"@en ;
     skos:definition "GAS CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
     skos:altLabel "GCP"^^xsd:string ;
@@ -247,7 +246,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:GasMeterPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:GasMeterPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Gas Meter Point"@en ;
     skos:definition "GAS METER POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
     skos:altLabel "GM"^^xsd:string ;
@@ -255,7 +254,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:TelephoneConnectionPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:TelephoneConnectionPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Telephone Connection Point"@en ;
     skos:definition "TELEPHONE CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
     skos:altLabel "TCP"^^xsd:string ;
@@ -263,7 +262,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:ElectricityConnectionPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:ElectricityConnectionPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Electricity Connection Point"@en ;
     skos:definition "ELECTRICITY CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
     skos:altLabel "ECP"^^xsd:string ;
@@ -271,7 +270,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:ElectricityMeterPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:ElectricityMeterPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Electricity Meter Point"@en ;
     skos:definition "ELECTRICITY METER POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
     skos:altLabel "EM"^^xsd:string ;
@@ -279,7 +278,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:InternetConnectionPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:InternetConnectionPointGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Internet Connection Point"@en ;
     skos:definition "INTERNET CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
     skos:altLabel "ICP"^^xsd:string ;
@@ -287,7 +286,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:UnknownGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:UnknownGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Unknown"@en ;
     skos:definition "THE TYPE OF REAL WORLD FEATURE THE POINT REPRESENTS IS NOT KNOWN"@en ;
     skos:altLabel "UNK"^^xsd:string ;
@@ -295,7 +294,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:StreetLocalityGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:StreetLocalityGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Street Locality"@en ;
     skos:definition "POINT REPRESENTING THE EXTENT OF A STREET WITHIN A LOCALITY"@en ;
     skos:altLabel "STL"^^xsd:string ;
@@ -303,7 +302,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:LocalityGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
+:LocalityGeocode rdfs:subClassOf :Geocode , skos:Concept ;
     skos:prefLabel "Locality"@en ;
     skos:definition "POINT REPRESENTING A LOCALITY"@en ;
     skos:altLabel "LOC"^^xsd:string ;

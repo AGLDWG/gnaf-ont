@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/> .
+@prefix : <http://gnafld.net/def/gnaf#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,7 +8,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix gnaf: <http://gnafld.net/def/gnaf/> .
 @base <http://gnafld.net/def/gnaf> .
 
 <http://gnafld.net/def/gnaf/MeshBlockMatchSubclassCollection> a skos:Collection ;
@@ -33,7 +32,7 @@
       ) ;
 ].
 
-:ParcelLevelMatch rdfs:subClassOf gnaf:MeshBlockMatch , skos:Concept ;
+:ParcelLevelMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
     skos:prefLabel "Parcel Level Match"@en ;
     skos:definition "A parcel level geocode for the address has been applied and clearly within the boundaries of a single mesh block. The mesh block ID allocated to the address in most cases is at a very high level of confidence."@en ;
     skos:altLabel "1"@en ;
@@ -41,7 +40,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:GapGeocodedAddressLevelMatch rdfs:subClassOf gnaf:MeshBlockMatch , skos:Concept ;
+:GapGeocodedAddressLevelMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
     skos:prefLabel "Gap Geocoded Address Level Match"@en ;
     skos:definition "A gap geocoded match for the address has been applied and clearly within the boundaries of a single mesh block. The mesh block ID allocated to the address in most cases is at a high level of confidence."@en ;
     skos:altLabel "2"@en ;
@@ -49,7 +48,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:StreetLocalityLevelSingleMatch rdfs:subClassOf gnaf:MeshBlockMatch , skos:Concept ;
+:StreetLocalityLevelSingleMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
     skos:prefLabel "Street Locality Level Single Match"@en ;
     skos:definition "A street-locality level geocode for the address has been applied and clearly within the boundaries of a single mesh block. The mesh block ID allocated to the address in most cases is at a high level of confidence."@en ;
     skos:altLabel "3"@en ;
@@ -57,7 +56,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:StreetLocalityLevelMultipleMatch rdfs:subClassOf gnaf:MeshBlockMatch , skos:Concept ;
+:StreetLocalityLevelMultipleMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
     skos:prefLabel "Street Locality Level Multiple Match"@en ;
     skos:definition "A street-locality level geocode for the address has been applied and is within the boundaries of a multiple mesh blocks. The mesh block ID allocated to the address is at a low level of confidence."@en ;
     skos:altLabel "4"@en ;
@@ -65,7 +64,7 @@
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:LocalityLevelSingleMatch rdfs:subClassOf gnaf:MeshBlockMatch , skos:Concept ;
+:LocalityLevelSingleMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
     skos:prefLabel "Locality Level Single Match"@en ;
     skos:definition "A locality level geocode for the address has been applied and is within the boundaries of a multiple mesh blocks. The mesh block ID allocated to the address is at a very low level of confidence."@en ;
     skos:altLabel "5"@en ;

@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/> .
+@prefix : <http://gnafld.net/def/gnaf#> .
 @prefix : <http://gnafld.net/def/gnaf/StreetSuffix/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -9,7 +9,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix gnaf: <http://gnafld.net/def/gnaf/> .
 @base <http://gnafld.net/def/gnaf> .
 
 <http://gnafld.net/def/gnaf/StreetSuffix/>
@@ -52,7 +51,7 @@
     ;
     skos:prefLabel "Street Suffix Individuals Collection" .
 
-:CN a gnaf:StreetSuffix , skos:Concept ;
+:CN a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Central"@en ;
 	skos:definition ""@en ;
   skos:altLabel "CENTRAL"^^xsd:string ;
@@ -60,7 +59,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:DE a gnaf:StreetSuffix , skos:Concept ;
+:DE a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Deviation"@en ;
 	skos:definition ""@en ;
   skos:altLabel "DEVIATION"^^xsd:string ;
@@ -68,7 +67,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:E a gnaf:StreetSuffix , skos:Concept ;
+:E a :StreetSuffix , skos:Concept ;
   skos:prefLabel "East"@en ;
 	skos:definition ""@en ;
   skos:altLabel "EAST"^^xsd:string ;
@@ -76,7 +75,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:EX a gnaf:StreetSuffix , skos:Concept ;
+:EX a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Extension"@en ;
 	skos:definition ""@en ;
   skos:altLabel "EXTENSION"^^xsd:string ;
@@ -84,7 +83,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:LR a gnaf:StreetSuffix , skos:Concept ;
+:LR a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Lower"@en ;
 	skos:definition ""@en ;
   skos:altLabel "LOWER"^^xsd:string ;
@@ -92,7 +91,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:ML a gnaf:StreetSuffix , skos:Concept ;
+:ML a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Mall"@en ;
 	skos:definition ""@en ;
   skos:altLabel "MALL"^^xsd:string ;
@@ -100,7 +99,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:N a gnaf:StreetSuffix , skos:Concept ;
+:N a :StreetSuffix , skos:Concept ;
   skos:prefLabel "North"@en ;
 	skos:definition ""@en ;
   skos:altLabel "NORTH"^^xsd:string ;
@@ -108,7 +107,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:NE a gnaf:StreetSuffix , skos:Concept ;
+:NE a :StreetSuffix , skos:Concept ;
   skos:prefLabel "North East"@en ;
 	skos:definition ""@en ;
   skos:altLabel "NORTH EAST"^^xsd:string ;
@@ -116,7 +115,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:NW a gnaf:StreetSuffix , skos:Concept ;
+:NW a :StreetSuffix , skos:Concept ;
   skos:prefLabel "North West"@en ;
 	skos:definition ""@en ;
   skos:altLabel "NORTH WEST"^^xsd:string ;
@@ -124,7 +123,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:S a gnaf:StreetSuffix , skos:Concept ;
+:S a :StreetSuffix , skos:Concept ;
   skos:prefLabel "South"@en ;
 	skos:definition ""@en ;
   skos:altLabel "SOUTH"^^xsd:string ;
@@ -132,7 +131,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:SE a gnaf:StreetSuffix , skos:Concept ;
+:SE a :StreetSuffix , skos:Concept ;
   skos:prefLabel "South East"@en ;
 	skos:definition ""@en ;
   skos:altLabel "SOUTH EAST"^^xsd:string ;
@@ -140,7 +139,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:SW a gnaf:StreetSuffix , skos:Concept ;
+:SW a :StreetSuffix , skos:Concept ;
   skos:prefLabel "South West"@en ;
 	skos:definition ""@en ;
   skos:altLabel "SOUTH WEST"^^xsd:string ;
@@ -148,7 +147,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:UP a gnaf:StreetSuffix , skos:Concept ;
+:UP a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Upper"@en ;
 	skos:definition ""@en ;
   skos:altLabel "UPPER"^^xsd:string ;
@@ -156,7 +155,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:W a gnaf:StreetSuffix , skos:Concept ;
+:W a :StreetSuffix , skos:Concept ;
   skos:prefLabel "West"@en ;
 	skos:definition ""@en ;
   skos:altLabel "WEST"^^xsd:string ;
@@ -164,7 +163,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:IN a gnaf:StreetSuffix , skos:Concept ;
+:IN a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Inner"@en ;
 	skos:definition ""@en ;
   skos:altLabel "INNER"^^xsd:string ;
@@ -172,7 +171,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:OF a gnaf:StreetSuffix , skos:Concept ;
+:OF a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Off"@en ;
 	skos:definition ""@en ;
   skos:altLabel "OFF"^^xsd:string ;
@@ -180,7 +179,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:ON a gnaf:StreetSuffix , skos:Concept ;
+:ON a :StreetSuffix , skos:Concept ;
   skos:prefLabel "On"@en ;
 	skos:definition ""@en ;
   skos:altLabel "ON"^^xsd:string ;
@@ -188,7 +187,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:OP a gnaf:StreetSuffix , skos:Concept ;
+:OP a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Overpass"@en ;
 	skos:definition ""@en ;
   skos:altLabel "OVERPASS"^^xsd:string ;
@@ -196,7 +195,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
-:OT a gnaf:StreetSuffix , skos:Concept ;
+:OT a :StreetSuffix , skos:Concept ;
   skos:prefLabel "Outer"@en ;
 	skos:definition ""@en ;
   skos:altLabel "OUTER"^^xsd:string ;

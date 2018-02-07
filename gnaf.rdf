@@ -18,14 +18,6 @@
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GNAF ontology</rdfs:label>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Abhayaratna</dc:contributor>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dc:creator>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-15</dct:modified>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</owl:versionInfo>
-        <dct:contributor rdf:resource="http://gnafld.net/def/joseph.abhayaratna@psma.com.au"/>
-        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-23</dct:created>
-        <dct:creator rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
-        <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Government Linked Data Working Group</dc:publisher>
-        <dct:source>https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf</dct:source>
         <rdfs:comment xml:lang="en">An ontology for the content of the PSMA Geocoded National Address File (G-NAF).
 
   The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth&apos;s surface.
@@ -35,6 +27,14 @@
   The base content of the G-NAF is available freely online at &lt;https://data.gov.au/dataset/geocoded-national-address-file-g-naf&gt; and also via a Linked Data API that uses this ontology at &lt;http://gnafld.net&gt;.
 
   This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 &quot;Addressing -- Part 1: Conceptual model&quot; standard (see &lt;https://www.iso.org/standard/61710.html&gt;) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at &lt;http://reference.data.gov.au/def/ont/iso19160-1-address&gt;.</rdfs:comment>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dc:creator>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-15</dct:modified>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</owl:versionInfo>
+        <dct:contributor rdf:resource="http://gnafld.net/def/joseph.abhayaratna@psma.com.au"/>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-23</dct:created>
+        <dct:creator rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+        <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Government Linked Data Working Group</dc:publisher>
+        <dct:source>https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf</dct:source>
         <dct:publisher rdf:resource="http://linked.data.gov.au"/>
     </owl:Ontology>
     
@@ -77,9 +77,20 @@
     
 
 
+    <!-- http://gnafld.net/def/gnaf#hasAddressPrimary -->
+
+    <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasAddressPrimary">
+        <owl:inverseOf rdf:resource="http://gnafld.net/def/gnaf#hasAddressSecondary"/>
+        <rdfs:label xml:lang="en">has Address primary</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://gnafld.net/def/gnaf#hasAddressSecondary -->
 
     <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasAddressSecondary">
+        <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Address"/>
+        <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#Address"/>
         <rdfs:label xml:lang="en">has Address Secondary</rdfs:label>
     </owl:ObjectProperty>
     
@@ -111,6 +122,7 @@
 
     <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasGeocode">
         <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Address"/>
+        <rdfs:range rdf:resource="http://gnafld.net/def/gnaf#GeocodePoint"/>
         <rdfs:label xml:lang="en">has Geocode</rdfs:label>
     </owl:ObjectProperty>
     
@@ -407,6 +419,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#GeocodePoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAddressSite"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#AddressSite"/>
@@ -514,6 +533,18 @@
     
 
 
+    <!-- http://gnafld.net/def/gnaf#GeocodePoint -->
+
+    <owl:Class rdf:about="http://gnafld.net/def/gnaf#GeocodePoint">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/sf#Point"/>
+        <rdfs:comment xml:lang="en">This class is the equivalent class to the non-Linked Data version of the GNAF&apos;s Geocode. It is subclassed as a Point since all the GNAF&apos;s Geocodes are points.
+
+In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also has a Geocode Reliability.</rdfs:comment>
+        <rdfs:label xml:lang="en">Geocode Point</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://gnafld.net/def/gnaf#GeocodeReliability -->
 
     <owl:Class rdf:about="http://gnafld.net/def/gnaf#GeocodeReliability">
@@ -575,6 +606,13 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasNeighbour"/>
                 <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#Locality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#GeocodePoint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -703,6 +741,13 @@
         <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#Street"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#GeocodePoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasGnafConfidence"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://gnafld.net/def/gnaf#GnafConfidence"/>
@@ -736,20 +781,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:label xml:lang="en">ISO19160-1 Address</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://www.opengis.net/ont/geosparql#Feature -->
-
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#Feature">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
     
 
 

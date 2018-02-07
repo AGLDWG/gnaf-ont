@@ -110,7 +110,7 @@ INSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('Alias', '', 'http:/
 INSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('Alias', 'ALT', 'http://gnafld.net/def/gnaf/AlternativeAlias', 'Alternative Alias');
 INSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('Alias', 'MR', 'http://gnafld.net/def/gnaf/MaintenanceReferenceAlias', 'Maintenance Reference Alias');
 INSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('Alias', 'SR', 'http://gnafld.net/def/gnaf/SpatiallyRelatedAlias', 'Spatially Related Alias');
-INSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('Alias', 'FNNFS', 'http://gnafld.net/def/gnaf/FlatNumberNoFirstSuffixCorrelationAlias', 'Flat Number – No First Suffix Correlation Alias');
+INSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('Alias', 'FNNFS', 'http://gnafld.net/def/gnaf/FlatNumberNoFirstSuffixCorrelationAlias', 'Flat Number ? No First Suffix Correlation Alias');
 INSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('Alias', 'SYN', 'http://gnafld.net/def/gnaf/SynonymAlias', 'Synonym Alias');
 INSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('Alias', 'AL', 'http://gnafld.net/def/gnaf/AlternativeLocalityAlias', 'Alternative Locality Alias');
 INSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('Alias', 'LD', 'http://gnafld.net/def/gnaf/LevelDuplicationAlias', 'Level Duplication Alias');

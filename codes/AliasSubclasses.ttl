@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/> .
+@prefix : <http://gnafld.net/def/gnaf#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -9,7 +9,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix gnaf: <http://gnafld.net/def/gnaf/> .
 @base <http://gnafld.net/def/gnaf> .
 
 <http://gnafld.net/def/gnaf/AliasSubclassCollection> a skos:Collection ;
@@ -46,7 +45,7 @@
     ) ;
 ].
 
-:SynonymAlias rdfs:subClassOf gnaf:Alias , skos:Concept;
+:SynonymAlias rdfs:subClassOf :Alias , skos:Concept;
     skos:prefLabel "Synonym Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "SYN" ;
@@ -54,7 +53,7 @@
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:ContributorDefinedAlias rdfs:subClassOf gnaf:Alias , skos:Concept;
+:ContributorDefinedAlias rdfs:subClassOf :Alias , skos:Concept;
     skos:prefLabel "Contributor Defined Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "CD" ;
@@ -62,7 +61,7 @@
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:AlternativeLocalityAlias rdfs:subClassOf gnaf:Alias , skos:Concept;
+:AlternativeLocalityAlias rdfs:subClassOf :Alias , skos:Concept;
     skos:prefLabel "Alternative Locality Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "AL" ;
@@ -70,7 +69,7 @@
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:RangedAddressAlias rdfs:subClassOf gnaf:Alias , skos:Concept;
+:RangedAddressAlias rdfs:subClassOf :Alias , skos:Concept;
     skos:prefLabel "Ranged Address Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "RA" ;
@@ -78,7 +77,7 @@
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:LevelDuplicationAlias rdfs:subClassOf gnaf:Alias , skos:Concept;
+:LevelDuplicationAlias rdfs:subClassOf :Alias , skos:Concept;
     skos:prefLabel "Level Duplication Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "LD" ;
@@ -86,7 +85,7 @@
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:FlatNumberNoFirstSuffixCorrelationAlias rdfs:subClassOf gnaf:Alias , skos:Concept;
+:FlatNumberNoFirstSuffixCorrelationAlias rdfs:subClassOf :Alias , skos:Concept;
     skos:prefLabel "Flat Number – No First Suffix Correlation Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "FNNFS" ;
@@ -94,7 +93,7 @@
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:MaintenanceReferenceAlias rdfs:subClassOf gnaf:Alias , skos:Concept;
+:MaintenanceReferenceAlias rdfs:subClassOf :Alias , skos:Concept;
     skos:prefLabel "Maintenance Reference Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "MR" ;
@@ -102,7 +101,7 @@
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:LocalityAlias rdfs:subClassOf gnaf:Alias , skos:Concept ;
+:LocalityAlias rdfs:subClassOf :Alias , skos:Concept ;
     skos:prefLabel "Locality Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "" ;
@@ -121,7 +120,7 @@
                       owl:onDataRange xsd:int
                     ] .
 
-:SpatiallyRelatedAlias rdfs:subClassOf gnaf:LocalityAlias , skos:Concept;
+:SpatiallyRelatedAlias rdfs:subClassOf :LocalityAlias , skos:Concept;
     skos:prefLabel "Spatially Related Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "SR" ;
@@ -129,7 +128,7 @@
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:AlternativeAlias rdfs:subClassOf gnaf:LocalityAlias , skos:Concept;
+:AlternativeAlias rdfs:subClassOf :LocalityAlias , skos:Concept;
     skos:prefLabel "Alternative Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "ALT" ;
@@ -137,7 +136,7 @@
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
-:StreetLocalityAlias rdfs:subClassOf gnaf:LocalityAlias , skos:Concept;
+:StreetLocalityAlias rdfs:subClassOf :LocalityAlias , skos:Concept;
     skos:prefLabel "Street Locality Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "" ;
