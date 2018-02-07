@@ -27,7 +27,7 @@
 
   This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 \"Addressing -- Part 1: Conceptual model\" standard (see <https://www.iso.org/standard/61710.html>) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at <http://reference.data.gov.au/def/ont/iso19160-1-address>."""@en ;
                               dc:creator "Nicholas Car"^^xsd:string ;
-                              dct:modified "2018-01-15"^^xsd:date ;
+                              dct:modified "2018-02-07"^^xsd:date ;
                               owl:versionInfo "1.1"^^xsd:string ;
                               dct:contributor <http://gnafld.net/def/joseph.abhayaratna@psma.com.au> ;
                               dct:created "2017-12-23"^^xsd:date ;
@@ -54,8 +54,15 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
          rdfs:label "alias of"@en .
 
 
+###  http://gnafld.net/def/gnaf#hasAddressPrimary
+:hasAddressPrimary rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :hasAddressSecondary .
+
+
 ###  http://gnafld.net/def/gnaf#hasAddressSecondary
 :hasAddressSecondary rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Address ;
+                     rdfs:range :Address ;
                      rdfs:label "has Address Secondary"@en .
 
 
@@ -258,10 +265,6 @@ dbo:Location rdf:type owl:Class .
                          <http://www.opengis.net/ont/geosparql#Feature> ,
                          prov:Location ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasAddressSecondary ;
-                           owl:someValuesFrom :AddressSecondary
-                         ] ,
-                         [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAlias ;
                            owl:someValuesFrom :Alias
                          ] ,
@@ -324,17 +327,6 @@ dbo:Location rdf:type owl:Class .
                            owl:onDataRange xsd:string
                          ] ;
          rdfs:label "Address"@en .
-
-
-###  http://gnafld.net/def/gnaf#AddressSecondary
-:AddressSecondary rdf:type owl:Class ;
-                  rdfs:subClassOf :GnafEntity ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasAddressSecondary ;
-                                    owl:someValuesFrom :Address
-                                  ] ;
-                  rdfs:comment "In the non-LD GNAF, this is the 'PrimarySecondary' concept but in this LD version, the relationship between Primary/Secondary Addresses is directed from Address (Primary) -> Address (Secondary) via Address Secondary to indicate the join type."@en ;
-                  rdfs:label "Address Secondary"@en .
 
 
 ###  http://gnafld.net/def/gnaf#AddressSite
