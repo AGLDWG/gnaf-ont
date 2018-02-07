@@ -17,14 +17,6 @@
                                           <http://www.w3.org/ns/prov-o-20130430> ;
                               rdfs:label "GNAF ontology"^^xsd:string ;
                               dc:contributor "Joseph Abhayaratna"^^xsd:string ;
-                              dc:creator "Nicholas Car"^^xsd:string ;
-                              dct:modified "2018-01-15"^^xsd:date ;
-                              owl:versionInfo "1.1"^^xsd:string ;
-                              dct:contributor <http://gnafld.net/def/joseph.abhayaratna@psma.com.au> ;
-                              dct:created "2017-12-23"^^xsd:date ;
-                              dct:creator <http://orcid.org/0000-0002-8742-7730> ;
-                              dc:publisher "Australian Government Linked Data Working Group"^^xsd:string ;
-                              dct:source "https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf" ;
                               rdfs:comment """An ontology for the content of the PSMA Geocoded National Address File (G-NAF).
 
   The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.
@@ -34,6 +26,14 @@
   The base content of the G-NAF is available freely online at <https://data.gov.au/dataset/geocoded-national-address-file-g-naf> and also via a Linked Data API that uses this ontology at <http://gnafld.net>.
 
   This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 \"Addressing -- Part 1: Conceptual model\" standard (see <https://www.iso.org/standard/61710.html>) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at <http://reference.data.gov.au/def/ont/iso19160-1-address>."""@en ;
+                              dc:creator "Nicholas Car"^^xsd:string ;
+                              dct:modified "2018-01-15"^^xsd:date ;
+                              owl:versionInfo "1.1"^^xsd:string ;
+                              dct:contributor <http://gnafld.net/def/joseph.abhayaratna@psma.com.au> ;
+                              dct:created "2017-12-23"^^xsd:date ;
+                              dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+                              dc:publisher "Australian Government Linked Data Working Group"^^xsd:string ;
+                              dct:source "https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf" ;
                               dct:publisher <http://linked.data.gov.au> .
 
 #################################################################
@@ -78,6 +78,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 ###  http://gnafld.net/def/gnaf#hasGeocode
 :hasGeocode rdf:type owl:ObjectProperty ;
             rdfs:domain :Address ;
+            rdfs:range :GeocodePoint ;
             rdfs:label "has Geocode"@en .
 
 
@@ -273,6 +274,11 @@ dbo:Location rdf:type owl:Class .
                            owl:someValuesFrom :Number
                          ] ,
                          [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :GeocodePoint
+                         ] ,
+                         [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAddressSite ;
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onClass :AddressSite
@@ -348,6 +354,15 @@ dbo:Location rdf:type owl:Class .
        rdfs:label "Alias"^^xsd:string .
 
 
+###  http://gnafld.net/def/gnaf#GeocodePoint
+:GeocodePoint rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.opengis.net/ont/sf#Point> ;
+              rdfs:comment """This class is the equivalent class to the non-Linked Data version of the GNAF's Geocode. It is subclassed as a Point since all the GNAF's Geocodes are points.
+
+In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also has a Geocode Reliability."""@en ;
+              rdfs:label "Geocode Point"@en .
+
+
 ###  http://gnafld.net/def/gnaf#GeocodeReliability
 :GeocodeReliability rdf:type owl:Class ;
                     rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ,
@@ -392,6 +407,11 @@ dbo:Location rdf:type owl:Class .
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasNeighbour ;
                             owl:someValuesFrom :Locality
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :GeocodePoint
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasName ;
@@ -481,6 +501,11 @@ dbo:Location rdf:type owl:Class .
 :StreetLocality rdf:type owl:Class ;
                 rdfs:subClassOf :Street ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :GeocodePoint
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasGnafConfidence ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onClass :GnafConfidence
@@ -504,14 +529,6 @@ dbo:Location rdf:type owl:Class .
 <http://reference.data.gov.au/def/ont/iso19160-1-address#Address> rdf:type owl:Class ;
                                                                   rdfs:subClassOf prov:Entity ;
                                                                   rdfs:label "ISO19160-1 Address"@en .
-
-
-###  http://www.opengis.net/ont/geosparql#Feature
-<http://www.opengis.net/ont/geosparql#Feature> rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://www.opengis.net/ont/geosparql#hasGeometry> ;
-                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                 owl:onClass <http://www.opengis.net/ont/geosparql#Geometry>
-                                                               ] .
 
 
 ###  http://www.opengis.net/ont/geosparql#Geometry
