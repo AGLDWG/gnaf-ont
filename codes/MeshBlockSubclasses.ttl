@@ -22,7 +22,7 @@
 [
     a owl:AllDisjointClasses ;
     owl:members (
-          :2011MB ,
+          :2011MB
           :2016MB
       ) ;
 ].

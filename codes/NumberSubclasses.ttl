@@ -25,10 +25,10 @@
 [
     a owl:AllDisjointClasses ;
     owl:members (
-          :FirstStreetNumber ,
-          :FlatNumber ,
-          :LastStreetNumber ,
-          :LevelNumber ,
+          :FirstStreetNumber
+          :FlatNumber
+          :LastStreetNumber
+          :LevelNumber
           :LotNumber
       ) ;
 ].

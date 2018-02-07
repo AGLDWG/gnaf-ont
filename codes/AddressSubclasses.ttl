@@ -77,61 +77,61 @@
 [
   rdf:type owl:AllDisjointClasses ;
   owl:members (
-      :RuralAddress ,
-      :RuralBlockAddress ,
-      :RuralCabinAddress ,
-      :RuralFlatAddress ,
-      :RuralHouseAddress ,
-      :RuralLotAddress ,
-      :RuralReserveAddress ,
-      :RuralRoadsideMailBoxAddress ,
-      :RuralRoomAddress ,
-      :RuralRoadsideMailDeliveryAddress ,
-      :RuralRoadsideMailServiceAddress ,
-      :RuralSectionAddress ,
-      :RuralSiteAddress ,
-      :RuralUnitAddress ,
-      :UnknownAddress ,
-      :UnknownVillaAddress ,
-      :UnknownApartmentAddress ,
-      :UnknownBlockAddress ,
-      :UnknownCabinAddress ,
-      :UnknownCottageAddress ,
-      :UnknownCaravanAddress ,
-      :UnknownFarmAddress ,
-      :UnknownFlatAddress ,
-      :UnknownGroundFloorAddress ,
-      :UnknownHouseAddress ,
-      :UnknownLocationAddress ,
-      :UnknownLotAddress ,
-      :UnknownLowerAddress ,
-      :UnknownPortionAddress ,
-      :UnknownPenthouseAddress ,
-      :UnknownRearAddress ,
-      :UnknownReserveAddress ,
-      :UnknownRoadsideMailBoxAddress ,
-      :UnknownRoadsideMailServiceAddress ,
-      :UnknownRoomAddress ,
-      :UnknownRoadsideMailDeliveryAddress ,
-      :UnknownRoadsideMailService2Address ,
-      :UnknownSectionAddress ,
-      :UnknownSiteAddress ,
-      :UnknownTownhouseAddress ,
-      :UnknownUnitAddress ,
-      :UrbanAddress ,
-      :UrbanBlockAddress ,
-      :UrbanCabinAddress ,
-      :UrbanFlatAddress ,
-      :UrbanHouseAddress ,
-      :UrbanLotAddress ,
-      :UrbanReserveAddress ,
-      :UrbanRoadsideMailBoxAddress ,
-      :UnknownRoadsideMailServiceAddress ,
-      :UrbanRoomAddress ,
-      :UrbanRoadsideMailDeliveryAddress ,
-      :UrbanRoadsideMailServiceAddress ,
-      :UrbanSectionAddress ,
-      :UrbanSiteAddress ,
+      :RuralAddress
+      :RuralBlockAddress
+      :RuralCabinAddress
+      :RuralFlatAddress
+      :RuralHouseAddress
+      :RuralLotAddress
+      :RuralReserveAddress
+      :RuralRoadsideMailBoxAddress
+      :RuralRoomAddress
+      :RuralRoadsideMailDeliveryAddress
+      :RuralRoadsideMailServiceAddress
+      :RuralSectionAddress
+      :RuralSiteAddress
+      :RuralUnitAddress
+      :UnknownAddress
+      :UnknownVillaAddress
+      :UnknownApartmentAddress
+      :UnknownBlockAddress
+      :UnknownCabinAddress
+      :UnknownCottageAddress
+      :UnknownCaravanAddress
+      :UnknownFarmAddress
+      :UnknownFlatAddress
+      :UnknownGroundFloorAddress
+      :UnknownHouseAddress
+      :UnknownLocationAddress
+      :UnknownLotAddress
+      :UnknownLowerAddress
+      :UnknownPortionAddress
+      :UnknownPenthouseAddress
+      :UnknownRearAddress
+      :UnknownReserveAddress
+      :UnknownRoadsideMailBoxAddress
+      :UnknownRoadsideMailServiceAddress
+      :UnknownRoomAddress
+      :UnknownRoadsideMailDeliveryAddress
+      :UnknownRoadsideMailService2Address
+      :UnknownSectionAddress
+      :UnknownSiteAddress
+      :UnknownTownhouseAddress
+      :UnknownUnitAddress
+      :UrbanAddress
+      :UrbanBlockAddress
+      :UrbanCabinAddress
+      :UrbanFlatAddress
+      :UrbanHouseAddress
+      :UrbanLotAddress
+      :UrbanReserveAddress
+      :UrbanRoadsideMailBoxAddress
+      :UnknownRoadsideMailServiceAddress
+      :UrbanRoomAddress
+      :UrbanRoadsideMailDeliveryAddress
+      :UrbanRoadsideMailServiceAddress
+      :UrbanSectionAddress
+      :UrbanSiteAddress
       :UrbanUnitAddress
     ) ;
 ].

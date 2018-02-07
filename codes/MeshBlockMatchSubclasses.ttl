@@ -25,10 +25,10 @@
 [
     a owl:AllDisjointClasses ;
     owl:members (
-          :ParcelLevelMatch ,
-          :GapGeocodedAddressLevelMatch ,
-          :StreetLocalityLevelSingleMatch ,
-          :StreetLocalityLevelMultipleMatch ,
+          :ParcelLevelMatch
+          :GapGeocodedAddressLevelMatch
+          :StreetLocalityLevelSingleMatch
+          :StreetLocalityLevelMultipleMatch
           :LocalityLevelSingleMatch
       ) ;
 ].

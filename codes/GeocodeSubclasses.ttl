@@ -48,33 +48,33 @@
 [
   rdf:type owl:AllDisjointClasses ;
   owl:members (
-        :BuildingCentroidGeocode ,
-        :CentreLineDroppedFrontageGeocode ,
-        :DrivewayFrontageGeocode ,
-        :EmergencyAccessGeocode ,
-        :EmergencyAccessSecondaryGeocode ,
-        :FrontDoorAccessGeocode ,
-        :FrontageCentreGeocode ,
-        :FrontageCentreSetbackGeocode ,
-        :LetterboxGeocode ,
-        :PropertyAccessPointGeocode ,
-        :PropertyAccessPointSetbackGeocode ,
-        :PropertyCentroidGeocode ,
-        :PropertyCentroidManualGeocode ,
-        :UnitCentroidGeocode ,
-        :UnitCentroidManualGeocode ,
-        :GapGeocode ,
-        :WaterConnectionPointGeocode ,
-        :WaterMeterGeocode ,
-        :SewageConnectionPointGeocode ,
-        :GasConnectionPointGeocode ,
-        :GasMeterPointGeocode ,
-        :TelephoneConnectionPointGeocode ,
-        :ElectricityConnectionPointGeocode ,
-        :ElectricityMeterPointGeocode ,
-        :InternetConnectionPointGeocode ,
-        :UnknownGeocode ,
-        :StreetLocalityGeocode ,
+        :BuildingCentroidGeocode
+        :CentreLineDroppedFrontageGeocode
+        :DrivewayFrontageGeocode
+        :EmergencyAccessGeocode
+        :EmergencyAccessSecondaryGeocode
+        :FrontDoorAccessGeocode
+        :FrontageCentreGeocode
+        :FrontageCentreSetbackGeocode
+        :LetterboxGeocode
+        :PropertyAccessPointGeocode
+        :PropertyAccessPointSetbackGeocode
+        :PropertyCentroidGeocode
+        :PropertyCentroidManualGeocode
+        :UnitCentroidGeocode
+        :UnitCentroidManualGeocode
+        :GapGeocode
+        :WaterConnectionPointGeocode
+        :WaterMeterGeocode
+        :SewageConnectionPointGeocode
+        :GasConnectionPointGeocode
+        :GasMeterPointGeocode
+        :TelephoneConnectionPointGeocode
+        :ElectricityConnectionPointGeocode
+        :ElectricityMeterPointGeocode
+        :InternetConnectionPointGeocode
+        :UnknownGeocode
+        :StreetLocalityGeocode
         :LocalityGeocode
     ) ;
 ].
@@ -169,8 +169,7 @@
 
 :PropertyAccessPointSetbackGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
     skos:prefLabel "Property Access Point Setback"@en ;
-    skos:definition "A POINT SET BACK FROM THE (CENTRE OF THE) ACCESS POINT AT THE ROAD FRONTAGE
-OF THE PROPERTY"@en ;
+    skos:definition "A POINT SET BACK FROM THE (CENTRE OF THE) ACCESS POINT AT THE ROAD FRONTAGE OF THE PROPERTY"@en ;
     skos:altLabel "PROPERTY ACCESS POINT SETBACK"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;

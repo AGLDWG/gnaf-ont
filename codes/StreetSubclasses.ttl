@@ -286,270 +286,270 @@
 [
     a owl:AllDisjointClasses ;
     owl:members (
-        :AccessStreet ,
-        :AcreStreet ,
-        :AirwalkStreet ,
-        :AlleyStreet ,
-        :AlleywayStreet ,
-        :AmbleStreet ,
-        :ApproachStreet ,
-        :ArcadeStreet ,
-        :ArterialStreet ,
-        :ArteryStreet ,
-        :AvenueStreet ,
-        :BananStreet ,
-        :BankStreet ,
-        :BayStreet ,
-        :BeachStreet ,
-        :BendStreet ,
-        :BoardwalkStreet ,
-        :BoulevardStreet ,
-        :BoulevardeStreet ,
-        :BowlStreet ,
-        :BraceStreet ,
-        :BraeStreet ,
-        :BranchStreet ,
-        :BreakStreet ,
-        :BrettStreet ,
-        :BridgeStreet ,
-        :BroadwalkStreet ,
-        :BroadwayStreet ,
-        :BrowStreet ,
-        :BullStreet ,
-        :BuswayStreet ,
-        :BypassStreet ,
-        :BywayStreet ,
-        :CausewayStreet ,
-        :CentreStreet ,
-        :CentrewayStreet ,
-        :ChaseStreet ,
-        :CircleStreet ,
-        :CircletStreet ,
-        :CircuitStreet ,
-        :CircusStreet ,
-        :CloseStreet ,
-        :ClusterStreet ,
-        :ColonnadeStreet ,
-        :CommonStreet ,
-        :CommonsStreet ,
-        :ConcordStreet ,
-        :ConcourseStreet ,
-        :ConnectionStreet ,
-        :CopseStreet ,
-        :CornerStreet ,
-        :CorsoStreet ,
-        :CourseStreet ,
-        :CourtStreet ,
-        :CourtyardStreet ,
-        :CoveStreet ,
-        :CrescentStreet ,
-        :CrestStreet ,
-        :CriefStreet ,
-        :CrookStreet ,
-        :CrossStreet ,
-        :CrossingStreet ,
-        :CruisewayStreet ,
-        :Cul-De-SacStreet ,
-        :CutStreet ,
-        :CuttingStreet ,
-        :DaleStreet ,
-        :DashStreet ,
-        :DellStreet ,
-        :DeneStreet ,
-        :DeviationStreet ,
-        :DipStreet ,
-        :DistributorStreet ,
-        :DivideStreet ,
-        :DockStreet ,
-        :DomainStreet ,
-        :DownStreet ,
-        :DownsStreet ,
-        :DriveStreet ,
-        :DrivewayStreet ,
-        :EasementStreet ,
-        :EastStreet ,
-        :EdgeStreet ,
-        :ElbowStreet ,
-        :EndStreet ,
-        :EntranceStreet ,
-        :EsplanadeStreet ,
-        :EstateStreet ,
-        :ExpresswayStreet ,
-        :ExtensionStreet ,
-        :FairwayStreet ,
-        :FirebreakStreet ,
-        :FirelineStreet ,
-        :FiretrackStreet ,
-        :FiretrailStreet ,
-        :FlatStreet ,
-        :FlatsStreet ,
-        :FollowStreet ,
-        :FootwayStreet ,
-        :FordStreet ,
-        :ForeshoreStreet ,
-        :ForkStreet ,
-        :FormationStreet ,
-        :FreewayStreet ,
-        :FrontStreet ,
-        :FrontageStreet ,
-        :GapStreet ,
-        :GardenStreet ,
-        :GardensStreet ,
-        :GateStreet ,
-        :GatewayStreet ,
-        :GladeStreet ,
-        :GlenStreet ,
-        :GrangeStreet ,
-        :GreenStreet ,
-        :GroveStreet ,
-        :GullyStreet ,
-        :HarbourStreet ,
-        :HavenStreet ,
-        :HeathStreet ,
-        :HeightsStreet ,
-        :HighroadStreet ,
-        :HighwayStreet ,
-        :HikeStreet ,
-        :HillStreet ,
-        :HillsStreet ,
-        :HollowStreet ,
-        :HubStreet ,
-        :InletStreet ,
-        :InterchangeStreet ,
-        :IslandStreet ,
-        :JunctionStreet ,
-        :KeyStreet ,
-        :KeysStreet ,
-        :KnollStreet ,
-        :LadderStreet ,
-        :LandingStreet ,
-        :LaneStreet ,
-        :LanewayStreet ,
-        :LeadStreet ,
-        :LeaderStreet ,
-        :LineStreet ,
-        :LinkStreet ,
-        :LookoutStreet ,
-        :LoopStreet ,
-        :LynneStreet ,
-        :MallStreet ,
-        :ManorStreet ,
-        :MartStreet ,
-        :MazeStreet ,
-        :MeadStreet ,
-        :MeanderStreet ,
-        :MewStreet ,
-        :MewsStreet ,
-        :MileStreet ,
-        :MotorwayStreet ,
-        :NookStreet ,
-        :NorthStreet ,
-        :NullStreet ,
-        :OutletStreet ,
-        :OutlookStreet ,
-        :OvalStreet ,
-        :PalmsStreet ,
-        :ParadeStreet ,
-        :ParadiseStreet ,
-        :ParkStreet ,
-        :ParkwayStreet ,
-        :PartStreet ,
-        :PassStreet ,
-        :PassageStreet ,
-        :PathStreet ,
-        :PathwayStreet ,
-        :PeninsulaStreet ,
-        :PiazzaStreet ,
-        :PlaceStreet ,
-        :PlazaStreet ,
-        :PocketStreet ,
-        :PointStreet ,
-        :PortStreet ,
-        :PrecinctStreet ,
-        :PromenadeStreet ,
-        :PursuitStreet ,
-        :QuadStreet ,
-        :QuadrantStreet ,
-        :QuayStreet ,
-        :QuaysStreet ,
-        :RambleStreet ,
-        :RampStreet ,
-        :RangeStreet ,
-        :ReachStreet ,
-        :ReefStreet ,
-        :ReserveStreet ,
-        :RestStreet ,
-        :RetreatStreet ,
-        :ReturnStreet ,
-        :RideStreet ,
-        :RidgeStreet ,
-        :RightOfWayStreet ,
-        :RingStreet ,
-        :RiseStreet ,
-        :RisingStreet ,
-        :RiverStreet ,
-        :RoadStreet ,
-        :RoadsStreet ,
-        :RoadwayStreet ,
-        :RotaryStreet ,
-        :RoundStreet ,
-        :RouteStreet ,
-        :RowStreet ,
-        :RoweStreet ,
-        :RueStreet ,
-        :RunStreet ,
-        :ServicewayStreet ,
-        :ShuntStreet ,
-        :SkylineStreet ,
-        :SlopeStreet ,
-        :SouthStreet ,
-        :SpurStreet ,
-        :SquareStreet ,
-        :StepsStreet ,
-        :StraightStreet ,
-        :StraitStreet ,
-        :StrandStreet ,
-        :StripStreet ,
-        :SubwayStreet ,
-        :TarnStreet ,
-        :TerraceStreet ,
-        :ThoroughfareStreet ,
-        :ThroughwayStreet ,
-        :TollwayStreet ,
-        :TopStreet ,
-        :TorStreet ,
-        :TrackStreet ,
-        :TrailStreet ,
-        :TramwayStreet ,
-        :TraverseStreet ,
-        :TriangleStreet ,
-        :TrunkwayStreet ,
-        :TunnelStreet ,
-        :TurnStreet ,
-        :TwistStreet ,
-        :UnderpassStreet ,
-        :ValeStreet ,
-        :ValleyStreet ,
-        :VergeStreet ,
-        :ViaductStreet ,
-        :ViewStreet ,
-        :ViewsStreet ,
-        :VillaStreet ,
-        :VillageStreet ,
-        :VillasStreet ,
-        :VistaStreet ,
-        :VueStreet ,
-        :WadeStreet ,
-        :WalkStreet ,
-        :WalkwayStreet ,
-        :WatersStreet ,
-        :WaterwayStreet ,
-        :WayStreet ,
-        :WestStreet ,
-        :WharfStreet ,
-        :WoodStreet ,
-        :WoodsStreet ,
-        :WyndStreet ,
+        :AccessStreet
+        :AcreStreet
+        :AirwalkStreet
+        :AlleyStreet
+        :AlleywayStreet
+        :AmbleStreet
+        :ApproachStreet
+        :ArcadeStreet
+        :ArterialStreet
+        :ArteryStreet
+        :AvenueStreet
+        :BananStreet
+        :BankStreet
+        :BayStreet
+        :BeachStreet
+        :BendStreet
+        :BoardwalkStreet
+        :BoulevardStreet
+        :BoulevardeStreet
+        :BowlStreet
+        :BraceStreet
+        :BraeStreet
+        :BranchStreet
+        :BreakStreet
+        :BrettStreet
+        :BridgeStreet
+        :BroadwalkStreet
+        :BroadwayStreet
+        :BrowStreet
+        :BullStreet
+        :BuswayStreet
+        :BypassStreet
+        :BywayStreet
+        :CausewayStreet
+        :CentreStreet
+        :CentrewayStreet
+        :ChaseStreet
+        :CircleStreet
+        :CircletStreet
+        :CircuitStreet
+        :CircusStreet
+        :CloseStreet
+        :ClusterStreet
+        :ColonnadeStreet
+        :CommonStreet
+        :CommonsStreet
+        :ConcordStreet
+        :ConcourseStreet
+        :ConnectionStreet
+        :CopseStreet
+        :CornerStreet
+        :CorsoStreet
+        :CourseStreet
+        :CourtStreet
+        :CourtyardStreet
+        :CoveStreet
+        :CrescentStreet
+        :CrestStreet
+        :CriefStreet
+        :CrookStreet
+        :CrossStreet
+        :CrossingStreet
+        :CruisewayStreet
+        :Cul-De-SacStreet
+        :CutStreet
+        :CuttingStreet
+        :DaleStreet
+        :DashStreet
+        :DellStreet
+        :DeneStreet
+        :DeviationStreet
+        :DipStreet
+        :DistributorStreet
+        :DivideStreet
+        :DockStreet
+        :DomainStreet
+        :DownStreet
+        :DownsStreet
+        :DriveStreet
+        :DrivewayStreet
+        :EasementStreet
+        :EastStreet
+        :EdgeStreet
+        :ElbowStreet
+        :EndStreet
+        :EntranceStreet
+        :EsplanadeStreet
+        :EstateStreet
+        :ExpresswayStreet
+        :ExtensionStreet
+        :FairwayStreet
+        :FirebreakStreet
+        :FirelineStreet
+        :FiretrackStreet
+        :FiretrailStreet
+        :FlatStreet
+        :FlatsStreet
+        :FollowStreet
+        :FootwayStreet
+        :FordStreet
+        :ForeshoreStreet
+        :ForkStreet
+        :FormationStreet
+        :FreewayStreet
+        :FrontStreet
+        :FrontageStreet
+        :GapStreet
+        :GardenStreet
+        :GardensStreet
+        :GateStreet
+        :GatewayStreet
+        :GladeStreet
+        :GlenStreet
+        :GrangeStreet
+        :GreenStreet
+        :GroveStreet
+        :GullyStreet
+        :HarbourStreet
+        :HavenStreet
+        :HeathStreet
+        :HeightsStreet
+        :HighroadStreet
+        :HighwayStreet
+        :HikeStreet
+        :HillStreet
+        :HillsStreet
+        :HollowStreet
+        :HubStreet
+        :InletStreet
+        :InterchangeStreet
+        :IslandStreet
+        :JunctionStreet
+        :KeyStreet
+        :KeysStreet
+        :KnollStreet
+        :LadderStreet
+        :LandingStreet
+        :LaneStreet
+        :LanewayStreet
+        :LeadStreet
+        :LeaderStreet
+        :LineStreet
+        :LinkStreet
+        :LookoutStreet
+        :LoopStreet
+        :LynneStreet
+        :MallStreet
+        :ManorStreet
+        :MartStreet
+        :MazeStreet
+        :MeadStreet
+        :MeanderStreet
+        :MewStreet
+        :MewsStreet
+        :MileStreet
+        :MotorwayStreet
+        :NookStreet
+        :NorthStreet
+        :NullStreet
+        :OutletStreet
+        :OutlookStreet
+        :OvalStreet
+        :PalmsStreet
+        :ParadeStreet
+        :ParadiseStreet
+        :ParkStreet
+        :ParkwayStreet
+        :PartStreet
+        :PassStreet
+        :PassageStreet
+        :PathStreet
+        :PathwayStreet
+        :PeninsulaStreet
+        :PiazzaStreet
+        :PlaceStreet
+        :PlazaStreet
+        :PocketStreet
+        :PointStreet
+        :PortStreet
+        :PrecinctStreet
+        :PromenadeStreet
+        :PursuitStreet
+        :QuadStreet
+        :QuadrantStreet
+        :QuayStreet
+        :QuaysStreet
+        :RambleStreet
+        :RampStreet
+        :RangeStreet
+        :ReachStreet
+        :ReefStreet
+        :ReserveStreet
+        :RestStreet
+        :RetreatStreet
+        :ReturnStreet
+        :RideStreet
+        :RidgeStreet
+        :RightOfWayStreet
+        :RingStreet
+        :RiseStreet
+        :RisingStreet
+        :RiverStreet
+        :RoadStreet
+        :RoadsStreet
+        :RoadwayStreet
+        :RotaryStreet
+        :RoundStreet
+        :RouteStreet
+        :RowStreet
+        :RoweStreet
+        :RueStreet
+        :RunStreet
+        :ServicewayStreet
+        :ShuntStreet
+        :SkylineStreet
+        :SlopeStreet
+        :SouthStreet
+        :SpurStreet
+        :SquareStreet
+        :StepsStreet
+        :StraightStreet
+        :StraitStreet
+        :StrandStreet
+        :StripStreet
+        :SubwayStreet
+        :TarnStreet
+        :TerraceStreet
+        :ThoroughfareStreet
+        :ThroughwayStreet
+        :TollwayStreet
+        :TopStreet
+        :TorStreet
+        :TrackStreet
+        :TrailStreet
+        :TramwayStreet
+        :TraverseStreet
+        :TriangleStreet
+        :TrunkwayStreet
+        :TunnelStreet
+        :TurnStreet
+        :TwistStreet
+        :UnderpassStreet
+        :ValeStreet
+        :ValleyStreet
+        :VergeStreet
+        :ViaductStreet
+        :ViewStreet
+        :ViewsStreet
+        :VillaStreet
+        :VillageStreet
+        :VillasStreet
+        :VistaStreet
+        :VueStreet
+        :WadeStreet
+        :WalkStreet
+        :WalkwayStreet
+        :WatersStreet
+        :WaterwayStreet
+        :WayStreet
+        :WestStreet
+        :WharfStreet
+        :WoodStreet
+        :WoodsStreet
+        :WyndStreet
         :YardStreet
       ) ;
 ].

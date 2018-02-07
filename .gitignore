@@ -3,3 +3,6 @@ catalog-*
 
 # Mac
 .DS_Store
+
+# Jetbrains
+.idea/

@@ -22,7 +22,7 @@
 [
     a owl:AllDisjointClasses ;
     owl:members (
-          :AutoPrimarySecondaryJoin ,
+          :AutoPrimarySecondaryJoin
           :ManualPrimarySecondaryJoin
       ) ;
 ].

@@ -28,13 +28,13 @@
 [
     rdf:type owl:AllDisjointClasses ;
     owl:members (
-        :AliasOnlyLocality ,
-        :DistrictLocality ,
-        :GazetedLocality ,
-        :HundredLocality ,
-        :ManuallyValidatedLocality ,
-        :TopographicLocality ,
-        :UnofficialSuburbLocality ,
+        :AliasOnlyLocality
+        :DistrictLocality
+        :GazetedLocality
+        :HundredLocality
+        :ManuallyValidatedLocality
+        :TopographicLocality
+        :UnofficialSuburbLocality
         :UnofficialTopographicFeatureLocality
       ) ;
 ].
