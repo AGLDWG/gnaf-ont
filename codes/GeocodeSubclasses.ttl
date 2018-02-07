@@ -98,7 +98,7 @@
 :CentreLineDroppedFrontageGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
     skos:prefLabel "Centre-Line Dropped Frontage"@en ;
     skos:definition "A POINT ON THE ROAD CENTRE-LINE OPPOSITE THE CENTRE OF THE ROAD FRONTAGE OF AN ADDRESS SITE"@en ;
-    skos:altLabel CDF""^^xsd:string ;
+    skos:altLabel "CDF"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
@@ -282,7 +282,7 @@
 :InternetConnectionPointGeocode rdfs:subClassOf gnaf:Geocode , skos:Concept ;
     skos:prefLabel "Internet Connection Point"@en ;
     skos:definition "INTERNET CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)"@en ;
-    skos:altLabel "ICP^^xsd:string ;
+    skos:altLabel "ICP"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
