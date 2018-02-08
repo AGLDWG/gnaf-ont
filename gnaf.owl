@@ -46,7 +46,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-01-15</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-02-07</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
@@ -123,9 +123,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasAddressSite"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AddressSecondary"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MeshBlockMatch"/>
@@ -239,9 +236,6 @@
         <NamedIndividual IRI="#hasDescription"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isPrimary"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#hasDateRetired"/>
     </Declaration>
     <Declaration>
@@ -299,13 +293,6 @@
     <SubClassOf>
         <Class IRI="#Address"/>
         <Class abbreviatedIRI="prov:Location"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Address"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasAddressSecondary"/>
-            <Class IRI="#AddressSecondary"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Address"/>
@@ -387,27 +374,9 @@
     <SubClassOf>
         <Class IRI="#Address"/>
         <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="#isPrimary"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Address"/>
-        <DataMaxCardinality cardinality="1">
             <DataProperty abbreviatedIRI="dct:description"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AddressSecondary"/>
-        <Class IRI="#GnafEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AddressSecondary"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasAddressSecondary"/>
-            <Class IRI="#Address"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AddressSite"/>
@@ -807,10 +776,6 @@
         <DataProperty IRI="#hasSuffix"/>
         <Class IRI="#Number"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#isPrimary"/>
-        <Class IRI="#Address"/>
-    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasDateCreated"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
@@ -818,6 +783,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasDateRetired"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLegalParcelId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasName"/>
@@ -840,10 +809,6 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#isPrimary"/>
-        <Datatype abbreviatedIRI="xsd:boolean"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#isPrivateStreet"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
@@ -851,16 +816,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Address</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Address</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#AddressSecondary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In the non-LD GNAF, this is the &apos;PrimarySecondary&apos; concept but in this LD version, the relationship between Primary/Secondary Addresses is directed from Address (Primary) -&gt; Address (Secondary) via Address Secondary to indicate the join type.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#AddressSecondary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Address Secondary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -963,11 +918,6 @@ In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also ha
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#aliasOf</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">alias of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasAddressPrimary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Address primary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1123,16 +1073,6 @@ In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also ha
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasSuffix</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has suffix</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isPrimary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In the non-semantic version of the GNAF, an address is indicated as being either Primary (P) or Secondary (S). In this semantic version, an Address either has the isPrimary property set to true (it is a Primary) or false (it is a Secondary).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isPrimary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is primary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

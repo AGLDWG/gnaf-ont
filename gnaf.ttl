@@ -195,6 +195,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://gnafld.net/def/gnaf#hasLegalParcelId
 :hasLegalParcelId rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:string ;
                   rdfs:label "has legal parcel ID"@en .
 
 
@@ -228,14 +229,6 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
            rdfs:domain :Number ;
            rdfs:range xsd:string ;
            rdfs:label "has suffix"@en .
-
-
-###  http://gnafld.net/def/gnaf#isPrimary
-:isPrimary rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Address ;
-           rdfs:range xsd:boolean ;
-           rdfs:comment "In the non-semantic version of the GNAF, an address is indicated as being either Primary (P) or Secondary (S). In this semantic version, an Address either has the isPrimary property set to true (it is a Primary) or false (it is a Secondary)."@en ;
-           rdfs:label "is primary"@en .
 
 
 ###  http://gnafld.net/def/gnaf#isPrivateStreet
@@ -315,11 +308,6 @@ dbo:Location rdf:type owl:Class .
                            owl:onProperty :hasPostcode ;
                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:string
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :isPrimary ;
-                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onDataRange xsd:boolean
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty dct:description ;

@@ -28,7 +28,7 @@
 
   This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 &quot;Addressing -- Part 1: Conceptual model&quot; standard (see &lt;https://www.iso.org/standard/61710.html&gt;) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at &lt;http://reference.data.gov.au/def/ont/iso19160-1-address&gt;.</rdfs:comment>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dc:creator>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-15</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-07</dct:modified>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</owl:versionInfo>
         <dct:contributor rdf:resource="http://gnafld.net/def/joseph.abhayaratna@psma.com.au"/>
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-23</dct:created>
@@ -81,7 +81,6 @@
 
     <owl:ObjectProperty rdf:about="http://gnafld.net/def/gnaf#hasAddressPrimary">
         <owl:inverseOf rdf:resource="http://gnafld.net/def/gnaf#hasAddressSecondary"/>
-        <rdfs:label xml:lang="en">has Address primary</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -289,6 +288,7 @@
     <!-- http://gnafld.net/def/gnaf#hasLegalParcelId -->
 
     <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#hasLegalParcelId">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">has legal parcel ID</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -341,17 +341,6 @@
     
 
 
-    <!-- http://gnafld.net/def/gnaf#isPrimary -->
-
-    <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#isPrimary">
-        <rdfs:domain rdf:resource="http://gnafld.net/def/gnaf#Address"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en">In the non-semantic version of the GNAF, an address is indicated as being either Primary (P) or Secondary (S). In this semantic version, an Address either has the isPrimary property set to true (it is a Primary) or false (it is a Secondary).</rdfs:comment>
-        <rdfs:label xml:lang="en">is primary</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://gnafld.net/def/gnaf#isPrivateStreet -->
 
     <owl:DatatypeProperty rdf:about="http://gnafld.net/def/gnaf#isPrivateStreet">
@@ -393,12 +382,6 @@
         <rdfs:subClassOf rdf:resource="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"/>
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Location"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAddressSecondary"/>
-                <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#AddressSecondary"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAlias"/>
@@ -475,35 +458,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#isPrimary"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/dc/terms/description"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Address</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://gnafld.net/def/gnaf#AddressSecondary -->
-
-    <owl:Class rdf:about="http://gnafld.net/def/gnaf#AddressSecondary">
-        <rdfs:subClassOf rdf:resource="http://gnafld.net/def/gnaf#GnafEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://gnafld.net/def/gnaf#hasAddressSecondary"/>
-                <owl:someValuesFrom rdf:resource="http://gnafld.net/def/gnaf#Address"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">In the non-LD GNAF, this is the &apos;PrimarySecondary&apos; concept but in this LD version, the relationship between Primary/Secondary Addresses is directed from Address (Primary) -&gt; Address (Secondary) via Address Secondary to indicate the join type.</rdfs:comment>
-        <rdfs:label xml:lang="en">Address Secondary</rdfs:label>
     </owl:Class>
     
 
