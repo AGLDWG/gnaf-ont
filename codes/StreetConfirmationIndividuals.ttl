@@ -1,5 +1,5 @@
 @prefix : <http://gnafld.net/def/gnaf#> .
-@prefix : <http://gnafld.net/def/gnaf/StreetConfirmation/> .
+@prefix sc: <http://gnafld.net/def/gnaf/StreetConfirmation/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -30,12 +30,12 @@
 
 <http://gnafld.net/def/gnaf/StreetConfirmation/Collection> a skos:Collection ;
     skos:member
-        :Confirmed ,
-        :Unconfirmed
+        sc:Confirmed ,
+        sc:Unconfirmed
     ;
     skos:prefLabel "Street Confirmation Individuals Collection" .
 
-:Confirmed a gnaf:StreetConfirmation , skos:Concept ;
+sc:Confirmed a :StreetConfirmation , skos:Concept ;
   skos:prefLabel "Confirmed"@en ;
 	skos:definition "A confirmed street is present in the roads data of the PSMA Transport and Topography product for the same release"@en ;
   skos:altLabel "CONFIRMED"^^xsd:string ;
@@ -43,7 +43,7 @@
   dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
 
-:Unconfirmed a gnaf:StreetConfirmation , skos:Concept ;
+sc:Unconfirmed a :StreetConfirmation , skos:Concept ;
   skos:prefLabel "Unconfirmed"@en ;
 	skos:definition "An unconfirmed street is NOT present in the roads data of the PSMA Transport and Topography product for the same release and will not have a street locality geocode"@en ;
   skos:altLabel "UNCONFIRMED"^^xsd:string ;

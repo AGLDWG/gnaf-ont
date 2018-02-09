@@ -6,6 +6,7 @@ import rdflib
 
 # Declare the CREATE TABLE SQL
 create_table = '''
+DROP TABLE IF EXISTS code_uris;
 CREATE TABLE code_uris (
   vocab varchar NOT NULL,
   code varchar NOT NULL,
