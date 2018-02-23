@@ -6,12 +6,12 @@ import rdflib
 
 # Declare the CREATE TABLE SQL
 create_table = '''
-CREATE TABLE code_uris (
-  vocab varchar NOT NULL,
+DROP TABLE IF EXISTS codes_{tn};
+CREATE TABLE codes_{tn} (
   code varchar NOT NULL,
   uri varchar NOT NULL,
   prefLabel varchar NOT NULL,
-  PRIMARY KEY(vocab, code)
+  PRIMARY KEY(code)
 );
 '''
 
@@ -29,16 +29,19 @@ def generate_sql(files, files_filter, sparql_query):
     sql = ''
     fs = [k for k in files if files_filter in k]
     for f in fs:
-        print('loading ' + f)
+        vocab_name = f.replace('Subclasses.ttl', '').replace('Individuals.ttl', '')
+        print('loading ' + vocab_name)
         g = rdflib.Graph()
         g.load(path.join(this_dir, f), format='turtle')
+        sql += create_table.format(tn=vocab_name)
         for r in g.query(sparql_query):
-            sql += "\nINSERT INTO code_uris (vocab, code, uri, prefLabel) VALUES ('{}', '{}', '{}', '{}');".format(
-                f.replace('Subclasses.ttl', ''),
+            sql += "\nINSERT INTO codes_{} (code, uri, prefLabel) VALUES ('{}', '{}', '{}');".format(
+                vocab_name,
                 str(r['code']),
                 str(r['uri']),
                 str(r['prefLabel']),
             )
+        sql += '\n\n'
 
     return sql
 

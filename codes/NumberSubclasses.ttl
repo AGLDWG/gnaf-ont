@@ -35,6 +35,7 @@
 :FirstStreetNumber rdfs:subClassOf :Number , skos:Concept ;
     skos:prefLabel "First"@en ;
     skos:definition "The first street number"@en ;
+    skos:altLabel "FSN" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
@@ -42,6 +43,7 @@
 :FlatNumber rdfs:subClassOf :Number , skos:Concept ;
     skos:prefLabel "Flat"@en ;
     skos:definition "A flat's number"@en ;
+    skos:altLabel "FN" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
@@ -49,6 +51,7 @@
 :LastStreetNumber rdfs:subClassOf :Number , skos:Concept ;
     skos:prefLabel "Last"@en ;
     skos:definition "The last street number"@en ;
+    skos:altLabel "LSN" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
@@ -56,6 +59,7 @@
 :LevelNumber rdfs:subClassOf :Number , skos:Concept ;
     skos:prefLabel "Level"@en ;
     skos:definition "a building level number"@en ;
+    skos:altLabel "LN" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
@@ -63,6 +67,7 @@
 :LotNumber rdfs:subClassOf :Number , skos:Concept ;
     skos:prefLabel "Lot"@en ;
     skos:definition "A lot number"@en ;
+    skos:altLabel "LON" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
