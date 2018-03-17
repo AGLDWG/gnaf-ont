@@ -1,0 +1,556 @@
+@prefix : <http://gnafld.net/def/gnaf#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <http://gnafld.net/def/gnaf> .
+
+
+<http://gnafld.net/def/gnaf/FlatSubclassCollection> a skos:Collection ;
+    skos:member
+      :AntennaFlatAddress ,
+      :ApartmentFlatAddress ,
+      :AutomatedTellerMachineFlatAddress ,
+      :BarbecueFlatAddress ,
+      :BlockFlatAddress ,
+      :BoatshedFlatAddress ,
+      :BuildingFlatAddress ,
+      :BungalowFlatAddress ,
+      :CageFlatAddress ,
+      :CarparkFlatAddress ,
+      :CarspaceFlatAddress ,
+      :ClubFlatAddress ,
+      :CoolroomFlatAddress ,
+      :CottageFlatAddress ,
+      :DuplexFlatAddress ,
+      :FlatFlatAddress ,
+      :FactoryFlatAddress ,
+      :GarageFlatAddress ,
+      :HallFlatAddress ,
+      :HouseFlatAddress ,
+      :KioskFlatAddress ,
+      :LobbyFlatAddress ,
+      :LoftFlatAddress ,
+      :LotFlatAddress ,
+      :LeaseFlatAddress ,
+      :MarineBerthFlatAddress ,
+      :MaisonetteFlatAddress ,
+      :OfficeFlatAddress ,
+      :PenthouseFlatAddress ,
+      :RearFlatAddress ,
+      :RoomFlatAddress ,
+      :ReserveFlatAddress ,
+      :SuiteFlatAddress ,
+      :SectionFlatAddress ,
+      :ShedFlatAddress ,
+      :ShopFlatAddress ,
+      :ShowroomFlatAddress ,
+      :SignFlatAddress ,
+      :SiteFlatAddress ,
+      :StallFlatAddress ,
+      :StoreFlatAddress ,
+      :StudioFlatAddress ,
+      :StrataUnitFlatAddress ,
+      :SubstationFlatAddress ,
+      :TenancyFlatAddress ,
+      :TownhouseFlatAddress ,
+      :TowerFlatAddress ,
+      :UnitFlatAddress ,
+      :VillaFlatAddress ,
+      :VaultFlatAddress ,
+      :WardFlatAddress ,
+      :WarehouseFlatAddress ,
+      :WorkshopFlatAddress
+    ;
+    skos:prefLabel "Flat Subclass Collection" .
+
+# This ensures that an instance of a Flat cannot be of more than one subclass
+[
+    rdf:type owl:AllDisjointClasses ;
+    owl:members (
+        :AntennaFlatAddress
+        :ApartmentFlatAddress
+        :AutomatedTellerMachineFlatAddress
+        :BarbecueFlatAddress
+        :BlockFlatAddress
+        :BoatshedFlatAddress
+        :BuildingFlatAddress
+        :BungalowFlatAddress
+        :CageFlatAddress
+        :CarparkFlatAddress
+        :CarspaceFlatAddress
+        :ClubFlatAddress
+        :CoolroomFlatAddress
+        :CottageFlatAddress
+        :DuplexFlatAddress
+        :FlatFlatAddress
+        :FactoryFlatAddress
+        :GarageFlatAddress
+        :HallFlatAddress
+        :HouseFlatAddress
+        :KioskFlatAddress
+        :LobbyFlatAddress
+        :LoftFlatAddress
+        :LotFlatAddress
+        :LeaseFlatAddress
+        :MarineBerthFlatAddress
+        :MaisonetteFlatAddress
+        :OfficeFlatAddress
+        :PenthouseFlatAddress
+        :RearFlatAddress
+        :RoomFlatAddress
+        :ReserveFlatAddress
+        :SuiteFlatAddress
+        :SectionFlatAddress
+        :ShedFlatAddress
+        :ShopFlatAddress
+        :ShowroomFlatAddress
+        :SignFlatAddress
+        :SiteFlatAddress
+        :StallFlatAddress
+        :StoreFlatAddress
+        :StudioFlatAddress
+        :StrataUnitFlatAddress
+        :SubstationFlatAddress
+        :TenancyFlatAddress
+        :TownhouseFlatAddress
+        :TowerFlatAddress
+        :UnitFlatAddress
+        :VillaFlatAddress
+        :VaultFlatAddress
+        :WardFlatAddress
+        :WarehouseFlatAddress
+        :WorkshopFlatAddress
+      ) ;
+].
+
+
+:AntennaFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Antenna"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "ANT"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:ApartmentFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Apartment"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "APT"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:AutomatedTellerMachineFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Automated Teller Machine"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "ATM"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:BarbecueFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Barbecue"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "BBQ"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:BlockFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Block"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "BLCK"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:BoatshedFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Boatshed"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "BTSD"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:BuildingFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Building"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "BLDG"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:BungalowFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Bungalow"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "BNGW"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:CageFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Cage"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "CAGE"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:CarparkFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Carpark"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "CARP"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:CarspaceFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Carspace"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "CARS"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:ClubFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Club"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "CLUB"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:CoolroomFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Coolroom"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "COOL"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:CottageFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Cottage"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "CTGE"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:DuplexFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Duplex"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "DUPL"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:FlatFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Flat"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "FLAT"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:FactoryFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Factory"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "FCTY"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:GarageFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Garage"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "GRGE"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:HallFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Hall"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "HALL"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:HouseFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "House"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "HSE"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:KioskFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Kiosk"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "KSK"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:LobbyFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Lobby"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "LBBY"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:LoftFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Loft"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "LOFT"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:LotFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Lot"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "LOT"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:LeaseFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Lease"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "LSE"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:MarineBerthFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Marine Berth"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "MBTH"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:MaisonetteFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Maisonette"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "MSNT"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:OfficeFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Office"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "OFFC"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:PenthouseFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Penthouse"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "PTHS"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:RearFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Rear"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "REAR"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:RoomFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Room"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "ROOM"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:ReserveFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Reserve"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "RESV"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:SuiteFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Suite"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "SE"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:SectionFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Section"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "SEC"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:ShedFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Shed"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "SHED"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:ShopFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Shop"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "SHOP"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:ShowroomFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Showroom"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "SHRM"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:SignFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Sign"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "SIGN"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+
+:SiteFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Site"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "SITE"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:StallFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Stall"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "STLL"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:StoreFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Store"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "STOR"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:StudioFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Studio"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "STU"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:StrataUnitFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Strata Unit"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "STR"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:SubstationFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Substation"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "SUBS"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:TenancyFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Tenancy"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "TNCY"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:TownhouseFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Townhouse"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "TNHS"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:TowerFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Tower"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "TWR"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:UnitFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Unit"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "UNIT"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:VillaFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Villa"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "VLLA"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:VaultFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Vault"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "VLT"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:WardFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Ward"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "WARD"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:WarehouseFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Warehouse"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "WHSE"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+
+:WorkshopFlatAddress rdfs:subClassOf :FlatAddress , skos:Concept ;
+  skos:prefLabel "Workshop"@en ;
+	skos:definition ""@en ;
+  skos:altLabel "WKSH"^^xsd:string ;
+  dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .

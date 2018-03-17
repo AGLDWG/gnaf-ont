@@ -11,7 +11,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <http://gnafld.net/def/gnaf> .
 
-<http://gnafld.net/def/gnaf/AdressSubclassCollection> a skos:Collection ;
+<http://gnafld.net/def/gnaf/AddressSubclassCollection> a skos:Collection ;
     skos:member
         :RuralAddress ,
         :RuralBlockAddress ,
@@ -134,6 +134,14 @@
       :UrbanUnitAddress
     ) ;
 ].
+
+# new addition to code list
+:FlatAddress rdfs:subClassOf :Address , skos:Concept ;
+skos:prefLabel "Flat Address"@en ;
+skos:definition ""@en ;
+dct:source "Nicholas Car"^^xsd:string ;
+dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+rdfs:isDefinedBy <http://gnafld.net/def/gnaf#> .
 
 :RuralAddress rdfs:subClassOf :RuralAddress , skos:Concept ;
 skos:prefLabel "Rural Address"@en ;

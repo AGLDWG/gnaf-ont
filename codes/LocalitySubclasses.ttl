@@ -10,7 +10,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @base <http://gnafld.net/def/gnaf> .
 
-<http://gnafld.net/def/gnaf/LocalithSubclassCollection> a skos:Collection ;
+<http://gnafld.net/def/gnaf/LocalitySubclassCollection> a skos:Collection ;
     skos:member
         :AliasOnlyLocality ,
         :DistrictLocality ,
