@@ -7,21 +7,6 @@
         <link href="http://pid.data.gov.au/websrv/static/LODE/rec.css" rel="stylesheet" type="text/css" />
         <link href="http://pid.data.gov.au/websrv/static/LODE/extra.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="http://pid.data.gov.au/websrv/static/LODE/favicon.ico" />
-        <script src="http://pid.data.gov.au/websrv/static/LODE/jquery.js"></script>
-        <script src="http://pid.data.gov.au/websrv/static/LODE/jquery.scrollTo.js"></script>
-        <script src="http://pid.data.gov.au/websrv/static/LODE/marked.min.js"></script>
-        <script>
-            $(document).ready(
-                function () {
-                	jQuery(".markdown").each(function(el){
-            jQuery(this).after(marked(jQuery(this).text())).remove()});
-                    var list = $('a[id="http://www.essepuntato.it/tmp/1515125288-ontology"]');
-                    if (list.size() != 0) {
-                    	var element = list.first();
-                    	$.scrollTo(element);
-                    }
-                });
-        </script>
     </head>
     <body>
         <div class="head">
@@ -98,7 +83,7 @@
                 <li><a href="#GeocodeReliability" title="http://gnafld.net/def/gnaf#GeocodeReliability">Geocode Reliability</a></li>
                 <li><a href="#GnafConfidence" title="http://gnafld.net/def/gnaf#GnafConfidence">GNAF Confidence</a></li>
                 <li><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a></li>
-                <li><a href="#Address" title="http://reference.data.gov.au/def/ont/iso19160-1-address#Address">ISO19160-1 Address</a></li>
+                <li><a href="#iso19160:Address" title="http://reference.data.gov.au/def/ont/iso19160-1-address#Address">ISO19160-1 Address</a></li>
                 <li><a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a></li>
                 <li><a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a></li>
                 <li><a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a></li>
@@ -119,7 +104,7 @@
                     <dt>has super-classes</dt>
                     <dd><span class="dotted" title="http://dbpedia.org/ontology/Location">location</span><sup title="class" class="type-c">c</sup></dd>
                     <dd><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#Address" title="http://reference.data.gov.au/def/ont/iso19160-1-address#Address">ISO19160-1 Address</a><sup title="class" class="type-c">c</sup></dd>
+                    <dd><a href="#iso19160:Address" title="http://reference.data.gov.au/def/ont/iso19160-1-address#Address">ISO19160-1 Address</a><sup title="class" class="type-c">c</sup></dd>
                     <dd><span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span></dd>
                     <dd><span class="dotted" title="http://www.w3.org/ns/prov#Location">location</span></dd>
                     <dd><span class="dotted" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</span> <span class="logic">min</span> 1 <a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a><sup title="class" class="type-c">c</sup></dd>
@@ -217,7 +202,7 @@
                     <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup>, <sup title="class" class="type-c">c</sup>, <a href="#AddressSite" title="http://gnafld.net/def/gnaf#AddressSite">Address Site</a><sup title="class" class="type-c">c</sup>, <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a><sup title="class" class="type-c">c</sup>, <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup>, <a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a><sup title="class" class="type-c">c</sup>, <a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a><sup title="class" class="type-c">c</sup>, <a href="#State" title="http://gnafld.net/def/gnaf#State">State</a><sup title="class" class="type-c">c</sup>, <a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a><sup title="class" class="type-c">c</sup></dd>
                 </dl>
             </div>
-            <div id="Address" class="entity">
+            <div id="iso19160:Address" class="entity">
                 <a name="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"></a>
                 <h3>ISO19160-1 Address<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://reference.data.gov.au/def/ont/iso19160-1-address#Address</p>
