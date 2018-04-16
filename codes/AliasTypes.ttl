@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf#> .
+@prefix : <http://gnafld.net/def/gnaf/code/AliasTypes#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -11,107 +11,126 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <http://gnafld.net/def/gnaf> .
 
-<http://gnafld.net/def/gnaf/AliasSubclassCollection> a skos:Collection ;
-    skos:member
-      :SynonymAlias ,
-      :ContributorDefinedAlias ,
-      :AlternativeLocalityAlias ,
-      :RangedAddressAlias ,
-      :LevelDuplicationAlias ,
-      :FlatNumberNoFirstSuffixCorrelationAlias ,
-      :FlatPrefixSuffixDeduplicationAlias ,
-      :MaintenanceReferenceAlias ,
-      :SpatiallyRelatedAlias ,
-      :AlternativeAlias ,
-      :LocalityAlias ,
-      :StreetLocalityAlias
-    ;
-    skos:prefLabel "Alias Subclass Collection" .
+<http://gnafld.net/def/gnaf/code/AliasTypes> a skos:ConceptScheme ;
+  skos:prefLabel "Alias Types" ;
+  rdfs:label "Alias Types" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:publisher <http://psma.com.au> ;
+  dct:issued "2018-04-16" ;
+  dct:subject "GNAF Aliases"@en ;
+  skos:hasTopConcept
+    :Synonym ,
+    :ContributorDefined ,
+    :AlternativeLocality ,
+    :RangedAddress ,
+    :LevelDuplication ,
+    :FlatNumberNoFirstSuffixCorrelation ,
+    :FlatPrefixSuffixDeduplication ,
+    :MaintenanceReference ,
+    :Locality .
+
+:allConcepts a skos:Collection ;
+  skos:member
+    :Synonym ,
+    :ContributorDefined ,
+    :AlternativeLocality ,
+    :RangedAddress ,
+    :LevelDuplication ,
+    :FlatNumberNoFirstSuffixCorrelation ,
+    :FlatPrefixSuffixDeduplication ,
+    :MaintenanceReference ,
+    :SpatiallyRelated ,
+    :Alternative ,
+    :Locality ,
+    :StreetLocality
+  ;
+  skos:prefLabel "All Concepts Collection" ;
+  rdfs:label "All Concepts Collection" .
 
 # This ensures that an instance of an Alias cannot be of more than one subclass
 [
   rdf:type owl:AllDisjointClasses ;
   owl:members (
-        :SynonymAlias
-        :ContributorDefinedAlias
-        :AlternativeLocalityAlias
-        :RangedAddressAlias
-        :LevelDuplicationAlias
-        :FlatNumberNoFirstSuffixCorrelationAlias
-        :FlatPrefixSuffixDeduplicationAlias
-        :MaintenanceReferenceAlias
-        :SpatiallyRelatedAlias
-        :AlternativeAlias
-        :LocalityAlias
-        :StreetLocalityAlias
-    ) ;
+    :Synonym
+    :ContributorDefined
+    :AlternativeLocality
+    :RangedAddress
+    :LevelDuplication
+    :FlatNumberNoFirstSuffixCorrelation
+    :FlatPrefixSuffixDeduplication
+    :MaintenanceReference
+    :SpatiallyRelated
+    :Alternative
+    :Locality
+    :StreetLocality
+  ) ;
 ].
 
-:SynonymAlias rdfs:subClassOf :Alias , skos:Concept;
-    skos:prefLabel "Synonym Alias"@en ;
+:Synonym a skos:Concept ;
+    skos:prefLabel "Synonym"@en ;
     skos:definition ""@en ;
     skos:altLabel "SYN" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:ContributorDefinedAlias rdfs:subClassOf :Alias , skos:Concept;
-    skos:prefLabel "Contributor Defined Alias"@en ;
+:ContributorDefined a skos:Concept ;
+    skos:prefLabel "Contributor Defined"@en ;
     skos:definition ""@en ;
     skos:altLabel "CD" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:AlternativeLocalityAlias rdfs:subClassOf :Alias , skos:Concept;
-    skos:prefLabel "Alternative Locality Alias"@en ;
+:AlternativeLocality a skos:Concept ;
+    skos:prefLabel "Alternative Locality"@en ;
     skos:definition ""@en ;
     skos:altLabel "AL" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:RangedAddressAlias rdfs:subClassOf :Alias , skos:Concept;
-    skos:prefLabel "Ranged Address Alias"@en ;
+:RangedAddress a skos:Concept ;
+    skos:prefLabel "Ranged Address"@en ;
     skos:definition ""@en ;
     skos:altLabel "RA" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:LevelDuplicationAlias rdfs:subClassOf :Alias , skos:Concept;
-    skos:prefLabel "Level Duplication Alias"@en ;
+:LevelDuplication a skos:Concept ;
+    skos:prefLabel "Level Duplication"@en ;
     skos:definition ""@en ;
     skos:altLabel "LD" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:FlatNumberNoFirstSuffixCorrelationAlias rdfs:subClassOf :Alias , skos:Concept;
-    skos:prefLabel "Flat Number – No First Suffix Correlation Alias"@en ;
+:FlatNumberNoFirstSuffixCorrelation a skos:Concept ;
+    skos:prefLabel "Flat Number – No First Suffix Correlation"@en ;
     skos:definition ""@en ;
     skos:altLabel "FNNFS" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:FlatPrefixSuffixDeduplicationAlias rdfs:subClassOf :Alias , skos:Concept;
-    skos:prefLabel "Flat Prefix – Suffix Deduplication Alias"@en ;
+:FlatPrefixSuffixDeduplication a skos:Concept ;
+    skos:prefLabel "Flat Prefix – Suffix Deduplication"@en ;
     skos:definition ""@en ;
     skos:altLabel "FPS" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:MaintenanceReferenceAlias rdfs:subClassOf :Alias , skos:Concept;
-    skos:prefLabel "Maintenance Reference Alias"@en ;
+:MaintenanceReference a skos:Concept ;
+    skos:prefLabel "Maintenance Reference"@en ;
     skos:definition ""@en ;
     skos:altLabel "MR" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:LocalityAlias rdfs:subClassOf :Alias , skos:Concept ;
+:LocalityAlias a skos:Concept ;
     skos:prefLabel "Locality Alias"@en ;
     skos:definition ""@en ;
     skos:altLabel "LA" ;
@@ -130,26 +149,29 @@
                       owl:onDataRange xsd:int
                     ] .
 
-:SpatiallyRelatedAlias rdfs:subClassOf :LocalityAlias , skos:Concept;
-    skos:prefLabel "Spatially Related Alias"@en ;
+:SpatiallyRelated a skos:Concept ;
+    skos:prefLabel "Spatially Related"@en ;
+    skos:broader :LocalityAlias ;
     skos:definition ""@en ;
     skos:altLabel "SR" ;
     dct:source "G-NAF Data Product Description, November 2017: LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:AlternativeAlias rdfs:subClassOf :LocalityAlias , skos:Concept;
-    skos:prefLabel "Alternative Alias"@en ;
+:Alternative a skos:Concept ;
+    skos:prefLabel "Alternative"@en ;
+    skos:broader :LocalityAlias ;
     skos:definition ""@en ;
     skos:altLabel "ALT" ;
     dct:source "G-NAF Data Product Description, November 2017: STREET_LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
 
-:StreetLocalityAlias rdfs:subClassOf :LocalityAlias , skos:Concept;
-    skos:prefLabel "Street Locality Alias"@en ;
+:StreetLocality a skos:Concept ;
+    skos:prefLabel "Street Locality"@en ;
+    skos:broader :LocalityAlias ;
     skos:definition ""@en ;
     skos:altLabel "" ;
     dct:source "This ontology"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .

@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf#> .
+@prefix : <http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinTypes#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,34 +10,45 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @base <http://gnafld.net/def/gnaf> .
 
-<http://gnafld.net/def/gnaf/AutoPrimarySecondaryJoinSubclassCollection> a skos:Collection ;
+
+<http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinTypes> a skos:ConceptScheme ;
+  skos:prefLabel "Primary Secondary Join Types" ;
+  rdfs:label "Primary Secondary Join Types" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:publisher <http://psma.com.au> ;
+  dct:issued "2018-04-16" ;
+  dct:subject "GNAF Primary Secondary Joins"@en ;
+  skos:hasTopConcept :Auto , :Manual .
+
+:allConcepts a skos:Collection ;
     skos:member
-      :AutoPrimarySecondaryJoin ,
-      :ManualPrimarySecondaryJoin
+      :Auto ,
+      :Manual
     ;
-    skos:prefLabel "Primary Secondary Join Collection" .
+    skos:prefLabel "All Concepts Collection" ;
+    rdfs:label "All Concepts Collection" .
 
 # This ensures that an instance of a Primary Secondary Join cannot be of more than one subclass
 [
     a owl:AllDisjointClasses ;
     owl:members (
-          :AutoPrimarySecondaryJoin
-          :ManualPrimarySecondaryJoin
+          :Auto
+          :Manual
       ) ;
 ].
 
-:AutoPrimarySecondaryJoin rdfs:subClassOf :PrimarySecondaryJoin , skos:Concept ;
+:Auto a skos:Concept ;
     skos:prefLabel "Auto"@en ;
     skos:definition "Automtically matched Primary & Secondary, both parent & child have same root Address."@en ;
     skos:altLabel "1"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType> .
 
-:ManualPrimarySecondaryJoin rdfs:subClassOf :PrimarySecondaryJoin , skos:Concept ;
+:Manual a skos:Concept ;
     skos:prefLabel "Manual"@en ;
     skos:definition "Manually generated link, may or may not have same root Address"@en ;
     skos:altLabel "2"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType> .

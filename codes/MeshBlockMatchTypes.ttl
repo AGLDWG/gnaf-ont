@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf#> .
+@prefix : <http://gnafld.net/def/gnaf/code/MeshBlockMatchTypes#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,64 +10,80 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @base <http://gnafld.net/def/gnaf> .
 
-<http://gnafld.net/def/gnaf/MeshBlockMatchSubclassCollection> a skos:Collection ;
+
+<http://gnafld.net/def/gnaf/code/MeshBlockMatchTypes> a skos:ConceptScheme ;
+  skos:prefLabel "Mesh Block Match Types" ;
+  rdfs:label "Mesh Block Match  Types" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:publisher <http://psma.com.au> ;
+  dct:issued "2018-04-16" ;
+  dct:subject "GNAF Mesh Block Matches"@en ;
+  skos:hasTopConcept
+    :ParcelLevel ,
+    :GapGeocodedAddressLevel ,
+    :StreetLocalityLevelSingle ,
+    :StreetLocalityLevelMultiple ,
+    :LocalityLevelSingle .
+
+:allConcepts a skos:Collection ;
     skos:member
-        :ParcelLevelMatch ,
-        :GapGeocodedAddressLevelMatch ,
-        :StreetLocalityLevelSingleMatch ,
-        :StreetLocalityLevelMultipleMatch ,
-        :LocalityLevelSingleMatch
+        :ParcelLevel ,
+        :GapGeocodedAddressLevel ,
+        :StreetLocalityLevelSingle ,
+        :StreetLocalityLevelMultiple ,
+        :LocalityLevelSingle
     ;
-    skos:prefLabel "Mesh Block Match subclass Collection" .
+    skos:prefLabel "All Concepts Collection" ;
+    rdfs:label "All Concepts Collection" .
 
 # This ensures that an instance of a Mesh Block Match cannot be of more than one subclass
 [
     a owl:AllDisjointClasses ;
     owl:members (
-          :ParcelLevelMatch
-          :GapGeocodedAddressLevelMatch
-          :StreetLocalityLevelSingleMatch
-          :StreetLocalityLevelMultipleMatch
-          :LocalityLevelSingleMatch
+          :ParcelLevel
+          :GapGeocodedAddressLevel
+          :StreetLocalityLevelSingle
+          :StreetLocalityLevelMultiple
+          :LocalityLevelSingle
       ) ;
 ].
 
-:ParcelLevelMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
+:ParcelLevel a skos:Concept ;
     skos:prefLabel "Parcel Level Match"@en ;
     skos:definition "A parcel level geocode for the address has been applied and clearly within the boundaries of a single mesh block. The mesh block ID allocated to the address in most cases is at a very high level of confidence."@en ;
     skos:altLabel "1"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
 
-:GapGeocodedAddressLevelMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
+:GapGeocodedAddressLevel a skos:Concept ;
     skos:prefLabel "Gap Geocoded Address Level Match"@en ;
     skos:definition "A gap geocoded match for the address has been applied and clearly within the boundaries of a single mesh block. The mesh block ID allocated to the address in most cases is at a high level of confidence."@en ;
     skos:altLabel "2"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
 
-:StreetLocalityLevelSingleMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
+:StreetLocalityLevelSingle a skos:Concept ;
     skos:prefLabel "Street Locality Level Single Match"@en ;
     skos:definition "A street-locality level geocode for the address has been applied and clearly within the boundaries of a single mesh block. The mesh block ID allocated to the address in most cases is at a high level of confidence."@en ;
     skos:altLabel "3"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
 
-:StreetLocalityLevelMultipleMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
+:StreetLocalityLevelMultiple a skos:Concept ;
     skos:prefLabel "Street Locality Level Multiple Match"@en ;
     skos:definition "A street-locality level geocode for the address has been applied and is within the boundaries of a multiple mesh blocks. The mesh block ID allocated to the address is at a low level of confidence."@en ;
     skos:altLabel "4"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
 
-:LocalityLevelSingleMatch rdfs:subClassOf :MeshBlockMatch , skos:Concept ;
+:LocalityLevelSingle a skos:Concept ;
     skos:prefLabel "Locality Level Single Match"@en ;
     skos:definition "A locality level geocode for the address has been applied and is within the boundaries of a multiple mesh blocks. The mesh block ID allocated to the address is at a very low level of confidence."@en ;
     skos:altLabel "5"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
