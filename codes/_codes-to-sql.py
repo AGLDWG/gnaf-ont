@@ -29,7 +29,7 @@ def generate_sql(files, files_filter, sparql_query):
     sql = ''
     fs = [k for k in files if files_filter in k]
     for f in fs:
-        vocab_name = f.replace('Subclasses.ttl', '').replace('Individuals.ttl', '')
+        vocab_name = f.replace('Types.ttl', '').replace('Individuals.ttl', '')
         print('loading ' + vocab_name)
         g = rdflib.Graph()
         g.load(path.join(this_dir, f), format='turtle')
@@ -58,17 +58,17 @@ q_individuals = '''
 sql = generate_sql(f, 'Individuals', q_individuals)
 
 # load all subclasses
-q_subclasses = '''
+q_types = '''
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     SELECT ?code ?uri ?prefLabel
     WHERE {
-        ?uri    rdfs:subClassOf skos:Concept ;
+        ?uri    a skos:Concept ;
                 skos:prefLabel ?prefLabel ;
                 skos:altLabel ?code .
     } 
 '''
-sql += generate_sql(f, 'Subclasses', q_subclasses)
+sql += generate_sql(f, 'Types', q_types)
 
 # write SQL to file
 with open(path.join(this_dir, 'codes.sql'), 'w') as f:
