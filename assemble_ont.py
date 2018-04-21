@@ -3,10 +3,10 @@ import rdflib
 
 g = rdflib.Graph()
 
-# add in all codes
-for f in os.listdir('codes'):
+# add in all code
+for f in os.listdir('code'):
     if f.endswith('.ttl'):
-        g.parse(os.path.join('codes', f), format='turtle')
+        g.parse(os.path.join('code', f), format='turtle')
         print(len(g))
 
 # add in main ontology

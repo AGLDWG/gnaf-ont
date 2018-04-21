@@ -1,6 +1,6 @@
-# This file converts the 14 code lists (list of individuals and collections of subclasses) in this codes/ folder in ttl
+# This file converts the 14 code lists (list of individuals and collections of subclasses) in this code/ folder in ttl
 # files into SQL statements that can then be loaded into a Postgres DB for fast term lookup using altlabels, as per the 
-# GNAF code lists (authority codes).
+# GNAF code lists (authority code).
 from os import path, walk
 import rdflib
 
@@ -71,7 +71,7 @@ q_types = '''
 sql += generate_sql(f, 'Types', q_types)
 
 # write SQL to file
-with open(path.join(this_dir, 'codes.sql'), 'w') as f:
+with open(path.join(this_dir, 'code.sql'), 'w') as f:
     f.write(create_table)
     f.write(sql)
 
