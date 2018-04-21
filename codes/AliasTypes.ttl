@@ -68,7 +68,6 @@
 
 :Synonym a skos:Concept ;
     skos:prefLabel "Synonym"@en ;
-    skos:definition ""@en ;
     skos:altLabel "SYN" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -76,7 +75,6 @@
 
 :ContributorDefined a skos:Concept ;
     skos:prefLabel "Contributor Defined"@en ;
-    skos:definition ""@en ;
     skos:altLabel "CD" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -84,7 +82,6 @@
 
 :AlternativeLocality a skos:Concept ;
     skos:prefLabel "Alternative Locality"@en ;
-    skos:definition ""@en ;
     skos:altLabel "AL" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -92,7 +89,6 @@
 
 :RangedAddress a skos:Concept ;
     skos:prefLabel "Ranged Address"@en ;
-    skos:definition ""@en ;
     skos:altLabel "RA" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -100,7 +96,6 @@
 
 :LevelDuplication a skos:Concept ;
     skos:prefLabel "Level Duplication"@en ;
-    skos:definition ""@en ;
     skos:altLabel "LD" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -108,7 +103,6 @@
 
 :FlatNumberNoFirstSuffixCorrelation a skos:Concept ;
     skos:prefLabel "Flat Number – No First Suffix Correlation"@en ;
-    skos:definition ""@en ;
     skos:altLabel "FNNFS" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -116,7 +110,6 @@
 
 :FlatPrefixSuffixDeduplication a skos:Concept ;
     skos:prefLabel "Flat Prefix – Suffix Deduplication"@en ;
-    skos:definition ""@en ;
     skos:altLabel "FPS" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -124,7 +117,6 @@
 
 :MaintenanceReference a skos:Concept ;
     skos:prefLabel "Maintenance Reference"@en ;
-    skos:definition ""@en ;
     skos:altLabel "MR" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -132,7 +124,6 @@
 
 :LocalityAlias a skos:Concept ;
     skos:prefLabel "Locality Alias"@en ;
-    skos:definition ""@en ;
     skos:altLabel "LA" ;
     dct:source "This ontology"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -152,7 +143,6 @@
 :SpatiallyRelated a skos:Concept ;
     skos:prefLabel "Spatially Related"@en ;
     skos:broader :LocalityAlias ;
-    skos:definition ""@en ;
     skos:altLabel "SR" ;
     dct:source "G-NAF Data Product Description, November 2017: LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -161,7 +151,6 @@
 :Alternative a skos:Concept ;
     skos:prefLabel "Alternative"@en ;
     skos:broader :LocalityAlias ;
-    skos:definition ""@en ;
     skos:altLabel "ALT" ;
     dct:source "G-NAF Data Product Description, November 2017: STREET_LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -170,8 +159,6 @@
 :StreetLocality a skos:Concept ;
     skos:prefLabel "Street Locality"@en ;
     skos:broader :LocalityAlias ;
-    skos:definition ""@en ;
-    skos:altLabel "" ;
     dct:source "This ontology"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .

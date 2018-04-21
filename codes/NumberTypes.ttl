@@ -53,7 +53,7 @@
     skos:definition "The first street number"@en ;
     skos:altLabel "FSN" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/NumberType> .
 
 :Flat a skos:Concept ;
@@ -61,7 +61,7 @@
     skos:definition "A flat's number"@en ;
     skos:altLabel "FN" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/NumberType> .
 
 :LastStreet a skos:Concept ;
@@ -69,7 +69,7 @@
     skos:definition "The last street number"@en ;
     skos:altLabel "LSN" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/NumberType> .
 
 :Level a skos:Concept ;
@@ -77,7 +77,7 @@
     skos:definition "a building level number"@en ;
     skos:altLabel "LN" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/NumberType> .
 
 :Lot a skos:Concept ;
@@ -85,5 +85,5 @@
     skos:definition "A lot number"@en ;
     skos:altLabel "LON" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/NumberType> .

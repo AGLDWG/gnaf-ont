@@ -39,10 +39,10 @@
 
 :Auto a skos:Concept ;
     skos:prefLabel "Auto"@en ;
-    skos:definition "Automtically matched Primary & Secondary, both parent & child have same root Address."@en ;
+    skos:definition "Automatically matched Primary & Secondary, both parent & child have same root Address."@en ;
     skos:altLabel "1"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType> .
 
 :Manual a skos:Concept ;
@@ -50,5 +50,5 @@
     skos:definition "Manually generated link, may or may not have same root Address"@en ;
     skos:altLabel "2"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/PrimarySecondaryJoinType> .

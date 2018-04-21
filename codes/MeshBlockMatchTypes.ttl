@@ -53,7 +53,7 @@
     skos:definition "A parcel level geocode for the address has been applied and clearly within the boundaries of a single mesh block. The mesh block ID allocated to the address in most cases is at a very high level of confidence."@en ;
     skos:altLabel "1"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
 
 :GapGeocodedAddressLevel a skos:Concept ;
@@ -61,7 +61,7 @@
     skos:definition "A gap geocoded match for the address has been applied and clearly within the boundaries of a single mesh block. The mesh block ID allocated to the address in most cases is at a high level of confidence."@en ;
     skos:altLabel "2"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
 
 :StreetLocalityLevelSingle a skos:Concept ;
@@ -69,7 +69,7 @@
     skos:definition "A street-locality level geocode for the address has been applied and clearly within the boundaries of a single mesh block. The mesh block ID allocated to the address in most cases is at a high level of confidence."@en ;
     skos:altLabel "3"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
 
 :StreetLocalityLevelMultiple a skos:Concept ;
@@ -77,7 +77,7 @@
     skos:definition "A street-locality level geocode for the address has been applied and is within the boundaries of a multiple mesh blocks. The mesh block ID allocated to the address is at a low level of confidence."@en ;
     skos:altLabel "4"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
 
 :LocalityLevelSingle a skos:Concept ;
@@ -85,5 +85,5 @@
     skos:definition "A locality level geocode for the address has been applied and is within the boundaries of a multiple mesh blocks. The mesh block ID allocated to the address is at a very low level of confidence."@en ;
     skos:altLabel "5"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/MeshBlockMatchType> .
