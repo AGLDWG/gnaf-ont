@@ -5,11 +5,11 @@ from datetime import datetime
 from jinja2 import FileSystemLoader, Environment
 
 
-def generate_html_from_template(template, data):
+def generate_html_from_template(template, data, url=None):
     loader = FileSystemLoader(searchpath=os.path.dirname(__file__))
     env = Environment(loader=loader)
     template = env.get_template(template)
-    return template.render(data=data)
+    return template.render(data=data, url=url)
 
 
 def generate_ConceptSchema_html(g):
@@ -179,7 +179,7 @@ def generate_html(ttl_file):
     html += generate_Concepts_html(g)
 
     with open(html_file, 'w') as f:
-        f.write(generate_html_from_template('tpl_vocab.html', html))
+        f.write(generate_html_from_template('tpl_vocab.html', html, url='http://gnafld.net/def/gnaf/code/' + ttl_file.replace('.ttl', '')))
 
     return html_file
 
@@ -191,5 +191,5 @@ if __name__ == '__main__':
     f = []
     for (dirpath, dirnames, filenames) in walk(this_dir):
         for filename in sorted(filenames):
-            if 'Types.ttl' in filename:
+            if 'GeocodeTypes.ttl' in filename:
                 generate_html(filename)

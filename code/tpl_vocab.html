@@ -8,6 +8,20 @@
         .list {
             padding-left: 20px;
         }
+
+        #alt {
+            font-size: small;
+            width: 250px;
+        }
+
+        #main {
+            float:  left;
+            width:  700px;
+        }
+
+        #main * {
+            border:none;
+        }
     </style>
 </head>
 <body>
@@ -22,13 +36,26 @@
                 <a href="/address/">Address Register</a>
                 <a href="/sparql">SPARQL endpoint</a>
                 <a href="/def/gnaf">GNAF ontology</a>
-                <a href="/def/gnaf/codes">GNAF codes</a>
+                <a href="/def/gnaf/code/">GNAF codes</a>
                 <a href="/about">About</a>
             </div>
             <div style="clear:both;"></div>
         </div><!-- #header -->
             <div id="container-content">
+                <div id="alt" style="float:right; display:block;">
+                    <h3>Alternate views</h3>
+                    <p>See this vocab in other formats:</p>
+                    <ul><li><a href="{{ url }}?_format=text/turtle">RDF (turtle)</a></li></ul>
+
+                    <p>This vocabulary is also stored in the GNAF database at the</p>
+                    <ul><li><a href="/sparql">SPARQL endpoint</a></li></ul>
+                </div>
+
+                <div id="main">
                 {{ data|safe }}
+                </div>
+
+                <div style="clear:both;"></div>
             </div><!-- #container-content -->
         <div id="footer"></div>
     </div><!-- #widther -->

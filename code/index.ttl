@@ -1,0 +1,46 @@
+@prefix : <http://gnafld.net/def/gnaf/code/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:AddressTypes a skos:ConceptScheme ;
+    rdfs:label "Address Types"@en ;
+    reg:register : .
+
+:AliasTypes a skos:ConceptScheme ;
+    rdfs:label "Alias Types"@en ;
+    reg:register : .
+
+:FlatTypes a skos:ConceptScheme ;
+    rdfs:label "Flat Types"@en ;
+    reg:register : .
+
+:GeocodeTypes a skos:ConceptScheme ;
+    rdfs:label "Geocode Types"@en ;
+    reg:register : .
+
+:LocalityTypes a skos:ConceptScheme ;
+    rdfs:label "Locality Types"@en ;
+    reg:register : .
+
+:MeshBlockMatchTypes a skos:ConceptScheme ;
+    rdfs:label "Mesh Block Match Types"@en ;
+    reg:register : .
+
+:NumberTypes a skos:ConceptScheme ;
+    rdfs:label "Number Types"@en ;
+    reg:register : .
+
+:PrimarySecondaryJoinTypes a skos:ConceptScheme ;
+    rdfs:label "Primary Secondary Join Types"@en ;
+    reg:register : .
+
+:StreetTypes a skos:ConceptScheme ;
+    rdfs:label "Street Types"@en ;
+    reg:register : .
+
+: a reg:Register ;
+    rdfs:label "Code Lists Register"@en .
