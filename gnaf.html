@@ -1,63 +1,92 @@
+<!doctype html>
 <html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>GNAF ontology</title>
-        <link href="http://pid.data.gov.au/websrv/static/LODE/owl.css" rel="stylesheet" type="text/css" />
-        <link href="http://pid.data.gov.au/websrv/static/LODE/Primer.css" rel="stylesheet" type="text/css" />
-        <link href="http://pid.data.gov.au/websrv/static/LODE/rec.css" rel="stylesheet" type="text/css" />
-        <link href="http://pid.data.gov.au/websrv/static/LODE/extra.css" rel="stylesheet" type="text/css" />
-        <link rel="shortcut icon" href="http://pid.data.gov.au/websrv/static/LODE/favicon.ico" />
+        <link href="http://pid.data.gov.au/websrv/static/LODE/owl.css" rel="stylesheet" type="text/css">
+        <link href="http://pid.data.gov.au/websrv/static/LODE/Primer.css" rel="stylesheet" type="text/css">
+        <link href="http://pid.data.gov.au/websrv/static/LODE/rec.css" rel="stylesheet" type="text/css">
+        <link href="http://pid.data.gov.au/websrv/static/LODE/extra.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="head">
             <h1>GNAF ontology</h1>
             <dl>
-                <dt>IRI:</dt>
-                <dd>http://gnafld.net/def/gnaf</dd>
-                <dt>Version IRI:</dt>
-                <dd>http://gnafld.net/def/gnaf/1.0</dd>
-            </dl>
-            <dl>
-                <dt>Current version:</dt>
-                <dd>1.1</dd>
-            </dl>
-            <dl>
-                <dt>Authors:</dt>
-                <dd>Nicholas Car</dd>
-                <dd><a href="http://orcid.org/0000-0002-8742-7730">http://orcid.org/0000-0002-8742-7730</a></dd>
-                <dt>Contributors:</dt>
-                <dd>Joseph Abhayaratna</dd>
-                <dd><a href="joseph.abhayaratna@psma.com.au">joseph.abhayaratna@psma.com.au</a></dd>
-            </dl>
-            <dl>
-                <dt>Publisher:</dt>
-                <dd>Australian Government Linked Data Working Group</dd>
-                <dd><a href="http://linked.data.gov.au">http://linked.data.gov.au</a></dd>
-            </dl>
-            <dl>
-                <dt>Imported Ontologies:</dt>
-                <dd><a href="http://www.opengis.net/ont/geosparql">GeoSPARQL</a></dd>
-                <dd><a href="http://www.w3.org/ns/prov-o-20130430">PROV-O</a></dd>
-            </dl>
-            <dl>
-                <dt>Ontology source:</dt>
+                <dt>
+                    IRI:
+                </dt>
                 <dd>
-                    <a href="http://gnafld.net/def/gnaf.rdf">RDF+XML</a>, <a href="http://gnafld.net/def/gnaf.owl">RDF+OWL</a>, <a href="http://gnafld.net/def/gnaf.ttl">RDF, turtle</a>
-                  </dd>
-                <dd><a href="https://github.com/AGLDWG/gnaf-ont">Git repository on GitHub</a></dd>
+                    http://gnafld.net/def/gnaf
+                </dd>
+                <dt>
+                    Version IRI:
+                </dt>
+                <dd>
+                    http://gnafld.net/def/gnaf/1.1
+                </dd>
             </dl>
             <dl>
-                <dt>Ontology in operation:</dt>
-                <dd><a href="http://gnafld.net">The GNAF Linked Data API online</a></dd>
+                <dt>
+                    Current version:
+                </dt>
+                <dd>
+                    1.1
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    Authors:
+                </dt>
+                <dd>
+                    Nicholas Car
+                </dd>
+                <dd>
+                    <a href="http://orcid.org/0000-0002-8742-7730">http://orcid.org/0000-0002-8742-7730</a>
+                </dd>
+                <dt>
+                    Contributors:
+                </dt>
+                <dd>
+                    Joseph Abhayaratna
+                </dd>
+                <dd>
+                    <a href="mailto:oseph.abhayaratna@psma.com.au">joseph.abhayaratna@psma.com.au</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    Publisher:
+                </dt>
+                <dd>
+                    Australian Government Linked Data Working Group
+                </dd>
+                <dd>
+                    <a href="http://linked.data.gov.au">http://linked.data.gov.au</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    Imported Ontologies:
+                </dt>
+                <dd>
+                    <a href="http://www.opengis.net/ont/geosparql">http://www.opengis.net/ont/geosparql</a>
+                </dd>
+                <dd>
+                    <a href="http://www.w3.org/ns/prov">http://www.w3.org/ns/prov</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    Ontology source:
+                </dt>
+                <dd>
+                    <a href="http://gnafld.net/def/gnaf.ttl">Ontology source</a>
+                </dd>
             </dl>
         </div>
-        <hr />
+        <hr>
         <h2>Abstract</h2>
-        <span class="markdown">An ontology for the content of the PSMA Geocoded National Address File (G-NAF).
-        The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.
-        The G-NAF does not contain any names or personal information.
-        The base content of the G-NAF is available freely online at &lt;https://data.gov.au/dataset/geocoded-national-address-file-g-naf&gt; and also via a Linked Data API that uses this ontology at &lt;http://gnafld.net&gt;.
-        This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 "Addressing -- Part 1: Conceptual model" standard (see &lt;https://www.iso.org/standard/61710.html&gt;) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at &lt;http://reference.data.gov.au/def/ont/iso19160-1-address&gt;.</span>
+        <span class="markdown">An ontology for the content of the PSMA Geocoded National Address File (G-NAF). The G-NAF is Australia?s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface. The G-NAF does not contain any names or personal information. The base content of the G-NAF is available freely online at &lt;https://data.gov.au/dataset/geocoded-national-address-file-g-naf&gt; and also via a Linked Data API that uses this ontology at &lt;http://gnafld.net&gt;. This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 "Addressing -- Part 1: Conceptual model" standard (see &lt;https://www.iso.org/standard/61710.html&gt;) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at &lt;http://reference.data.gov.au/def/ont/iso19160-1-address&gt;.</span>
         <div id="toc">
             <h2>Table of Content</h2>
             <ol>
@@ -76,24 +105,72 @@
         <div id="classes">
             <h2>Classes</h2>
             <ul class="hlist">
+                <li><a href="#MB2011" title="http://gnafld.net/def/gnaf#MB2011">2011 Mesh Block</a></li>
+                <li><a href="#MB2016" title="http://gnafld.net/def/gnaf#MB2016">2016 Mesh Block</a></li>
                 <li><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a></li>
                 <li><a href="#AddressSite" title="http://gnafld.net/def/gnaf#AddressSite">Address Site</a></li>
                 <li><a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a></li>
                 <li><a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a></li>
-                <li><a href="#GeocodeReliability" title="http://gnafld.net/def/gnaf#GeocodeReliability">Geocode Reliability</a></li>
-                <li><a href="#GnafConfidence" title="http://gnafld.net/def/gnaf#GnafConfidence">GNAF Confidence</a></li>
                 <li><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a></li>
-                <li><a href="#iso19160:Address" title="http://reference.data.gov.au/def/ont/iso19160-1-address#Address">ISO19160-1 Address</a></li>
+                <li><a href="#d4e989" title="http://reference.data.gov.au/def/ont/iso19160-1-address#Address">ISO19160-1 Address</a></li>
                 <li><a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a></li>
                 <li><a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a></li>
                 <li><a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a></li>
                 <li><a href="#Number" title="http://gnafld.net/def/gnaf#Number">Number</a></li>
                 <li><a href="#State" title="http://gnafld.net/def/gnaf#State">State</a></li>
                 <li><a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a></li>
-                <li><a href="#StreetConfirmation" title="http://gnafld.net/def/gnaf#StreetConfirmation">Street Confirmation</a></li>
                 <li><a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a></li>
-                <li><a href="#StreetSuffix" title="http://gnafld.net/def/gnaf#StreetSuffix">Street Suffix</a></li>
             </ul>
+            <div id="MB2011" class="entity">
+                <a name="http://gnafld.net/def/gnaf#MB2011"></a>
+                <h3>2011 Mesh Block<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#MB2011</p>
+                <dl class="definedBy">
+                    <dt>
+                        is defined by
+                    </dt>
+                    <dd>
+                        <a href="http://gnafld.net/def/gnaf/">http://gnafld.net/def/gnaf/</a>
+                    </dd>
+                </dl>
+                <div class="comment">
+                    <span class="markdown">A Mesh Block from the 2011 census</span>
+                </div>
+                <dl class="description">
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                </dl>
+            </div>
+            <div id="MB2016" class="entity">
+                <a name="http://gnafld.net/def/gnaf#MB2016"></a>
+                <h3>2016 Mesh Block<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#MB2016</p>
+                <dl class="definedBy">
+                    <dt>
+                        is defined by
+                    </dt>
+                    <dd>
+                        <a href="http://gnafld.net/def/gnaf/">http://gnafld.net/def/gnaf/</a>
+                    </dd>
+                </dl>
+                <div class="comment">
+                    <span class="markdown">A Mesh Block from the 2016 census</span>
+                </div>
+                <dl class="description">
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                </dl>
+            </div>
             <div id="Address" class="entity">
                 <a name="http://gnafld.net/def/gnaf#Address"></a>
                 <h3>Address<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
@@ -101,30 +178,130 @@
                 <p><em><strong>Figure 2:</strong>Address class and its properties</em></p>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#Address</p>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://dbpedia.org/ontology/Location">location</span><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#iso19160:Address" title="http://reference.data.gov.au/def/ont/iso19160-1-address#Address">ISO19160-1 Address</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span></dd>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Location">location</span></dd>
-                    <dd><span class="dotted" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</span> <span class="logic">min</span> 1 <a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasBuildingName" title="http://gnafld.net/def/gnaf#hasBuildingName">has building name</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
-                    <dd><a href="#hasAddressSite" title="http://gnafld.net/def/gnaf#hasAddressSite">has Address Site</a><sup title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#AddressSite" title="http://gnafld.net/def/gnaf#AddressSite">Address Site</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasAddressSecondary" title="http://gnafld.net/def/gnaf#hasAddressSecondary">has Address Secondary</a><sup title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#d4e607" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a><sup title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasLocality" title="http://gnafld.net/def/gnaf#hasLocality">has Locality</a><sup title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasStreetLocality" title="http://gnafld.net/def/gnaf#hasStreetLocality">has Street Locality</a><sup title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasNumber" title="http://gnafld.net/def/gnaf#hasNumber">has Number</a><sup title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#Number" title="http://gnafld.net/def/gnaf#Number">Number</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasMeshBlockMatch" title="http://gnafld.net/def/gnaf#hasMeshBlockMatch">has Mesh Block match</a><sup title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#isPrimary" title="http://gnafld.net/def/gnaf#isPrimary">is primary</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
-                    <dd><span class="dotted" title="http://purl.org/dc/terms/description">description</span><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
-                    <dd><a href="#hasGnafConfidence" title="http://gnafld.net/def/gnaf#hasGnafConfidence">has GNAF confidence</a><sup title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#GnafConfidence" title="http://gnafld.net/def/gnaf#GnafConfidence">GNAF Confidence</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasPostcode" title="http://gnafld.net/def/gnaf#hasPostcode">has postcode</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
-                    <dd><a href="#hasDateLastModified" title="http://gnafld.net/def/gnaf#hasDateLastModified">has date last modified</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
-                    <dt>is in domain of</dt>
-                    <dd><a href="#hasAddressSite" title="http://gnafld.net/def/gnaf#hasAddressSite">has Address Site</a><sup title="object property" class="type-op">op</sup>, <a href="#hasGnafConfidence" title="http://gnafld.net/def/gnaf#hasGnafConfidence">has GNAF confidence</a><sup title="object property" class="type-op">op</sup>, <a href="#hasGeocode" title="http://gnafld.net/def/gnaf#hasGeocode">has Geocode</a><sup title="object property" class="type-op">op</sup>, <a href="#hasMeshBlockMatch" title="http://gnafld.net/def/gnaf#hasMeshBlockMatch">has Mesh Block match</a><sup title="object property" class="type-op">op</sup>, <a href="#hasNumber" title="http://gnafld.net/def/gnaf#hasNumber">has Number</a><sup title="object property" class="type-op">op</sup>, <a href="#hasStreetLocality" title="http://gnafld.net/def/gnaf#hasStreetLocality">has Street Locality</a><sup title="object property" class="type-op">op</sup>, <a href="#isPrimary" title="http://gnafld.net/def/gnaf#isPrimary">is primary</a><sup title="data property" class="type-dp">dp</sup></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://dbpedia.org/ontology/Location">location</span>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#d4e989" title="http://reference.data.gov.au/def/ont/iso19160-1-address#Address">ISO19160-1 Address</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span>
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://www.w3.org/ns/prov#Location">location</span>
+                    </dd>
+                    <dd>
+                        <a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">some</span>
+                        <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasMeshBlockMatch" title="http://gnafld.net/def/gnaf#hasMeshBlockMatch">has Mesh Block match</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">some</span>
+                        <a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasNumber" title="http://gnafld.net/def/gnaf#hasNumber">has Number</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">some</span>
+                        <a href="#Number" title="http://gnafld.net/def/gnaf#Number">Number</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</span>
+                        <span class="logic">min</span> 1
+                        <a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasAddressSite" title="http://gnafld.net/def/gnaf#hasAddressSite">has Address Site</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">exactly</span> 1
+                        <a href="#AddressSite" title="http://gnafld.net/def/gnaf#AddressSite">Address Site</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasGnafConfidence" title="http://gnafld.net/def/gnaf#hasGnafConfidence">has GNAF confidence</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">exactly</span> 1
+                        <span class="dotted" title="http://gnafld.net/def/gnaf#GnafConfidence">gnaf confidence</span>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasLocality" title="http://gnafld.net/def/gnaf#hasLocality">has Locality</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">exactly</span> 1
+                        <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasStreetLocality" title="http://gnafld.net/def/gnaf#hasStreetLocality">has Street Locality</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">exactly</span> 1
+                        <a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasDateLastModified" title="http://gnafld.net/def/gnaf#hasDateLastModified">has date last modified</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">exactly</span> 1
+                    </dd>
+                    <dd>
+                        <a href="#hasBuildingName" title="http://gnafld.net/def/gnaf#hasBuildingName">has building name</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">max</span> 1
+                    </dd>
+                    <dd>
+                        <a href="#hasPostcode" title="http://gnafld.net/def/gnaf#hasPostcode">has postcode</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">max</span> 1
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://purl.org/dc/terms/description">description</span>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">max</span> 1
+                    </dd>
+                    <dt>
+                        is in domain of
+                    </dt>
+                    <dd>
+                        <a href="#hasAddressSecondary" title="http://gnafld.net/def/gnaf#hasAddressSecondary">has Address Secondary</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasAddressSite" title="http://gnafld.net/def/gnaf#hasAddressSite">has Address Site</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasGnafConfidence" title="http://gnafld.net/def/gnaf#hasGnafConfidence">has GNAF confidence</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasGeocode" title="http://gnafld.net/def/gnaf#hasGeocode">has Geocode</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasMeshBlockMatch" title="http://gnafld.net/def/gnaf#hasMeshBlockMatch">has Mesh Block match</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasNumber" title="http://gnafld.net/def/gnaf#hasNumber">has Number</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasStreetLocality" title="http://gnafld.net/def/gnaf#hasStreetLocality">has Street Locality</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasAddressSecondary" title="http://gnafld.net/def/gnaf#hasAddressSecondary">has Address Secondary</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="AddressSite" class="entity">
@@ -132,11 +309,25 @@
                 <h3>Address Site<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#AddressSite</p>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasName" title="http://gnafld.net/def/gnaf#hasName">has name</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasAddressSite" title="http://gnafld.net/def/gnaf#hasAddressSite">has Address Site</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasName" title="http://gnafld.net/def/gnaf#hasName">has name</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">max</span> 1
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasAddressSite" title="http://gnafld.net/def/gnaf#hasAddressSite">has Address Site</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="Alias" class="entity">
@@ -144,73 +335,111 @@
                 <h3>Alias<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#Alias</p>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a><sup title="class" class="type-c">c</sup></dd>
-                    <dt>is in domain of</dt>
-                    <dd><a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dt>
+                        is in domain of
+                    </dt>
+                    <dd>
+                        <a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="GeocodePoint" class="entity">
                 <a name="http://gnafld.net/def/gnaf#GeocodePoint"></a>
                 <h3>Geocode Point<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <img src="http://gnafld.net/def/gnaf/images/geocodedPoint.png" style="width:527px;" alt="Geocoded Point class and its properties" />
-                <p><em><strong>Figure 3:</strong>Geocoded Point class and its properties</em></p>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#GeocodePoint</p>
-                <div class="comment"><span class="markdown">This class is the equivalent class to the non-Linked Data version of the GNAF's Geocode. It is subclassed as a Point since all the GNAF's Geocodes are points.
-                    In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also has a Geocode Reliability.</span>
+                <div class="comment">
+                    <span class="markdown">This class is the equivalent class to the non-Linked Data version of the GNAF's Geocode. It is subclassed as a Point since all the GNAF's Geocodes are points. In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also has a Geocode Reliability.</span>
                 </div>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://www.opengis.net/ont/sf#Point">point</span></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasGeocode" title="http://gnafld.net/def/gnaf#hasGeocode">has Geocode</a><sup title="object property" class="type-op">op</sup></dd>
-                </dl>
-            </div>
-            <div id="GeocodeReliability" class="entity">
-                <a name="http://gnafld.net/def/gnaf#GeocodeReliability"></a>
-                <h3>Geocode Reliability<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
-                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#GeocodeReliability</p>
-                <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://www.w3.org/2004/02/skos/core#Collection">collection</span></dd>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Collection">collection</span></dd>
-                </dl>
-            </div>
-            <div id="GnafConfidence" class="entity">
-                <a name="http://gnafld.net/def/gnaf#GnafConfidence"></a>
-                <h3>GNAF Confidence<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
-                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#GnafConfidence</p>
-                <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://www.w3.org/2004/02/skos/core#Collection">collection</span></dd>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Collection">collection</span></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasGnafConfidence" title="http://gnafld.net/def/gnaf#hasGnafConfidence">has GNAF confidence</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://www.opengis.net/ont/sf#Point">point</span>
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasGeocode" title="http://gnafld.net/def/gnaf#hasGeocode">has Geocode</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="GnafEntity" class="entity">
                 <a name="http://gnafld.net/def/gnaf#GnafEntity"></a>
                 <h3>GNAF Entity<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#GnafEntity</p>
-                <div class="comment"><span class="markdown">Entities (things) that are present as records in the GNAF database. Every GNAF Entity has a data created, date last modified (can be the same) and may have a data retired. These dates indicate the creation, modification &amp; retirement of the representation of the Entity in the GNAF database, not the real-world Entity.</span></div>
+                <div class="comment">
+                    <span class="markdown">Entities (things) that are present as records in the GNAF database. Every GNAF Entity has a data created, date last modified (can be the same) and may have a data retired. These dates indicate the creation, modification &amp; retirement of the representation of the Entity in the GNAF database, not the real-world Entity.</span>
+                </div>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span></dd>
-                    <dd><a href="#hasDateRetired" title="http://gnafld.net/def/gnaf#hasDateRetired">has date retired</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
-                    <dd><a href="#hasDateCreated" title="http://gnafld.net/def/gnaf#hasDateCreated">has date created</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
-                    <dt>has sub-classes</dt>
-                    <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup>, <sup title="class" class="type-c">c</sup>, <a href="#AddressSite" title="http://gnafld.net/def/gnaf#AddressSite">Address Site</a><sup title="class" class="type-c">c</sup>, <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a><sup title="class" class="type-c">c</sup>, <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup>, <a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a><sup title="class" class="type-c">c</sup>, <a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a><sup title="class" class="type-c">c</sup>, <a href="#State" title="http://gnafld.net/def/gnaf#State">State</a><sup title="class" class="type-c">c</sup>, <a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+                    </dd>
+                    <dd>
+                        <a href="#hasDateCreated" title="http://gnafld.net/def/gnaf#hasDateCreated">has date created</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">exactly</span> 1
+                    </dd>
+                    <dd>
+                        <a href="#hasDateRetired" title="http://gnafld.net/def/gnaf#hasDateRetired">has date retired</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">max</span> 1
+                    </dd>
+                    <dt>
+                        has sub-classes
+                    </dt>
+                    <dd>
+                        <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                        <sup title="class" class="type-c">c</sup>,
+                        <a href="#AddressSite" title="http://gnafld.net/def/gnaf#AddressSite">Address Site</a>
+                        <sup title="class" class="type-c">c</sup>,
+                        <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a>
+                        <sup title="class" class="type-c">c</sup>,
+                        <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a>
+                        <sup title="class" class="type-c">c</sup>,
+                        <a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a>
+                        <sup title="class" class="type-c">c</sup>,
+                        <a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a>
+                        <sup title="class" class="type-c">c</sup>,
+                        <a href="#State" title="http://gnafld.net/def/gnaf#State">State</a>
+                        <sup title="class" class="type-c">c</sup>,
+                        <a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
                 </dl>
             </div>
-            <div id="iso19160:Address" class="entity">
+            <div id="d4e989" class="entity">
                 <a name="http://reference.data.gov.au/def/ont/iso19160-1-address#Address"></a>
                 <h3>ISO19160-1 Address<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://reference.data.gov.au/def/ont/iso19160-1-address#Address</p>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span></dd>
-                    <dt>has sub-classes</dt>
-                    <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+                    </dd>
+                    <dt>
+                        has sub-classes
+                    </dt>
+                    <dd>
+                        <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="Locality" class="entity">
@@ -220,32 +449,106 @@
                 <p><em><strong>Figure 4:</strong>Locality class and its properties</em></p>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#Locality</p>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://dbpedia.org/ontology/Location">location</span><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span></dd>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Location">location</span></dd>
-                    <dd><a href="#hasPrimaryPostcode" title="http://gnafld.net/def/gnaf#hasPrimaryPostcode">has primary postcode</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
-                    <dd><a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a><sup title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><span class="dotted" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</span> <span class="logic">min</span> 1 <a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasName" title="http://gnafld.net/def/gnaf#hasName">has name</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
-                    <dd><a href="#hasNeighbour" title="http://gnafld.net/def/gnaf#hasNeighbour">has neighbour</a><sup title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup></dd>
-                    <dt>is in domain of</dt>
-                    <dd><a href="#hasNeighbour" title="http://gnafld.net/def/gnaf#hasNeighbour">has neighbour</a><sup title="object property" class="type-op">op</sup>, <a href="#hasPrimaryPostcode" title="http://gnafld.net/def/gnaf#hasPrimaryPostcode">has primary postcode</a><sup title="data property" class="type-dp">dp</sup></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a><sup title="object property" class="type-op">op</sup>, <a href="#hasLocality" title="http://gnafld.net/def/gnaf#hasLocality">has Locality</a><sup title="object property" class="type-op">op</sup>, <a href="#hasNeighbour" title="http://gnafld.net/def/gnaf#hasNeighbour">has neighbour</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://dbpedia.org/ontology/Location">location</span>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span>
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://www.w3.org/ns/prov#Location">location</span>
+                    </dd>
+                    <dd>
+                        <a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">some</span>
+                        <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasNeighbour" title="http://gnafld.net/def/gnaf#hasNeighbour">has neighbour</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">some</span>
+                        <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</span>
+                        <span class="logic">min</span> 1
+                        <a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasName" title="http://gnafld.net/def/gnaf#hasName">has name</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">exactly</span> 1
+                    </dd>
+                    <dd>
+                        <a href="#hasPrimaryPostcode" title="http://gnafld.net/def/gnaf#hasPrimaryPostcode">has primary postcode</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">max</span> 1
+                    </dd>
+                    <dt>
+                        is in domain of
+                    </dt>
+                    <dd>
+                        <a href="#hasNeighbour" title="http://gnafld.net/def/gnaf#hasNeighbour">has neighbour</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasPrimaryPostcode" title="http://gnafld.net/def/gnaf#hasPrimaryPostcode">has primary postcode</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasLocality" title="http://gnafld.net/def/gnaf#hasLocality">has Locality</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasNeighbour" title="http://gnafld.net/def/gnaf#hasNeighbour">has neighbour</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="MeshBlock" class="entity">
                 <a name="http://gnafld.net/def/gnaf#MeshBlock"></a>
                 <h3>Mesh Block<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#MeshBlock</p>
-                <div class="comment"><span class="markdown">Mesh Blocks are the smallest geographical area defined by the Australian Bureau of Statistics (ABS) and form the building blocks for the larger regions of the Australian Statistical Geography Standard (ASGS). All other statistical areas or regions are built up from or, approximated by whole Mesh Blocks. They broadly identify land use such as residential, commercial, primary production and parks, etc.</span></div>
+                <div class="comment">
+                    <span class="markdown">Mesh Blocks are the smallest geographical area defined by the Australian Bureau of Statistics (ABS) and form the building blocks for the larger regions of the Australian Statistical Geography Standard (ASGS). All other statistical areas or regions are built up from or, approximated by whole Mesh Blocks. They broadly identify land use such as residential, commercial, primary production and parks, etc.</span>
+                </div>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a><sup title="class" class="type-c">c</sup></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasMeshBlock" title="http://gnafld.net/def/gnaf#hasMeshBlock">has Mesh Block</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dt>
+                        has sub-classes
+                    </dt>
+                    <dd>
+                        <a href="#MB2011" title="http://gnafld.net/def/gnaf#MB2011">2011 Mesh Block</a>
+                        <sup title="class" class="type-c">c</sup>,
+                        <a href="#MB2016" title="http://gnafld.net/def/gnaf#MB2016">2016 Mesh Block</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasMeshBlock" title="http://gnafld.net/def/gnaf#hasMeshBlock">has Mesh Block</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="MeshBlockMatch" class="entity">
@@ -253,13 +556,34 @@
                 <h3>Mesh Block Match<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#MeshBlockMatch</p>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasMeshBlock" title="http://gnafld.net/def/gnaf#hasMeshBlock">has Mesh Block</a><sup title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a><sup title="class" class="type-c">c</sup></dd>
-                    <dt>is in domain of</dt>
-                    <dd><a href="#hasMeshBlock" title="http://gnafld.net/def/gnaf#hasMeshBlock">has Mesh Block</a><sup title="object property" class="type-op">op</sup></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasMeshBlockMatch" title="http://gnafld.net/def/gnaf#hasMeshBlockMatch">has Mesh Block match</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasMeshBlock" title="http://gnafld.net/def/gnaf#hasMeshBlock">has Mesh Block</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">exactly</span> 1
+                        <a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dt>
+                        is in domain of
+                    </dt>
+                    <dd>
+                        <a href="#hasMeshBlock" title="http://gnafld.net/def/gnaf#hasMeshBlock">has Mesh Block</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasMeshBlockMatch" title="http://gnafld.net/def/gnaf#hasMeshBlockMatch">has Mesh Block match</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="Number" class="entity">
@@ -267,26 +591,62 @@
                 <h3>Number<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#Number</p>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span></dd>
-                    <dd><a href="#hasSuffix" title="http://gnafld.net/def/gnaf#hasSuffix">has suffix</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
-                    <dd><a href="#hasPrefix" title="http://gnafld.net/def/gnaf#hasPrefix">has prefix</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
-                    <dt>is in domain of</dt>
-                    <dd><a href="#hasPrefix" title="http://gnafld.net/def/gnaf#hasPrefix">has prefix</a><sup title="data property" class="type-dp">dp</sup>, <a href="#hasSuffix" title="http://gnafld.net/def/gnaf#hasSuffix">has suffix</a><sup title="data property" class="type-dp">dp</sup></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasNumber" title="http://gnafld.net/def/gnaf#hasNumber">has Number</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://www.w3.org/ns/prov#Entity">entity</span>
+                    </dd>
+                    <dd>
+                        <a href="#hasPrefix" title="http://gnafld.net/def/gnaf#hasPrefix">has prefix</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">max</span> 1
+                    </dd>
+                    <dd>
+                        <a href="#hasSuffix" title="http://gnafld.net/def/gnaf#hasSuffix">has suffix</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">max</span> 1
+                    </dd>
+                    <dt>
+                        is in domain of
+                    </dt>
+                    <dd>
+                        <a href="#hasPrefix" title="http://gnafld.net/def/gnaf#hasPrefix">has prefix</a>
+                        <sup title="data property" class="type-dp">dp</sup>,
+                        <a href="#hasSuffix" title="http://gnafld.net/def/gnaf#hasSuffix">has suffix</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasNumber" title="http://gnafld.net/def/gnaf#hasNumber">has Number</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="State" class="entity">
                 <a name="http://gnafld.net/def/gnaf#State"></a>
                 <h3>State<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#State</p>
-                <div class="comment"><span class="markdown">An Australian State, including "Other Territories" for Cocos &amp; Keeling Islands, Jervis Bay etc.</span></div>
+                <div class="comment">
+                    <span class="markdown">An Australian State, including "Other Territories" for Cocos &amp; Keeling Islands, Jervis Bay etc.</span>
+                </div>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a><sup title="class" class="type-c">c</sup></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasState" title="http://gnafld.net/def/gnaf#hasState">has State</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasState" title="http://gnafld.net/def/gnaf#hasState">has State</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="Street" class="entity">
@@ -294,62 +654,114 @@
                 <h3>Street<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#Street</p>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://dbpedia.org/ontology/Location">location</span><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span></dd>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Location">location</span></dd>
-                    <dd><a href="#hasStreetSuffix" title="http://gnafld.net/def/gnaf#hasStreetSuffix">has Street Suffix</a><sup title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#StreetSuffix" title="http://gnafld.net/def/gnaf#StreetSuffix">Street Suffix</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a><sup title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasName" title="http://gnafld.net/def/gnaf#hasName">has name</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
-                    <dt>has sub-classes</dt>
-                    <dd><a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a><sup title="class" class="type-c">c</sup></dd>
-                    <dt>is in domain of</dt>
-                    <dd><a href="#hasStreetConfirmation" title="http://gnafld.net/def/gnaf#hasStreetConfirmation">has Street Confirmation</a><sup title="object property" class="type-op">op</sup></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a><sup title="object property" class="type-op">op</sup></dd>
-                </dl>
-            </div>
-            <div id="StreetConfirmation" class="entity">
-                <a name="http://gnafld.net/def/gnaf#StreetConfirmation"></a>
-                <h3>Street Confirmation<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
-                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#StreetConfirmation</p>
-                <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://www.w3.org/2004/02/skos/core#Collection">collection</span></dd>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Collection">collection</span></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasStreetConfirmation" title="http://gnafld.net/def/gnaf#hasStreetConfirmation">has Street Confirmation</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://dbpedia.org/ontology/Location">location</span>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#GnafEntity" title="http://gnafld.net/def/gnaf#GnafEntity">GNAF Entity</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span>
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://www.w3.org/ns/prov#Location">location</span>
+                    </dd>
+                    <dd>
+                        <a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">some</span>
+                        <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasStreetSuffix" title="http://gnafld.net/def/gnaf#hasStreetSuffix">has Street Suffix</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">max</span> 1
+                        <span class="dotted" title="http://gnafld.net/def/gnaf#StreetSuffix">street suffix</span>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasName" title="http://gnafld.net/def/gnaf#hasName">has name</a>
+                        <sup title="data property" class="type-dp">dp</sup>
+                        <span class="logic">exactly</span> 1
+                    </dd>
+                    <dt>
+                        has sub-classes
+                    </dt>
+                    <dd>
+                        <a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dt>
+                        is in domain of
+                    </dt>
+                    <dd>
+                        <a href="#hasStreetConfirmation" title="http://gnafld.net/def/gnaf#hasStreetConfirmation">has Street Confirmation</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
             <div id="StreetLocality" class="entity">
                 <a name="http://gnafld.net/def/gnaf#StreetLocality"></a>
                 <h3>Street Locality<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
                 <img src="http://gnafld.net/def/gnaf/images/StreetLocality.png" style="width:527px;" alt="StreetLocality class and its properties" />
-                <p><em><strong>Figure 5:</strong>StreetLocality class and its properties</em></p>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#StreetLocality</p>
                 <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasGnafConfidence" title="http://gnafld.net/def/gnaf#hasGnafConfidence">has GNAF confidence</a><sup title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#GnafConfidence" title="http://gnafld.net/def/gnaf#GnafConfidence">GNAF Confidence</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><span class="dotted" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</span> <span class="logic">min</span> 1 <a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a><sup title="class" class="type-c">c</sup></dd>
-                    <dd><a href="#hasLocality" title="http://gnafld.net/def/gnaf#hasLocality">has Locality</a><sup title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup></dd>
-                    <dt>is in domain of</dt>
-                    <dd><a href="#hasLocality" title="http://gnafld.net/def/gnaf#hasLocality">has Locality</a><sup title="object property" class="type-op">op</sup>, <a href="#hasStreetSuffix" title="http://gnafld.net/def/gnaf#hasStreetSuffix">has Street Suffix</a><sup title="object property" class="type-op">op</sup></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasStreetLocality" title="http://gnafld.net/def/gnaf#hasStreetLocality">has Street Locality</a><sup title="object property" class="type-op">op</sup></dd>
-                </dl>
-            </div>
-            <div id="StreetSuffix" class="entity">
-                <a name="http://gnafld.net/def/gnaf#StreetSuffix"></a>
-                <h3>Street Suffix<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
-                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#StreetSuffix</p>
-                <dl class="description">
-                    <dt>has super-classes</dt>
-                    <dd><span class="dotted" title="http://www.w3.org/2004/02/skos/core#Collection">collection</span></dd>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#Collection">collection</span></dd>
-                    <dt>is in range of</dt>
-                    <dd><a href="#hasStreetSuffix" title="http://gnafld.net/def/gnaf#hasStreetSuffix">has Street Suffix</a><sup title="object property" class="type-op">op</sup></dd>
+                    <dt>
+                        has super-classes
+                    </dt>
+                    <dd>
+                        <a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <span class="dotted" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</span>
+                        <span class="logic">min</span> 1
+                        <a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasGnafConfidence" title="http://gnafld.net/def/gnaf#hasGnafConfidence">has GNAF confidence</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">exactly</span> 1
+                        <span class="dotted" title="http://gnafld.net/def/gnaf#GnafConfidence">gnaf confidence</span>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dd>
+                        <a href="#hasLocality" title="http://gnafld.net/def/gnaf#hasLocality">has Locality</a>
+                        <sup title="object property" class="type-op">op</sup>
+                        <span class="logic">exactly</span> 1
+                        <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a>
+                        <sup title="class" class="type-c">c</sup>
+                    </dd>
+                    <dt>
+                        is in domain of
+                    </dt>
+                    <dd>
+                        <a href="#hasLocality" title="http://gnafld.net/def/gnaf#hasLocality">has Locality</a>
+                        <sup title="object property" class="type-op">op</sup>,
+                        <a href="#hasStreetSuffix" title="http://gnafld.net/def/gnaf#hasStreetSuffix">has Street Suffix</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
+                    <dt>
+                        is in range of
+                    </dt>
+                    <dd>
+                        <a href="#hasStreetLocality" title="http://gnafld.net/def/gnaf#hasStreetLocality">has Street Locality</a>
+                        <sup title="object property" class="type-op">op</sup>
+                    </dd>
                 </dl>
             </div>
         </div>
@@ -357,6 +769,8 @@
             <h2>Object Properties</h2>
             <ul class="hlist">
                 <li><a href="#aliasOf" title="http://gnafld.net/def/gnaf#aliasOf">alias of</a></li>
+                <li><a href="#gnafType" title="http://gnafld.net/def/gnaf#gnafType">GNAF type</a></li>
+                <li><a href="#hasAddressPrimary" title="http://gnafld.net/def/gnaf#hasAddressPrimary"><span>has address primary</span></a></li>
                 <li><a href="#hasAddressSecondary" title="http://gnafld.net/def/gnaf#hasAddressSecondary">has Address Secondary</a></li>
                 <li><a href="#hasAddressSite" title="http://gnafld.net/def/gnaf#hasAddressSite">has Address Site</a></li>
                 <li><a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a></li>
@@ -379,8 +793,37 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#aliasOf</p>
                 <div class="description">
                     <dl>
-                        <dt>is inverse of</dt>
-                        <dd><a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a><sup title="object property" class="type-op">op</sup></dd>
+                        <dt>
+                            is inverse of
+                        </dt>
+                        <dd>
+                            <a href="#hasAlias" title="http://gnafld.net/def/gnaf#hasAlias">has Alias</a>
+                            <sup title="object property" class="type-op">op</sup>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="gnafType" class="entity">
+                <a name="http://gnafld.net/def/gnaf#gnafType"></a>
+                <h3>GNAF type<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#gnafType</p>
+                <div class="comment">
+                    <span class="markdown">A property to allow for GNAF-specific soft typing of various GNAF classes using code list terms published in the GNAF product guide, for example Locality class instances being soft typed according to the Locality Types list which includes *Alias Only*, *District*, *Gazeted* etc.</span>
+                </div>
+            </div>
+            <div id="hasAddressPrimary" class="entity">
+                <a name="http://gnafld.net/def/gnaf#hasAddressPrimary"></a>
+                <h3>has address primary<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasAddressPrimary</p>
+                <div class="description">
+                    <dl>
+                        <dt>
+                            is inverse of
+                        </dt>
+                        <dd>
+                            <a href="#hasAddressSecondary" title="http://gnafld.net/def/gnaf#hasAddressSecondary">has Address Secondary</a>
+                            <sup title="object property" class="type-op">op</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -388,6 +831,31 @@
                 <a name="http://gnafld.net/def/gnaf#hasAddressSecondary"></a>
                 <h3>has Address Secondary<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasAddressSecondary</p>
+                <div class="description">
+                    <dl>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            is inverse of
+                        </dt>
+                        <dd>
+                            <a href="#hasAddressPrimary" title="http://gnafld.net/def/gnaf#hasAddressPrimary">has address primary</a>
+                            <sup title="object property" class="type-op">op</sup>
+                        </dd>
+                    </dl>
+                </div>
             </div>
             <div id="hasAddressSite" class="entity">
                 <a name="http://gnafld.net/def/gnaf#hasAddressSite"></a>
@@ -395,10 +863,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasAddressSite</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#AddressSite" title="http://gnafld.net/def/gnaf#AddressSite">Address Site</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#AddressSite" title="http://gnafld.net/def/gnaf#AddressSite">Address Site</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -408,14 +886,35 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasAlias</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
-                        <dd><a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup></dd>
-                        <dd><a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>is inverse of</dt>
-                        <dd><a href="#aliasOf" title="http://gnafld.net/def/gnaf#aliasOf">alias of</a><sup title="object property" class="type-op">op</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Alias" title="http://gnafld.net/def/gnaf#Alias">Alias</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dd>
+                            <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dd>
+                            <a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            is inverse of
+                        </dt>
+                        <dd>
+                            <a href="#aliasOf" title="http://gnafld.net/def/gnaf#aliasOf">alias of</a>
+                            <sup title="object property" class="type-op">op</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -425,10 +924,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasGeocode</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#GeocodePoint" title="http://gnafld.net/def/gnaf#GeocodePoint">Geocode Point</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -443,10 +952,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasGnafConfidence</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#GnafConfidence" title="http://gnafld.net/def/gnaf#GnafConfidence">GNAF Confidence</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://gnafld.net/def/gnaf#GnafConfidence">gnaf confidence</span>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -456,10 +975,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasLocality</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -469,10 +998,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasMeshBlock</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#MeshBlock" title="http://gnafld.net/def/gnaf#MeshBlock">Mesh Block</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -482,10 +1021,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasMeshBlockMatch</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#MeshBlockMatch" title="http://gnafld.net/def/gnaf#MeshBlockMatch">Mesh Block Match</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -495,10 +1044,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasNeighbour</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -508,10 +1067,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasNumber</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#Number" title="http://gnafld.net/def/gnaf#Number">Number</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#Number" title="http://gnafld.net/def/gnaf#Number">Number</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -521,10 +1090,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasState</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><span class="dotted" title="http://dbpedia.org/ontology/Location">location</span><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#State" title="http://gnafld.net/def/gnaf#State">State</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://dbpedia.org/ontology/Location">location</span>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#State" title="http://gnafld.net/def/gnaf#State">State</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -534,10 +1113,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasStreetConfirmation</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#StreetConfirmation" title="http://gnafld.net/def/gnaf#StreetConfirmation">Street Confirmation</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Street" title="http://gnafld.net/def/gnaf#Street">Street</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://gnafld.net/def/gnaf#StreetConfirmation">street confirmation</span>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -547,10 +1136,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasStreetLocality</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -560,10 +1159,20 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasStreetSuffix</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><a href="#StreetSuffix" title="http://gnafld.net/def/gnaf#StreetSuffix">Street Suffix</a><sup title="class" class="type-c">c</sup></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#StreetLocality" title="http://gnafld.net/def/gnaf#StreetLocality">Street Locality</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://gnafld.net/def/gnaf#StreetSuffix">street suffix</span>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -572,18 +1181,16 @@
             <h2>Data Properties</h2>
             <ul class="hlist">
                 <li><a href="#hasBuildingName" title="http://gnafld.net/def/gnaf#hasBuildingName">has building name</a></li>
-                <li><a href="#hasDateCreated" title="http://gnafld.net/def/gnaf#hasDateCreated">has date created</a></li>
+                <li><a href="#hasDateCreated" title="http://gnafld.net/def/gnaf#hasDateCreated"><span>has date created</span></a></li>
                 <li><a href="#hasDateLastModified" title="http://gnafld.net/def/gnaf#hasDateLastModified">has date last modified</a></li>
-                <li><a href="#hasDateRetired" title="http://gnafld.net/def/gnaf#hasDateRetired">has date retired</a></li>
-                <li><a href="#hasDescription" title="http://gnafld.net/def/gnaf#hasDescription">has description</a></li>
+                <li><a href="#hasDateRetired" title="http://gnafld.net/def/gnaf#hasDateRetired"><span>has date retired</span></a></li>
                 <li><a href="#hasLegalParcelId" title="http://gnafld.net/def/gnaf#hasLegalParcelId">has legal parcel ID</a></li>
-                <li><a href="#hasName" title="http://gnafld.net/def/gnaf#hasName">has name</a></li>
+                <li><a href="#hasName" title="http://gnafld.net/def/gnaf#hasName"><span>has name</span></a></li>
                 <li><a href="#hasPostcode" title="http://gnafld.net/def/gnaf#hasPostcode">has postcode</a></li>
                 <li><a href="#hasPrefix" title="http://gnafld.net/def/gnaf#hasPrefix">has prefix</a></li>
                 <li><a href="#hasPrimaryPostcode" title="http://gnafld.net/def/gnaf#hasPrimaryPostcode">has primary postcode</a></li>
                 <li><a href="#isPrivateStreet" title="http://gnafld.net/def/gnaf#isPrivateStreet">has private street</a></li>
                 <li><a href="#hasSuffix" title="http://gnafld.net/def/gnaf#hasSuffix">has suffix</a></li>
-                <li><a href="#isPrimary" title="http://gnafld.net/def/gnaf#isPrimary">is primary</a></li>
             </ul>
             <div id="hasBuildingName" class="entity">
                 <a name="http://gnafld.net/def/gnaf#hasBuildingName"></a>
@@ -594,15 +1201,26 @@
                 <a name="http://gnafld.net/def/gnaf#hasDateCreated"></a>
                 <h3>has date created<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasDateCreated</p>
-                <div class="comment"><span class="markdown">This is the same as prov:wasGeneratedAtTime.</span></div>
                 <div class="description">
                     <dl>
-                        <dt>has range</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
-                        <dt>is same as</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/ns/prov#wasGeneratedAtTime">was generated at time</span></dd>
-                        <dt>is also defined as</dt>
-                        <dd><a href="#hasDateCreated">named individual</a></dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+                        </dd>
+                        <dt>
+                            is same as
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/ns/prov#wasGeneratedAtTime">was generated at time</span>
+                        </dd>
+                        <dt>
+                            is also defined as
+                        </dt>
+                        <dd>
+                            <a href="#hasDateCreated">named individual</a>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -610,35 +1228,34 @@
                 <a name="http://gnafld.net/def/gnaf#hasDateLastModified"></a>
                 <h3>has date last modified<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasDateLastModified</p>
-                <div class="comment"><span class="markdown">This is the same as dct:modified.</span></div>
+                <div class="comment">
+                    <span class="markdown">This is the same as dct:modified.</span>
+                </div>
             </div>
             <div id="hasDateRetired" class="entity">
                 <a name="http://gnafld.net/def/gnaf#hasDateRetired"></a>
                 <h3>has date retired<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasDateRetired</p>
-                <div class="comment"><span class="markdown">This is the same as prov:wasInvalidatedAtTime.</span></div>
                 <div class="description">
                     <dl>
-                        <dt>has range</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
-                        <dt>is same as</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/ns/prov#wasInvalidatedAtTime">was invalidated at time</span></dd>
-                        <dt>is also defined as</dt>
-                        <dd><a href="#hasDateRetired">named individual</a></dd>
-                    </dl>
-                </div>
-            </div>
-            <div id="hasDescription" class="entity">
-                <a name="http://gnafld.net/def/gnaf#hasDescription"></a>
-                <h3>has description<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
-                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasDescription</p>
-                <div class="comment"><span class="markdown">This is the same as dct:description.</span></div>
-                <div class="description">
-                    <dl>
-                        <dt>is same as</dt>
-                        <dd><span class="dotted" title="http://purl.org/dc/terms/description">description</span><sup title="data property" class="type-dp">dp</sup></dd>
-                        <dt>is also defined as</dt>
-                        <dd><a href="#hasDescription">named individual</a></dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+                        </dd>
+                        <dt>
+                            is same as
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/ns/prov#wasInvalidatedAtTime">was invalidated at time</span>
+                        </dd>
+                        <dt>
+                            is also defined as
+                        </dt>
+                        <dd>
+                            <a href="#hasDateRetired">named individual</a>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -646,20 +1263,41 @@
                 <a name="http://gnafld.net/def/gnaf#hasLegalParcelId"></a>
                 <h3>has legal parcel ID<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasLegalParcelId</p>
+                <div class="description">
+                    <dl>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+                        </dd>
+                    </dl>
+                </div>
             </div>
             <div id="hasName" class="entity">
                 <a name="http://gnafld.net/def/gnaf#hasName"></a>
                 <h3>has name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasName</p>
-                <div class="comment"><span class="markdown">This is the same as dct:title.</span></div>
                 <div class="description">
                     <dl>
-                        <dt>has range</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
-                        <dt>is same as</dt>
-                        <dd><span class="dotted" title="http://purl.org/dc/terms/title">title</span></dd>
-                        <dt>is also defined as</dt>
-                        <dd><a href="#hasName">named individual</a></dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+                        </dd>
+                        <dt>
+                            is same as
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://purl.org/dc/terms/title">title</span>
+                        </dd>
+                        <dt>
+                            is also defined as
+                        </dt>
+                        <dd>
+                            <a href="#hasName">named individual</a>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -669,8 +1307,12 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasPostcode</p>
                 <div class="description">
                     <dl>
-                        <dt>has range</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span></dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -680,10 +1322,19 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasPrefix</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Number" title="http://gnafld.net/def/gnaf#Number">Number</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Number" title="http://gnafld.net/def/gnaf#Number">Number</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -693,10 +1344,19 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasPrimaryPostcode</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Locality" title="http://gnafld.net/def/gnaf#Locality">Locality</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -706,10 +1366,18 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#isPrivateStreet</p>
                 <div class="description">
                     <dl>
-                        <dt>has super-properties</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span></dd>
-                        <dt>has range</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span></dd>
+                        <dt>
+                            has super-properties
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -719,24 +1387,19 @@
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasSuffix</p>
                 <div class="description">
                     <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Number" title="http://gnafld.net/def/gnaf#Number">Number</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
-                    </dl>
-                </div>
-            </div>
-            <div id="isPrimary" class="entity">
-                <a name="http://gnafld.net/def/gnaf#isPrimary"></a>
-                <h3>is primary<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
-                <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#isPrimary</p>
-                <div class="comment"><span class="markdown">In the non-semantic version of the GNAF, an address is indicated as being either Primary (P) or Secondary (S). In this semantic version, an Address either has the isPrimary property set to true (it is a Primary) or false (it is a Secondary).</span></div>
-                <div class="description">
-                    <dl>
-                        <dt>has domain</dt>
-                        <dd><a href="#Address" title="http://gnafld.net/def/gnaf#Address">Address</a><sup title="class" class="type-c">c</sup></dd>
-                        <dt>has range</dt>
-                        <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span></dd>
+                        <dt>
+                            has domain
+                        </dt>
+                        <dd>
+                            <a href="#Number" title="http://gnafld.net/def/gnaf#Number">Number</a>
+                            <sup title="class" class="type-c">c</sup>
+                        </dd>
+                        <dt>
+                            has range
+                        </dt>
+                        <dd>
+                            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -744,100 +1407,200 @@
         <div id="namedindividuals">
             <h2>Named Individuals</h2>
             <ul class="hlist">
-                <li><a href="#hasDateCreated" title="http://gnafld.net/def/gnaf#hasDateCreated">has date created</a></li>
-                <li><a href="#hasDateRetired" title="http://gnafld.net/def/gnaf#hasDateRetired">has date retired</a></li>
-                <li><a href="#hasDescription" title="http://gnafld.net/def/gnaf#hasDescription">has description</a></li>
-                <li><a href="#hasName" title="http://gnafld.net/def/gnaf#hasName">has name</a></li>
+                <li><a href="#hasDateCreated" title="http://gnafld.net/def/gnaf#hasDateCreated"><span>has date created</span></a></li>
+                <li><a href="#hasDateRetired" title="http://gnafld.net/def/gnaf#hasDateRetired"><span>has date retired</span></a></li>
+                <li><a href="#hasDescription" title="http://gnafld.net/def/gnaf#hasDescription"><span>has description</span></a></li>
+                <li><a href="#hasName" title="http://gnafld.net/def/gnaf#hasName"><span>has name</span></a></li>
             </ul>
             <div id="hasDateCreated" class="entity">
                 <a name="http://gnafld.net/def/gnaf#hasDateCreated"></a>
                 <h3>has date created<sup title="named individual" class="type-ni">ni</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasDateCreated</p>
-                <div class="comment"><span class="markdown">This is the same as prov:wasGeneratedAtTime.</span></div>
                 <dl class="description">
-                    <dt>is same as</dt>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#wasGeneratedAtTime">was generated at time</span></dd>
-                    <dt>is also defined as</dt>
-                    <dd><a href="#hasDateCreated">data property</a></dd>
+                    <dt>
+                        is same as
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://www.w3.org/ns/prov#wasGeneratedAtTime">was generated at time</span>
+                    </dd>
+                    <dt>
+                        is also defined as
+                    </dt>
+                    <dd>
+                        <a href="#hasDateCreated">data property</a>
+                    </dd>
                 </dl>
             </div>
             <div id="hasDateRetired" class="entity">
                 <a name="http://gnafld.net/def/gnaf#hasDateRetired"></a>
                 <h3>has date retired<sup title="named individual" class="type-ni">ni</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasDateRetired</p>
-                <div class="comment"><span class="markdown">This is the same as prov:wasInvalidatedAtTime.</span></div>
                 <dl class="description">
-                    <dt>is same as</dt>
-                    <dd><span class="dotted" title="http://www.w3.org/ns/prov#wasInvalidatedAtTime">was invalidated at time</span></dd>
-                    <dt>is also defined as</dt>
-                    <dd><a href="#hasDateRetired">data property</a></dd>
+                    <dt>
+                        is same as
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://www.w3.org/ns/prov#wasInvalidatedAtTime">was invalidated at time</span>
+                    </dd>
+                    <dt>
+                        is also defined as
+                    </dt>
+                    <dd>
+                        <a href="#hasDateRetired">data property</a>
+                    </dd>
                 </dl>
             </div>
             <div id="hasDescription" class="entity">
                 <a name="http://gnafld.net/def/gnaf#hasDescription"></a>
                 <h3>has description<sup title="named individual" class="type-ni">ni</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasDescription</p>
-                <div class="comment"><span class="markdown">This is the same as dct:description.</span></div>
                 <dl class="description">
-                    <dt>is same as</dt>
-                    <dd><span class="dotted" title="http://purl.org/dc/terms/description">description</span></dd>
-                    <dt>is also defined as</dt>
-                    <dd><a href="#hasDescription">data property</a></dd>
+                    <dt>
+                        is same as
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://purl.org/dc/terms/description">description</span>
+                    </dd>
+                    <dt>
+                        is also defined as
+                    </dt>
+                    <dd>
+                        data property
+                    </dd>
                 </dl>
             </div>
             <div id="hasName" class="entity">
                 <a name="http://gnafld.net/def/gnaf#hasName"></a>
                 <h3>has name<sup title="named individual" class="type-ni">ni</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://gnafld.net/def/gnaf#hasName</p>
-                <div class="comment"><span class="markdown">This is the same as dct:title.</span></div>
                 <dl class="description">
-                    <dt>is same as</dt>
-                    <dd><span class="dotted" title="http://purl.org/dc/terms/title">title</span></dd>
-                    <dt>is also defined as</dt>
-                    <dd><a href="#hasName">data property</a></dd>
+                    <dt>
+                        is same as
+                    </dt>
+                    <dd>
+                        <span class="dotted" title="http://purl.org/dc/terms/title">title</span>
+                    </dd>
+                    <dt>
+                        is also defined as
+                    </dt>
+                    <dd>
+                        <a href="#hasName">data property</a>
+                    </dd>
                 </dl>
             </div>
         </div>
         <div id="annotationproperties">
             <h2>Annotation Properties</h2>
             <ul class="hlist">
-                <li><a href="#qualifiedCardinality" title="http://www.w3.org/2002/07/owl#qualifiedCardinality"><span>qualified cardinality</span></a></li>
+                <li><a href="#d4e51" title="http://purl.org/dc/terms/contributor"><span>contributor</span></a></li>
+                <li><a href="#d4e60" title="http://www.w3.org/2002/07/owl#qualifiedCardinality"><span>qualified cardinality</span></a></li>
+                <li><a href="#d4e56" title="http://purl.org/dc/terms/source"><span>source</span></a></li>
             </ul>
-            <div id="qualifiedCardinality" class="entity">
+            <div id="d4e51" class="entity">
+                <a name="http://purl.org/dc/terms/contributor"></a>
+                <h3>contributor<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
+                <p><strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+            </div>
+            <div id="d4e60" class="entity">
                 <a name="http://www.w3.org/2002/07/owl#qualifiedCardinality"></a>
                 <h3>qualified cardinality<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
                 <p><strong>IRI:</strong> http://www.w3.org/2002/07/owl#qualifiedCardinality</p>
+            </div>
+            <div id="d4e56" class="entity">
+                <a name="http://purl.org/dc/terms/source"></a>
+                <h3>source<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
+                <p><strong>IRI:</strong> http://purl.org/dc/terms/source</p>
             </div>
         </div>
         <div id="namespacedeclarations">
             <h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
             <dl>
-                <dt><em>default namespace</em></dt>
-                <dd>http://gnafld.net/def/gnaf#</dd>
-                <dt>skos</dt>
-                <dd>http://www.w3.org/2004/02/skos/core#</dd>
-                <dt>dc</dt>
-                <dd>http://purl.org/dc/elements/1.1/</dd>
-                <dt>geosparql</dt>
-                <dd>http://www.opengis.net/ont/geosparql#</dd>
-                <dt>iso19160-1-address</dt>
-                <dd>http://reference.data.gov.au/def/ont/iso19160-1-address#</dd>
-                <dt>owl</dt>
-                <dd>http://www.w3.org/2002/07/owl#</dd>
-                <dt>prov</dt>
-                <dd>http://www.w3.org/ns/prov#</dd>
-                <dt>rdf</dt>
-                <dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd>
-                <dt>rdfs</dt>
-                <dd>http://www.w3.org/2000/01/rdf-schema#</dd>
-                <dt>sf</dt>
-                <dd>http://www.opengis.net/ont/sf#</dd>
-                <dt>terms</dt>
-                <dd>http://purl.org/dc/terms/</dd>
-                <dt>xsd</dt>
-                <dd>http://www.w3.org/2001/XMLSchema#</dd>
+                <dt>
+                    <em>default namespace</em>
+                </dt>
+                <dd>
+                    http://gnafld.net/def/gnaf#
+                </dd>
+                <dt>
+                    dc
+                </dt>
+                <dd>
+                    http://purl.org/dc/elements/1.1/
+                </dd>
+                <dt>
+                    def
+                </dt>
+                <dd>
+                    http://gnafld.net/def/
+                </dd>
+                <dt>
+                    geosparql
+                </dt>
+                <dd>
+                    http://www.opengis.net/ont/geosparql#
+                </dd>
+                <dt>
+                    gnaf
+                </dt>
+                <dd>
+                    http://gnafld.net/def/gnaf/
+                </dd>
+                <dt>
+                    iso19160-1-address
+                </dt>
+                <dd>
+                    http://reference.data.gov.au/def/ont/iso19160-1-address#
+                </dd>
+                <dt>
+                    ontology
+                </dt>
+                <dd>
+                    http://dbpedia.org/ontology/
+                </dd>
+                <dt>
+                    owl
+                </dt>
+                <dd>
+                    http://www.w3.org/2002/07/owl#
+                </dd>
+                <dt>
+                    prov
+                </dt>
+                <dd>
+                    http://www.w3.org/ns/prov#
+                </dd>
+                <dt>
+                    rdf
+                </dt>
+                <dd>
+                    http://www.w3.org/1999/02/22-rdf-syntax-ns#
+                </dd>
+                <dt>
+                    rdfs
+                </dt>
+                <dd>
+                    http://www.w3.org/2000/01/rdf-schema#
+                </dd>
+                <dt>
+                    sf
+                </dt>
+                <dd>
+                    http://www.opengis.net/ont/sf#
+                </dd>
+                <dt>
+                    terms
+                </dt>
+                <dd>
+                    http://purl.org/dc/terms/
+                </dd>
+                <dt>
+                    xsd
+                </dt>
+                <dd>
+                    http://www.w3.org/2001/XMLSchema#
+                </dd>
             </dl>
         </div>
-        <p class="endnote">This HTML document was obtained by processing the OWL ontology source code through <a href="http://www.essepuntato.it/lode">LODE</a>, <em>Live OWL Documentation Environment</em>, developed by <a href="http://www.essepuntato.it">Silvio Peroni</a>.</p>
+        <p class="endnote">This HTML document was obtained by processing the OWL ontology source code through <a href="http://lode2.promsns.org">LODE2</a>, <em>Live OWL Documentation Environment, v2</em>, originally developed as LODE by <a href="http://www.essepuntato.it">Silvio Peroni</a> and updated by Edmond Chuc at the <a href="https://csiro.au">CSIRO</a>.</p>
     </body>
 </html>

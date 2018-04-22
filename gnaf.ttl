@@ -357,20 +357,6 @@ In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also ha
               rdfs:label "Geocode Point"@en .
 
 
-###  http://gnafld.net/def/gnaf#GeocodeReliability
-:GeocodeReliability rdf:type owl:Class ;
-                    rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ,
-                                    prov:Collection ;
-                    rdfs:label "Geocode Reliability"@en .
-
-
-###  http://gnafld.net/def/gnaf#GnafConfidence
-:GnafConfidence rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ,
-                                prov:Collection ;
-                rdfs:label "GNAF Confidence"@en .
-
-
 ###  http://gnafld.net/def/gnaf#GnafEntity
 :GnafEntity rdf:type owl:Class ;
             rdfs:subClassOf prov:Entity ,
@@ -484,13 +470,6 @@ In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also ha
         rdfs:label "Street"@en .
 
 
-###  http://gnafld.net/def/gnaf#StreetConfirmation
-:StreetConfirmation rdf:type owl:Class ;
-                    rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ,
-                                    prov:Collection ;
-                    rdfs:label "Street Confirmation"@en .
-
-
 ###  http://gnafld.net/def/gnaf#StreetLocality
 :StreetLocality rdf:type owl:Class ;
                 rdfs:subClassOf :Street ,
@@ -512,22 +491,14 @@ In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also ha
                 rdfs:label "Street Locality"^^xsd:string .
 
 
-###  http://gnafld.net/def/gnaf#StreetSuffix
-:StreetSuffix rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ,
-                              prov:Collection ;
-              rdfs:label "Street Suffix"@en .
-
-
 ###  http://gnafld.net/def/gnaf#MB2011
 :MB2011 rdf:type owl:Class ;
     rdfs:subClassOf :MeshBlock ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> ;
-    <http://www.w3.org/2004/02/skos/core#altLabel> "2011"@en ;
-    <http://www.w3.org/2004/02/skos/core#definition> "A Mesh Block from the 2011 census"@en ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "2011 Mesh Block"@en .
+    rdfs:comment "A Mesh Block from the 2011 census"@en ;
+    rdfs:label "2011 Mesh Block"@en .
 
 
 ###  http://gnafld.net/def/gnaf#MB2016
@@ -536,9 +507,8 @@ In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also ha
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> ;
-    <http://www.w3.org/2004/02/skos/core#altLabel> "2016"@en ;
-    <http://www.w3.org/2004/02/skos/core#definition> "A Mesh Block from the 2016 census"@en ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "2016 Mesh Block"@en .
+    rdfs:comment "A Mesh Block from the 2016 census"@en ;
+    rdfs:label "2016 Mesh Block"@en .
 
 
 ###  http://reference.data.gov.au/def/ont/iso19160-1-address#Address
