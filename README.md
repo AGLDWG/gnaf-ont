@@ -14,7 +14,11 @@ The main documentation for this ontology is available online at this ontology's 
 
 * <http://gnafld.net/def/gnaf>
 
-The content of the GNAF database, delivered using Linked Data principles, according to this ontology, is online at:
+The code lists used by ontology implementations, derived from the GNAF relational data model, are all listed at:
+
+* <http://gnafld.net/def/gnaf/code/>
+
+The content of the GNAF database delivered according to this ontology, using its code lists and also implementing Linked Data principles is online at:
 
 * <http://gnafld.net>
 
