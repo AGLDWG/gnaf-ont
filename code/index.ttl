@@ -42,5 +42,9 @@
     rdfs:label "Street Types"@en ;
     reg:register : .
 
+:StreetConfirmationTypes a skos:ConceptScheme ;
+    rdfs:label "Street Confirmation Types"@en ;
+    reg:register : .
+
 : a reg:Register ;
     rdfs:label "Code Lists Register"@en .

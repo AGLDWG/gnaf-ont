@@ -1,0 +1,56 @@
+@prefix : <http://gnafld.net/def/gnaf/code/StreetConfirmationTypes#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <http://gnafld.net/def/gnaf> .
+
+
+<http://gnafld.net/def/gnaf/code/StreetConfirmationTypes> a skos:ConceptScheme ;
+  skos:prefLabel "Street Confirmation Types" ;
+  rdfs:label "Street Confirmation Types" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:publisher <http://psma.com.au> ;
+  dct:issued "2018-04-16" ;
+  dct:subject "GNAF street confirmations"@en ;
+  skos:hasTopConcept
+    :Confirmed ,
+    :Unconfirmed .
+
+:allConcepts a skos:Collection ;
+    skos:member
+        :Confirmed ,
+        :Unconfirmed 
+    ;
+    skos:prefLabel "All Concepts Collection" ;
+    rdfs:label "All Concepts Collection" .
+
+# This ensures that an instance of a Street Confirmation cannot be of more than one subclass
+[
+    a owl:AllDisjointClasses ;
+    owl:members (
+        :Confirmed
+        :Unconfirmed 
+      ) ;
+].
+    
+sc:Confirmed a skos:Concept ;
+    skos:prefLabel "Confirmed"@en ;
+    skos:definition "A confirmed street is present in the roads data of the PSMA Transport and Topography product for the same release"@en ;
+    skos:altLabel "CONFIRMED"^^xsd:string ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
+
+sc:Unconfirmed a skos:Concept ;
+    skos:prefLabel "Unconfirmed"@en ;
+    skos:definition "An unconfirmed street is NOT present in the roads data of the PSMA Transport and Topography product for the same release and will not have a street locality geocode"@en ;
+    skos:altLabel "UNCONFIRMED"^^xsd:string ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetClass> .
