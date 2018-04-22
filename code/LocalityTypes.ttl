@@ -13,7 +13,6 @@
 
 <http://gnafld.net/def/gnaf/code/LocalityTypes> a skos:ConceptScheme ;
   skos:prefLabel "Locality Types" ;
-  rdfs:label "Locality Types" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   dct:publisher <http://psma.com.au> ;
   dct:issued "2018-04-16" ;
@@ -39,8 +38,7 @@
       :UnofficialSuburb ,
       :UnofficialTopographicFeature
     ;
-    skos:prefLabel "All Concepts Collection" ;
-    rdfs:label "All Concepts Collection" .
+    skos:prefLabel "All Concepts Collection" .
 
 # This ensures that an instance of a Locality cannot be of more than one subclass
 [

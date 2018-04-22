@@ -13,7 +13,6 @@
 
 <http://gnafld.net/def/gnaf/code/FlatTypes> a skos:ConceptScheme ;
   skos:prefLabel "Flat Types" ;
-  rdfs:label "Flat Types" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   dct:publisher <http://psma.com.au> ;
   dct:issued "2018-04-16" ;

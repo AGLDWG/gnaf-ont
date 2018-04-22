@@ -30,10 +30,10 @@
 
 <http://gnafld.net/def/gnaf/GnafConfidenceCollection> a skos:Collection ;
     skos:member
-      :2 ,
-      :1 ,
-      :0 ,
-      :-1
+        :2 ,
+        :1 ,
+        :0 ,
+        :-1
     ;
     skos:prefLabel "GNAF Confidence Subclasses Collection" .
 

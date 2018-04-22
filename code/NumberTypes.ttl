@@ -13,7 +13,6 @@
 
 <http://gnafld.net/def/gnaf/code/NumberTypes> a skos:ConceptScheme ;
   skos:prefLabel "Number Types" ;
-  rdfs:label "Number Types" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   dct:publisher <http://psma.com.au> ;
   dct:issued "2018-04-16" ;
@@ -33,8 +32,7 @@
         :Level ,
         :Lot
     ;
-    skos:prefLabel "All Concepts Collection" ;
-    rdfs:label "All Concepts Collection" .
+    skos:prefLabel "All Concepts Collection" .
 
 # This ensures that an instance of a Number cannot be of more than one subclass
 [

@@ -13,7 +13,6 @@
 
 <http://gnafld.net/def/gnaf/code/StreetConfirmationTypes> a skos:ConceptScheme ;
   skos:prefLabel "Street Confirmation Types" ;
-  rdfs:label "Street Confirmation Types" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   dct:publisher <http://psma.com.au> ;
   dct:issued "2018-04-16" ;
@@ -27,8 +26,7 @@
         :Confirmed ,
         :Unconfirmed 
     ;
-    skos:prefLabel "All Concepts Collection" ;
-    rdfs:label "All Concepts Collection" .
+    skos:prefLabel "All Concepts Collection" .
 
 # This ensures that an instance of a Street Confirmation cannot be of more than one subclass
 [
