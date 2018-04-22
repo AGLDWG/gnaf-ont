@@ -17,6 +17,14 @@
                                           <http://www.w3.org/ns/prov-o-20130430> ;
                               rdfs:label "GNAF ontology"^^xsd:string ;
                               dc:contributor "Joseph Abhayaratna"^^xsd:string ;
+                              dc:creator "Nicholas Car"^^xsd:string ;
+                              dct:modified "2018-02-07"^^xsd:date ;
+                              owl:versionInfo "1.1"^^xsd:string ;
+                              dct:contributor <http://gnafld.net/def/joseph.abhayaratna@psma.com.au> ;
+                              dct:created "2017-12-23"^^xsd:date ;
+                              dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+                              dc:publisher "Australian Government Linked Data Working Group"^^xsd:string ;
+                              dct:source "https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf" ;
                               rdfs:comment """An ontology for the content of the PSMA Geocoded National Address File (G-NAF).
 
   The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.
@@ -26,19 +34,19 @@
   The base content of the G-NAF is available freely online at <https://data.gov.au/dataset/geocoded-national-address-file-g-naf> and also via a Linked Data API that uses this ontology at <http://gnafld.net>.
 
   This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 \"Addressing -- Part 1: Conceptual model\" standard (see <https://www.iso.org/standard/61710.html>) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at <http://reference.data.gov.au/def/ont/iso19160-1-address>."""@en ;
-                              dc:creator "Nicholas Car"^^xsd:string ;
-                              dct:modified "2018-02-07"^^xsd:date ;
-                              owl:versionInfo "1.1"^^xsd:string ;
-                              dct:contributor <http://gnafld.net/def/joseph.abhayaratna@psma.com.au> ;
-                              dct:created "2017-12-23"^^xsd:date ;
-                              dct:creator <http://orcid.org/0000-0002-8742-7730> ;
-                              dc:publisher "Australian Government Linked Data Working Group"^^xsd:string ;
-                              dct:source "https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf" ;
                               dct:publisher <http://linked.data.gov.au> .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/contributor
+dct:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+dct:source rdf:type owl:AnnotationProperty .
+
 
 ###  http://www.w3.org/2002/07/owl#qualifiedCardinality
 owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
@@ -52,6 +60,12 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 :aliasOf rdf:type owl:ObjectProperty ;
          owl:inverseOf :hasAlias ;
          rdfs:label "alias of"@en .
+
+
+###  http://gnafld.net/def/gnaf#gnafType
+:gnafType rdf:type owl:ObjectProperty ;
+          rdfs:comment "A property to allow for GNAF-specific soft typing of various GNAF classes using code list terms published in the GNAF product guide, for example Locality class instances being soft typed according to the Locality Types list which includes *Alias Only*, *District*, *Gazeted* etc."@en ;
+          rdfs:label "GNAF type"@en .
 
 
 ###  http://gnafld.net/def/gnaf#hasAddressPrimary
@@ -505,6 +519,28 @@ In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also ha
               rdfs:label "Street Suffix"@en .
 
 
+###  http://gnafld.net/def/gnaf#2011MB
+:MB rdf:type owl:Class ;
+    rdfs:subClassOf :MeshBlock ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "2011"@en ;
+    <http://www.w3.org/2004/02/skos/core#definition> "A Mesh Block from the 2011 census"@en ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "2011 Mesh Block"@en .
+
+
+###  http://gnafld.net/def/gnaf#2016MB
+:MB rdf:type owl:Class ;
+    rdfs:subClassOf :MeshBlock ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> ;
+    <http://www.w3.org/2004/02/skos/core#altLabel> "2016"@en ;
+    <http://www.w3.org/2004/02/skos/core#definition> "A Mesh Block from the 2016 census"@en ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "2016 Mesh Block"@en .
+
+
 ###  http://reference.data.gov.au/def/ont/iso19160-1-address#Address
 <http://reference.data.gov.au/def/ont/iso19160-1-address#Address> rdf:type owl:Class ;
                                                                   rdfs:subClassOf prov:Entity ;
@@ -591,19 +627,3 @@ prov:wasInvalidatedAtTime rdf:type owl:NamedIndividual .
 
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
-
-:2011MB rdfs:subClassOf :MeshBlock ;
-    skos:prefLabel "2011 Mesh Block"@en ;
-    skos:definition "A Mesh Block from the 2011 census"@en ;
-    skos:altLabel "2011"@en ;
-    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
-
-:2016MB rdfs:subClassOf :MeshBlock ;
-    skos:prefLabel "2016 Mesh Block"@en ;
-    skos:definition "A Mesh Block from the 2016 census"@en ;
-    skos:altLabel "2016"@en ;
-    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
