@@ -519,8 +519,8 @@ In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also ha
               rdfs:label "Street Suffix"@en .
 
 
-###  http://gnafld.net/def/gnaf#2011MB
-:MB rdf:type owl:Class ;
+###  http://gnafld.net/def/gnaf#MB2011
+:MB2011 rdf:type owl:Class ;
     rdfs:subClassOf :MeshBlock ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
@@ -530,8 +530,8 @@ In addition to the stuff of geometry (lats, longs etc.), a Geocode Point also ha
     <http://www.w3.org/2004/02/skos/core#prefLabel> "2011 Mesh Block"@en .
 
 
-###  http://gnafld.net/def/gnaf#2016MB
-:MB rdf:type owl:Class ;
+###  http://gnafld.net/def/gnaf#MB2016
+:MB2016 rdf:type owl:Class ;
     rdfs:subClassOf :MeshBlock ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
