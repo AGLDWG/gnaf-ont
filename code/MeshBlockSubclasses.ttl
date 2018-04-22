@@ -31,7 +31,7 @@
     skos:definition "A Mesh Block from the 2011 census"@en ;
     skos:altLabel "2011"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .
 
 :2016MB rdfs:subClassOf :MeshBlock , skos:Concept ;
@@ -39,5 +39,5 @@
     skos:definition "A Mesh Block from the 2016 census"@en ;
     skos:altLabel "2016"@en ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> .

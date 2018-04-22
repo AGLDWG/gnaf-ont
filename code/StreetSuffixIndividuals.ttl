@@ -56,7 +56,7 @@
 	skos:definition ""@en ;
   skos:altLabel "CENTRAL"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :DE a :StreetSuffix , skos:Concept ;
@@ -64,7 +64,7 @@
 	skos:definition ""@en ;
   skos:altLabel "DEVIATION"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :E a :StreetSuffix , skos:Concept ;
@@ -72,7 +72,7 @@
 	skos:definition ""@en ;
   skos:altLabel "EAST"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :EX a :StreetSuffix , skos:Concept ;
@@ -80,7 +80,7 @@
 	skos:definition ""@en ;
   skos:altLabel "EXTENSION"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :LR a :StreetSuffix , skos:Concept ;
@@ -88,7 +88,7 @@
 	skos:definition ""@en ;
   skos:altLabel "LOWER"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :ML a :StreetSuffix , skos:Concept ;
@@ -96,7 +96,7 @@
 	skos:definition ""@en ;
   skos:altLabel "MALL"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :N a :StreetSuffix , skos:Concept ;
@@ -104,7 +104,7 @@
 	skos:definition ""@en ;
   skos:altLabel "NORTH"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :NE a :StreetSuffix , skos:Concept ;
@@ -112,7 +112,7 @@
 	skos:definition ""@en ;
   skos:altLabel "NORTH EAST"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :NW a :StreetSuffix , skos:Concept ;
@@ -120,7 +120,7 @@
 	skos:definition ""@en ;
   skos:altLabel "NORTH WEST"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :S a :StreetSuffix , skos:Concept ;
@@ -128,7 +128,7 @@
 	skos:definition ""@en ;
   skos:altLabel "SOUTH"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :SE a :StreetSuffix , skos:Concept ;
@@ -136,7 +136,7 @@
 	skos:definition ""@en ;
   skos:altLabel "SOUTH EAST"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :SW a :StreetSuffix , skos:Concept ;
@@ -144,7 +144,7 @@
 	skos:definition ""@en ;
   skos:altLabel "SOUTH WEST"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :UP a :StreetSuffix , skos:Concept ;
@@ -152,7 +152,7 @@
 	skos:definition ""@en ;
   skos:altLabel "UPPER"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :W a :StreetSuffix , skos:Concept ;
@@ -160,7 +160,7 @@
 	skos:definition ""@en ;
   skos:altLabel "WEST"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :IN a :StreetSuffix , skos:Concept ;
@@ -168,7 +168,7 @@
 	skos:definition ""@en ;
   skos:altLabel "INNER"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :OF a :StreetSuffix , skos:Concept ;
@@ -176,7 +176,7 @@
 	skos:definition ""@en ;
   skos:altLabel "OFF"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :ON a :StreetSuffix , skos:Concept ;
@@ -184,7 +184,7 @@
 	skos:definition ""@en ;
   skos:altLabel "ON"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :OP a :StreetSuffix , skos:Concept ;
@@ -192,7 +192,7 @@
 	skos:definition ""@en ;
   skos:altLabel "OVERPASS"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .
 
 :OT a :StreetSuffix , skos:Concept ;
@@ -200,5 +200,5 @@
 	skos:definition ""@en ;
   skos:altLabel "OUTER"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 	rdfs:isDefinedBy <http://gnafld.net/def/gnaf/StreetSuffix/> .

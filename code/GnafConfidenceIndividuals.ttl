@@ -42,7 +42,7 @@
     skos:definition "All three contributors have supplied an identical address"@en ;
     skos:altLabel "2"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
 
 :GnafConfidence_1 a gnaf:GnafConfidence , skos:Concept ;
@@ -50,7 +50,7 @@
     skos:definition "A match has been achieved between only two contributors"@en ;
     skos:altLabel "1"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
 
 :GnafConfidence_0 a gnaf:GnafConfidence , skos:Concept ;
@@ -58,7 +58,7 @@
     skos:definition "A single contributor holds this address and no match has been achieved with either or the other two contributors."@en ;
     skos:altLabel "0"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
 
 :GnafConfidence_-1 a gnaf:GnafConfidence , skos:Concept ;
@@ -66,5 +66,5 @@
     skos:definition "None of the contributors hold this address in their address dataset anymore."@en ;
     skos:altLabel "-1"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .

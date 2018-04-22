@@ -13,7 +13,7 @@
 
 <http://gnafld.net/def/gnaf/code/MeshBlockMatchTypes> a skos:ConceptScheme ;
   skos:prefLabel "Mesh Block Match Types" ;
-  rdfs:label "Mesh Block Match  Types" ;
+  rdfs:label "Mesh Block Match Types" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   dct:publisher <http://psma.com.au> ;
   dct:issued "2018-04-16" ;

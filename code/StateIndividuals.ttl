@@ -47,7 +47,7 @@
     skos:altLabel "8"^^xsd:string ;
     skos:altLabel "ACT"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://sws.geonames.org/2177478/about.rdf> .
 
 <http://www.geonames.org/2155400> a :State , skos:Concept ;
@@ -56,7 +56,7 @@
     skos:altLabel "1"^^xsd:string ;
     skos:altLabel "NSW"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://sws.geonames.org/2155400/about.rdf> .
 
 <http://www.geonames.org/2064513> a :State , skos:Concept ;
@@ -65,7 +65,7 @@
     skos:altLabel "7"^^xsd:string ;
     skos:altLabel "NT"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://sws.geonames.org/2064513/about.rdf> .
 
 <http://gnafld.net/def/gnaf/State/OT> a :State , skos:Concept ;
@@ -74,7 +74,7 @@
     skos:altLabel "9"^^xsd:string ;
     skos:altLabel "OT"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/State/> .
 
 <http://www.geonames.org/2152274> a :State , skos:Concept ;
@@ -83,7 +83,7 @@
     skos:altLabel "3"^^xsd:string ;
     skos:altLabel "QLD"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://sws.geonames.org/2152274/about.rdf> .
 
 <http://www.geonames.org/2061327> a :State , skos:Concept ;
@@ -92,7 +92,7 @@
     skos:altLabel "4"^^xsd:string ;
     skos:altLabel "SA"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://sws.geonames.org/2061327/about.rdf> .
 
 <http://www.geonames.org/2147291> a :State , skos:Concept ;
@@ -101,7 +101,7 @@
     skos:altLabel "6"^^xsd:string ;
     skos:altLabel "TAS"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://sws.geonames.org/2147291/about.rdf> .
 
 <http://www.geonames.org/2145234> a :State , skos:Concept ;
@@ -110,7 +110,7 @@
     skos:altLabel "2"^^xsd:string ;
     skos:altLabel "VIC"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://sws.geonames.org/2145234/about.rdf> .
 
 <http://www.geonames.org/2058645> a :State , skos:Concept ;
@@ -119,5 +119,5 @@
     skos:altLabel "5"^^xsd:string ;
     skos:altLabel "WA"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-    dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     rdfs:isDefinedBy <http://sws.geonames.org/2058645/about.rdf> .

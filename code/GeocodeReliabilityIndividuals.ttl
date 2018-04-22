@@ -52,7 +52,7 @@
   skos:definition "Geocode accuracy recorded to appropriate surveying standard"@en ;
   skos:altLabel "1"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GeocodeReliability/> .
 
 :WithinAddressSiteBoundaryOrAccessPoint a gnaf:GeocodeReliability , skos:Concept ;
@@ -60,7 +60,7 @@
   skos:definition "Geocode accuracy sufficient to place geocode within address site boundary or access point"@en ;
   skos:altLabel "2"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GeocodeReliability/> .
 
 :NearOrPossiblyWithinAddressSiteBoundary a gnaf:GeocodeReliability , skos:Concept ;
@@ -68,7 +68,7 @@
   skos:definition "Geocode accuracy sufficient to place geocode near (or possibly within) address site boundary"@en ;
   skos:altLabel "3"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GeocodeReliability/> .
 
 :UniqueRoadFeature a gnaf:GeocodeReliability , skos:Concept ;
@@ -76,7 +76,7 @@
   skos:definition "Geocode accuracy sufficient to associate address site with a unique road feature"@en ;
   skos:altLabel "4"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GeocodeReliability/> .
 
 :UniqueLocalityOrNeighbourhood a gnaf:GeocodeReliability , skos:Concept ;
@@ -84,7 +84,7 @@
   skos:definition "Geocode accuracy sufficient to associate address site with a unique locality or neighbourhood"@en ;
   skos:altLabel "5"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GeocodeReliability/> .
 
 :UniqueRegion a gnaf:GeocodeReliability , skos:Concept ;
@@ -92,5 +92,5 @@
   skos:definition "Geocode accuracy sufficient to associate address site with a unique region"@en ;
   skos:altLabel "6"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
-  dct:countributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GeocodeReliability/> .
