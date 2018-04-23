@@ -6,8 +6,8 @@ import rdflib
 
 # Declare the CREATE TABLE SQL
 create_table = '''
-DROP TABLE IF EXISTS codes_{tn};
-CREATE TABLE codes_{tn} (
+DROP TABLE IF EXISTS codes.{tn};
+CREATE TABLE codes.{tn} (
   code varchar NOT NULL,
   uri varchar NOT NULL,
   prefLabel varchar NOT NULL,
@@ -35,7 +35,7 @@ def generate_sql(files, files_filter, sparql_query):
         g.load(path.join(this_dir, f), format='turtle')
         sql += create_table.format(tn=vocab_name)
         for r in g.query(sparql_query):
-            sql += "\nINSERT INTO codes_{} (code, uri, prefLabel) VALUES ('{}', '{}', '{}');".format(
+            sql += "\nINSERT INTO codes.{} (code, uri, prefLabel) VALUES ('{}', '{}', '{}');".format(
                 vocab_name,
                 str(r['code']),
                 str(r['uri']),
@@ -71,7 +71,7 @@ q_types = '''
 sql += generate_sql(f, 'Types', q_types)
 
 # write SQL to file
-with open(path.join(this_dir, 'code.sql'), 'w') as f:
+with open(path.join(this_dir, 'create_codes.sql'), 'w') as f:
     f.write(create_table)
     f.write(sql)
 
