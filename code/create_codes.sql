@@ -617,6 +617,10 @@ INSERT INTO codes.Street (code, uri, prefLabel) VALUES ('CENTRE', 'http://gnafld
 INSERT INTO codes.Street (code, uri, prefLabel) VALUES ('CTR', 'http://gnafld.net/def/gnaf/code/StreetTypes#Centre', 'Centre');
 INSERT INTO codes.Street (code, uri, prefLabel) VALUES ('VIEW', 'http://gnafld.net/def/gnaf/code/StreetTypes#View', 'View');
 INSERT INTO codes.Street (code, uri, prefLabel) VALUES ('SPUR', 'http://gnafld.net/def/gnaf/code/StreetTypes#Spur', 'Spur');
+INSERT INTO codes.Street (code, uri, prefLabel) VALUES ('STREET', 'http://gnafld.net/def/gnaf/code/StreetTypes#Street', 'Street');
+INSERT INTO codes.Street (code, uri, prefLabel) VALUES ('ST', 'http://gnafld.net/def/gnaf/code/StreetTypes#Street', 'Street');
+INSERT INTO codes.Street (code, uri, prefLabel) VALUES ('AVE', 'http://gnafld.net/def/gnaf/code/StreetTypes#Avenue', 'Avenue');
+INSERT INTO codes.Street (code, uri, prefLabel) VALUES ('CRES', 'http://gnafld.net/def/gnaf/code/StreetTypes#Crescent', 'Crescent');
 
 
 DROP TABLE IF EXISTS codes.StreetConfirmation;
