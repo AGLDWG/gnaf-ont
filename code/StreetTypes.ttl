@@ -244,6 +244,7 @@
         :Straight ,
         :Strait ,
         :Strand ,
+        :Street ,
         :Strip ,
         :Subway ,
         :Tarn ,
@@ -512,6 +513,7 @@
         :Straight ,
         :Strait ,
         :Strand ,
+        :Street ,
         :Strip ,
         :Subway ,
         :Tarn ,
@@ -784,6 +786,7 @@
         :Straight
         :Strait
         :Strand
+        :Street
         :Strip
         :Subway
         :Tarn
@@ -901,7 +904,7 @@
 
 :Avenue a skos:Concept ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
-    skos:altLabel "AV", "AVENUE" ;
+    skos:altLabel "AV", "AVENUE", "AVE" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     skos:prefLabel "Avenue"@en .
@@ -1223,7 +1226,7 @@
 
 :Crescent a skos:Concept ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
-    skos:altLabel "CR", "CRESCENT" ;
+    skos:altLabel "CR", "CRESCENT", "CRES" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     skos:prefLabel "Crescent"@en .
@@ -2389,6 +2392,13 @@
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     skos:prefLabel "Strand"@en .
+
+:Street a skos:Concept ;
+    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
+    skos:altLabel "ST", "STREET" ;
+    dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
+    dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+    skos:prefLabel "Street"@en .
 
 :Strip a skos:Concept ;
     rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/StreetType> ;
