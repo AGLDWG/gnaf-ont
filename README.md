@@ -12,11 +12,11 @@ This ontology draws some elements from the OWL ontology version of the ISO19160-
 ## Implementation
 The main documentation for this ontology is available online at this ontology's namespace location:
 
-* <http://gnafld.net/def/gnaf>
+* <http://linked.data.gov.au/def/gnaf>
 
 The code lists used by ontology implementations, derived from the GNAF relational data model, are all listed at:
 
-* <http://gnafld.net/def/gnaf/code/>
+* <http://linked.data.gov.au/def/gnaf/code/>
 
 The content of the GNAF database delivered according to this ontology, using its code lists and also implementing Linked Data principles is online at:
 

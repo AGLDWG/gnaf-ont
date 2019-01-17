@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/> .
+@prefix : <http://linked.data.gov.au/def/gnaf/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,10 +8,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix gnaf: <http://gnafld.net/def/gnaf/> .
-@base <http://gnafld.net/def/gnaf> .
+@prefix gnaf: <http://linked.data.gov.au/def/gnaf/> .
+@base <http://linked.data.gov.au/def/gnaf> .
 
-<http://gnafld.net/def/gnaf/GnafConfidence/>
+<http://linked.data.gov.au/def/gnaf/GnafConfidence/>
     a owl:Ontology ;
     rdfs:label "G-NAF code list for GnafConfidence individuals"@en ;
     rdfs:comment "This code list is a Register of OWL class Named Individuals."@en ;
@@ -22,13 +22,13 @@
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:rights "PSMA Ltd."@en ;
     owl:versionInfo "0.1"@en ;
-    owl:versionIRI <http://gnafld.net/def/gnaf/GnafConfidence/0.1> ;
+    owl:versionIRI <http://linked.data.gov.au/def/gnaf/GnafConfidence/0.1> ;
     dct:created "2018-01-02"^^xsd:date ;
     dct:modified "2018-01-02"@en ;
-    vann:preferredNamespaceUri "http://gnafld.net/def/gnaf/GnafConfidence/"^^xsd:string ;
+    vann:preferredNamespaceUri "http://linked.data.gov.au/def/gnaf/GnafConfidence/"^^xsd:string ;
     vann:preferredNamespacePrefix "gnconf"@en .
 
-<http://gnafld.net/def/gnaf/GnafConfidenceCollection> a skos:Collection ;
+<http://linked.data.gov.au/def/gnaf/GnafConfidenceCollection> a skos:Collection ;
     skos:member
         :2 ,
         :1 ,
@@ -43,7 +43,7 @@
     skos:altLabel "2"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/GnafConfidence/> .
 
 :GnafConfidence_1 a gnaf:GnafConfidence , skos:Concept ;
     skos:prefLabel "Confidence level 1"@en ;
@@ -51,7 +51,7 @@
     skos:altLabel "1"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/GnafConfidence/> .
 
 :GnafConfidence_0 a gnaf:GnafConfidence , skos:Concept ;
     skos:prefLabel "Confidence level 0"@en ;
@@ -59,7 +59,7 @@
     skos:altLabel "0"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/GnafConfidence/> .
 
 :GnafConfidence_-1 a gnaf:GnafConfidence , skos:Concept ;
     skos:prefLabel "Confidence level -1"@en ;
@@ -67,4 +67,4 @@
     skos:altLabel "-1"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/GnafConfidence/> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/GnafConfidence/> .

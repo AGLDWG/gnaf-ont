@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/code/AddressTypes#> .
+@prefix : <http://linked.data.gov.au/def/gnaf/code/AddressTypes#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,10 +7,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@base <http://gnafld.net/def/gnaf> .
+@base <http://linked.data.gov.au/def/gnaf> .
 
 
-<http://gnafld.net/def/gnaf/code/AddressTypes> a skos:ConceptScheme ;
+<http://linked.data.gov.au/def/gnaf/code/AddressTypes> a skos:ConceptScheme ;
     skos:prefLabel "Address Types" ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     dct:publisher <http://psma.com.au> ;
@@ -152,14 +152,14 @@
   skos:prefLabel "Flat"@en ;
   dct:source "Nicholas Car"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> .
 
 :Rural a skos:Concept ;
   skos:prefLabel "Rural"@en ;
   skos:altLabel "R" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralBlock a skos:Concept ;
   skos:prefLabel "Rural Block"@en ;
@@ -167,7 +167,7 @@
   skos:altLabel "R/BLOCK" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralCabin a skos:Concept ;
   skos:prefLabel "Rural Cabin"@en ;
@@ -175,7 +175,7 @@
   skos:altLabel "R/CABIN" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralFlat a skos:Concept ;
   skos:prefLabel "Rural Flat"@en ;
@@ -183,7 +183,7 @@
   skos:altLabel "R/FLAT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralHouse a skos:Concept ;
   skos:prefLabel "Rural House"@en ;
@@ -191,7 +191,7 @@
   skos:altLabel "R/HOUSE" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralLot a skos:Concept ;
   skos:prefLabel "Rural Lot"@en ;
@@ -199,7 +199,7 @@
   skos:altLabel "R/LOT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralReserve a skos:Concept ;
   skos:prefLabel "Rural Reserve"@en ;
@@ -207,7 +207,7 @@
   skos:altLabel "R/RES" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralRoadsideMailBox a skos:Concept ;
   skos:prefLabel "Rural Roadside Mail Box"@en ;
@@ -215,7 +215,7 @@
   skos:altLabel "R/RMB" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralRoom a skos:Concept ;
   skos:prefLabel "Rural Room"@en ;
@@ -223,7 +223,7 @@
   skos:altLabel "R/ROOM" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralRoadsideMailDelivery a skos:Concept ;
   skos:prefLabel "Rural Roadside Mail Delivery"@en ;
@@ -231,7 +231,7 @@
   skos:altLabel "R/RSD" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralRoadsideMailService a skos:Concept ;
   skos:prefLabel "Rural Roadside Mail Service"@en ;
@@ -239,7 +239,7 @@
   skos:altLabel "R/RSM" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralSection a skos:Concept ;
   skos:prefLabel "Rural Section"@en ;
@@ -247,7 +247,7 @@
   skos:altLabel "R/SEC" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralSite a skos:Concept ;
   skos:prefLabel "Rural Site"@en ;
@@ -255,7 +255,7 @@
   skos:altLabel "R/SITE" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :RuralUnit a skos:Concept ;
   skos:prefLabel "Rural Unit"@en ;
@@ -263,14 +263,14 @@
   skos:altLabel "R/UNIT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :Unknown a skos:Concept ;
   skos:prefLabel "Unknown"@en ;
   skos:altLabel "UN" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownVilla a skos:Concept ;
   skos:prefLabel "Unknown Villa"@en ;
@@ -278,7 +278,7 @@
   skos:altLabel "UN/VILLA" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownApartment a skos:Concept ;
   skos:prefLabel "Unknown Apartment"@en ;
@@ -286,7 +286,7 @@
   skos:altLabel "UN/APT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownBlock a skos:Concept ;
   skos:prefLabel "Unknown Block"@en ;
@@ -294,7 +294,7 @@
   skos:altLabel "UN/BLOCK" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownCabin a skos:Concept ;
   skos:prefLabel "Unknown Cabin"@en ;
@@ -302,7 +302,7 @@
   skos:altLabel "UN/CABIN" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownCottage a skos:Concept ;
   skos:prefLabel "Unknown Cottage"@en ;
@@ -310,7 +310,7 @@
   skos:altLabel "UN/CTGE" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownCaravan a skos:Concept ;
   skos:prefLabel "Unknown Caravan"@en ;
@@ -318,7 +318,7 @@
   skos:altLabel "UN/CVAN" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownFarm a skos:Concept ;
   skos:prefLabel "Unknown Farm"@en ;
@@ -326,7 +326,7 @@
   skos:altLabel "UN/FARM" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownFlat a skos:Concept ;
   skos:prefLabel "Unknown Flat"@en ;
@@ -334,7 +334,7 @@
   skos:altLabel "UN/FLAT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownGroundFloor a skos:Concept ;
   skos:prefLabel "Unknown Ground Floor"@en ;
@@ -342,7 +342,7 @@
   skos:altLabel "UN/GD" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownHouse a skos:Concept ;
   skos:prefLabel "Unknown House"@en ;
@@ -350,7 +350,7 @@
   skos:altLabel "UN/HOUSE" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownLocation a skos:Concept ;
   skos:prefLabel "Unknown Location"@en ;
@@ -358,7 +358,7 @@
   skos:altLabel "UN/LOC" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownLot a skos:Concept ;
   skos:prefLabel "Unknown Lot"@en ;
@@ -366,7 +366,7 @@
   skos:altLabel "UN/LOT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownLower a skos:Concept ;
   skos:prefLabel "Unknown Lower"@en ;
@@ -374,7 +374,7 @@
   skos:altLabel "UN/LWR" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownPortion a skos:Concept ;
   skos:prefLabel "Unknown Portion"@en ;
@@ -382,7 +382,7 @@
   skos:altLabel "UN/POR" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownPenthouse a skos:Concept ;
   skos:prefLabel "Unknown Penthouse"@en ;
@@ -390,7 +390,7 @@
   skos:altLabel "UN/PTHS" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownRear a skos:Concept ;
   skos:prefLabel "Unknown Rear"@en ;
@@ -398,7 +398,7 @@
   skos:altLabel "UN/REAR" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownReserve a skos:Concept ;
   skos:prefLabel "Unknown Reserve"@en ;
@@ -406,7 +406,7 @@
   skos:altLabel "UN/RES" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownRoadsideMailBox a skos:Concept ;
   skos:prefLabel "Unknown Roadside Mail Box"@en ;
@@ -414,7 +414,7 @@
   skos:altLabel "UN/RMB" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownRoadsideMailMailService a skos:Concept ;
   skos:prefLabel "Unknown Roadside Mail Service"@en ;
@@ -422,7 +422,7 @@
   skos:altLabel "UN/RMS" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownRoom a skos:Concept ;
   skos:prefLabel "Unknown Room"@en ;
@@ -430,7 +430,7 @@
   skos:altLabel "UN/ROOM" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownRoadsideMailDelivery a skos:Concept ;
   skos:prefLabel "Unknown Roadside Mail Delivery"@en ;
@@ -438,7 +438,7 @@
   skos:altLabel "UN/RSD" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownRoadsideMailService2 a skos:Concept ;
   skos:prefLabel "Unknown Roadside Mail Box"@en ;
@@ -446,7 +446,7 @@
   skos:altLabel "UN/RSM" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownSection a skos:Concept ;
   skos:prefLabel "Unknown Section"@en ;
@@ -454,7 +454,7 @@
   skos:altLabel "UN/SEC" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownSite a skos:Concept ;
   skos:prefLabel "Unknown Site"@en ;
@@ -462,7 +462,7 @@
   skos:altLabel "UN/SITE" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownTownhouse a skos:Concept ;
   skos:prefLabel "Unknown Townhouse"@en ;
@@ -470,7 +470,7 @@
   skos:altLabel "UN/TNHS" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UnknownUnit a skos:Concept ;
   skos:prefLabel "Unknown Unit"@en ;
@@ -478,14 +478,14 @@
   skos:altLabel "UN/UNIT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :Urban a skos:Concept ;
   skos:prefLabel "Urban"@en ;
   skos:altLabel "UR" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanBlock a skos:Concept ;
   skos:prefLabel "Urban Block"@en ;
@@ -493,7 +493,7 @@
   skos:altLabel "UR/BLOCK" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanCabin a skos:Concept ;
   skos:prefLabel "Urban Cabin"@en ;
@@ -501,7 +501,7 @@
   skos:altLabel "UR/CABIN" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanFlat a skos:Concept ;
   skos:prefLabel "Urban Flat"@en ;
@@ -509,7 +509,7 @@
   skos:altLabel "UR/FLAT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanHouse a skos:Concept ;
   skos:prefLabel "Urban House"@en ;
@@ -517,7 +517,7 @@
   skos:altLabel "UR/HOUSE" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanLot a skos:Concept ;
   skos:prefLabel "Urban Lot"@en ;
@@ -525,7 +525,7 @@
   skos:altLabel "UR/LOT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanReserve a skos:Concept ;
   skos:prefLabel "Urban Reserve"@en ;
@@ -533,7 +533,7 @@
   skos:altLabel "UR/RES" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanRoadsideMailBox a skos:Concept ;
   skos:prefLabel "Urban Roadside Mail Box"@en ;
@@ -541,7 +541,7 @@
   skos:altLabel "UR/RMB" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanRoadsideMailService a skos:Concept ;
   skos:prefLabel "Urban Roadside Mail Service"@en ;
@@ -549,7 +549,7 @@
   skos:altLabel "UR/RMS" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanRoom a skos:Concept ;
   skos:prefLabel "Urban Room"@en ;
@@ -557,7 +557,7 @@
   skos:altLabel "UR/ROOM" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanRoadsideMailDelivery a skos:Concept ;
   skos:prefLabel "Urban Roadside Mail Delivery"@en ;
@@ -565,7 +565,7 @@
   skos:altLabel "UR/RSD" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanRoadsideMailService a skos:Concept ;
   skos:prefLabel "Urban Roadside Mail Service"@en ;
@@ -573,7 +573,7 @@
   skos:altLabel "UR/RSM" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanSection a skos:Concept ;
   skos:prefLabel "Urban Section"@en ;
@@ -581,7 +581,7 @@
   skos:altLabel "UR/SEC" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanSite a skos:Concept ;
   skos:prefLabel "Urban Site"@en ;
@@ -589,7 +589,7 @@
   skos:altLabel "UR/SITE" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .
 
 :UrbanUnit a skos:Concept ;
   skos:prefLabel "Urban Unit"@en ;
@@ -597,4 +597,4 @@
   skos:altLabel "UR/UNIT" ;
   dct:source "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AddressType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AddressType> .

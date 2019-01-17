@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/code/> .
+@prefix : <http://linked.data.gov.au/def/gnaf/code/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix reg: <http://purl.org/linked-data/registry#> .
