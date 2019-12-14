@@ -24,21 +24,11 @@
                                                         sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
                                                         sdo:name "Nicholas Car"
                                                       ] ;
-                                      dcterms:description """An ontology for the content of the PSMA Geocoded National Address File (G-NAF).
-
-  The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.
-
-  The G-NAF does not contain any names or personal information.
-
-  The base content of the G-NAF is available freely online at <https://data.gov.au/dataset/geocoded-national-address-file-g-naf> and also via a Linked Data API that uses this ontology at <http://gnafld.net>.
-
-  This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 \"Addressing -- Part 1: Conceptual model\" standard (see <https://www.iso.org/standard/61710.html>) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at <http://reference.data.gov.au/def/ont/iso19160-1-address>."""@en ;
                                       dcterms:modified "2019-06-07"^^xsd:date ;
                                       dcterms:publisher [ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
                                                           sdo:name "PSMA Australia"
                                                         ] ;
                                       dcterms:source "https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf" ;
-                                      rdfs:label "GNAF ontology" ;
                                       skos:changeNote "Version 1.2 has these changes: hasState & hasLocality made sub properties of geo:sfWithin, GeocodedPoint removed and replaces with just sf:Point. New-style ontology documentation with Agent objects for publisher etc. used too." .
 
 #################################################################
@@ -306,8 +296,6 @@ asgs:StateOrTerritory rdf:type owl:Class .
 ###  http://linked.data.gov.au/def/gnaf#Address
 :Address rdf:type owl:Class ;
          rdfs:subClassOf :GnafEntity ,
-                         <http://org.semanticweb.owlapi/error#Error1> ,
-                         <http://reference.data.gov.au/def/ont/iso19160-1-address#Address> ,
                          geo:Feature ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasAlias ;
@@ -529,15 +517,6 @@ asgs:StateOrTerritory rdf:type owl:Class .
 :StreetSuffix rdf:type owl:Class .
 
 
-###  http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
-
-
-###  http://reference.data.gov.au/def/ont/iso19160-1-address#Address
-<http://reference.data.gov.au/def/ont/iso19160-1-address#Address> rdf:type owl:Class ;
-                                                                  rdfs:label "ISO19160-1 Address"@en .
-
-
 ###  http://www.opengis.net/ont/geosparql#Geometry
 geo:Geometry rdfs:subClassOf :GnafEntity ,
                              [ rdf:type owl:Restriction ;
@@ -587,13 +566,26 @@ dcterms:title rdf:type owl:NamedIndividual .
    sdo:name "PSMA Australia"
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
+   sdo:name "Joseph Abhayaratna"
+ ] .
+
+[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
+   sdo:name "PSMA Australia"
+ ] .
+
+[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
+   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+   sdo:name "Nicholas Car"
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
