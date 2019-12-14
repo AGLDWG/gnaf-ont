@@ -24,6 +24,11 @@
                                                         sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
                                                         sdo:name "Nicholas Car"
                                                       ] ;
+                                      dcterms:description """An ontology for the content of the PSMA Geocoded National Address File (G-NAF).	
+  The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.	
+  The G-NAF does not contain any names or personal information.	
+  The base content of the G-NAF is available freely online at <https://data.gov.au/dataset/geocoded-national-address-file-g-naf> and also via a Linked Data API that uses this ontology at <http://gnafld.net>.	
+  This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 \"Addressing -- Part 1: Conceptual model\" standard (see <https://www.iso.org/standard/61710.html>) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at <http://reference.data.gov.au/def/ont/iso19160-1-address>."""@en ;
                                       dcterms:modified "2019-06-07"^^xsd:date ;
                                       dcterms:publisher [ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
                                                           sdo:name "PSMA Australia"
