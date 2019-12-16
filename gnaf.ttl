@@ -40,20 +40,19 @@
 #################################################################
 
 ###  http://linked.data.gov.au/def/gnaf#hasDateLastModified
-:hasDateLastModified rdf:type owl:AnnotationProperty ;
-                     rdfs:subPropertyOf dcterms:modified .
+:hasDateLastModified rdf:type owl:AnnotationProperty .
 
 
 ###  http://linked.data.gov.au/def/gnaf#hasDescription
 :hasDescription rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf dcterms:description ,
-                                   rdfs:comment .
+                rdfs:subPropertyOf rdfs:comment ;
+                rdfs:range xsd:string .
 
 
 ###  http://linked.data.gov.au/def/gnaf#hasName
 :hasName rdf:type owl:AnnotationProperty ;
-         rdfs:subPropertyOf dcterms:title ,
-                            rdfs:label .
+         rdfs:subPropertyOf rdfs:label ;
+         rdfs:range xsd:string .
 
 
 ###  http://purl.org/dc/terms/contributor
@@ -62,6 +61,10 @@ dcterms:contributor rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/creator
 dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/isReplacedBy
+dcterms:isReplacedBy rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/source
@@ -243,11 +246,14 @@ dcterms:type rdf:type owl:ObjectProperty .
 :hasDateCreated rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf dcterms:created ;
                 rdfs:range xsd:dateTime ;
-                rdfs:label "has date created"@en .
+                dcterms:isReplacedBy "dcterms:created" ;
+                rdfs:label "has date created"@en ;
+                owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://linked.data.gov.au/def/gnaf#hasDateLastModified
-:hasDateLastModified rdf:type owl:DatatypeProperty .
+:hasDateLastModified rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dcterms:modified .
 
 
 ###  http://linked.data.gov.au/def/gnaf#hasDateRetired
@@ -258,7 +264,7 @@ dcterms:type rdf:type owl:ObjectProperty .
 
 ###  http://linked.data.gov.au/def/gnaf#hasDescription
 :hasDescription rdf:type owl:DatatypeProperty ;
-                rdfs:range xsd:string .
+                rdfs:subPropertyOf dcterms:description .
 
 
 ###  http://linked.data.gov.au/def/gnaf#hasLegalParcelId
@@ -269,7 +275,7 @@ dcterms:type rdf:type owl:ObjectProperty .
 
 ###  http://linked.data.gov.au/def/gnaf#hasName
 :hasName rdf:type owl:DatatypeProperty ;
-         rdfs:range xsd:string .
+         rdfs:subPropertyOf dcterms:title .
 
 
 ###  http://linked.data.gov.au/def/gnaf#hasPostcode
@@ -308,6 +314,23 @@ dcterms:type rdf:type owl:ObjectProperty .
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
@@ -394,7 +417,11 @@ asgs:StateOrTerritory rdf:type owl:Class .
 ###  http://linked.data.gov.au/def/gnaf#GnafEntity
 :GnafEntity rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasDateCreated ;
+                              owl:onProperty dcterms:identifier ;
+                              owl:minCardinality "1"^^xsd:nonNegativeInteger
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty dcterms:created ;
                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                               owl:onDataRange xsd:dateTime
                             ] ,
@@ -516,7 +543,7 @@ asgs:StateOrTerritory rdf:type owl:Class .
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onClass :Locality
                                 ] ;
-                rdfs:label "Street Locality" .
+                rdfs:label "Street Locality " .
 
 
 ###  http://linked.data.gov.au/def/gnaf#StreetSuffix
@@ -541,36 +568,16 @@ geo:Geometry rdfs:subClassOf :GnafEntity ,
                                      dcterms:created "2017-12-23"^^xsd:date .
 
 
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-  sdo:name "PSMA Australia"
+[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
+  sdo:name "Joseph Abhayaratna"
 ] .
 
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
+[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
+   sdo:name "Joseph Abhayaratna"
  ] .
 
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
+[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
+   sdo:name "Joseph Abhayaratna"
  ] .
 
 [ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
@@ -581,8 +588,24 @@ geo:Geometry rdfs:subClassOf :GnafEntity ,
    sdo:name "PSMA Australia"
  ] .
 
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
+[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
+   sdo:name "PSMA Australia"
+ ] .
+
+[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
+   sdo:name "PSMA Australia"
+ ] .
+
+[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
+   sdo:name "PSMA Australia"
+ ] .
+
+[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
+   sdo:name "PSMA Australia"
+ ] .
+
+[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
+   sdo:name "PSMA Australia"
  ] .
 
 [ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
@@ -604,12 +627,39 @@ geo:Geometry rdfs:subClassOf :GnafEntity ,
 
 [ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
    sdo:name "PSMA Australia"
+ ] .
+
+[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
+   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+   sdo:name "Nicholas Car"
+ ] .
+
+[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
+   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+   sdo:name "Nicholas Car"
+ ] .
+
+[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
+   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+   sdo:name "Nicholas Car"
+ ] .
+
+[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
+   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+   sdo:name "Nicholas Car"
+ ] .
+
+[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
+   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+   sdo:name "Nicholas Car"
+ ] .
+
+[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
+   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+   sdo:name "Nicholas Car"
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -618,12 +668,17 @@ geo:Geometry rdfs:subClassOf :GnafEntity ,
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:cardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 #################################################################
 #    Annotations
 #################################################################
 
 :hasDateLastModified rdfs:comment "This is the same as dct:modified."@en ;
-                      rdfs:label "has date last modified"@en .
+                      owl:deprecated "true"^^xsd:boolean ;
+                      rdfs:label "has date last modified"@en ;
+                      dcterms:isReplacedBy "dcterms:modified" .
 
 
 :hasDescription rdfs:comment "This is the same as dct:description."@en ;
