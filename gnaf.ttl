@@ -33,8 +33,7 @@
                                       dcterms:publisher [ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
                                                           sdo:name "PSMA Australia"
                                                         ] ;
-                                      dcterms:source "https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf" ;
-                                      skos:changeNote "Version 1.2 has these changes: hasState & hasLocality made sub properties of geo:sfWithin, GeocodedPoint removed and replaces with just sf:Point. New-style ontology documentation with Agent objects for publisher etc. used too." .
+                                      dcterms:source "https://www.psma.com.au/sites/default/files/g-naf_product_description.pdf" .
 
 #################################################################
 #    Annotation properties
@@ -107,13 +106,13 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://linked.data.gov.au/def/gnaf#hasAlias
 :hasAlias rdf:type owl:ObjectProperty ;
-          rdfs:domain :Alias ;
-          rdfs:range [ rdf:type owl:Class ;
-                       owl:unionOf ( :Address
-                                     :Locality
-                                     :Street
-                                   )
-                     ] ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Address
+                                      :Locality
+                                      :Street
+                                    )
+                      ] ;
+          rdfs:range :Alias ;
           rdfs:label "has Alias"@en .
 
 
@@ -303,18 +302,6 @@ asgs:StateOrTerritory rdf:type owl:Class .
          rdfs:subClassOf :GnafEntity ,
                          geo:Feature ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasAlias ;
-                           owl:someValuesFrom :Alias
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasMeshBlockMatch ;
-                           owl:someValuesFrom :MeshBlockMatch
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasNumber ;
-                           owl:someValuesFrom :Number
-                         ] ,
-                         [ rdf:type owl:Restriction ;
                            owl:onProperty geo:hasGeometry ;
                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onClass sf:Point
@@ -403,14 +390,6 @@ asgs:StateOrTerritory rdf:type owl:Class .
           rdfs:subClassOf :GnafEntity ,
                           geo:Feature ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasAlias ;
-                            owl:someValuesFrom :Alias
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasNeighbour ;
-                            owl:someValuesFrom :Locality
-                          ] ,
-                          [ rdf:type owl:Restriction ;
                             owl:onProperty geo:hasGeometry ;
                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass sf:Point
@@ -476,10 +455,6 @@ asgs:StateOrTerritory rdf:type owl:Class .
 :Street rdf:type owl:Class ;
         rdfs:subClassOf :GnafEntity ,
                         geo:Feature ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasAlias ;
-                          owl:someValuesFrom :Alias
-                        ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasStreetSuffix ;
                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -571,12 +546,9 @@ dcterms:title rdf:type owl:NamedIndividual .
    sdo:name "PSMA Australia"
  ] .
 
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
- ] .
-
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
+[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
+   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+   sdo:name "Nicholas Car"
  ] .
 
 [ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
@@ -584,13 +556,29 @@ dcterms:title rdf:type owl:NamedIndividual .
    sdo:name "Nicholas Car"
  ] .
 
+[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
+   sdo:name "PSMA Australia"
+ ] .
+
+[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
+   sdo:name "PSMA Australia"
+ ] .
+
+[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
+   sdo:name "Joseph Abhayaratna"
+ ] .
+
+[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
+   sdo:name "Joseph Abhayaratna"
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
