@@ -24,7 +24,7 @@
 gnaf:MeshBlock
   owl:equivalentClass <http://linked.data.gov.au/def/asgs#MeshBlock> ;
 .
-gnaf:StateOrTerritory
+gnaf:State
   owl:equivalentClass <http://linked.data.gov.au/def/asgs#StateOrTerritory> ;
 .
 dcterms:created
