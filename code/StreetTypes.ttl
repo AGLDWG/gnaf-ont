@@ -834,14 +834,15 @@
 
 :Access a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/StreetType> ;
-    skos:altLabel "ACCS", "ACCESS" ;
+    skos:altLabel "ACCS", "ACCESS", "AAA" ;
+
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     skos:prefLabel "Access"@en .
 
 :Acre a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/StreetType> ;
-    skos:altLabel "ACRE", "ACRE" ;
+    skos:altLabel "ACRE" ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     skos:prefLabel "Acre"@en .
