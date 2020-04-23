@@ -179,7 +179,7 @@ def generate_html(ttl_file):
     html += generate_Concepts_html(g)
 
     with open(html_file, 'w') as f:
-        f.write(generate_html_from_template('tpl_vocab.html', html, url='http://gnafld.net/def/gnaf/code/' + ttl_file.replace('.ttl', '')))
+        f.write(generate_html_from_template('tpl_vocab.html', html, url='http://linked.data.gov.au/def/gnaf/code/' + ttl_file.replace('.ttl', '')))
 
     return html_file
 

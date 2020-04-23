@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/code/FlatTypes#> .
+@prefix : <http://linked.data.gov.au/def/gnaf/code/FlatTypes#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,10 +7,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@base <http://gnafld.net/def/gnaf> .
+@base <http://linked.data.gov.au/def/gnaf> .
 
 
-<http://gnafld.net/def/gnaf/code/FlatTypes> a skos:ConceptScheme ;
+<http://linked.data.gov.au/def/gnaf/code/FlatTypes> a skos:ConceptScheme ;
     skos:prefLabel "Flat Types" ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     dct:publisher <http://psma.com.au> ;
@@ -199,368 +199,368 @@
   skos:altLabel "ANT"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Apartment a skos:Concept ;
   skos:prefLabel "Apartment"@en ;
   skos:altLabel "APT"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :AutomatedTellerMachine a skos:Concept ;
   skos:prefLabel "Automated Teller Machine"@en ;
   skos:altLabel "ATM"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Barbecue a skos:Concept ;
   skos:prefLabel "Barbecue"@en ;
   skos:altLabel "BBQ"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Block a skos:Concept ;
   skos:prefLabel "Block"@en ;
   skos:altLabel "BLCK"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Boatshed a skos:Concept ;
   skos:prefLabel "Boatshed"@en ;
   skos:altLabel "BTSD"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Building a skos:Concept ;
   skos:prefLabel "Building"@en ;
   skos:altLabel "BLDG"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Bungalow a skos:Concept ;
   skos:prefLabel "Bungalow"@en ;
   skos:altLabel "BNGW"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Cage a skos:Concept ;
   skos:prefLabel "Cage"@en ;
   skos:altLabel "CAGE"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Carpark a skos:Concept ;
   skos:prefLabel "Carpark"@en ;
   skos:altLabel "CARP"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Carspace a skos:Concept ;
   skos:prefLabel "Carspace"@en ;
   skos:altLabel "CARS"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Club a skos:Concept ;
   skos:prefLabel "Club"@en ;
   skos:altLabel "CLUB"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Coolroom a skos:Concept ;
   skos:prefLabel "Coolroom"@en ;
   skos:altLabel "COOL"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Cottage a skos:Concept ;
   skos:prefLabel "Cottage"@en ;
   skos:altLabel "CTGE"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Duplex a skos:Concept ;
   skos:prefLabel "Duplex"@en ;
   skos:altLabel "DUPL"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Flat a skos:Concept ;
   skos:prefLabel "Flat"@en ;
   skos:altLabel "FLAT"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Factory a skos:Concept ;
   skos:prefLabel "Factory"@en ;
   skos:altLabel "FCTY"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Garage a skos:Concept ;
   skos:prefLabel "Garage"@en ;
   skos:altLabel "GRGE"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Hall a skos:Concept ;
   skos:prefLabel "Hall"@en ;
   skos:altLabel "HALL"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :House a skos:Concept ;
   skos:prefLabel "House"@en ;
   skos:altLabel "HSE"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Kiosk a skos:Concept ;
   skos:prefLabel "Kiosk"@en ;
   skos:altLabel "KSK"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Lobby a skos:Concept ;
   skos:prefLabel "Lobby"@en ;
   skos:altLabel "LBBY"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Loft a skos:Concept ;
   skos:prefLabel "Loft"@en ;
   skos:altLabel "LOFT"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Lot a skos:Concept ;
   skos:prefLabel "Lot"@en ;
   skos:altLabel "LOT"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Lease a skos:Concept ;
   skos:prefLabel "Lease"@en ;
   skos:altLabel "LSE"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :MarineBerth a skos:Concept ;
   skos:prefLabel "Marine Berth"@en ;
   skos:altLabel "MBTH"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Maisonette a skos:Concept ;
   skos:prefLabel "Maisonette"@en ;
   skos:altLabel "MSNT"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Office a skos:Concept ;
   skos:prefLabel "Office"@en ;
   skos:altLabel "OFFC"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Penthouse a skos:Concept ;
   skos:prefLabel "Penthouse"@en ;
   skos:altLabel "PTHS"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Rear a skos:Concept ;
   skos:prefLabel "Rear"@en ;
   skos:altLabel "REAR"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Room a skos:Concept ;
   skos:prefLabel "Room"@en ;
   skos:altLabel "ROOM"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Reserve a skos:Concept ;
   skos:prefLabel "Reserve"@en ;
   skos:altLabel "RESV"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Suite a skos:Concept ;
   skos:prefLabel "Suite"@en ;
   skos:altLabel "SE"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Section a skos:Concept ;
   skos:prefLabel "Section"@en ;
   skos:altLabel "SEC"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Shed a skos:Concept ;
   skos:prefLabel "Shed"@en ;
   skos:altLabel "SHED"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Shop a skos:Concept ;
   skos:prefLabel "Shop"@en ;
   skos:altLabel "SHOP"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Showroom a skos:Concept ;
   skos:prefLabel "Showroom"@en ;
   skos:altLabel "SHRM"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Sign a skos:Concept ;
   skos:prefLabel "Sign"@en ;
   skos:altLabel "SIGN"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Site a skos:Concept ;
   skos:prefLabel "Site"@en ;
   skos:altLabel "SITE"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Stall a skos:Concept ;
   skos:prefLabel "Stall"@en ;
   skos:altLabel "STLL"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Store a skos:Concept ;
   skos:prefLabel "Store"@en ;
   skos:altLabel "STOR"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Studio a skos:Concept ;
   skos:prefLabel "Studio"@en ;
   skos:altLabel "STU"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :StrataUnit a skos:Concept ;
   skos:prefLabel "Strata Unit"@en ;
   skos:altLabel "STR"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Substation a skos:Concept ;
   skos:prefLabel "Substation"@en ;
   skos:altLabel "SUBS"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Tenancy a skos:Concept ;
   skos:prefLabel "Tenancy"@en ;
   skos:altLabel "TNCY"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Townhouse a skos:Concept ;
   skos:prefLabel "Townhouse"@en ;
   skos:altLabel "TNHS"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Tower a skos:Concept ;
   skos:prefLabel "Tower"@en ;
   skos:altLabel "TWR"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Unit a skos:Concept ;
   skos:prefLabel "Unit"@en ;
   skos:altLabel "UNIT"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Villa a skos:Concept ;
   skos:prefLabel "Villa"@en ;
   skos:altLabel "VLLA"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Vault a skos:Concept ;
   skos:prefLabel "Vault"@en ;
   skos:altLabel "VLT"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Ward a skos:Concept ;
   skos:prefLabel "Ward"@en ;
   skos:altLabel "WARD"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Warehouse a skos:Concept ;
   skos:prefLabel "Warehouse"@en ;
   skos:altLabel "WHSE"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .
 
 :Workshop a skos:Concept ;
   skos:prefLabel "Workshop"@en ;
   skos:altLabel "WKSH"^^xsd:string ;
   dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-  rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/FlatType> .
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/FlatType> .

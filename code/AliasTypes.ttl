@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/code/AliasTypes#> .
+@prefix : <http://linked.data.gov.au/def/gnaf/code/AliasTypes#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -9,9 +9,9 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@base <http://gnafld.net/def/gnaf> .
+@base <http://linked.data.gov.au/def/gnaf> .
 
-<http://gnafld.net/def/gnaf/code/AliasTypes> a skos:ConceptScheme ;
+<http://linked.data.gov.au/def/gnaf/code/AliasTypes> a skos:ConceptScheme ;
   skos:prefLabel "Alias Types" ;
   rdfs:label "Alias Types" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -81,63 +81,63 @@ This vocabulary lists the various alias types for all three levels."""@en ;
     skos:altLabel "SYN" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :ContributorDefined a skos:Concept ;
     skos:prefLabel "Contributor Defined"@en ;
     skos:altLabel "CD" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :AlternativeLocality a skos:Concept ;
     skos:prefLabel "Alternative Locality"@en ;
     skos:altLabel "AL" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :RangedAddress a skos:Concept ;
     skos:prefLabel "Ranged Address"@en ;
     skos:altLabel "RA" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :LevelDuplication a skos:Concept ;
     skos:prefLabel "Level Duplication"@en ;
     skos:altLabel "LD" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :FlatNumberNoFirstSuffixCorrelation a skos:Concept ;
     skos:prefLabel "Flat Number – No First Suffix Correlation"@en ;
     skos:altLabel "FNNFS" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :FlatPrefixSuffixDeduplication a skos:Concept ;
     skos:prefLabel "Flat Prefix – Suffix Deduplication"@en ;
     skos:altLabel "FPS" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :MaintenanceReference a skos:Concept ;
     skos:prefLabel "Maintenance Reference"@en ;
     skos:altLabel "MR" ;
     dct:source "G-NAF Data Product Description, November 2017: ADDRESS_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :LocalityAlias a skos:Concept ;
     skos:prefLabel "Locality Alias"@en ;
     skos:altLabel "LA" ;
     dct:source "This ontology"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/> ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/> ;
     rdfs:subClassOf :Alias ,
                     [ rdf:type owl:Restriction ;
                       owl:onProperty :hasName ;
@@ -156,7 +156,7 @@ This vocabulary lists the various alias types for all three levels."""@en ;
     skos:altLabel "SR" ;
     dct:source "G-NAF Data Product Description, November 2017: LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :Alternative a skos:Concept ;
     skos:prefLabel "Alternative"@en ;
@@ -164,11 +164,11 @@ This vocabulary lists the various alias types for all three levels."""@en ;
     skos:altLabel "ALT" ;
     dct:source "G-NAF Data Product Description, November 2017: STREET_LOCALITY_ALIAS_TYPE_AUT"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .
 
 :StreetLocality a skos:Concept ;
     skos:prefLabel "Street Locality"@en ;
     skos:broader :LocalityAlias ;
     dct:source "This ontology"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/AliasType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/AliasType> .

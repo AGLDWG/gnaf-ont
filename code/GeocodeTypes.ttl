@@ -1,4 +1,4 @@
-@prefix : <http://gnafld.net/def/gnaf/code/GeocodeTypes#> .
+@prefix : <http://linked.data.gov.au/def/gnaf/code/GeocodeTypes#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,10 +7,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@base <http://gnafld.net/def/gnaf> .
+@base <http://linked.data.gov.au/def/gnaf> .
 
 
-<http://gnafld.net/def/gnaf/code/GeocodeTypes> a skos:ConceptScheme ;
+<http://linked.data.gov.au/def/gnaf/code/GeocodeTypes> a skos:ConceptScheme ;
     skos:prefLabel "Geocode Types" ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
     dct:publisher <http://psma.com.au> ;
@@ -124,7 +124,7 @@
     skos:altLabel "BAP"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :BuildingCentroid a skos:Concept ;
     skos:prefLabel "Building Centroid"@en ;
@@ -132,7 +132,7 @@
     skos:altLabel "BC"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :CentreLineDroppedFrontage a skos:Concept ;
     skos:prefLabel "Centre-Line Dropped Frontage"@en ;
@@ -140,7 +140,7 @@
     skos:altLabel "CDF"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :DrivewayFrontage a skos:Concept ;
     skos:prefLabel "Driveway Frontage"@en ;
@@ -148,7 +148,7 @@
     skos:altLabel "DF"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :EmergencyAccess a skos:Concept ;
     skos:prefLabel "Emergency Access"@en ;
@@ -156,7 +156,7 @@
     skos:altLabel "EA"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :EmergencyAccessSecondary a skos:Concept ;
     skos:prefLabel "Emergency Access Secondary"@en ;
@@ -164,7 +164,7 @@
     skos:altLabel "EAS"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :FrontDoorAccess a skos:Concept ;
     skos:prefLabel "Front Door Access"@en ;
@@ -172,7 +172,7 @@
     skos:altLabel "FDA"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :FrontageCentre a skos:Concept ;
     skos:prefLabel "Frontage Centre"@en ;
@@ -180,7 +180,7 @@
     skos:altLabel "FC"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :FrontageCentreSetback a skos:Concept ;
     skos:prefLabel "Frontage Centre Setback"@en ;
@@ -188,7 +188,7 @@
     skos:altLabel "FCS"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :Letterbox a skos:Concept ;
     skos:prefLabel "Letterbox"@en ;
@@ -196,7 +196,7 @@
     skos:altLabel "LB"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :PropertyAccessPoint a skos:Concept ;
     skos:prefLabel "Property Access Point"@en ;
@@ -204,7 +204,7 @@
     skos:altLabel "PAP"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :PropertyAccessPointSetback a skos:Concept ;
     skos:prefLabel "Property Access Point Setback"@en ;
@@ -212,7 +212,7 @@
     skos:altLabel "PAPS"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :PropertyCentroid a skos:Concept ;
     skos:prefLabel "Property Centroid"@en ;
@@ -220,7 +220,7 @@
     skos:altLabel "PC"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :PropertyCentroidManual a skos:Concept ;
     skos:prefLabel "Property Centroid Manual"@en ;
@@ -228,7 +228,7 @@
     skos:altLabel "PCM"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :UnitCentroid a skos:Concept ;
     skos:prefLabel "Unit Centroid"@en ;
@@ -236,7 +236,7 @@
     skos:altLabel "UC"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :UnitCentroidManual a skos:Concept ;
     skos:prefLabel "Unit Centroid Manual"@en ;
@@ -244,7 +244,7 @@
     skos:altLabel "UCM"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :Gap a skos:Concept ;
     skos:prefLabel "Gap "@en ;
@@ -252,7 +252,7 @@
     skos:altLabel "GG"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :WaterConnectionPoint a skos:Concept ;
     skos:prefLabel "Water Connection Point"@en ;
@@ -260,7 +260,7 @@
     skos:altLabel "WCP"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :WaterMeter a skos:Concept ;
     skos:prefLabel "Water Meter"@en ;
@@ -268,7 +268,7 @@
     skos:altLabel "WM"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :SewageConnectionPoint a skos:Concept ;
     skos:prefLabel "Sewage Connection Point"@en ;
@@ -276,7 +276,7 @@
     skos:altLabel "SCP"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :GasConnectionPoint a skos:Concept ;
     skos:prefLabel "Gas Connection Point"@en ;
@@ -284,7 +284,7 @@
     skos:altLabel "GCP"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :GasMeterPoint a skos:Concept ;
     skos:prefLabel "Gas Meter Point"@en ;
@@ -292,7 +292,7 @@
     skos:altLabel "GM"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :TelephoneConnectionPoint a skos:Concept ;
     skos:prefLabel "Telephone Connection Point"@en ;
@@ -300,7 +300,7 @@
     skos:altLabel "TCP"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :ElectricityConnectionPoint a skos:Concept ;
     skos:prefLabel "Electricity Connection Point"@en ;
@@ -308,7 +308,7 @@
     skos:altLabel "ECP"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :ElectricityMeterPoint a skos:Concept ;
     skos:prefLabel "Electricity Meter Point"@en ;
@@ -316,7 +316,7 @@
     skos:altLabel "EM"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :InternetConnectionPoint a skos:Concept ;
     skos:prefLabel "Internet Connection Point"@en ;
@@ -324,7 +324,7 @@
     skos:altLabel "ICP"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :Unknown a skos:Concept ;
     skos:prefLabel "Unknown"@en ;
@@ -332,7 +332,7 @@
     skos:altLabel "UNK"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :StreetLocality a skos:Concept ;
     skos:prefLabel "Street Locality"@en ;
@@ -340,7 +340,7 @@
     skos:altLabel "STL"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .
 
 :Locality a skos:Concept ;
     skos:prefLabel "Locality"@en ;
@@ -348,4 +348,4 @@
     skos:altLabel "LOC"^^xsd:string ;
     dct:source "G-NAF Data Product Description, November 2017"^^xsd:string ;
     dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-    rdfs:isDefinedBy <http://gnafld.net/def/gnaf/code/GeocodeType> .
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf/code/GeocodeType> .

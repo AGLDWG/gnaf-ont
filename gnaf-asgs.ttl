@@ -1,0 +1,32 @@
+# baseURI: http://example.org/gnaf-asgs
+# imports: http://linked.data.gov.au/def/asgs
+# imports: http://linked.data.gov.au/def/gnaf
+# prefix: gnaf-asgs
+
+@prefix : <http://example.org/gnaf-asgs#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gnaf: <http://linked.data.gov.au/def/gnaf#> .
+@prefix gnaf-asgs: <http://example.org/gnaf-asgs#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/gnaf-asgs>
+  a owl:Ontology ;
+  dcterms:created "2019-12-13"^^xsd:date ;
+  dcterms:creator <https://orcid.org/0000-0002-3884-3420> ;
+  rdfs:comment "Alignments between gnaf-ont and asgs-ont" ;
+  owl:imports <http://linked.data.gov.au/def/asgs> ;
+  owl:imports <http://linked.data.gov.au/def/gnaf> ;
+.
+gnaf:MeshBlock
+  owl:equivalentClass <http://linked.data.gov.au/def/asgs#MeshBlock> ;
+.
+gnaf:StateOrTerritory
+  owl:equivalentClass <http://linked.data.gov.au/def/asgs#StateOrTerritory> ;
+.
+dcterms:created
+  a owl:AnnotationProperty ;
+.
