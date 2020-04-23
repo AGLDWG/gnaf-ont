@@ -14,19 +14,26 @@
 @base <http://linked.data.gov.au/def/gnaf> .
 
 <http://linked.data.gov.au/def/gnaf> rdf:type owl:Ontology ;
-                                      owl:versionIRI <http://linked.data.gov.au/def/gnaf/1.3> ;
-                                      owl:imports <http://www.opengis.net/ont/geosparql> ;
+                                      owl:versionIRI <http://linked.data.gov.au/def/gnaf/1.4> ;
+                                      owl:imports <http://linked.data.gov.au/def/geox> ;
                                       dcterms:contributor "<a href='http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au'>Joseph Abhayaratna, PSMA</a>"^^rdf:HTML ,
                                                           "<a href='https://orcid.org/0000-0002-3884-3420'>Simon Cox, CSIRO</a>"^^rdf:HTML ;
+                                      dcterms:created "2017-12-23"^^xsd:date ;
                                       dcterms:creator "<a href='https://orcid.org/0000-0002-8742-7730'>Nicholas Car, Surround Australia</a>"^^rdf:HTML ;
-                                      dcterms:description """An ontology for the content of the PSMA Geocoded National Address File (G-NAF).	
-  The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.	
-  The G-NAF does not contain any names or personal information.	
-  The base content of the G-NAF is available freely online at <https://data.gov.au/dataset/geocoded-national-address-file-g-naf> and also via a Linked Data API that uses this ontology at <http://gnafld.net>.	
-  This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 \"Addressing -- Part 1: Conceptual model\" standard (see <https://www.iso.org/standard/61710.html>) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at <http://reference.data.gov.au/def/ont/iso19160-1-address>."""@en ;
-                                      dcterms:modified "2020-02-02"^^xsd:date ;
+                                      dcterms:description """<p>An ontology for the content of the PSMA Geocoded National Address File (G-NAF).	</p>
+<p>The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.	The G-NAF does not contain any names or personal information.	</p>
+<p>The base content of the G-NAF is available freely online at <a href=\"https://data.gov.au/dataset/ds-dga-19432f89-dc3a-4ef3-b943-5326ef1dbecc/details?q=G-NAF\">data.gov.au</a>.	</p>
+<p>This ontology draws partly from ISO19160-1:2015 \"Addressing -- Part 1: Conceptual model\" standard (see <https://www.iso.org/standard/61710.html>) in particular the <a href=\"https://def.isotc211.org/ontologies/iso19160/\">OWL implemention</a> created by the ISO TC211, Group for Ontology Management (GOM) and also <a href=\"http://reference.data.gov.au/def/ont/iso19160-1-address\">published online</a> by the Australian Government Linked Data Working Group.</p>
+<p>Also see:</p>
+<ul>
+<li><a href=\"https://gnafld.net/\">Linked Data API that uses this ontology</a></li>
+<li><a href=\"https://gnafld.net/address/\">Address register</a></li>
+<li><a href=\"https://gnafld.net/sparql\">SPARQL Endpoint</a></li>
+<li><a href=\"https://gnafld.net/def/gnaf/code/\">Code lists</a></li>
+</ul>"""^^rdf:HTML ;
+                                      dcterms:modified "2020-03-30"^^xsd:date ;
                                       dcterms:publisher "<a href='http://catalogue.linked.data.gov.au/org/psma'>PSMA Australia</a>"^^rdf:HTML ;
-                                      dcterms:rights "Copyright 2018 PSMA Australia." ;
+                                      dcterms:rights "Copyright 2018, 2020 PSMA Australia." ;
                                       dcterms:source <https://psma.com.au/wp-content/uploads/2019/12/G-NAF-Product-Description.pdf> ;
                                       dcterms:title "G-NAF Ontology" .
 
@@ -62,6 +69,10 @@ dcterms:creator rdf:type owl:AnnotationProperty .
 dcterms:isReplacedBy rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/rights
 dcterms:rights rdf:type owl:AnnotationProperty .
 
@@ -94,19 +105,27 @@ owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
 owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+skos:editorialNote rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Datatypes
 #################################################################
 
 ###  http://linked.data.gov.au/def/gnaf#gnaf-2016-05
-:gnaf-2016-05 rdfs:label "GNAF 2016-05 ID" ;
-              rdf:type rdfs:Datatype ;
+:gnaf-2016-05 rdf:type rdfs:Datatype ;
+              rdfs:label "GNAF 2016-05 ID" ;
               owl:equivalentClass [ rdf:type rdfs:Datatype ;
                                     owl:onDatatype xsd:string ;
                                     owl:withRestrictions ( [ xsd:maxLength 100
                                                            ]
                                                          )
                                   ] .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
@@ -174,6 +193,8 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://linked.data.gov.au/def/gnaf#hasGeocodeReliability
 :hasGeocodeReliability rdf:type owl:ObjectProperty ;
+                       rdfs:domain geo:Geometry ;
+                       rdfs:range :GeocodeReliability ;
                        rdfs:label "has Geocode Reliability"@en .
 
 
@@ -223,7 +244,13 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 ###  http://linked.data.gov.au/def/gnaf#hasState
 :hasState rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf geo:sfWithin ;
-          rdfs:range :StateOrTerritory ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Address
+                                      :Locality
+                                      :Street
+                                    )
+                      ] ;
+          rdfs:range :State ;
           rdfs:label "has State"@en .
 
 
@@ -253,6 +280,14 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 dcterms:type rdf:type owl:ObjectProperty .
 
 
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+geo:hasGeometry rdf:type owl:ObjectProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+geo:sfWithin rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -279,6 +314,7 @@ dcterms:type rdf:type owl:ObjectProperty .
 
 ###  http://linked.data.gov.au/def/gnaf#hasDateRetired
 :hasDateRetired rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dcterms:date ;
                 rdfs:range xsd:dateTime ;
                 rdfs:label "has date retired"@en .
 
@@ -335,6 +371,10 @@ dcterms:type rdf:type owl:ObjectProperty .
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:DatatypeProperty .
 
 
 ###  http://purl.org/dc/terms/description
@@ -399,6 +439,7 @@ rdf:value rdf:type owl:DatatypeProperty .
                            owl:onProperty :hasPostcode ;
                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
                          ] ;
+         rdfs:comment "G-NAF contains only point geometries, so the GeoSPARQL hasGeometry property is expected to have at least one sf:Point value" ;
          rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> ;
          rdfs:label "Address"@en .
 
@@ -450,7 +491,8 @@ rdf:value rdf:type owl:DatatypeProperty .
                             ] ;
             rdfs:comment "Entities (things) that are present as records in the GNAF database. Every GNAF Entity has a data created, date last modified (can be the same) and may have a data retired. These dates indicate the creation, modification & retirement of the representation of the Entity in the GNAF database, not the real-world Entity."@en ;
             rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> ;
-            rdfs:label "GNAF Entity"@en .
+            rdfs:label "GNAF Entity"@en ;
+            skos:editorialNote "This class might be implemented as a SHACL shape" .
 
 
 ###  http://linked.data.gov.au/def/gnaf#Locality
@@ -470,6 +512,7 @@ rdf:value rdf:type owl:DatatypeProperty .
                             owl:onProperty :hasPrimaryPostcode ;
                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
                           ] ;
+          rdfs:comment "G-NAF contains only point geometries, so the GeoSPARQL hasGeometry property is expected to have at least one sf:Point value" ;
           rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> ;
           rdfs:label "Locality" .
 
@@ -497,7 +540,9 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 
 ###  http://linked.data.gov.au/def/gnaf#MeshBlock
-:MeshBlock rdf:type owl:Class .
+:MeshBlock rdf:type owl:Class ;
+           rdfs:subClassOf :GnafEntity ,
+                           geo:Feature .
 
 
 ###  http://linked.data.gov.au/def/gnaf#MeshBlockMatch
@@ -536,8 +581,10 @@ rdf:value rdf:type owl:DatatypeProperty .
         rdfs:label "Number"@en .
 
 
-###  http://linked.data.gov.au/def/gnaf#StateOrTerritory
-:StateOrTerritory rdf:type owl:Class .
+###  http://linked.data.gov.au/def/gnaf#State
+:State rdf:type owl:Class ;
+       rdfs:subClassOf :GnafEntity ,
+                       geo:Feature .
 
 
 ###  http://linked.data.gov.au/def/gnaf#Street
@@ -552,6 +599,9 @@ rdf:value rdf:type owl:DatatypeProperty .
                           owl:onProperty :hasName ;
                           owl:cardinality "1"^^xsd:nonNegativeInteger
                         ] ;
+        rdfs:comment """Definition: a complete Street that crosses multiple localities. 
+
+NOTE: In principle, a Street is composed of several StreetLocality members, however this relationship is not present in the GNAF Ontology. Furthermore, the GNAF product definition does not contain a class for Street, only for StreetLocality. The GNAF Ontology does not therefore correspond to the GNAF product in this area, and should be reviewed and potentially revised to capture the correct alignment. In particular, in the GNAF Ontology _geometry_ is associated with gnaf:StreetLocality, but not with gnaf:Street which means that gnaf:Street as a sub-class of geo:Feature is not Loc-I conformant. """ ;
         rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> ;
         rdfs:label "Street"@en .
 
@@ -579,6 +629,11 @@ rdf:value rdf:type owl:DatatypeProperty .
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onClass :Locality
                                 ] ;
+                rdfs:comment """Definition: StreetLocality is a segment of a street contained within a single locality.
+
+NOTE: The GNAF product definition contain a class for Street, only for StreetLocality. The GNAF Ontology does not correspond to the GNAF product in this area and should be reviewed and potentially revised to capture the correct alignment. In the GNAF Ontology _geometry_ is associated with gnaf:StreetLocality, which as a (transitive) sub-class of geo:Feature is therefore conformant to Loc-I rules.
+
+G-NAF contains only point geometries, so the GeoSPARQL hasGeometry property is expected to have at least one sf:Point value""" ;
                 rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> ;
                 rdfs:label "Street Locality " .
 
@@ -588,13 +643,16 @@ rdf:value rdf:type owl:DatatypeProperty .
               rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> .
 
 
+###  http://www.opengis.net/ont/geosparql#Feature
+geo:Feature rdf:type owl:Class .
+
+
 ###  http://www.opengis.net/ont/geosparql#Geometry
-geo:Geometry rdfs:subClassOf :GnafEntity ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasGeocodeReliability ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :GeocodeReliability
-                             ] .
+geo:Geometry rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/sf#Point
+sf:Point rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#Resource
@@ -605,147 +663,26 @@ rdfs:Resource rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  http://linked.data.gov.au/def/gnaf
-<http://linked.data.gov.au/def/gnaf> rdf:type owl:NamedIndividual ;
-                                     dcterms:created "2017-12-23"^^xsd:date .
-
-
 ###  http://linked.data.gov.au/def/gnaf#MeshBlock
 :MeshBlock rdf:type owl:NamedIndividual ;
            dcterms:description "Mesh Blocks (MB) are the smallest geographical area defined by the ABS. They are designed as geographic building blocks rather than as areas for the release of statistics themselves. All statistical areas in the Australian Statistical Geography Standard (ASGS) both ABS and Non ABS Structures are built up from one or more MBs.As a result the design of MBs takes into account many factors including administrative boundaries such as Cadastre (property boundaries) Suburbs and Localities and Local Government Areas (LGAs) as well as land uses and dwelling distribution. Most MBs contain 30 to 60 dwellings although some are specifically designed to have zero. This provides an additional level of confidentiality for data released on the ASGS as the difference in data released on multiple statistical areas is always at least one MB. Mesh Blocks like other ABS structures in the ASGS are stable for 5 years and are updated to reflect changes such as new housing developments every 5 years. The MB table includes a Mesh Block Category field that broadly defines primary land uses such as Residential and Commercial. MB boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." .
 
 
-###  http://linked.data.gov.au/def/gnaf#StateOrTerritory
-:StateOrTerritory rdf:type owl:NamedIndividual ;
-                  dcterms:description "State and Territory (S/T) are separate spatial units representing the States and Territories within Australia. Jervis Bay Territory the Territories of Christmas Island; Cocos (Keeling) Islands and Norfolk Island are included as one spatial unit at the State and Territory level under the category of Other Territories. S/T are aggregations of one or more Statistical Area Level 4 (SA4s) in the ASGS Main Structure. S/T boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." .
+###  http://linked.data.gov.au/def/gnaf#State
+:State rdf:type owl:NamedIndividual ;
+       dcterms:description "State and Territory (S/T) are separate spatial units representing the States and Territories within Australia. Jervis Bay Territory the Territories of Christmas Island; Cocos (Keeling) Islands and Norfolk Island are included as one spatial unit at the State and Territory level under the category of Other Territories. S/T are aggregations of one or more Statistical Area Level 4 (SA4s) in the ASGS Main Structure. S/T boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia. (definition from ASGS)" .
 
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-  sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-  sdo:name "Nicholas Car"
-] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:email <http://linked.data.gov.au/def/nicholas.car@csiro.au> ;
-   sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
-   sdo:name "Nicholas Car"
- ] .
-
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
- ] .
-
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
- ] .
-
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
- ] .
-
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
- ] .
-
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
- ] .
-
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
- ] .
-
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
- ] .
-
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
- ] .
-
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
- ] .
-
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
- ] .
-
-[ sdo:identifier <http://catalogue.linked.data.gov.au/org/psma> ;
-   sdo:name "PSMA Australia"
- ] .
-
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
- ] .
-
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
- ] .
-
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
- ] .
-
-[ sdo:identifier <http://linked.data.gov.au/def/joseph.abhayaratna@psma.com.au> ;
-   sdo:name "Joseph Abhayaratna"
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
 
 #################################################################
 #    Annotations
 #################################################################
 
 :MeshBlock rdfs:label "Mesh Block" ;
-            rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> .
+           rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> .
 
 
-:StateOrTerritory rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> ;
-                  rdfs:label "StateOrTerritory" .
+:State rdfs:isDefinedBy <http://linked.data.gov.au/def/gnaf> ;
+       rdfs:label "State or Territory" .
 
 
 :hasDateLastModified rdfs:comment "This is the same as dct:modified."@en ;

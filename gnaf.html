@@ -174,7 +174,7 @@ code {
     ],
     "https://schema.org/description": [
       {
-        "@value": "<p>An ontology for the content of the PSMA Geocoded National Address File (G-NAF). \n  The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.  <br />\n  The G-NAF does not contain any names or personal information. \n  The base content of the G-NAF is available freely online at <a href=\"https://data.gov.au/dataset/geocoded-national-address-file-g-naf\">https://data.gov.au/dataset/geocoded-national-address-file-g-naf</a> and also via a Linked Data API that uses this ontology at <a href=\"http://gnafld.net\">http://gnafld.net</a>. \n  This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 \"Addressing -- Part 1: Conceptual model\" standard (see <a href=\"https://www.iso.org/standard/61710.html\">https://www.iso.org/standard/61710.html</a>) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at <a href=\"http://reference.data.gov.au/def/ont/iso19160-1-address\">http://reference.data.gov.au/def/ont/iso19160-1-address</a>.</p>"
+        "@value": "<p>An ontology for the content of the PSMA Geocoded National Address File (G-NAF).  </p>\n\n<p>The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.   The G-NAF does not contain any names or personal information.   </p>\n\n<p>The base content of the G-NAF is available freely online at <a href=\"https://data.gov.au/dataset/ds-dga-19432f89-dc3a-4ef3-b943-5326ef1dbecc/details?q=G-NAF\">data.gov.au</a>.   </p>\n\n<p>This ontology draws partly from ISO19160-1:2015 \"Addressing -- Part 1: Conceptual model\" standard (see <https://www.iso.org/standard/61710.html>) in particular the <a href=\"https://def.isotc211.org/ontologies/iso19160/\">OWL implemention</a> created by the ISO TC211, Group for Ontology Management (GOM) and also <a href=\"http://reference.data.gov.au/def/ont/iso19160-1-address\">published online</a> by the Australian Government Linked Data Working Group.</p>\n\n<p>Also see:</p>\n\n<ul>\n<li><a href=\"https://gnafld.net/\">Linked Data API that uses this ontology</a></li>\n<li><a href=\"https://gnafld.net/address/\">Address register</a></li>\n<li><a href=\"https://gnafld.net/sparql\">SPARQL Endpoint</a></li>\n<li><a href=\"https://gnafld.net/def/gnaf/code/\">Code lists</a></li>\n</ul>"
       }
     ],
     "https://schema.org/name": [
@@ -193,6 +193,7 @@ code {
 </head>
 <body>
 <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">pyLODE</a></div>
+<div style="width:200px; height:100px; background-color: black;"><img src="https://psma.com.au/wp-content/uploads/2019/06/psma-logo-white.svg"/></div>
 <h1>G-NAF Ontology</h1>
 <section id="metadata">
     <h2 style="display:none;">Metadata</h2>
@@ -215,25 +216,36 @@ code {
         <dt>Created</dt>
         <dd>2017-12-23</dd>
         <dt>Modified</dt>
-        <dd>2020-02-02</dd>
+        <dd>2020-03-30</dd>
         <dt>Version IRI</dt>
-        <dd><a href="http://linked.data.gov.au/def/gnaf/1.3">http://linked.data.gov.au/def/gnaf/1.3</a></dd>
+        <dd><a href="http://linked.data.gov.au/def/gnaf/1.4">http://linked.data.gov.au/def/gnaf/1.4</a></dd>
         <dt>Imports</dt>
         <dd>
-            <a href="http://www.opengis.net/ont/geosparql">http://www.opengis.net/ont/geosparql</a><br/>
+            <a href="http://linked.data.gov.au/def/geox">http://linked.data.gov.au/def/geox</a><br/>
         </dd>
         <dt>Rights</dt>
-        <dd>&copy; 2018 PSMA Australia.</dd>
+        <dd>&copy; 2018, 2020 PSMA Australia.</dd>
         <dt>Ontology Source</dt>
-        <dd><a href="gnaf.ttl">RDF (turtle)</a></dd>
+        <dd><a href="http://linked.data.gov.au/def/gnaf.ttl">RDF (turtle)</a></dd>
     </dl>
     <h2>Description</h2>
     <div id="description">
-        <p>An ontology for the content of the PSMA Geocoded National Address File (G-NAF). 
-  The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.  <br />
-  The G-NAF does not contain any names or personal information. 
-  The base content of the G-NAF is available freely online at <a href="https://data.gov.au/dataset/geocoded-national-address-file-g-naf">https://data.gov.au/dataset/geocoded-national-address-file-g-naf</a> and also via a Linked Data API that uses this ontology at <a href="http://gnafld.net">http://gnafld.net</a>. 
-  This ontology draws heavily from the OWL ontology version of the ISO19160-1:2015 "Addressing -- Part 1: Conceptual model" standard (see <a href="https://www.iso.org/standard/61710.html">https://www.iso.org/standard/61710.html</a>) which has been created by the ISO TC211, Group for Ontology Management (GOM) and published online by the Australian Government Linked Data Working Group at <a href="http://reference.data.gov.au/def/ont/iso19160-1-address">http://reference.data.gov.au/def/ont/iso19160-1-address</a>.</p>
+        <p>An ontology for the content of the PSMA Geocoded National Address File (G-NAF).  </p>
+
+<p>The G-NAF is Australia’s authoritative, geocoded address file. It contains more than 13 million Australian physical address records. The records include geocodes which are latitude and longitude map coordinates with coordinate reference system details and other information necissary to prcicely locate addresses on the earth's surface.   The G-NAF does not contain any names or personal information.   </p>
+
+<p>The base content of the G-NAF is available freely online at <a href="https://data.gov.au/dataset/ds-dga-19432f89-dc3a-4ef3-b943-5326ef1dbecc/details?q=G-NAF">data.gov.au</a>.   </p>
+
+<p>This ontology draws partly from ISO19160-1:2015 "Addressing -- Part 1: Conceptual model" standard (see <https://www.iso.org/standard/61710.html>) in particular the <a href="https://def.isotc211.org/ontologies/iso19160/">OWL implemention</a> created by the ISO TC211, Group for Ontology Management (GOM) and also <a href="http://reference.data.gov.au/def/ont/iso19160-1-address">published online</a> by the Australian Government Linked Data Working Group.</p>
+
+<p>Also see:</p>
+
+<ul>
+<li><a href="https://gnafld.net/">Linked Data API that uses this ontology</a></li>
+<li><a href="https://gnafld.net/address/">Address register</a></li>
+<li><a href="https://gnafld.net/sparql">SPARQL Endpoint</a></li>
+<li><a href="https://gnafld.net/def/gnaf/code/">Code lists</a></li>
+</ul>
     </div>
 </section>
 <section id="toc">
@@ -251,8 +263,8 @@ code {
 <section id="overview">
     <h2>Overview</h2>
     <div class="figure">
-        <div style="width:500px; height:500px; background-color: black;">&nbsp;</div>
-        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
+        <div style="width:80%"><img alt="GNAF Entity diagram" src="./images/gnaf-entity.png"></div>
+        <div class="caption"><strong>Figure 1:</strong>The main GNAF classes. Some GNAF Entities are also GeoSPARQL Features</div>
     </div>
 </section>
 <section id="classes">
@@ -263,15 +275,18 @@ code {
         <li><a href="#Address">Address</a></li>
         <li><a href="#AddressSite">Address Site</a></li>
         <li><a href="#Alias">Alias</a></li>
+        <li><a href="#Feature">Feature</a></li>
         <li><a href="#GNAFEntity">GNAF Entity</a></li>
         <li><a href="#GeocodeReliability">GeocodeReliability</a></li>
+        <li><a href="#Geometry">Geometry</a></li>
         <li><a href="#GnafConfidence">GnafConfidence</a></li>
         <li><a href="#Locality">Locality</a></li>
         <li><a href="#MeshBlock">Mesh Block</a></li>
         <li><a href="#MeshBlockMatch">Mesh Block Match</a></li>
         <li><a href="#Number">Number</a></li>
+        <li><a href="#Point">Point</a></li>
         <li><a href="#Resource">Resource</a></li>
-        <li><a href="#StateOrTerritory">StateOrTerritory</a></li>
+        <li><a href="#StateorTerritory">State or Territory</a></li>
         <li><a href="#Street">Street</a></li>
         <li><a href="#StreetLocality">Street Locality </a></li>
         <li><a href="#StreetConfirmation">StreetConfirmation</a></li>
@@ -279,10 +294,20 @@ code {
     </ul>
     <div class="entity class" id="Address">
         <h3>Address<sup title="class" class="sup-c">c</sup></h3>
+        <div class="figure">
+            <div style="width:80%"><img alt="GNAF Address diagram" src="./images/address-tb.png"></div>
+            <div class="caption"><strong>Figure 2:</strong>The GNAF Address class. </div>
+        </div>
         <table>
             <tr>
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/gnaf#Address</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    G-NAF contains only point geometries, so the GeoSPARQL hasGeometry property is expected to have at least one sf:Point value
+                </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
@@ -295,25 +320,25 @@ code {
                 <th>Restrictions</th>
                 <td>
                     <a href="#haspostcode">hasPostcode</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">max</span> 1<br/>
-                    <a href="#hasAddressSite">hasAddressSite</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="#hasGNAFconfidence">hasGnafConfidence</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="#hasdatelastmodified">hasDateLastModified</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="#hasLocality">hasLocality</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
                     <a href="#hasbuildingname">hasBuildingName</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">max</span> 1<br/>
+                    <a href="#hasdatelastmodified">hasDateLastModified</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geo:hasGeometry</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="http://www.opengis.net/ont/sf#Point">sf:Point</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#hasStreetLocality">hasStreetLocality</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geo:hasGeometry</a> <span class="cardinality">min</span> 1 <a href="http://www.opengis.net/ont/sf#Point">sf:Point</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasGNAFconfidence">hasGnafConfidence</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#hasAddressSite">hasAddressSite</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#hasLocality">hasLocality</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasAddressSecondary">hasAddressSecondary</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasStreetLocality">hasStreetLocality</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasGNAFconfidence">hasGnafConfidence</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAddressSecondary">hasAddressSecondary</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasGeocode">hasGeocode</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasAddressSite">hasAddressSite</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasMeshBlockmatch">hasMeshBlockMatch</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasGeocode">hasGeocode</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasNumber">hasNumber</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasGNAFconfidence">hasGnafConfidence</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -385,6 +410,12 @@ code {
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/gnaf#GeocodeReliability</code></td>
             </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasGeocodeReliability">hasGeocodeReliability</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="GnafConfidence">
@@ -418,52 +449,63 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasdateretired">hasDateRetired</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">max</span> 1<br/>
                     <a href="http://purl.org/dc/terms/created">dcterms:created</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#hasdateretired">hasDateRetired</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">max</span> 1<br/>
                     <a href="http://purl.org/dc/terms/identifier">dcterms:identifier</a><sup class="sup-fp" title="functional property">fp</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#MeshBlockMatch">MeshBlockMatch</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateorTerritory">State</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MeshBlock">MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Locality">Locality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Street">Street</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Alias">Alias</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#AddressSite">AddressSite</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#Geometry">geo:Geometry</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Address">Address</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Street">Street</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MeshBlockMatch">MeshBlockMatch</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="Locality">
         <h3>Locality<sup title="class" class="sup-c">c</sup></h3>
+        <div class="figure">
+            <div style="width:80%"><img alt="GNAF Locality diagram" src="./images/locality-tb.png"></div>
+            <div class="caption"><strong>Figure 3:</strong>The GNAF Address class. </div>
+        </div>
         <table>
             <tr>
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/gnaf#Locality</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    G-NAF contains only point geometries, so the GeoSPARQL hasGeometry property is expected to have at least one sf:Point value
+                </td>
+            </tr>
+            <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#GNAFEntity">GnafEntity</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#Feature">geo:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GNAFEntity">GnafEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
                     <a href="#hasname">hasName</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geo:hasGeometry</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="http://www.opengis.net/ont/sf#Point">sf:Point</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#hasprimarypostcode">hasPrimaryPostcode</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">max</span> 1<br/>
-                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geo:hasGeometry</a> <span class="cardinality">min</span> 1 <a href="http://www.opengis.net/ont/sf#Point">sf:Point</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasneighbour">hasNeighbour</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasprimarypostcode">hasPrimaryPostcode</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasneighbour">hasNeighbour</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -531,6 +573,13 @@ code {
                 </td>
             </tr>
             <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/geosparql#Feature">geo:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GNAFEntity">GnafEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
                 <th>Sub-classes</th>
                 <td>
                     <a href="#2016MeshBlock">MB2016</a><sup class="sup-c" title="class">c</sup><br/>
@@ -589,9 +638,9 @@ code {
                 <th>Restrictions</th>
                 <td>
                     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">rdf:value</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">only</span> <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#hassuffix">hasSuffix</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">max</span> 1<br/>
                     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">rdf:value</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
                     <a href="#hasprefix">hasPrefix</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">max</span> 1<br/>
+                    <a href="#hassuffix">hasSuffix</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">max</span> 1<br/>
                 </td>
             </tr>
             <tr>
@@ -609,17 +658,24 @@ code {
             </tr>
         </table>
     </div>
-    <div class="entity class" id="StateOrTerritory">
-        <h3>StateOrTerritory<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="StateorTerritory">
+        <h3>State or Territory<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
-                <td><code>http://linked.data.gov.au/def/gnaf#StateOrTerritory</code></td>
+                <td><code>http://linked.data.gov.au/def/gnaf#State</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
-                    State and Territory (S/T) are separate spatial units representing the States and Territories within Australia. Jervis Bay Territory the Territories of Christmas Island; Cocos (Keeling) Islands and Norfolk Island are included as one spatial unit at the State and Territory level under the category of Other Territories. S/T are aggregations of one or more Statistical Area Level 4 (SA4s) in the ASGS Main Structure. S/T boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    State and Territory (S/T) are separate spatial units representing the States and Territories within Australia. Jervis Bay Territory the Territories of Christmas Island; Cocos (Keeling) Islands and Norfolk Island are included as one spatial unit at the State and Territory level under the category of Other Territories. S/T are aggregations of one or more Statistical Area Level 4 (SA4s) in the ASGS Main Structure. S/T boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia. (definition from ASGS)
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GNAFEntity">GnafEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#Feature">geo:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -632,23 +688,35 @@ code {
     </div>
     <div class="entity class" id="Street">
         <h3>Street<sup title="class" class="sup-c">c</sup></h3>
+        <div class="figure">
+            <div style="width:80%"><img alt="GNAF Street and StreetLocality diagram" src="./images/street-tb.png"></div>
+            <div class="caption"><strong>Figure 4:</strong>The GNAF Street and StreetLocality classes. </div>
+        </div>
         <table>
             <tr>
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/gnaf#Street</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    Definition: a complete Street that crosses multiple localities. 
+
+NOTE: In principle, a Street is composed of several StreetLocality members, however this relationship is not present in the GNAF Ontology. Furthermore, the GNAF product definition does not contain a class for Street, only for StreetLocality. The GNAF Ontology does not therefore correspond to the GNAF product in this area, and should be reviewed and potentially revised to capture the correct alignment. In particular, in the GNAF Ontology _geometry_ is associated with gnaf:StreetLocality, but not with gnaf:Street which means that gnaf:Street as a sub-class of geo:Feature is not Loc-I conformant. 
+                </td>
+            </tr>
+            <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#Feature">geo:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#GNAFEntity">GnafEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#Feature">geo:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasStreetSuffix">hasStreetSuffix</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1<br/>
                     <a href="#hasname">hasName</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#hasStreetSuffix">hasStreetSuffix</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1<br/>
                 </td>
             </tr>
             <tr>
@@ -688,6 +756,16 @@ code {
                 <td><code>http://linked.data.gov.au/def/gnaf#StreetLocality</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    Definition: StreetLocality is a segment of a street contained within a single locality.
+
+NOTE: The GNAF product definition contain a class for Street, only for StreetLocality. The GNAF Ontology does not correspond to the GNAF product in this area and should be reviewed and potentially revised to capture the correct alignment. In the GNAF Ontology _geometry_ is associated with gnaf:StreetLocality, which as a (transitive) sub-class of geo:Feature is therefore conformant to Loc-I rules.
+
+G-NAF contains only point geometries, so the GeoSPARQL hasGeometry property is expected to have at least one sf:Point value
+                </td>
+            </tr>
+            <tr>
                 <th>Super-classes</th>
                 <td>
                     <a href="#Street">Street</a><sup class="sup-c" title="class">c</sup><br/>
@@ -696,16 +774,16 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geo:hasGeometry</a> <span class="cardinality">min</span> 1 <a href="http://www.opengis.net/ont/sf#Point">sf:Point</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#hasLocality">hasLocality</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Locality">Locality</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#hasGNAFconfidence">hasGnafConfidence</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#GnafConfidence">GnafConfidence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasLocality">hasLocality</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Locality">Locality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geo:hasGeometry</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="http://www.opengis.net/ont/sf#Point">sf:Point</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasStreetSuffix">hasStreetSuffix</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasLocality">hasLocality</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasStreetSuffix">hasStreetSuffix</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -727,6 +805,55 @@ code {
                 <th>In range of</th>
                 <td>
                     <a href="#hasStreetSuffix">hasStreetSuffix</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Feature">
+        <h3>Feature<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://www.opengis.net/ont/geosparql#Feature</code></td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#MeshBlock">MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Locality">Locality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateorTerritory">State</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Address">Address</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Street">Street</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Geometry">
+        <h3>Geometry<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://www.opengis.net/ont/geosparql#Geometry</code></td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#hasGeocodeReliability">hasGeocodeReliability</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Point">
+        <h3>Point<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://www.opengis.net/ont/sf#Point</code></td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasGeocode">hasGeocode</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -763,6 +890,8 @@ code {
         <li><a href="#hasStreetLocality">has Street Locality</a></li>
         <li><a href="#hasStreetSuffix">has Street Suffix</a></li>
         <li><a href="#type">type</a></li>
+        <li><a href="#hasGeometry">hasGeometry</a></li>
+        <li><a href="#sfWithin">sfWithin</a></li>
     </ul>
     <div class="entity property" id="isaliasof">
         <h3>is alias of<sup title="object property" class="sup-op">op</sup></h3>
@@ -890,7 +1019,7 @@ code {
             <tr>
                 <th>Super-properties</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geo:hasGeometry</a>
+                    <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geo:hasGeometry</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -913,6 +1042,18 @@ code {
             <tr>
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/gnaf#hasGeocodeReliability</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/geosparql#Geometry">geo:Geometry</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#GeocodeReliability">GeocodeReliability</a><sup class="sup-c" title="class">c</sup>
+                </td>
             </tr>
         </table>
     </div>
@@ -947,7 +1088,7 @@ code {
             <tr>
                 <th>Super-properties</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a>
+                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -1058,13 +1199,19 @@ code {
             <tr>
                 <th>Super-properties</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a>
+                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    (<a href="#Address">Address</a><sup class="sup-c" title="class">c</sup> or <a href="#Locality">Locality</a><sup class="sup-c" title="class">c</sup> or <a href="#Street">Street</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#StateOrTerritory">StateOrTerritory</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#StateorTerritory">State</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1100,7 +1247,7 @@ code {
             <tr>
                 <th>Super-properties</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a>
+                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -1147,6 +1294,24 @@ code {
             </tr>
         </table>
     </div>
+    <div class="entity property" id="hasGeometry">
+        <h3>hasGeometry<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://www.opengis.net/ont/geosparql#hasGeometry</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="sfWithin">
+        <h3>sfWithin<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://www.opengis.net/ont/geosparql#sfWithin</code></td>
+            </tr>
+        </table>
+    </div>
 </section>
 
 <section id="functionalproperties">
@@ -1181,6 +1346,7 @@ code {
         <li><a href="#hassuffix">has suffix</a></li>
         <li><a href="#hasprivatestreet">has private street</a></li>
         <li><a href="#created">created</a></li>
+        <li><a href="#date">date</a></li>
         <li><a href="#description">description</a></li>
         <li><a href="#modified">modified</a></li>
         <li><a href="#title">title</a></li>
@@ -1251,6 +1417,12 @@ code {
                 <td><code>http://linked.data.gov.au/def/gnaf#hasDateRetired</code></td>
             </tr>
             <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="http://purl.org/dc/terms/date">dcterms:date</a><sup class="sup-dp" title="datatype property">dp</sup>
+                </td>
+            </tr>
+            <tr>
                 <th>Range(s)</th>
                 <td>
                     <a href="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</a><sup class="sup-c" title="class">c</sup>
@@ -1317,8 +1489,8 @@ code {
             <tr>
                 <th>Super-properties</th>
                 <td>
-                    <a href="http://purl.org/dc/terms/title">dcterms:title</a><sup class="sup-dp" title="datatype property">dp</sup>
                     <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                    <a href="http://purl.org/dc/terms/title">dcterms:title</a><sup class="sup-dp" title="datatype property">dp</sup>
                 </td>
             </tr>
             <tr>
@@ -1437,6 +1609,15 @@ code {
             </tr>
         </table>
     </div>
+    <div class="entity property" id="date">
+        <h3>date<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://purl.org/dc/terms/date</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="description">
         <h3>description<sup title="datatype property" class="sup-dp">dp</sup></h3>
         <table>
@@ -1481,6 +1662,8 @@ code {
         <li><a href="#contributor">contributor</a></li>
         <li><a href="#creator">creator</a></li>
         <li><a href="#isReplacedBy">isReplacedBy</a></li>
+        <li><a href="#publisher">publisher</a></li>
+        <li><a href="#rights">rights</a></li>
         <li><a href="#source">source</a></li>
         <li><a href="#email">email</a></li>
         <li><a href="#identifier1">identifier</a></li>
@@ -1488,6 +1671,7 @@ code {
         <li><a href="#cardinality">cardinality</a></li>
         <li><a href="#maxQualifiedCardinality">maxQualifiedCardinality</a></li>
         <li><a href="#qualifiedCardinality">qualifiedCardinality</a></li>
+        <li><a href="#editorialNote">editorialNote</a></li>
     </ul>
     <div class="entity property" id="contributor">
         <h3>contributor<sup title="annotation property" class="sup-ap">ap</sup></h3>
@@ -1513,6 +1697,24 @@ code {
             <tr>
                 <th>IRI</th>
                 <td><code>http://purl.org/dc/terms/isReplacedBy</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="publisher">
+        <h3>publisher<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://purl.org/dc/terms/publisher</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="rights">
+        <h3>rights<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://purl.org/dc/terms/rights</code></td>
             </tr>
         </table>
     </div>
@@ -1576,6 +1778,15 @@ code {
             <tr>
                 <th>IRI</th>
                 <td><code>http://www.w3.org/2002/07/owl#qualifiedCardinality</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="editorialNote">
+        <h3>editorialNote<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://www.w3.org/2004/02/skos/core#editorialNote</code></td>
             </tr>
         </table>
     </div>
